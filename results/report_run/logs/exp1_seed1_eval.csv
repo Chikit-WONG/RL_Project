@@ -1,0 +1,11 @@
+episode,success_rate,alpha,is_slippery,seed,backend
+500,1.0,0.1,False,1,native
+1000,1.0,0.1,False,1,native
+1500,1.0,0.1,False,1,native
+2000,1.0,0.1,False,1,native
+2500,1.0,0.1,False,1,native
+3000,1.0,0.1,False,1,native
+3500,1.0,0.1,False,1,native
+4000,1.0,0.1,False,1,native
+4500,1.0,0.1,False,1,native
+5000,1.0,0.1,False,1,native

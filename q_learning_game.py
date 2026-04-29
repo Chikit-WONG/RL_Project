@@ -1,245 +1,52 @@
-"""FrozenLake Q-Learning project with plotting, logging, and native fallback.
+﻿"""FrozenLake Q-Learning project - main entry point.
 
-This script implements tabular Q-Learning for the RL final project. It prefers
-Gymnasium's FrozenLake-v1 when available and automatically falls back to a
-native implementation when Gymnasium is unavailable in the active environment.
+Imports all components from the project modules and exposes the CLI.
+Run this file directly to execute the full experiment suite.
+
+Module layout
+-------------
+config.py          - constants, Config, ExperimentSpec
+environment.py     - NativeFrozenLakeEnv, GymFrozenLakeAdapter, make_env,
+                     generate_random_map
+agent.py           - QTable, DoubleQTable, policy classes, train_once,
+                     evaluate_policy
+utils.py           - I/O helpers, smoothing, summary statistics
+plotting.py        - all matplotlib plot functions
+q_learning_game.py - CLI (parse_args) and main()
 """
 
 from __future__ import annotations
 
 import argparse
-import csv
-import math
 from collections import defaultdict
-from dataclasses import dataclass
 from pathlib import Path
-from typing import Dict, List, Optional, Sequence, Tuple
+from typing import Any, Dict, List, Optional, cast
 
-import matplotlib
-
-matplotlib.use("Agg")
-
-import matplotlib.pyplot as plt
 import numpy as np
 
-
-MAP_LAYOUT = ["SFFF", "FHFH", "FFFH", "HFFG"]
-ACTION_LABELS = {0: "^", 1: ">", 2: "v", 3: "<"}
-ACTION_NAMES = {0: "UP", 1: "RIGHT", 2: "DOWN", 3: "LEFT"}
-ACTION_DELTAS = {0: (-1, 0), 1: (0, 1), 2: (1, 0), 3: (0, -1)}
-GYM_ACTION_MAP = {0: 3, 1: 2, 2: 1, 3: 0}
-
-
-@dataclass
-class Config:
-    """Global configuration for training, evaluation, and result export."""
-
-    alpha: float = 0.1
-    gamma: float = 0.99
-    epsilon_start: float = 1.0
-    epsilon_min: float = 0.01
-    epsilon_decay: float = 0.995
-    n_episodes: int = 10_000
-    max_steps: int = 100
-    eval_interval: int = 500
-    eval_episodes: int = 100
-    smoothing_window: int = 200
-    multi_seed: int = 5
-    default_seed: int = 0
-    output_dir: Path = Path("results")
-
-
-@dataclass(frozen=True)
-class ExperimentSpec:
-    """Describes one experimental setting."""
-
-    name: str
-    title: str
-    is_slippery: bool
-    alpha: float
-    family: str
-
-
-class NativeFrozenLakeEnv:
-    """A small FrozenLake environment compatible with this project."""
-
-    def __init__(self, is_slippery: bool, seed: Optional[int] = None) -> None:
-        self.map_layout = MAP_LAYOUT
-        self.nrow = len(self.map_layout)
-        self.ncol = len(self.map_layout[0])
-        self.n_states = self.nrow * self.ncol
-        self.n_actions = 4
-        self.is_slippery = is_slippery
-        self.start_state = self._find_state("S")
-        self.goal_state = self._find_state("G")
-        self.terminal_states = {
-            self._to_state(row, col)
-            for row in range(self.nrow)
-            for col in range(self.ncol)
-            if self.map_layout[row][col] in {"H", "G"}
-        }
-        self.rng = np.random.default_rng(seed)
-        self.state = self.start_state
-
-    def _find_state(self, symbol: str) -> int:
-        """Return the state index for the requested symbol."""
-
-        for row in range(self.nrow):
-            for col in range(self.ncol):
-                if self.map_layout[row][col] == symbol:
-                    return self._to_state(row, col)
-        raise ValueError(f"Symbol {symbol!r} not found in the map.")
-
-    def _to_state(self, row: int, col: int) -> int:
-        """Convert row/column coordinates to a flattened state index."""
-
-        return row * self.ncol + col
-
-    def _to_pos(self, state: int) -> Tuple[int, int]:
-        """Convert a flattened state index to row/column coordinates."""
-
-        return divmod(state, self.ncol)
-
-    def reset(self, seed: Optional[int] = None) -> int:
-        """Reset the environment and optionally reseed the RNG."""
-
-        if seed is not None:
-            self.rng = np.random.default_rng(seed)
-        self.state = self.start_state
-        return self.state
-
-    def _move(self, state: int, action: int) -> int:
-        """Move one step in the selected direction with boundary handling."""
-
-        row, col = self._to_pos(state)
-        delta_row, delta_col = ACTION_DELTAS[action]
-        next_row = min(max(row + delta_row, 0), self.nrow - 1)
-        next_col = min(max(col + delta_col, 0), self.ncol - 1)
-        return self._to_state(next_row, next_col)
-
-    def _sample_transition_action(self, action: int) -> int:
-        """Sample the executed action under slippery dynamics."""
-
-        if not self.is_slippery:
-            return action
-        candidates = [((action - 1) % 4), action, ((action + 1) % 4)]
-        return int(self.rng.choice(candidates))
-
-    def step(self, action: int) -> Tuple[int, float, bool, Dict[str, object]]:
-        """Apply one action and return the next transition tuple."""
-
-        if self.state in self.terminal_states:
-            reward = 1.0 if self.state == self.goal_state else 0.0
-            return self.state, reward, True, {}
-
-        executed_action = self._sample_transition_action(action)
-        next_state = self._move(self.state, executed_action)
-        self.state = next_state
-
-        cell = self.map_layout[next_state // self.ncol][next_state % self.ncol]
-        done = cell in {"H", "G"}
-        reward = 1.0 if cell == "G" else 0.0
-        return next_state, reward, done, {"executed_action": ACTION_NAMES[executed_action]}
-
-    def close(self) -> None:
-        """Compatibility method for parity with Gymnasium environments."""
-
-
-class GymFrozenLakeAdapter:
-    """Wrap FrozenLake-v1 so the project can use a consistent action layout."""
-
-    def __init__(self, is_slippery: bool, seed: Optional[int] = None) -> None:
-        try:
-            import gymnasium as gym
-        except ImportError as exc:
-            raise RuntimeError("Gymnasium is not available.") from exc
-
-        self._env = gym.make("FrozenLake-v1", map_name="4x4", is_slippery=is_slippery)
-        self.n_states = int(self._env.observation_space.n)
-        self.n_actions = 4
-        self.map_layout = MAP_LAYOUT
-        self.goal_state = 15
-        self.is_slippery = is_slippery
-        self.reset(seed=seed)
-
-    def reset(self, seed: Optional[int] = None) -> int:
-        """Reset the wrapped Gymnasium environment."""
-
-        observation, _ = self._env.reset(seed=seed)
-        return int(observation)
-
-    def step(self, action: int) -> Tuple[int, float, bool, Dict[str, object]]:
-        """Step through the wrapped environment using canonical actions."""
-
-        gym_action = GYM_ACTION_MAP[action]
-        observation, reward, terminated, truncated, info = self._env.step(gym_action)
-        done = bool(terminated or truncated)
-        return int(observation), float(reward), done, dict(info)
-
-    def close(self) -> None:
-        """Close the wrapped environment."""
-
-        self._env.close()
-
-
-class QTable:
-    """Simple Q-table wrapper with tie-aware greedy selection."""
-
-    def __init__(self, n_states: int, n_actions: int) -> None:
-        self.values = np.zeros((n_states, n_actions), dtype=np.float64)
-
-    def max_q(self, state: int) -> float:
-        """Return the maximum action value for the provided state."""
-
-        return float(np.max(self.values[state]))
-
-    def best_action(self, state: int, rng: np.random.Generator) -> int:
-        """Break action ties randomly among the best-valued actions."""
-
-        state_values = self.values[state]
-        best_value = np.max(state_values)
-        best_actions = np.flatnonzero(np.isclose(state_values, best_value))
-        return int(rng.choice(best_actions))
-
-    def update(self, state: int, action: int, td_target: float, alpha: float) -> float:
-        """Apply one Q-Learning update and return the TD error."""
-
-        td_error = td_target - self.values[state, action]
-        self.values[state, action] += alpha * td_error
-        return float(td_error)
-
-
-class EpsilonGreedyPolicy:
-    """Epsilon-greedy action selection with multiplicative decay."""
-
-    def __init__(
-        self,
-        epsilon_start: float,
-        epsilon_min: float,
-        epsilon_decay: float,
-        rng: np.random.Generator,
-    ) -> None:
-        self.epsilon = epsilon_start
-        self.epsilon_min = epsilon_min
-        self.epsilon_decay = epsilon_decay
-        self.rng = rng
-
-    def select_action(self, q_table: QTable, state: int) -> int:
-        """Select a random or greedy action according to epsilon."""
-
-        if self.rng.random() < self.epsilon:
-            return int(self.rng.integers(0, q_table.values.shape[1]))
-        return q_table.best_action(state, self.rng)
-
-    def greedy_action(self, q_table: QTable, state: int) -> int:
-        """Select the greedy action without additional exploration."""
-
-        return q_table.best_action(state, self.rng)
-
-    def decay(self) -> None:
-        """Decay epsilon after each episode."""
-
-        self.epsilon = max(self.epsilon_min, self.epsilon * self.epsilon_decay)
+from config import Config, ExperimentSpec
+from agent import train_once
+from environment import generate_random_map
+from utils import (
+    ensure_output_dirs,
+    export_run_logs,
+    write_csv,
+    filter_specs,
+    build_run_summary,
+    build_aggregate_summary,
+)
+from plotting import (
+    plot_learning_curve,
+    plot_eval_curve,
+    plot_epsilon_curve,
+    plot_qtable_heatmap,
+    plot_policy_arrows,
+    plot_alpha_comparison,
+    plot_mean_eval_bands,
+    plot_alpha_final_bar,
+    plot_alpha_final_boxplot,
+    plot_map_heatmap_grid,
+)
 
 
 def parse_args() -> argparse.Namespace:
@@ -247,571 +54,138 @@ def parse_args() -> argparse.Namespace:
 
     parser = argparse.ArgumentParser(description="Run FrozenLake Q-Learning experiments.")
     parser.add_argument("--backend", choices=["auto", "gymnasium", "native"], default="auto")
-    parser.add_argument("--exp", choices=["all", "exp1", "exp2", "exp3"], default="all")
+    parser.add_argument(
+        "--exp",
+        choices=["all", "exp1", "exp2", "exp3", "exp4", "exp5", "exp6", "exp7", "exp8"],
+        default="all",
+    )
     parser.add_argument("--episodes", type=int, default=10_000)
     parser.add_argument("--seed", type=int, default=0)
     parser.add_argument("--multi-seed", type=int, default=5)
     parser.add_argument("--output-dir", type=Path, default=Path("results"))
+    parser.add_argument(
+        "--n-maps",
+        type=int,
+        default=10,
+        help="Number of random maps in the Exp6 map pool.",
+    )
+    parser.add_argument(
+        "--size",
+        type=int,
+        default=None,
+        choices=[5, 6],
+        help="If set, restrict Exp5/6 to maps of this side length.",
+    )
     return parser.parse_args()
 
 
-def make_env(
-    backend: str,
-    is_slippery: bool,
-    seed: Optional[int] = None,
-) -> Tuple[object, str]:
-    """Create the requested environment backend and report the backend used."""
+# ---------------------------------------------------------------------------
+# Spec builder
+# ---------------------------------------------------------------------------
 
-    if backend == "native":
-        return NativeFrozenLakeEnv(is_slippery=is_slippery, seed=seed), "native"
-    if backend == "gymnasium":
-        return GymFrozenLakeAdapter(is_slippery=is_slippery, seed=seed), "gymnasium"
-    try:
-        return GymFrozenLakeAdapter(is_slippery=is_slippery, seed=seed), "gymnasium"
-    except RuntimeError:
-        return NativeFrozenLakeEnv(is_slippery=is_slippery, seed=seed), "native"
-
-
-def q_learning_update(
-    q_table: QTable,
-    state: int,
-    action: int,
-    reward: float,
-    next_state: int,
-    done: bool,
-    alpha: float,
-    gamma: float,
-) -> float:
-    """Compute the Q-Learning target and update the Q-table."""
-
-    td_target = reward if done else reward + gamma * q_table.max_q(next_state)
-    return q_table.update(state, action, td_target, alpha)
-
-
-def smooth_curve(values: Sequence[float], window: int) -> np.ndarray:
-    """Return a simple moving-average smoothed version of the input sequence."""
-
-    array = np.asarray(values, dtype=np.float64)
-    if array.size == 0:
-        return array
-    if array.size < window:
-        return np.full_like(array, np.mean(array), dtype=np.float64)
-    weights = np.ones(window, dtype=np.float64) / float(window)
-    smoothed = np.convolve(array, weights, mode="valid")
-    prefix = np.full(window - 1, smoothed[0], dtype=np.float64)
-    return np.concatenate([prefix, smoothed])
-
-
-def ensure_output_dirs(output_dir: Path) -> Dict[str, Path]:
-    """Create and return the standard output directory layout."""
-
-    figures_dir = output_dir / "figures"
-    tables_dir = output_dir / "tables"
-    logs_dir = output_dir / "logs"
-    for directory in (output_dir, figures_dir, tables_dir, logs_dir):
-        directory.mkdir(parents=True, exist_ok=True)
-    return {"root": output_dir, "figures": figures_dir, "tables": tables_dir, "logs": logs_dir}
-
-
-def evaluate_policy(
-    q_table: QTable,
-    backend: str,
-    is_slippery: bool,
-    max_steps: int,
-    eval_episodes: int,
-    seed: int,
-) -> float:
-    """Evaluate the greedy policy and return the success rate."""
-
-    env, _ = make_env(backend=backend, is_slippery=is_slippery, seed=seed)
-    rng = np.random.default_rng(seed)
-    successes = 0
-    try:
-        for episode in range(eval_episodes):
-            state = env.reset(seed=seed + episode)
-            for _ in range(max_steps):
-                action = q_table.best_action(state, rng)
-                next_state, reward, done, _ = env.step(action)
-                state = next_state
-                if done:
-                    successes += int(reward > 0.0)
-                    break
-    finally:
-        env.close()
-    return successes / float(eval_episodes)
-
-
-def train_once(
-    spec: ExperimentSpec,
+def _build_all_specs(
     config: Config,
-    backend: str,
-    seed: int,
-) -> Dict[str, object]:
-    """Run one training job and return the full statistics dictionary."""
+    n_maps: int,
+    size_filter: Optional[int],
+    maps_5x5: List[List[str]],
+    maps_6x6: List[List[str]],
+) -> List[ExperimentSpec]:
+    """Construct the full list of experiment specifications for Exp1-8."""
 
-    env, backend_used = make_env(backend=backend, is_slippery=spec.is_slippery, seed=seed)
-    rng = np.random.default_rng(seed)
-    q_table = QTable(n_states=env.n_states, n_actions=env.n_actions)
-    policy = EpsilonGreedyPolicy(
-        epsilon_start=config.epsilon_start,
-        epsilon_min=config.epsilon_min,
-        epsilon_decay=config.epsilon_decay,
-        rng=rng,
-    )
+    specs: List[ExperimentSpec] = []
 
-    rewards: List[float] = []
-    epsilons: List[float] = []
-    train_rows: List[Dict[str, object]] = []
-    eval_rows: List[Dict[str, object]] = []
+    # ------------------------------------------------------------------
+    # Exp1-3  (original baseline + alpha ablation)
+    # ------------------------------------------------------------------
+    specs += [
+        ExperimentSpec("exp1", "Exp1 Deterministic Baseline", False, config.alpha, "baseline"),
+        ExperimentSpec("exp2", "Exp2 Stochastic Baseline", True, config.alpha, "baseline"),
+        ExperimentSpec("exp3_alpha_0.01", "Exp3 Alpha 0.01", True, 0.01, "alpha"),
+        ExperimentSpec("exp3_alpha_0.10", "Exp3 Alpha 0.10", True, 0.10, "alpha"),
+        ExperimentSpec("exp3_alpha_0.50", "Exp3 Alpha 0.50", True, 0.50, "alpha"),
+    ]
 
-    try:
-        for episode in range(1, config.n_episodes + 1):
-            state = env.reset(seed=seed + episode)
-            total_reward = 0.0
-            steps_taken = 0
+    # ------------------------------------------------------------------
+    # Exp4  — exploration policy comparison (4x4 stochastic)
+    # ------------------------------------------------------------------
+    specs += [
+        ExperimentSpec("exp4_random",    "Exp4 Random Policy",    True, config.alpha, "policy", policy_type="random"),
+        ExperimentSpec("exp4_epsilon",   "Exp4 Epsilon-Greedy",   True, config.alpha, "policy", policy_type="epsilon_greedy"),
+        ExperimentSpec("exp4_ucb",       "Exp4 UCB",              True, config.alpha, "policy", policy_type="ucb"),
+        ExperimentSpec("exp4_boltzmann", "Exp4 Boltzmann",        True, config.alpha, "policy", policy_type="boltzmann"),
+    ]
 
-            for step in range(1, config.max_steps + 1):
-                action = policy.select_action(q_table, state)
-                next_state, reward, done, _ = env.step(action)
-                q_learning_update(
-                    q_table=q_table,
-                    state=state,
-                    action=action,
-                    reward=reward,
-                    next_state=next_state,
-                    done=done,
-                    alpha=spec.alpha,
-                    gamma=config.gamma,
+    # ------------------------------------------------------------------
+    # Exp5  — map scale (fixed 5x5 and 6x6, map_id=0)
+    # ------------------------------------------------------------------
+    scale_configs = []
+    if size_filter is None or size_filter == 5:
+        scale_configs.append(("5x5", maps_5x5[0]))
+    if size_filter is None or size_filter == 6:
+        scale_configs.append(("6x6", maps_6x6[0]))
+    for size_str, first_map in scale_configs:
+        layout = tuple(first_map)
+        specs += [
+            ExperimentSpec(f"exp5_{size_str}_det", f"Exp5 {size_str} Deterministic",
+                           False, config.alpha, "map_scale", map_layout=layout, map_id=0),
+            ExperimentSpec(f"exp5_{size_str}_sto", f"Exp5 {size_str} Stochastic",
+                           True,  config.alpha, "map_scale", map_layout=layout, map_id=0),
+        ]
+
+    # ------------------------------------------------------------------
+    # Exp6  — random map pool (each map trained with seed=0 only)
+    # ------------------------------------------------------------------
+    pool_configs = []
+    if size_filter is None or size_filter == 5:
+        pool_configs.append(("5x5", maps_5x5))
+    if size_filter is None or size_filter == 6:
+        pool_configs.append(("6x6", maps_6x6))
+    for size_str, pool in pool_configs:
+        for i, m in enumerate(pool[:n_maps]):
+            specs.append(
+                ExperimentSpec(
+                    f"exp6_{size_str}_map{i}",
+                    f"Exp6 {size_str} Map {i}",
+                    True, config.alpha, "map_pool",
+                    map_layout=tuple(m), map_id=i,
                 )
-                total_reward += reward
-                state = next_state
-                steps_taken = step
-                if done:
-                    break
-
-            rewards.append(total_reward)
-            epsilons.append(policy.epsilon)
-            train_rows.append(
-                {
-                    "episode": episode,
-                    "reward": total_reward,
-                    "steps": steps_taken,
-                    "epsilon": policy.epsilon,
-                    "alpha": spec.alpha,
-                    "is_slippery": spec.is_slippery,
-                    "seed": seed,
-                    "backend": backend_used,
-                }
             )
 
-            if episode % config.eval_interval == 0 or episode == config.n_episodes:
-                success_rate = evaluate_policy(
-                    q_table=q_table,
-                    backend=backend_used,
-                    is_slippery=spec.is_slippery,
-                    max_steps=config.max_steps,
-                    eval_episodes=config.eval_episodes,
-                    seed=seed + 100_000 + episode,
+    # ------------------------------------------------------------------
+    # Exp7  — Standard vs Double Q-Learning (4x4 and 6x6 stochastic)
+    # ------------------------------------------------------------------
+    layout_6x6 = tuple(maps_6x6[0])
+    specs += [
+        ExperimentSpec("exp7_4x4_std",    "Exp7 4x4 Standard Q",  True, config.alpha, "algo"),
+        ExperimentSpec("exp7_4x4_double", "Exp7 4x4 Double Q",    True, config.alpha, "algo",
+                       algo="double_q_learning"),
+        ExperimentSpec("exp7_6x6_std",    "Exp7 6x6 Standard Q",  True, config.alpha, "algo",
+                       map_layout=layout_6x6),
+        ExperimentSpec("exp7_6x6_double", "Exp7 6x6 Double Q",    True, config.alpha, "algo",
+                       algo="double_q_learning", map_layout=layout_6x6),
+    ]
+
+    # ------------------------------------------------------------------
+    # Exp8  — reward shaping (4x4 and 6x6 stochastic)
+    # ------------------------------------------------------------------
+    shaping_variants = [
+        ("base",  dict()),
+        ("step",  dict(step_penalty=True)),
+        ("pot",   dict(reward_shaping=True)),
+        ("both",  dict(reward_shaping=True, step_penalty=True)),
+    ]
+    for size_str, layout_kw in [("4x4", {}), ("6x6", {"map_layout": layout_6x6})]:
+        for suffix, extra in shaping_variants:
+            specs.append(
+                ExperimentSpec(
+                    f"exp8_{size_str}_{suffix}",
+                    f"Exp8 {size_str} {suffix.capitalize()}",
+                    True, config.alpha, "shaping",
+                    **layout_kw, **extra,
                 )
-                eval_rows.append(
-                    {
-                        "episode": episode,
-                        "success_rate": success_rate,
-                        "alpha": spec.alpha,
-                        "is_slippery": spec.is_slippery,
-                        "seed": seed,
-                        "backend": backend_used,
-                    }
-                )
-
-            policy.decay()
-    finally:
-        env.close()
-
-    return {
-        "spec": spec,
-        "backend_used": backend_used,
-        "seed": seed,
-        "q_table": q_table.values.copy(),
-        "rewards": np.asarray(rewards, dtype=np.float64),
-        "smoothed_rewards": smooth_curve(rewards, config.smoothing_window),
-        "epsilons": np.asarray(epsilons, dtype=np.float64),
-        "eval_rows": eval_rows,
-        "train_rows": train_rows,
-    }
-
-
-def write_csv(path: Path, rows: Sequence[Dict[str, object]]) -> None:
-    """Write a list of dictionaries to CSV."""
-
-    path.parent.mkdir(parents=True, exist_ok=True)
-    if not rows:
-        path.write_text("", encoding="utf-8")
-        return
-    fieldnames = list(rows[0].keys())
-    with path.open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fieldnames)
-        writer.writeheader()
-        writer.writerows(rows)
-
-
-def plot_learning_curve(
-    rewards: np.ndarray,
-    smoothed_rewards: np.ndarray,
-    path: Path,
-    title: str,
-) -> None:
-    """Plot raw and smoothed episode rewards."""
-
-    episodes = np.arange(1, rewards.size + 1)
-    fig, ax = plt.subplots(figsize=(10, 5))
-    ax.plot(episodes, rewards, alpha=0.25, color="tab:blue", label="Raw reward")
-    ax.plot(episodes, smoothed_rewards, linewidth=2.0, color="tab:red", label="Smoothed reward")
-    ax.set_title(title)
-    ax.set_xlabel("Episode")
-    ax.set_ylabel("Reward")
-    ax.set_ylim(-0.02, 1.05)
-    ax.grid(alpha=0.25)
-    ax.legend()
-    fig.tight_layout()
-    fig.savefig(path, dpi=200)
-    plt.close(fig)
-
-
-def plot_eval_curve(eval_rows: Sequence[Dict[str, object]], path: Path, title: str) -> None:
-    """Plot evaluation success rate against training episodes."""
-
-    eval_episodes = [row["episode"] for row in eval_rows]
-    success_rates = [row["success_rate"] for row in eval_rows]
-    fig, ax = plt.subplots(figsize=(10, 5))
-    ax.plot(eval_episodes, success_rates, marker="o", linewidth=2.0, color="tab:green")
-    ax.set_title(title)
-    ax.set_xlabel("Training episode")
-    ax.set_ylabel("Greedy evaluation success rate")
-    ax.set_ylim(0.0, 1.05)
-    ax.grid(alpha=0.25)
-    fig.tight_layout()
-    fig.savefig(path, dpi=200)
-    plt.close(fig)
-
-
-def plot_epsilon_curve(epsilons: np.ndarray, path: Path, title: str) -> None:
-    """Plot the epsilon value used over training episodes."""
-
-    episodes = np.arange(1, epsilons.size + 1)
-    fig, ax = plt.subplots(figsize=(10, 5))
-    ax.plot(episodes, epsilons, linewidth=2.0, color="tab:orange")
-    ax.set_title(title)
-    ax.set_xlabel("Episode")
-    ax.set_ylabel("Epsilon")
-    ax.set_ylim(0.0, 1.05)
-    ax.grid(alpha=0.25)
-    fig.tight_layout()
-    fig.savefig(path, dpi=200)
-    plt.close(fig)
-
-
-def plot_qtable_heatmap(q_values: np.ndarray, path: Path, title: str) -> None:
-    """Plot the max Q-value per state on the 4x4 FrozenLake grid."""
-
-    value_grid = np.max(q_values, axis=1).reshape(4, 4)
-    fig, ax = plt.subplots(figsize=(6, 6))
-    image = ax.imshow(value_grid, cmap="RdYlGn")
-    for row in range(4):
-        for col in range(4):
-            state = row * 4 + col
-            label = MAP_LAYOUT[row][col]
-            ax.text(
-                col,
-                row,
-                f"{label}\n{value_grid[row, col]:.2f}",
-                ha="center",
-                va="center",
-                color="black",
-                fontsize=10,
             )
-    ax.set_title(title)
-    ax.set_xticks(range(4))
-    ax.set_yticks(range(4))
-    fig.colorbar(image, ax=ax, fraction=0.046, pad=0.04, label="max Q(s, a)")
-    fig.tight_layout()
-    fig.savefig(path, dpi=220)
-    plt.close(fig)
 
-
-def plot_policy_arrows(q_values: np.ndarray, path: Path, title: str) -> None:
-    """Plot the greedy policy on the FrozenLake grid using text arrows."""
-
-    fig, ax = plt.subplots(figsize=(6, 6))
-    ax.set_xlim(-0.5, 3.5)
-    ax.set_ylim(3.5, -0.5)
-    ax.set_xticks(np.arange(-0.5, 4, 1), minor=True)
-    ax.set_yticks(np.arange(-0.5, 4, 1), minor=True)
-    ax.grid(which="minor", color="black", linestyle="-", linewidth=1)
-    ax.tick_params(which="both", bottom=False, left=False, labelbottom=False, labelleft=False)
-
-    for row in range(4):
-        for col in range(4):
-            state = row * 4 + col
-            cell = MAP_LAYOUT[row][col]
-            if cell == "H":
-                text = "X"
-            elif cell == "G":
-                text = "*"
-            else:
-                text = ACTION_LABELS[int(np.argmax(q_values[state]))]
-            ax.text(col, row, text, ha="center", va="center", fontsize=24)
-
-    ax.set_title(title)
-    fig.tight_layout()
-    fig.savefig(path, dpi=220)
-    plt.close(fig)
-
-
-def plot_alpha_comparison(results: Sequence[Dict[str, object]], path: Path, title: str) -> None:
-    """Plot the single-seed alpha ablation reward curves on one figure."""
-
-    fig, ax = plt.subplots(figsize=(10, 5))
-    for result in results:
-        spec = result["spec"]
-        rewards = result["rewards"]
-        smoothed_rewards = result["smoothed_rewards"]
-        episodes = np.arange(1, rewards.size + 1)
-        ax.plot(episodes, rewards, alpha=0.15, linewidth=0.8)
-        ax.plot(episodes, smoothed_rewards, linewidth=2.0, label=f"alpha={spec.alpha}")
-    ax.set_title(title)
-    ax.set_xlabel("Episode")
-    ax.set_ylabel("Reward")
-    ax.set_ylim(-0.02, 1.05)
-    ax.grid(alpha=0.25)
-    ax.legend()
-    fig.tight_layout()
-    fig.savefig(path, dpi=200)
-    plt.close(fig)
-
-
-def plot_mean_eval_bands(
-    grouped_results: Dict[str, Sequence[Dict[str, object]]],
-    path: Path,
-    title: str,
-) -> None:
-    """Plot mean evaluation curves with one-standard-deviation bands."""
-
-    fig, ax = plt.subplots(figsize=(10, 5))
-    for label, runs in grouped_results.items():
-        episodes = np.asarray([row["episode"] for row in runs[0]["eval_rows"]], dtype=np.int32)
-        curve_matrix = np.asarray(
-            [[row["success_rate"] for row in run["eval_rows"]] for run in runs],
-            dtype=np.float64,
-        )
-        mean_curve = np.mean(curve_matrix, axis=0)
-        std_curve = np.std(curve_matrix, axis=0)
-        ax.plot(episodes, mean_curve, linewidth=2.0, label=label)
-        ax.fill_between(
-            episodes,
-            np.clip(mean_curve - std_curve, 0.0, 1.0),
-            np.clip(mean_curve + std_curve, 0.0, 1.0),
-            alpha=0.2,
-        )
-    ax.set_title(title)
-    ax.set_xlabel("Training episode")
-    ax.set_ylabel("Greedy evaluation success rate")
-    ax.set_ylim(0.0, 1.05)
-    ax.grid(alpha=0.25)
-    ax.legend()
-    fig.tight_layout()
-    fig.savefig(path, dpi=200)
-    plt.close(fig)
-
-
-def plot_alpha_final_bar(
-    grouped_results: Dict[str, Sequence[Dict[str, object]]],
-    path: Path,
-    title: str,
-) -> None:
-    """Plot final evaluation success rates for each alpha as a bar chart."""
-
-    labels: List[str] = []
-    means: List[float] = []
-    stds: List[float] = []
-    for label, runs in grouped_results.items():
-        finals = [run["eval_rows"][-1]["success_rate"] for run in runs]
-        labels.append(label)
-        means.append(float(np.mean(finals)))
-        stds.append(float(np.std(finals)))
-
-    x = np.arange(len(labels))
-    fig, ax = plt.subplots(figsize=(8, 5))
-    ax.bar(x, means, yerr=stds, capsize=6, color=["#4C78A8", "#F58518", "#54A24B"][: len(labels)])
-    ax.set_xticks(x, labels)
-    ax.set_ylim(0.0, 1.05)
-    ax.set_ylabel("Final evaluation success rate")
-    ax.set_title(title)
-    ax.grid(axis="y", alpha=0.25)
-    fig.tight_layout()
-    fig.savefig(path, dpi=200)
-    plt.close(fig)
-
-
-def plot_alpha_final_boxplot(
-    grouped_results: Dict[str, Sequence[Dict[str, object]]],
-    path: Path,
-    title: str,
-) -> None:
-    """Plot final evaluation success rates as boxplots with per-seed scatter."""
-
-    labels: List[str] = []
-    final_groups: List[List[float]] = []
-    for label, runs in grouped_results.items():
-        labels.append(label)
-        final_groups.append([float(run["eval_rows"][-1]["success_rate"]) for run in runs])
-
-    positions = np.arange(1, len(labels) + 1)
-    fig, ax = plt.subplots(figsize=(8, 5))
-    boxplot = ax.boxplot(
-        final_groups,
-        positions=positions,
-        widths=0.55,
-        patch_artist=True,
-        showmeans=False,
-    )
-
-    colors = ["#4C78A8", "#F58518", "#54A24B"][: len(labels)]
-    for patch, color in zip(boxplot["boxes"], colors):
-        patch.set_facecolor(color)
-        patch.set_alpha(0.55)
-    for median in boxplot["medians"]:
-        median.set_color("black")
-        median.set_linewidth(1.8)
-
-    rng = np.random.default_rng(2026)
-    for idx, values in enumerate(final_groups, start=1):
-        jitter = rng.uniform(-0.08, 0.08, size=len(values))
-        ax.scatter(
-            np.full(len(values), idx, dtype=np.float64) + jitter,
-            values,
-            color="black",
-            s=28,
-            alpha=0.8,
-            zorder=3,
-        )
-
-    ax.set_xticks(positions, labels)
-    ax.set_ylim(0.0, 1.05)
-    ax.set_ylabel("Final evaluation success rate")
-    ax.set_title(title)
-    ax.grid(axis="y", alpha=0.25)
-    fig.tight_layout()
-    fig.savefig(path, dpi=200)
-    plt.close(fig)
-
-
-def estimate_convergence_episode(eval_rows: Sequence[Dict[str, object]], threshold: float) -> Optional[int]:
-    """Estimate the first evaluation point that reaches the target threshold."""
-
-    for row in eval_rows:
-        if float(row["success_rate"]) >= threshold:
-            return int(row["episode"])
-    return None
-
-
-def build_run_summary(result: Dict[str, object], config: Config) -> Dict[str, object]:
-    """Create a compact summary row for one training run."""
-
-    spec: ExperimentSpec = result["spec"]
-    eval_rows = result["eval_rows"]
-    rewards = result["rewards"]
-    smoothed_rewards = result["smoothed_rewards"]
-    target_threshold = 0.95 if spec.name == "exp1" else 0.65
-    convergence_episode = estimate_convergence_episode(eval_rows, target_threshold)
-    final_success = float(eval_rows[-1]["success_rate"]) if eval_rows else math.nan
-    best_success = float(max(row["success_rate"] for row in eval_rows)) if eval_rows else math.nan
-    return {
-        "condition": spec.name,
-        "title": spec.title,
-        "family": spec.family,
-        "seed": result["seed"],
-        "backend": result["backend_used"],
-        "alpha": spec.alpha,
-        "is_slippery": spec.is_slippery,
-        "episodes": config.n_episodes,
-        "final_eval_success": final_success,
-        "best_eval_success": best_success,
-        "final_smoothed_reward": float(smoothed_rewards[-1]) if smoothed_rewards.size else math.nan,
-        "mean_reward": float(np.mean(rewards)) if rewards.size else math.nan,
-        "convergence_episode": convergence_episode if convergence_episode is not None else "",
-    }
-
-
-def build_aggregate_summary(
-    grouped_results: Dict[str, Sequence[Dict[str, object]]],
-    config: Config,
-) -> List[Dict[str, object]]:
-    """Aggregate seed-wise statistics for each condition."""
-
-    rows: List[Dict[str, object]] = []
-    for condition, runs in grouped_results.items():
-        template_spec: ExperimentSpec = runs[0]["spec"]
-        run_summaries = [build_run_summary(run, config) for run in runs]
-        final_successes = np.asarray([row["final_eval_success"] for row in run_summaries], dtype=np.float64)
-        best_successes = np.asarray([row["best_eval_success"] for row in run_summaries], dtype=np.float64)
-        mean_rewards = np.asarray([row["mean_reward"] for row in run_summaries], dtype=np.float64)
-        convergence_values = np.asarray(
-            [row["convergence_episode"] for row in run_summaries if row["convergence_episode"] != ""],
-            dtype=np.float64,
-        )
-        rows.append(
-            {
-                "condition": condition,
-                "title": template_spec.title,
-                "family": template_spec.family,
-                "alpha": template_spec.alpha,
-                "is_slippery": template_spec.is_slippery,
-                "n_seeds": len(runs),
-                "mean_final_eval_success": float(np.mean(final_successes)),
-                "std_final_eval_success": float(np.std(final_successes)),
-                "mean_best_eval_success": float(np.mean(best_successes)),
-                "std_best_eval_success": float(np.std(best_successes)),
-                "mean_reward": float(np.mean(mean_rewards)),
-                "std_reward": float(np.std(mean_rewards)),
-                "mean_convergence_episode": float(np.mean(convergence_values))
-                if convergence_values.size
-                else "",
-                "std_convergence_episode": float(np.std(convergence_values))
-                if convergence_values.size
-                else "",
-            }
-        )
-    return rows
-
-
-def filter_specs(all_specs: Sequence[ExperimentSpec], exp_choice: str) -> List[ExperimentSpec]:
-    """Select the experiments requested by the CLI."""
-
-    if exp_choice == "all":
-        return list(all_specs)
-    if exp_choice == "exp1":
-        return [spec for spec in all_specs if spec.name == "exp1"]
-    if exp_choice == "exp2":
-        return [spec for spec in all_specs if spec.name == "exp2"]
-    if exp_choice == "exp3":
-        return [spec for spec in all_specs if spec.family == "alpha"]
-    raise ValueError(f"Unsupported experiment selection: {exp_choice}")
-
-
-def sanitize_name(text: str) -> str:
-    """Convert a label to a filesystem-safe name."""
-
-    return text.replace(" ", "_").replace("=", "").replace(".", "_")
-
-
-def export_run_logs(result: Dict[str, object], logs_dir: Path) -> None:
-    """Write per-run training and evaluation logs to disk."""
-
-    spec: ExperimentSpec = result["spec"]
-    stem = f"{spec.name}_seed{result['seed']}"
-    write_csv(logs_dir / f"{stem}_train.csv", result["train_rows"])
-    write_csv(logs_dir / f"{stem}_eval.csv", result["eval_rows"])
+    return specs
 
 
 def main() -> None:
@@ -826,13 +200,19 @@ def main() -> None:
     )
     directories = ensure_output_dirs(config.output_dir)
 
-    all_specs = [
-        ExperimentSpec("exp1", "Exp1 Deterministic Baseline", False, config.alpha, "baseline"),
-        ExperimentSpec("exp2", "Exp2 Stochastic Baseline", True, config.alpha, "baseline"),
-        ExperimentSpec("exp3_alpha_0.01", "Exp3 Alpha 0.01", True, 0.01, "alpha"),
-        ExperimentSpec("exp3_alpha_0.10", "Exp3 Alpha 0.10", True, 0.10, "alpha"),
-        ExperimentSpec("exp3_alpha_0.50", "Exp3 Alpha 0.50", True, 0.50, "alpha"),
-    ]
+    # ------------------------------------------------------------------
+    # Generate fixed benchmark map pools (BFS-validated, deterministic)
+    # ------------------------------------------------------------------
+    maps_5x5: List[List[str]] = [generate_random_map(5, hole_prob=0.25, seed=i) for i in range(10)]
+    maps_6x6: List[List[str]] = [generate_random_map(6, hole_prob=0.25, seed=i) for i in range(10)]
+
+    all_specs = _build_all_specs(
+        config=config,
+        n_maps=args.n_maps,
+        size_filter=args.size,
+        maps_5x5=maps_5x5,
+        maps_6x6=maps_6x6,
+    )
     selected_specs = filter_specs(all_specs, args.exp)
     seed_values = list(range(config.multi_seed))
     if config.default_seed not in seed_values:
@@ -842,7 +222,9 @@ def main() -> None:
     results_by_condition: Dict[str, List[Dict[str, object]]] = defaultdict(list)
 
     for spec in selected_specs:
-        for seed in seed_values:
+        # Exp6 map-pool: each map is its own variation — run with seed 0 only
+        seeds_for_spec = [0] if spec.family == "map_pool" else seed_values
+        for seed in seeds_for_spec:
             result = train_once(spec=spec, config=config, backend=args.backend, seed=seed)
             results_by_condition[spec.name].append(result)
             export_run_logs(result, directories["logs"])
@@ -855,52 +237,60 @@ def main() -> None:
     write_csv(directories["tables"] / "run_summary.csv", run_summary_rows)
     write_csv(directories["tables"] / "summary_table.csv", aggregate_summary_rows)
 
-    # Single-seed figures use the requested default seed when available.
     selected_seed = config.default_seed
 
+    # ==================================================================
+    # Exp1 plots
+    # ==================================================================
     if "exp1" in results_by_condition:
-        exp1_seed_run = next(run for run in results_by_condition["exp1"] if run["seed"] == selected_seed)
+        exp1_run = next(r for r in results_by_condition["exp1"] if r["seed"] == selected_seed)
         plot_learning_curve(
-            rewards=exp1_seed_run["rewards"],
-            smoothed_rewards=exp1_seed_run["smoothed_rewards"],
+            rewards=cast(np.ndarray, exp1_run["rewards"]),
+            smoothed_rewards=cast(np.ndarray, exp1_run["smoothed_rewards"]),
             path=directories["figures"] / "exp1_learning_curve.png",
             title="Exp1 Learning Curve (Deterministic FrozenLake)",
         )
 
+    # ==================================================================
+    # Exp2 plots
+    # ==================================================================
     if "exp2" in results_by_condition:
-        exp2_seed_run = next(run for run in results_by_condition["exp2"] if run["seed"] == selected_seed)
+        exp2_run = next(r for r in results_by_condition["exp2"] if r["seed"] == selected_seed)
         plot_learning_curve(
-            rewards=exp2_seed_run["rewards"],
-            smoothed_rewards=exp2_seed_run["smoothed_rewards"],
+            rewards=cast(np.ndarray, exp2_run["rewards"]),
+            smoothed_rewards=cast(np.ndarray, exp2_run["smoothed_rewards"]),
             path=directories["figures"] / "exp2_learning_curve.png",
             title="Exp2 Learning Curve (Stochastic FrozenLake)",
         )
         plot_eval_curve(
-            eval_rows=exp2_seed_run["eval_rows"],
+            eval_rows=cast(List[Dict[str, object]], exp2_run["eval_rows"]),
             path=directories["figures"] / "exp2_eval_curve.png",
             title="Exp2 Evaluation Success Rate",
         )
         plot_epsilon_curve(
-            epsilons=exp2_seed_run["epsilons"],
+            epsilons=cast(np.ndarray, exp2_run["epsilons"]),
             path=directories["figures"] / "exp2_epsilon_curve.png",
             title="Exp2 Epsilon Decay",
         )
         plot_qtable_heatmap(
-            q_values=exp2_seed_run["q_table"],
+            q_values=cast(np.ndarray, exp2_run["q_table"]),
             path=directories["figures"] / "exp2_qtable_heatmap.png",
             title="Exp2 Max-Q Heatmap",
         )
         plot_policy_arrows(
-            q_values=exp2_seed_run["q_table"],
+            q_values=cast(np.ndarray, exp2_run["q_table"]),
             path=directories["figures"] / "exp2_policy_arrows.png",
             title="Exp2 Greedy Policy",
         )
 
-    alpha_condition_names = [name for name in results_by_condition if name.startswith("exp3_alpha_")]
+    # ==================================================================
+    # Exp3 plots (alpha ablation)
+    # ==================================================================
+    alpha_condition_names = [n for n in results_by_condition if n.startswith("exp3_alpha_")]
     if alpha_condition_names:
         alpha_seed_runs = [
-            next(run for run in results_by_condition[name] if run["seed"] == selected_seed)
-            for name in sorted(alpha_condition_names)
+            next(r for r in results_by_condition[n] if r["seed"] == selected_seed)
+            for n in sorted(alpha_condition_names)
         ]
         plot_alpha_comparison(
             results=alpha_seed_runs,
@@ -908,21 +298,20 @@ def main() -> None:
             title="Exp3 Alpha Ablation (Single Seed)",
         )
 
-    if all(label in results_by_condition for label in ("exp1", "exp2")):
-        baseline_groups = {
-            "Exp1 deterministic": results_by_condition["exp1"],
-            "Exp2 stochastic": results_by_condition["exp2"],
-        }
+    if all(lbl in results_by_condition for lbl in ("exp1", "exp2")):
         plot_mean_eval_bands(
-            grouped_results=baseline_groups,
+            grouped_results={
+                "Exp1 deterministic": results_by_condition["exp1"],
+                "Exp2 stochastic": results_by_condition["exp2"],
+            },
             path=directories["figures"] / "baseline_multi_seed_eval.png",
             title="Baseline Evaluation Curves Across Seeds",
         )
 
     if alpha_condition_names:
-        alpha_groups = {
-            f"alpha={results_by_condition[name][0]['spec'].alpha:g}": results_by_condition[name]
-            for name in sorted(alpha_condition_names)
+        alpha_groups: Dict[str, List[Dict[str, object]]] = {
+            f"alpha={cast(ExperimentSpec, results_by_condition[n][0]['spec']).alpha:g}": results_by_condition[n]
+            for n in sorted(alpha_condition_names)
         }
         plot_mean_eval_bands(
             grouped_results=alpha_groups,
@@ -939,6 +328,128 @@ def main() -> None:
             path=directories["figures"] / "alpha_final_success_boxplot.png",
             title="Final Success Rate Distribution by Alpha",
         )
+
+    # ==================================================================
+    # Exp4 — exploration policy comparison
+    # ==================================================================
+    exp4_names = [n for n in results_by_condition if n.startswith("exp4_")]
+    if exp4_names:
+        exp4_groups: Dict[str, List[Dict[str, object]]] = {
+            cast(ExperimentSpec, results_by_condition[n][0]["spec"]).policy_type: results_by_condition[n]
+            for n in sorted(exp4_names)
+        }
+        plot_mean_eval_bands(
+            grouped_results=exp4_groups,
+            path=directories["figures"] / "exp4_policy_comparison.png",
+            title="Exp4 Policy Comparison (4x4 Stochastic)",
+        )
+        plot_alpha_final_bar(
+            grouped_results=exp4_groups,
+            path=directories["figures"] / "exp4_policy_final_bar.png",
+            title="Exp4 Final Success Rate by Policy",
+        )
+
+    # ==================================================================
+    # Exp5 — map scale
+    # ==================================================================
+    for size_str in ("5x5", "6x6"):
+        det_key = f"exp5_{size_str}_det"
+        sto_key = f"exp5_{size_str}_sto"
+        if det_key in results_by_condition and sto_key in results_by_condition:
+            plot_mean_eval_bands(
+                grouped_results={
+                    f"{size_str} deterministic": results_by_condition[det_key],
+                    f"{size_str} stochastic":    results_by_condition[sto_key],
+                },
+                path=directories["figures"] / f"exp5_{size_str}_eval_bands.png",
+                title=f"Exp5 {size_str} Deterministic vs Stochastic",
+            )
+        # Q-table visualisation for stochastic variant (single seed)
+        if sto_key in results_by_condition:
+            sto_run = next(
+                (r for r in results_by_condition[sto_key] if r["seed"] == selected_seed),
+                results_by_condition[sto_key][0],
+            )
+            layout = list(cast(ExperimentSpec, sto_run["spec"]).map_layout or [])
+            plot_qtable_heatmap(
+                q_values=cast(np.ndarray, sto_run["q_table"]),
+                path=directories["figures"] / f"exp5_{size_str}_qtable_heatmap.png",
+                title=f"Exp5 {size_str} Max-Q Heatmap",
+                map_layout=layout,
+            )
+            plot_policy_arrows(
+                q_values=cast(np.ndarray, sto_run["q_table"]),
+                path=directories["figures"] / f"exp5_{size_str}_policy_arrows.png",
+                title=f"Exp5 {size_str} Greedy Policy",
+                map_layout=layout,
+            )
+
+    # ==================================================================
+    # Exp6 — random map pool
+    # ==================================================================
+    for size_str in ("5x5", "6x6"):
+        exp6_keys = sorted(n for n in results_by_condition if n.startswith(f"exp6_{size_str}_"))
+        if not exp6_keys:
+            continue
+        # Bar chart: final success rate per map
+        exp6_groups: Dict[str, List[Dict[str, object]]] = {
+            f"map{cast(ExperimentSpec, results_by_condition[k][0]['spec']).map_id}": results_by_condition[k]
+            for k in exp6_keys
+        }
+        plot_alpha_final_bar(
+            grouped_results=exp6_groups,
+            path=directories["figures"] / f"exp6_{size_str}_map_variance_bar.png",
+            title=f"Exp6 {size_str} Final Success Rate per Map",
+        )
+        # Map layout visualisation
+        pool_layouts = [
+            list(cast(ExperimentSpec, results_by_condition[k][0]["spec"]).map_layout or [])
+            for k in exp6_keys
+        ]
+        plot_map_heatmap_grid(
+            map_layouts=pool_layouts,
+            path=directories["figures"] / f"exp6_{size_str}_map_grid.png",
+            title=f"Exp6 {size_str} Random Map Pool",
+        )
+
+    # ==================================================================
+    # Exp7 — algorithm comparison
+    # ==================================================================
+    for size_str in ("4x4", "6x6"):
+        std_key    = f"exp7_{size_str}_std"
+        double_key = f"exp7_{size_str}_double"
+        if std_key in results_by_condition and double_key in results_by_condition:
+            plot_mean_eval_bands(
+                grouped_results={
+                    "Standard Q-Learning": results_by_condition[std_key],
+                    "Double Q-Learning":   results_by_condition[double_key],
+                },
+                path=directories["figures"] / f"exp7_{size_str}_algo_comparison.png",
+                title=f"Exp7 {size_str} Standard vs Double Q-Learning",
+            )
+
+    # ==================================================================
+    # Exp8 — reward shaping
+    # ==================================================================
+    shaping_labels = {
+        "base": "Sparse reward",
+        "step": "Step penalty",
+        "pot":  "Potential shaping",
+        "both": "Step + Potential",
+    }
+    for size_str in ("4x4", "6x6"):
+        exp8_keys = {
+            suffix: f"exp8_{size_str}_{suffix}"
+            for suffix in ("base", "step", "pot", "both")
+        }
+        present = {lbl: k for suffix, k in exp8_keys.items()
+                   if (lbl := shaping_labels[suffix]) and k in results_by_condition}
+        if len(present) >= 2:
+            plot_mean_eval_bands(
+                grouped_results={lbl: results_by_condition[k] for lbl, k in present.items()},
+                path=directories["figures"] / f"exp8_{size_str}_shaping_comparison.png",
+                title=f"Exp8 {size_str} Reward Shaping Comparison",
+            )
 
     print(f"Completed experiments: {', '.join(results_by_condition.keys())}")
     print(f"Backend requested: {args.backend}")
