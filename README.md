@@ -1,132 +1,96 @@
-# FrozenLake Stochastic RL Experiments
+# Stochastic FrozenLake RL Project Submission
 
-This folder is prepared for uploading to a GitHub branch of the project repository:
+This package is organized around the final report narrative:
+
+1. We use the Gymnasium standard 8x8 map as an important standard benchmark.
+2. We then tried Gymnasium-generated random maps.
+3. Many low-p Gymnasium random maps had near-zero oracle success under `slippery=True`, so they were not suitable for fair algorithm ranking.
+4. We therefore used controlled stochastic maps as the main comparison benchmark.
+5. We compared seven tabular RL algorithms, added Optuna tuning, and used Value Iteration as an oracle reference.
+
+## Folder Structure
 
 ```text
-https://github.com/Chikit-WONG/RL_Project
-```
-
-It contains the current main experimental deliverables for stochastic FrozenLake (`slippery=True`): runnable code, selected figures, result CSV files, and Chinese documentation for result interpretation.
-
-## What Is Included
-
-```text
-.
+RL_Project_Submission_FINAL_20260507/
 |-- code/
-|   |-- focused_random_map/
+|   |-- core/
+|   |-- experiments/
+|   |-- analysis/
+|   |-- requirements.txt
 |-- figures/
-|   |-- main/
-|       |-- per_map_designed4/
-|       |-- per_map_random8/
+|   |-- 01_report_used_compact/
+|   |-- 02_main_controlled_results/
+|   |-- 03_diagnostic_gymnasium8/
+|   |-- 04_supplemental_per_map/
+|   |-- 05_all_figures_archive/
 |-- results_csv/
+|   |-- 01_main_controlled/
+|   |-- 02_diagnostic_gymnasium8/
 |-- docs/
-|-- README.md
-|-- GITHUB_BRANCH_WORKFLOW.md
-|-- .gitignore
+|-- report_overleaf_light/
 ```
 
-The formal experimental scope is:
+## Main Benchmark
+
+The main algorithm comparison uses controlled stochastic maps:
 
 - Standard 4x4 slippery FrozenLake.
-- Designed random 4x4 slippery maps with exactly 4 holes.
-- Random 8x8 slippery maps with `p = 0.80, 0.85, 0.90, 0.95`, 5 maps per setting.
-- Gymnasium 8x8 benchmark: standard 8x8 plus Gymnasium `generate_random_map` at `p = 0.8, 0.7, 0.6, 0.5`, 3 maps per setting. This is the harder random-map benchmark and should be used for conservative claims.
-- Seven tabular RL algorithms: Q-learning, SARSA, Expected SARSA, SARSA(lambda), Q(lambda), Optimistic Q-learning, and Dyna-Q.
-- Value Iteration as an oracle reference, not as a model-free baseline.
-- Long-budget learning curves and ablation figures.
+- Designed 4x4 maps with exactly four holes.
+- Gymnasium standard 8x8 slippery FrozenLake as a standard reference.
+- Fixed 8x8 slippery FrozenLake.
+- Controlled random 8x8 maps with `p = 0.80, 0.85, 0.90, 0.95`.
 
-## Install Dependencies
+All reported main experiments use `slippery=True`.
 
-Use a normal Python environment. Conda is fine, but no machine-specific path is required.
+## Algorithms
+
+The main comparison includes:
+
+- Q-learning
+- SARSA
+- Expected SARSA
+- SARSA(lambda)
+- Q(lambda)
+- Optimistic Q-learning
+- Dyna-Q
+
+Value Iteration is used as an oracle reference, not as a model-free baseline.
+
+## Recommended Reading Order
+
+1. `report_overleaf_light/main.tex`
+2. `docs/中文文件结构说明.md`
+3. `docs/图表阅读指南.md`
+4. `docs/中文结果整理.md`
+5. `docs/algorithm_qa_notes.md`
+
+## Reproduction
+
+Install dependencies:
 
 ```bash
-cd code/focused_random_map
+cd code
 python -m pip install -r requirements.txt
 ```
 
-## Reproduce Main Runs
-
-Standard 4x4 slippery:
+Run the controlled 8x8 long-budget experiment:
 
 ```bash
-cd code/focused_random_map
-python run_standard_4x4_focused.py --output-dir standard_4x4_slippery_focused_v2 --episodes 2000 --eval-interval 50 --eval-episodes 500 --seeds 5 --planning-steps 5
-python plot_standard_4x4_slippery.py --input standard_4x4_slippery_focused_v2/standard_4x4_runs.csv --output-dir standard_4x4_slippery_focused_v2/figures
-```
-
-Designed random 4x4 long-budget curves:
-
-```bash
-cd code/focused_random_map
-python run_random8_learning_curves.py --suite designed4 --designed4-manifest ../../results_csv/designed4_learning_curve_map_manifest.csv --output-dir designed4_learning_curves_long_v1 --episodes 2000 --eval-interval 50 --eval-episodes 100 --oracle-eval-episodes 300 --seeds 1 --max-steps 100 --planning-steps 10
-```
-
-Random 8x8 slippery long-budget curves:
-
-```bash
-cd code/focused_random_map
+cd code/experiments
 python run_random8_learning_curves.py --suite random8 --output-dir random8_learning_curves_long_v1 --episodes 10000 --eval-interval 500 --eval-episodes 50 --oracle-eval-episodes 300 --maps-per-prob 5 --seeds 1 --max-steps 200 --planning-steps 15
 ```
 
-Gymnasium 8x8 harder benchmark:
+Run the Gymnasium diagnostic trial:
 
 ```bash
-cd code/focused_random_map
+cd code/experiments
 python run_gymnasium8_experiments.py --output-dir gymnasium8_random_maps_v1 --probs 0.8,0.7,0.6,0.5 --maps-per-prob 3 --episodes 10000 --eval-interval 500 --eval-episodes 100 --oracle-eval-episodes 1000 --max-steps 200 --planning-steps 15
 ```
 
-Regenerate report assets after the runs:
+The submitted CSV and figures are already included, so rerunning is optional.
 
-```bash
-cd code/focused_random_map
-python make_long_budget_report_assets.py
-```
+## Figure Policy
 
-## Key Outputs
+`figures/02_main_controlled_results/` and `figures/03_diagnostic_gymnasium8/` are the recommended figures for the report and presentation.
 
-Recommended figures:
-
-- `figures/main/stochastic_success_heatmap.png`
-- `figures/main/random8_learning_curves_all_maps_panel.png`
-- `figures/main/random8_final_success_heatmap_by_map.png`
-- `figures/main/random8_oracle_gap_heatmap_by_map.png`
-- `figures/main/random8_auc_heatmap_by_map.png`
-- `figures/main/gymnasium8/gym8_final_success_heatmap.png`
-- `figures/main/gymnasium8/gym8_oracle_gap_heatmap.png`
-- `figures/main/gymnasium8/gym8_mean_learning_curve.png`
-- `figures/main/exploration_ablation_fixed_8x8.png`
-- `figures/main/reward_propagation_ablation_fixed_8x8.png`
-
-Recommended CSV tables:
-
-- `results_csv/stochastic_core_summary_long_budget.csv`
-- `results_csv/random8_long_budget_algorithm_ranking.csv`
-- `results_csv/random8_long_budget_final_success.csv`
-- `results_csv/designed4_long_budget_algorithm_ranking.csv`
-- `results_csv/standard_4x4_slippery_rerun_aggregate.csv`
-- `results_csv/gymnasium8/gymnasium8_algorithm_ranking.csv`
-- `results_csv/gymnasium8/gymnasium8_map_summary.csv`
-
-## Documentation
-
-Start from:
-
-```text
-docs/README.md
-```
-
-The docs include Chinese result summaries, figure-reading guidance, algorithm QA notes, ablation explanations, and a file-structure guide.
-
-For the latest harder-map correction, see:
-
-```text
-docs/gymnasium8_benchmark_update.md
-```
-
-## GitHub Upload
-
-If you do not own the original repository, do not push directly to its `main` branch. Use a fork or a new branch and submit a pull request. See:
-
-```text
-GITHUB_BRANCH_WORKFLOW.md
-```
+`figures/05_all_figures_archive/` keeps all current valid figures from the clean working package, including grouped learning curves and individual Gymnasium per-map plots, so no previous useful figure is lost.

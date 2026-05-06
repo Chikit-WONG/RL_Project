@@ -1,0 +1,5 @@
+algorithm,display,best_value,note
+optimistic_q,Optimistic Q-learning,0.83,tuned validation
+dyna_q,Dyna-Q,0.795,tuned validation
+q_learning,Q-learning,0.735,tuned validation
+expected_sarsa,Expected SARSA,0.665,tuned validation

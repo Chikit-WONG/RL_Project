@@ -1,10 +1,12 @@
-# Gymnasium 8x8 Benchmark Update
+# Gymnasium Standard 8x8 and Random-Map Diagnostic Trial
 
-This update adds a stricter stochastic 8x8 benchmark based on Gymnasium.
+This update records two related results: the Gymnasium standard 8x8 map, which is an important standard benchmark, and the Gymnasium random-map trial, which motivated the final controlled-map benchmark design.
 
-## Why This Update Was Added
+## Why This Trial Was Added
 
-The earlier custom random-map generator used high frozen-tile probabilities and carved safe paths. Many generated maps were therefore relatively easy, and several Value Iteration oracle scores were close to 1.0. That result was useful as a first generalization test, but it should not be treated as a hard FrozenLake benchmark.
+The Gymnasium standard 8x8 map is not a failure case. It is a useful sanity check and standard comparison because it is fixed, reproducible, stochastic under `slippery=True`, and neither trivial nor near-impossible. In our run, its oracle success is about 0.861 and several tabular algorithms achieve strong learned policies.
+
+The initial idea was to use Gymnasium's standard map tools directly, because `generate_random_map` guarantees that a path exists from start to goal. In slippery FrozenLake, however, deterministic reachability is not enough: a connected map can still be almost impossible when each move can slip into a neighboring direction.
 
 The new experiment uses:
 
@@ -34,11 +36,11 @@ The Gymnasium random maps are much harder than the earlier custom maps. For exam
 
 ## Important Interpretation
 
-The earlier custom random-map results should be described as easy-to-medium controlled random-map tests. The Gymnasium results are a more credible harder benchmark.
+The standard Gymnasium 8x8 map should be used as a standard benchmark. The generated low-p random maps should not be used as the main algorithm-ranking benchmark. They are diagnostic evidence for why controlled maps were needed.
 
 Recommended conclusion:
 
-> Optimistic Q-learning remains the strongest learned tabular method, but the Gymnasium random maps show that harder stochastic 8x8 FrozenLake is far from solved under the current budget. Therefore, oracle gap and per-map difficulty must be reported alongside mean success.
+> Direct Gymnasium random maps exposed many near-zero oracle cases, so the final project uses controlled stochastic maps for fair algorithm comparison. The Gymnasium results remain useful as a stress test and as evidence that map generation must be treated as part of the experimental design.
 
 ## New Files
 

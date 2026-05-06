@@ -1,131 +1,81 @@
 # Algorithm QA Notes
 
-本文用于答辩或代码说明时解释各算法的表现。所有讨论默认指 `slippery=True` 的 stochastic FrozenLake。
+这些笔记用于答辩时解释每个算法为什么表现如此。当前正式讨论只针对 `slippery=True` 的 stochastic FrozenLake，重点是标准 4x4、designed 4x4 和 random 8x8 long-budget 结果。
 
 ## Q-learning
 
-Q-learning 是 off-policy TD control，更新目标使用 `max_a Q(s', a)`。
+Q-learning 是 off-policy TD control，用 `max_a Q(s', a)` 更新。它是强 baseline，random 8x8 long-budget mean final success 约为 0.879。
 
-优势：
+优势：实现简单、收敛后策略强、适合作为 tabular RL 基线。
 
-- 简单、经典、适合作为 baseline。
-- 在 4x4 和部分 8x8 地图上表现强。
-- 长预算后 random 8x8 mean final success 约为 0.879。
+局限：在 stochastic 转移和稀疏奖励下，max target 容易放大偶然高估；探索不足时会卡在局部策略。
 
-局限：
-
-- stochastic transition 下，max target 可能放大偶然高估。
-- 稀疏奖励下，如果探索不足，容易长期找不到有效路径。
-
-答辩要点：Q-learning 很强，但它的瓶颈主要是探索与过估计，不是更新公式完全不适合。
+答辩说法：Q-learning 在 4x4 和部分 8x8 地图上很强，但 random-map 泛化不如 Optimistic Q 稳定。
 
 ## SARSA
 
-SARSA 是 on-policy TD control，使用实际执行的下一步动作更新。
+SARSA 是 on-policy TD control，用实际下一步动作更新。random 8x8 long-budget mean final success 约为 0.895。
 
-优势：
+优势：更新目标与行为策略一致，在 slippery 环境中通常更保守。
 
-- 学习目标与行为策略一致。
-- 在 slippery 环境下相对保守，长预算后表现稳定。
-- random 8x8 mean final success 约为 0.895。
+局限：依赖 epsilon schedule，探索期策略会影响学习目标，所以前期学习较慢。
 
-局限：
-
-- 学习速度受 epsilon schedule 影响较大。
-- 探索期动作会进入更新目标，因此前期可能慢。
-
-答辩要点：SARSA 的最终表现并不差，但需要足够训练预算。
+答辩说法：SARSA 的最终表现并不差，但它需要更长预算才能体现稳定性。
 
 ## Expected SARSA
 
-Expected SARSA 使用 epsilon-greedy 策略下的期望动作价值更新。
+Expected SARSA 用 epsilon-greedy 策略下的期望动作价值更新。random 8x8 long-budget mean final success 约为 0.902。
 
-优势：
+优势：比 SARSA 的单样本 next action 更新方差更低，也比 Q-learning 的 max target 更保守。
 
-- 比 SARSA 的单样本 next action 更新方差更低。
-- 比 Q-learning 的 max target 更保守。
-- random 8x8 mean final success 约为 0.902。
+局限：如果 epsilon schedule 不合适，期望目标仍会被探索概率拖慢；短预算结果容易低估它。
 
-局限：
-
-- 对 epsilon schedule 仍然敏感。
-- 短预算下容易被低估。
-
-答辩要点：Expected SARSA 适合 stochastic FrozenLake，因为它显式考虑当前行为策略下的期望。
+答辩说法：它适合 stochastic FrozenLake，因为它显式考虑当前探索策略下的下一步期望。
 
 ## SARSA(lambda)
 
-SARSA(lambda) 使用 eligibility traces 加速奖励传播。
+SARSA(lambda) 使用 eligibility traces 加速 reward propagation。random 8x8 long-budget mean final success 约为 0.783，mean AUC 约为 0.725。
 
-优势：
+优势：稀疏奖励下能把成功回报更快传播到早期状态。
 
-- 成功奖励稀疏时，可以更快把终点奖励传播回早期状态。
-- random 8x8 mean AUC 约为 0.725，说明训练过程有一定优势。
+局限：对 lambda、alpha 和探索策略敏感；某些地图上 trace 会放大不稳定更新。
 
-局限：
-
-- 对 `lambda`、学习率和探索策略敏感。
-- 某些地图上 trace 可能放大不稳定更新，导致 final success 偏低。
-
-答辩要点：它展示了 reward propagation 的价值，但不是本项目中最稳定的最终策略。
+答辩说法：它体现了 reward propagation 的价值，但不是当前最稳定的最终策略。
 
 ## Q(lambda)
 
-Q(lambda) 将 Q-learning 与 eligibility traces 结合。
+Q(lambda) 把 Q-learning 与 eligibility traces 结合。random 8x8 long-budget mean final success 约为 0.873。
 
-优势：
+优势：比 one-step Q-learning 更快传播奖励。
 
-- 比 one-step Q-learning 更快传播奖励。
-- random 8x8 mean final success 约为 0.873。
+局限：off-policy 与 trace 结合时更敏感，stochastic 环境中容易出现不稳定。
 
-局限：
-
-- off-policy 方法与 traces 结合时更敏感。
-- stochastic 环境中稳定性不如 Optimistic Q。
-
-答辩要点：这是重要传统变种，但在本实验中没有超过探索更强的 Optimistic Q-learning。
+答辩说法：它是重要传统变种，但在本实验中没有超过 Optimistic Q。
 
 ## Dyna-Q
 
-Dyna-Q 学习一个经验模型，并用 planning steps 做模拟更新。
+Dyna-Q 学到一个经验模型，并用 planning steps 做模拟更新。random 8x8 long-budget final success 约为 0.870，但 mean AUC 约为 0.808。
 
-优势：
+优势：AUC 高，说明更早学到有效策略；适合解释 planning 对 sparse reward 的帮助。
 
-- early learning 和 AUC 表现好。
-- random 8x8 mean AUC 约为 0.808，高于 Q-learning、SARSA 和 Expected SARSA。
-- 适合说明 planning 对稀疏奖励传播的帮助。
+局限：在 slippery 环境中，简单经验模型不能完全表达转移随机性，最终策略不一定最好。
 
-局限：
-
-- 简单经验模型不能完美表达 slippery transition 的随机性。
-- final success 不是最高，random 8x8 mean final success 约为 0.870。
-
-答辩要点：Dyna-Q 的价值主要是 sample efficiency，不一定是最终策略最优。
+答辩说法：Dyna-Q 的价值主要体现在 sample efficiency，而不是最终成功率排名第一。
 
 ## Optimistic Q-learning
 
-Optimistic Q-learning 使用乐观初始化鼓励探索。
+Optimistic Q-learning 用乐观初始化鼓励探索。random 8x8 long-budget mean final success 约为 0.988，mean oracle gap 约为 0.002。
 
-优势：
+优势：对稀疏奖励 FrozenLake 非常有效，因为未知状态动作一开始都显得有价值，会推动 agent 尝试更多路径。
 
-- 在稀疏奖励 FrozenLake 中非常有效。
-- 未探索动作初始价值高，agent 更愿意尝试不同路径。
-- random 8x8 mean final success 约为 0.988，mean oracle gap 约为 0.002。
+局限：如果环境更大或奖励结构更复杂，乐观初始化值需要重新调；过强乐观值也可能导致探索时间过长。
 
-局限：
-
-- 乐观初始值需要调参。
-- 环境更大或奖励结构变化时，可能需要重新设置。
-
-答辩要点：它表现最好不是因为更新公式复杂，而是因为它最有效地缓解了探索瓶颈。
+答辩说法：本项目中它表现最好，核心原因不是更新公式更复杂，而是探索瓶颈被明显缓解。
 
 ## Value Iteration Oracle
 
-Value Iteration 使用已知环境模型求近似最优策略。
+Value Iteration 使用环境转移模型求近似最优策略，不是 model-free baseline。
 
-用途：
+用途：作为上限参考，帮助判断失败来自地图本身难，还是算法没有学好。
 
-- 提供 oracle success，作为上限参考。
-- 帮助区分地图本身难，还是算法没学好。
-
-答辩要点：如果 oracle 高但 learned success 低，说明算法学习不足；如果 oracle 本身低，说明该 slippery map 即使最优策略也很难稳定成功。
+答辩说法：如果 oracle success 高但 learned success 低，说明算法学习不足；如果 oracle 本身低，则说明该地图在 slippery setting 下可达但很难稳定成功。

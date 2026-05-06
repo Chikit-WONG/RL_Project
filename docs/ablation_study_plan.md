@@ -1,64 +1,56 @@
-# Ablation Study 说明
+# Ablation Study Plan
 
-本项目中的 ablation study 主要用于解释两个问题：
+当前正式 ablation 只服务于 stochastic FrozenLake 主线，重点解释 random 8x8 中算法差异的来源。
 
-1. 为什么 Optimistic Q-learning 表现最好？
-2. 为什么 Dyna-Q 的 final success 不是最高，但训练过程表现仍然有价值？
+## 1. Exploration Ablation
 
-## Exploration Ablation
+目的：解释 Optimistic Q-learning 为什么在 8x8 random maps 上表现最好。
 
-对应文件：
+对比项：
 
-```text
-figures/main/exploration_ablation_fixed_8x8.png
-results_csv/exploration_ablation_fixed_8x8.csv
-```
+- 普通 epsilon-greedy Q-learning
+- Optimistic Q-learning
+- 不同 epsilon decay / epsilon minimum
 
-研究问题：在 slippery 8x8 FrozenLake 中，探索策略对学习结果有多大影响？
+预期解释：FrozenLake 奖励稀疏，很多失败不是更新公式本身不行，而是 agent 没有足够探索到可行路径。乐观初始化能让未知动作保持吸引力，因此更容易穿过稀疏奖励瓶颈。
 
-核心解释：
+对应图表：
 
-- FrozenLake 奖励非常稀疏，agent 很长时间可能完全拿不到成功奖励。
-- 普通 epsilon-greedy Q-learning 会随着 epsilon 衰减逐渐减少探索。
-- Optimistic initialization 让未知动作一开始看起来更有价值，因此更愿意探索不同路径。
+- `figures/main/exploration_ablation_fixed_8x8.png`
+- `results_csv/exploration_ablation_fixed_8x8.csv`
 
-结论：在本项目中，Optimistic Q-learning 的优势主要来自更有效的探索，而不是更复杂的 TD 更新公式。
+## 2. Reward Propagation Ablation
 
-## Reward Propagation Ablation
+目的：解释 Dyna-Q、SARSA(lambda)、Q(lambda) 的价值。
 
-对应文件：
+对比项：
 
-```text
-figures/main/reward_propagation_ablation_fixed_8x8.png
-results_csv/reward_propagation_ablation_fixed_8x8.csv
-```
+- one-step TD methods
+- eligibility trace methods
+- planning-based Dyna-Q
 
-研究问题：在稀疏奖励环境中，如何更快把终点奖励传播回早期状态？
+预期解释：FrozenLake 成功奖励只在终点出现，one-step 方法需要很多 episode 才能把奖励传播回起点。trace 和 planning 可以加速传播，因此在 AUC 或早期学习速度上更有优势。
 
-对比思路：
+对应图表：
 
-- one-step TD 方法每次只传播一步。
-- eligibility traces 可以把奖励传播到近期访问过的一串状态动作。
-- Dyna-Q 可以通过模型 replay 做额外 planning updates。
+- `figures/main/reward_propagation_ablation_fixed_8x8.png`
+- `results_csv/reward_propagation_ablation_fixed_8x8.csv`
 
-结论：Dyna-Q 的 final success 不是最高，但 AUC 通常较好，说明它更早学到有效策略。这个结果支持“planning 提高 sample efficiency”的解释。
+## 3. Map Difficulty Ablation
 
-## Map Difficulty Ablation
+目的：解释为什么同一 frozen tile probability 下方差仍然很大。
 
-对应文件：
+对比项：
 
-```text
-figures/main/random8_learning_curves_all_maps_panel.png
-figures/main/random8_oracle_gap_heatmap_by_map.png
-figures/main/random8_final_success_points_by_probability.png
-```
+- 标准 4x4
+- designed 4x4 exact-hole maps
+- random 8x8 不同 p 与不同 map id
+- Value Iteration oracle gap
 
-研究问题：为什么同一个 frozen tile probability 下，结果方差仍然很大？
+预期解释：`p` 只控制洞的大致比例，不直接控制路径结构、拐点、瓶颈和 slippery 后的风险。因此必须按每张地图单独画 learning curve，并用 oracle gap 区分“地图难”和“算法没学好”。
 
-核心解释：
+对应图表：
 
-- `p` 只控制 frozen tile 的概率，不直接控制路径长度、瓶颈位置、洞的局部结构。
-- slippery transition 会让路径附近的洞产生额外风险。
-- 因此同一 p 下不同地图仍可能差异很大。
-
-结论：不能只看平均曲线。per-map learning curves 和 oracle gap 更能说明算法失败来自地图难度还是学习不足。
+- `figures/main/random8_learning_curves_all_maps_panel.png`
+- `figures/main/random8_oracle_gap_heatmap_by_map.png`
+- `figures/main/random8_final_success_points_by_probability.png`
