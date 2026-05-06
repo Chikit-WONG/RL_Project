@@ -1,0 +1,1912 @@
+group,map_label,map_id,algorithm,display_algorithm,seed,episode,success_rate
+standard8,standard8,0,q_learning,Q-learning,0,0,0.0
+standard8,standard8,0,q_learning,Q-learning,0,500,0.02
+standard8,standard8,0,q_learning,Q-learning,0,1000,0.06
+standard8,standard8,0,q_learning,Q-learning,0,1500,0.18
+standard8,standard8,0,q_learning,Q-learning,0,2000,0.17
+standard8,standard8,0,q_learning,Q-learning,0,2500,0.49
+standard8,standard8,0,q_learning,Q-learning,0,3000,0.77
+standard8,standard8,0,q_learning,Q-learning,0,3500,0.74
+standard8,standard8,0,q_learning,Q-learning,0,4000,0.63
+standard8,standard8,0,q_learning,Q-learning,0,4500,0.79
+standard8,standard8,0,q_learning,Q-learning,0,5000,0.71
+standard8,standard8,0,q_learning,Q-learning,0,5500,0.87
+standard8,standard8,0,q_learning,Q-learning,0,6000,0.5
+standard8,standard8,0,q_learning,Q-learning,0,6500,0.46
+standard8,standard8,0,q_learning,Q-learning,0,7000,0.77
+standard8,standard8,0,q_learning,Q-learning,0,7500,0.83
+standard8,standard8,0,q_learning,Q-learning,0,8000,0.73
+standard8,standard8,0,q_learning,Q-learning,0,8500,0.83
+standard8,standard8,0,q_learning,Q-learning,0,9000,0.86
+standard8,standard8,0,q_learning,Q-learning,0,9500,0.8
+standard8,standard8,0,q_learning,Q-learning,0,10000,0.78
+standard8,standard8,0,sarsa,SARSA,0,0,0.0
+standard8,standard8,0,sarsa,SARSA,0,500,0.0
+standard8,standard8,0,sarsa,SARSA,0,1000,0.07
+standard8,standard8,0,sarsa,SARSA,0,1500,0.19
+standard8,standard8,0,sarsa,SARSA,0,2000,0.3
+standard8,standard8,0,sarsa,SARSA,0,2500,0.58
+standard8,standard8,0,sarsa,SARSA,0,3000,0.83
+standard8,standard8,0,sarsa,SARSA,0,3500,0.8
+standard8,standard8,0,sarsa,SARSA,0,4000,0.68
+standard8,standard8,0,sarsa,SARSA,0,4500,0.86
+standard8,standard8,0,sarsa,SARSA,0,5000,0.66
+standard8,standard8,0,sarsa,SARSA,0,5500,0.76
+standard8,standard8,0,sarsa,SARSA,0,6000,0.9
+standard8,standard8,0,sarsa,SARSA,0,6500,0.86
+standard8,standard8,0,sarsa,SARSA,0,7000,0.69
+standard8,standard8,0,sarsa,SARSA,0,7500,0.89
+standard8,standard8,0,sarsa,SARSA,0,8000,0.88
+standard8,standard8,0,sarsa,SARSA,0,8500,0.65
+standard8,standard8,0,sarsa,SARSA,0,9000,0.81
+standard8,standard8,0,sarsa,SARSA,0,9500,0.84
+standard8,standard8,0,sarsa,SARSA,0,10000,0.74
+standard8,standard8,0,expected_sarsa,Expected SARSA,0,0,0.0
+standard8,standard8,0,expected_sarsa,Expected SARSA,0,500,0.0
+standard8,standard8,0,expected_sarsa,Expected SARSA,0,1000,0.0
+standard8,standard8,0,expected_sarsa,Expected SARSA,0,1500,0.14
+standard8,standard8,0,expected_sarsa,Expected SARSA,0,2000,0.12
+standard8,standard8,0,expected_sarsa,Expected SARSA,0,2500,0.53
+standard8,standard8,0,expected_sarsa,Expected SARSA,0,3000,0.64
+standard8,standard8,0,expected_sarsa,Expected SARSA,0,3500,0.84
+standard8,standard8,0,expected_sarsa,Expected SARSA,0,4000,0.7
+standard8,standard8,0,expected_sarsa,Expected SARSA,0,4500,0.78
+standard8,standard8,0,expected_sarsa,Expected SARSA,0,5000,0.77
+standard8,standard8,0,expected_sarsa,Expected SARSA,0,5500,0.82
+standard8,standard8,0,expected_sarsa,Expected SARSA,0,6000,0.85
+standard8,standard8,0,expected_sarsa,Expected SARSA,0,6500,0.86
+standard8,standard8,0,expected_sarsa,Expected SARSA,0,7000,0.79
+standard8,standard8,0,expected_sarsa,Expected SARSA,0,7500,0.82
+standard8,standard8,0,expected_sarsa,Expected SARSA,0,8000,0.82
+standard8,standard8,0,expected_sarsa,Expected SARSA,0,8500,0.86
+standard8,standard8,0,expected_sarsa,Expected SARSA,0,9000,0.82
+standard8,standard8,0,expected_sarsa,Expected SARSA,0,9500,0.81
+standard8,standard8,0,expected_sarsa,Expected SARSA,0,10000,0.85
+standard8,standard8,0,sarsa_lambda,SARSA(lambda),0,0,0.0
+standard8,standard8,0,sarsa_lambda,SARSA(lambda),0,500,0.12
+standard8,standard8,0,sarsa_lambda,SARSA(lambda),0,1000,0.13
+standard8,standard8,0,sarsa_lambda,SARSA(lambda),0,1500,0.4
+standard8,standard8,0,sarsa_lambda,SARSA(lambda),0,2000,0.23
+standard8,standard8,0,sarsa_lambda,SARSA(lambda),0,2500,0.82
+standard8,standard8,0,sarsa_lambda,SARSA(lambda),0,3000,0.78
+standard8,standard8,0,sarsa_lambda,SARSA(lambda),0,3500,0.13
+standard8,standard8,0,sarsa_lambda,SARSA(lambda),0,4000,0.56
+standard8,standard8,0,sarsa_lambda,SARSA(lambda),0,4500,0.55
+standard8,standard8,0,sarsa_lambda,SARSA(lambda),0,5000,0.44
+standard8,standard8,0,sarsa_lambda,SARSA(lambda),0,5500,0.75
+standard8,standard8,0,sarsa_lambda,SARSA(lambda),0,6000,0.5
+standard8,standard8,0,sarsa_lambda,SARSA(lambda),0,6500,0.8
+standard8,standard8,0,sarsa_lambda,SARSA(lambda),0,7000,0.63
+standard8,standard8,0,sarsa_lambda,SARSA(lambda),0,7500,0.0
+standard8,standard8,0,sarsa_lambda,SARSA(lambda),0,8000,0.01
+standard8,standard8,0,sarsa_lambda,SARSA(lambda),0,8500,0.7
+standard8,standard8,0,sarsa_lambda,SARSA(lambda),0,9000,0.68
+standard8,standard8,0,sarsa_lambda,SARSA(lambda),0,9500,0.07
+standard8,standard8,0,sarsa_lambda,SARSA(lambda),0,10000,0.76
+standard8,standard8,0,q_lambda,Q(lambda),0,0,0.0
+standard8,standard8,0,q_lambda,Q(lambda),0,500,0.0
+standard8,standard8,0,q_lambda,Q(lambda),0,1000,0.12
+standard8,standard8,0,q_lambda,Q(lambda),0,1500,0.26
+standard8,standard8,0,q_lambda,Q(lambda),0,2000,0.17
+standard8,standard8,0,q_lambda,Q(lambda),0,2500,0.81
+standard8,standard8,0,q_lambda,Q(lambda),0,3000,0.88
+standard8,standard8,0,q_lambda,Q(lambda),0,3500,0.68
+standard8,standard8,0,q_lambda,Q(lambda),0,4000,0.11
+standard8,standard8,0,q_lambda,Q(lambda),0,4500,0.88
+standard8,standard8,0,q_lambda,Q(lambda),0,5000,0.55
+standard8,standard8,0,q_lambda,Q(lambda),0,5500,0.5
+standard8,standard8,0,q_lambda,Q(lambda),0,6000,0.82
+standard8,standard8,0,q_lambda,Q(lambda),0,6500,0.8
+standard8,standard8,0,q_lambda,Q(lambda),0,7000,0.59
+standard8,standard8,0,q_lambda,Q(lambda),0,7500,0.65
+standard8,standard8,0,q_lambda,Q(lambda),0,8000,0.42
+standard8,standard8,0,q_lambda,Q(lambda),0,8500,0.8
+standard8,standard8,0,q_lambda,Q(lambda),0,9000,0.75
+standard8,standard8,0,q_lambda,Q(lambda),0,9500,0.86
+standard8,standard8,0,q_lambda,Q(lambda),0,10000,0.85
+standard8,standard8,0,optimistic_q,Optimistic Q,0,0,0.0
+standard8,standard8,0,optimistic_q,Optimistic Q,0,500,0.34
+standard8,standard8,0,optimistic_q,Optimistic Q,0,1000,0.66
+standard8,standard8,0,optimistic_q,Optimistic Q,0,1500,0.76
+standard8,standard8,0,optimistic_q,Optimistic Q,0,2000,0.83
+standard8,standard8,0,optimistic_q,Optimistic Q,0,2500,0.84
+standard8,standard8,0,optimistic_q,Optimistic Q,0,3000,0.82
+standard8,standard8,0,optimistic_q,Optimistic Q,0,3500,0.91
+standard8,standard8,0,optimistic_q,Optimistic Q,0,4000,0.87
+standard8,standard8,0,optimistic_q,Optimistic Q,0,4500,0.86
+standard8,standard8,0,optimistic_q,Optimistic Q,0,5000,0.82
+standard8,standard8,0,optimistic_q,Optimistic Q,0,5500,0.86
+standard8,standard8,0,optimistic_q,Optimistic Q,0,6000,0.8
+standard8,standard8,0,optimistic_q,Optimistic Q,0,6500,0.63
+standard8,standard8,0,optimistic_q,Optimistic Q,0,7000,0.77
+standard8,standard8,0,optimistic_q,Optimistic Q,0,7500,0.79
+standard8,standard8,0,optimistic_q,Optimistic Q,0,8000,0.8
+standard8,standard8,0,optimistic_q,Optimistic Q,0,8500,0.77
+standard8,standard8,0,optimistic_q,Optimistic Q,0,9000,0.94
+standard8,standard8,0,optimistic_q,Optimistic Q,0,9500,0.8
+standard8,standard8,0,optimistic_q,Optimistic Q,0,10000,0.82
+standard8,standard8,0,dyna_q,Dyna-Q,0,0,0.0
+standard8,standard8,0,dyna_q,Dyna-Q,0,500,0.0
+standard8,standard8,0,dyna_q,Dyna-Q,0,1000,0.0
+standard8,standard8,0,dyna_q,Dyna-Q,0,1500,0.0
+standard8,standard8,0,dyna_q,Dyna-Q,0,2000,0.42
+standard8,standard8,0,dyna_q,Dyna-Q,0,2500,0.24
+standard8,standard8,0,dyna_q,Dyna-Q,0,3000,0.38
+standard8,standard8,0,dyna_q,Dyna-Q,0,3500,0.77
+standard8,standard8,0,dyna_q,Dyna-Q,0,4000,0.64
+standard8,standard8,0,dyna_q,Dyna-Q,0,4500,0.36
+standard8,standard8,0,dyna_q,Dyna-Q,0,5000,0.4
+standard8,standard8,0,dyna_q,Dyna-Q,0,5500,0.46
+standard8,standard8,0,dyna_q,Dyna-Q,0,6000,0.5
+standard8,standard8,0,dyna_q,Dyna-Q,0,6500,0.12
+standard8,standard8,0,dyna_q,Dyna-Q,0,7000,0.68
+standard8,standard8,0,dyna_q,Dyna-Q,0,7500,0.29
+standard8,standard8,0,dyna_q,Dyna-Q,0,8000,0.75
+standard8,standard8,0,dyna_q,Dyna-Q,0,8500,0.6
+standard8,standard8,0,dyna_q,Dyna-Q,0,9000,0.0
+standard8,standard8,0,dyna_q,Dyna-Q,0,9500,0.77
+standard8,standard8,0,dyna_q,Dyna-Q,0,10000,0.16
+p0.80,p0.80_m0,1,q_learning,Q-learning,0,0,0.0
+p0.80,p0.80_m0,1,q_learning,Q-learning,0,500,0.0
+p0.80,p0.80_m0,1,q_learning,Q-learning,0,1000,0.0
+p0.80,p0.80_m0,1,q_learning,Q-learning,0,1500,0.0
+p0.80,p0.80_m0,1,q_learning,Q-learning,0,2000,0.0
+p0.80,p0.80_m0,1,q_learning,Q-learning,0,2500,0.0
+p0.80,p0.80_m0,1,q_learning,Q-learning,0,3000,0.0
+p0.80,p0.80_m0,1,q_learning,Q-learning,0,3500,0.0
+p0.80,p0.80_m0,1,q_learning,Q-learning,0,4000,0.0
+p0.80,p0.80_m0,1,q_learning,Q-learning,0,4500,0.0
+p0.80,p0.80_m0,1,q_learning,Q-learning,0,5000,0.0
+p0.80,p0.80_m0,1,q_learning,Q-learning,0,5500,0.0
+p0.80,p0.80_m0,1,q_learning,Q-learning,0,6000,0.0
+p0.80,p0.80_m0,1,q_learning,Q-learning,0,6500,0.0
+p0.80,p0.80_m0,1,q_learning,Q-learning,0,7000,0.0
+p0.80,p0.80_m0,1,q_learning,Q-learning,0,7500,0.0
+p0.80,p0.80_m0,1,q_learning,Q-learning,0,8000,0.0
+p0.80,p0.80_m0,1,q_learning,Q-learning,0,8500,0.0
+p0.80,p0.80_m0,1,q_learning,Q-learning,0,9000,0.0
+p0.80,p0.80_m0,1,q_learning,Q-learning,0,9500,0.0
+p0.80,p0.80_m0,1,q_learning,Q-learning,0,10000,0.0
+p0.80,p0.80_m0,1,sarsa,SARSA,0,0,0.0
+p0.80,p0.80_m0,1,sarsa,SARSA,0,500,0.0
+p0.80,p0.80_m0,1,sarsa,SARSA,0,1000,0.0
+p0.80,p0.80_m0,1,sarsa,SARSA,0,1500,0.0
+p0.80,p0.80_m0,1,sarsa,SARSA,0,2000,0.0
+p0.80,p0.80_m0,1,sarsa,SARSA,0,2500,0.0
+p0.80,p0.80_m0,1,sarsa,SARSA,0,3000,0.0
+p0.80,p0.80_m0,1,sarsa,SARSA,0,3500,0.0
+p0.80,p0.80_m0,1,sarsa,SARSA,0,4000,0.0
+p0.80,p0.80_m0,1,sarsa,SARSA,0,4500,0.0
+p0.80,p0.80_m0,1,sarsa,SARSA,0,5000,0.0
+p0.80,p0.80_m0,1,sarsa,SARSA,0,5500,0.0
+p0.80,p0.80_m0,1,sarsa,SARSA,0,6000,0.0
+p0.80,p0.80_m0,1,sarsa,SARSA,0,6500,0.0
+p0.80,p0.80_m0,1,sarsa,SARSA,0,7000,0.0
+p0.80,p0.80_m0,1,sarsa,SARSA,0,7500,0.0
+p0.80,p0.80_m0,1,sarsa,SARSA,0,8000,0.0
+p0.80,p0.80_m0,1,sarsa,SARSA,0,8500,0.0
+p0.80,p0.80_m0,1,sarsa,SARSA,0,9000,0.0
+p0.80,p0.80_m0,1,sarsa,SARSA,0,9500,0.0
+p0.80,p0.80_m0,1,sarsa,SARSA,0,10000,0.0
+p0.80,p0.80_m0,1,expected_sarsa,Expected SARSA,0,0,0.0
+p0.80,p0.80_m0,1,expected_sarsa,Expected SARSA,0,500,0.0
+p0.80,p0.80_m0,1,expected_sarsa,Expected SARSA,0,1000,0.0
+p0.80,p0.80_m0,1,expected_sarsa,Expected SARSA,0,1500,0.0
+p0.80,p0.80_m0,1,expected_sarsa,Expected SARSA,0,2000,0.0
+p0.80,p0.80_m0,1,expected_sarsa,Expected SARSA,0,2500,0.0
+p0.80,p0.80_m0,1,expected_sarsa,Expected SARSA,0,3000,0.0
+p0.80,p0.80_m0,1,expected_sarsa,Expected SARSA,0,3500,0.0
+p0.80,p0.80_m0,1,expected_sarsa,Expected SARSA,0,4000,0.0
+p0.80,p0.80_m0,1,expected_sarsa,Expected SARSA,0,4500,0.0
+p0.80,p0.80_m0,1,expected_sarsa,Expected SARSA,0,5000,0.0
+p0.80,p0.80_m0,1,expected_sarsa,Expected SARSA,0,5500,0.0
+p0.80,p0.80_m0,1,expected_sarsa,Expected SARSA,0,6000,0.0
+p0.80,p0.80_m0,1,expected_sarsa,Expected SARSA,0,6500,0.01
+p0.80,p0.80_m0,1,expected_sarsa,Expected SARSA,0,7000,0.0
+p0.80,p0.80_m0,1,expected_sarsa,Expected SARSA,0,7500,0.0
+p0.80,p0.80_m0,1,expected_sarsa,Expected SARSA,0,8000,0.0
+p0.80,p0.80_m0,1,expected_sarsa,Expected SARSA,0,8500,0.0
+p0.80,p0.80_m0,1,expected_sarsa,Expected SARSA,0,9000,0.0
+p0.80,p0.80_m0,1,expected_sarsa,Expected SARSA,0,9500,0.0
+p0.80,p0.80_m0,1,expected_sarsa,Expected SARSA,0,10000,0.0
+p0.80,p0.80_m0,1,sarsa_lambda,SARSA(lambda),0,0,0.0
+p0.80,p0.80_m0,1,sarsa_lambda,SARSA(lambda),0,500,0.0
+p0.80,p0.80_m0,1,sarsa_lambda,SARSA(lambda),0,1000,0.0
+p0.80,p0.80_m0,1,sarsa_lambda,SARSA(lambda),0,1500,0.0
+p0.80,p0.80_m0,1,sarsa_lambda,SARSA(lambda),0,2000,0.0
+p0.80,p0.80_m0,1,sarsa_lambda,SARSA(lambda),0,2500,0.0
+p0.80,p0.80_m0,1,sarsa_lambda,SARSA(lambda),0,3000,0.0
+p0.80,p0.80_m0,1,sarsa_lambda,SARSA(lambda),0,3500,0.0
+p0.80,p0.80_m0,1,sarsa_lambda,SARSA(lambda),0,4000,0.0
+p0.80,p0.80_m0,1,sarsa_lambda,SARSA(lambda),0,4500,0.0
+p0.80,p0.80_m0,1,sarsa_lambda,SARSA(lambda),0,5000,0.0
+p0.80,p0.80_m0,1,sarsa_lambda,SARSA(lambda),0,5500,0.0
+p0.80,p0.80_m0,1,sarsa_lambda,SARSA(lambda),0,6000,0.0
+p0.80,p0.80_m0,1,sarsa_lambda,SARSA(lambda),0,6500,0.0
+p0.80,p0.80_m0,1,sarsa_lambda,SARSA(lambda),0,7000,0.0
+p0.80,p0.80_m0,1,sarsa_lambda,SARSA(lambda),0,7500,0.0
+p0.80,p0.80_m0,1,sarsa_lambda,SARSA(lambda),0,8000,0.0
+p0.80,p0.80_m0,1,sarsa_lambda,SARSA(lambda),0,8500,0.0
+p0.80,p0.80_m0,1,sarsa_lambda,SARSA(lambda),0,9000,0.0
+p0.80,p0.80_m0,1,sarsa_lambda,SARSA(lambda),0,9500,0.0
+p0.80,p0.80_m0,1,sarsa_lambda,SARSA(lambda),0,10000,0.0
+p0.80,p0.80_m0,1,q_lambda,Q(lambda),0,0,0.0
+p0.80,p0.80_m0,1,q_lambda,Q(lambda),0,500,0.0
+p0.80,p0.80_m0,1,q_lambda,Q(lambda),0,1000,0.0
+p0.80,p0.80_m0,1,q_lambda,Q(lambda),0,1500,0.0
+p0.80,p0.80_m0,1,q_lambda,Q(lambda),0,2000,0.0
+p0.80,p0.80_m0,1,q_lambda,Q(lambda),0,2500,0.0
+p0.80,p0.80_m0,1,q_lambda,Q(lambda),0,3000,0.0
+p0.80,p0.80_m0,1,q_lambda,Q(lambda),0,3500,0.0
+p0.80,p0.80_m0,1,q_lambda,Q(lambda),0,4000,0.0
+p0.80,p0.80_m0,1,q_lambda,Q(lambda),0,4500,0.0
+p0.80,p0.80_m0,1,q_lambda,Q(lambda),0,5000,0.0
+p0.80,p0.80_m0,1,q_lambda,Q(lambda),0,5500,0.0
+p0.80,p0.80_m0,1,q_lambda,Q(lambda),0,6000,0.0
+p0.80,p0.80_m0,1,q_lambda,Q(lambda),0,6500,0.0
+p0.80,p0.80_m0,1,q_lambda,Q(lambda),0,7000,0.0
+p0.80,p0.80_m0,1,q_lambda,Q(lambda),0,7500,0.0
+p0.80,p0.80_m0,1,q_lambda,Q(lambda),0,8000,0.0
+p0.80,p0.80_m0,1,q_lambda,Q(lambda),0,8500,0.0
+p0.80,p0.80_m0,1,q_lambda,Q(lambda),0,9000,0.0
+p0.80,p0.80_m0,1,q_lambda,Q(lambda),0,9500,0.0
+p0.80,p0.80_m0,1,q_lambda,Q(lambda),0,10000,0.0
+p0.80,p0.80_m0,1,optimistic_q,Optimistic Q,0,0,0.0
+p0.80,p0.80_m0,1,optimistic_q,Optimistic Q,0,500,0.0
+p0.80,p0.80_m0,1,optimistic_q,Optimistic Q,0,1000,0.03
+p0.80,p0.80_m0,1,optimistic_q,Optimistic Q,0,1500,0.0
+p0.80,p0.80_m0,1,optimistic_q,Optimistic Q,0,2000,0.04
+p0.80,p0.80_m0,1,optimistic_q,Optimistic Q,0,2500,0.03
+p0.80,p0.80_m0,1,optimistic_q,Optimistic Q,0,3000,0.0
+p0.80,p0.80_m0,1,optimistic_q,Optimistic Q,0,3500,0.09
+p0.80,p0.80_m0,1,optimistic_q,Optimistic Q,0,4000,0.04
+p0.80,p0.80_m0,1,optimistic_q,Optimistic Q,0,4500,0.0
+p0.80,p0.80_m0,1,optimistic_q,Optimistic Q,0,5000,0.1
+p0.80,p0.80_m0,1,optimistic_q,Optimistic Q,0,5500,0.17
+p0.80,p0.80_m0,1,optimistic_q,Optimistic Q,0,6000,0.16
+p0.80,p0.80_m0,1,optimistic_q,Optimistic Q,0,6500,0.11
+p0.80,p0.80_m0,1,optimistic_q,Optimistic Q,0,7000,0.07
+p0.80,p0.80_m0,1,optimistic_q,Optimistic Q,0,7500,0.15
+p0.80,p0.80_m0,1,optimistic_q,Optimistic Q,0,8000,0.13
+p0.80,p0.80_m0,1,optimistic_q,Optimistic Q,0,8500,0.09
+p0.80,p0.80_m0,1,optimistic_q,Optimistic Q,0,9000,0.22
+p0.80,p0.80_m0,1,optimistic_q,Optimistic Q,0,9500,0.03
+p0.80,p0.80_m0,1,optimistic_q,Optimistic Q,0,10000,0.15
+p0.80,p0.80_m0,1,dyna_q,Dyna-Q,0,0,0.0
+p0.80,p0.80_m0,1,dyna_q,Dyna-Q,0,500,0.0
+p0.80,p0.80_m0,1,dyna_q,Dyna-Q,0,1000,0.0
+p0.80,p0.80_m0,1,dyna_q,Dyna-Q,0,1500,0.0
+p0.80,p0.80_m0,1,dyna_q,Dyna-Q,0,2000,0.0
+p0.80,p0.80_m0,1,dyna_q,Dyna-Q,0,2500,0.0
+p0.80,p0.80_m0,1,dyna_q,Dyna-Q,0,3000,0.0
+p0.80,p0.80_m0,1,dyna_q,Dyna-Q,0,3500,0.0
+p0.80,p0.80_m0,1,dyna_q,Dyna-Q,0,4000,0.0
+p0.80,p0.80_m0,1,dyna_q,Dyna-Q,0,4500,0.0
+p0.80,p0.80_m0,1,dyna_q,Dyna-Q,0,5000,0.0
+p0.80,p0.80_m0,1,dyna_q,Dyna-Q,0,5500,0.0
+p0.80,p0.80_m0,1,dyna_q,Dyna-Q,0,6000,0.0
+p0.80,p0.80_m0,1,dyna_q,Dyna-Q,0,6500,0.0
+p0.80,p0.80_m0,1,dyna_q,Dyna-Q,0,7000,0.0
+p0.80,p0.80_m0,1,dyna_q,Dyna-Q,0,7500,0.0
+p0.80,p0.80_m0,1,dyna_q,Dyna-Q,0,8000,0.0
+p0.80,p0.80_m0,1,dyna_q,Dyna-Q,0,8500,0.0
+p0.80,p0.80_m0,1,dyna_q,Dyna-Q,0,9000,0.0
+p0.80,p0.80_m0,1,dyna_q,Dyna-Q,0,9500,0.0
+p0.80,p0.80_m0,1,dyna_q,Dyna-Q,0,10000,0.0
+p0.80,p0.80_m1,2,q_learning,Q-learning,0,0,0.0
+p0.80,p0.80_m1,2,q_learning,Q-learning,0,500,0.0
+p0.80,p0.80_m1,2,q_learning,Q-learning,0,1000,0.0
+p0.80,p0.80_m1,2,q_learning,Q-learning,0,1500,0.0
+p0.80,p0.80_m1,2,q_learning,Q-learning,0,2000,0.0
+p0.80,p0.80_m1,2,q_learning,Q-learning,0,2500,0.0
+p0.80,p0.80_m1,2,q_learning,Q-learning,0,3000,0.0
+p0.80,p0.80_m1,2,q_learning,Q-learning,0,3500,0.0
+p0.80,p0.80_m1,2,q_learning,Q-learning,0,4000,0.0
+p0.80,p0.80_m1,2,q_learning,Q-learning,0,4500,0.0
+p0.80,p0.80_m1,2,q_learning,Q-learning,0,5000,0.0
+p0.80,p0.80_m1,2,q_learning,Q-learning,0,5500,0.0
+p0.80,p0.80_m1,2,q_learning,Q-learning,0,6000,0.0
+p0.80,p0.80_m1,2,q_learning,Q-learning,0,6500,0.0
+p0.80,p0.80_m1,2,q_learning,Q-learning,0,7000,0.0
+p0.80,p0.80_m1,2,q_learning,Q-learning,0,7500,0.0
+p0.80,p0.80_m1,2,q_learning,Q-learning,0,8000,0.0
+p0.80,p0.80_m1,2,q_learning,Q-learning,0,8500,0.0
+p0.80,p0.80_m1,2,q_learning,Q-learning,0,9000,0.0
+p0.80,p0.80_m1,2,q_learning,Q-learning,0,9500,0.0
+p0.80,p0.80_m1,2,q_learning,Q-learning,0,10000,0.0
+p0.80,p0.80_m1,2,sarsa,SARSA,0,0,0.0
+p0.80,p0.80_m1,2,sarsa,SARSA,0,500,0.0
+p0.80,p0.80_m1,2,sarsa,SARSA,0,1000,0.0
+p0.80,p0.80_m1,2,sarsa,SARSA,0,1500,0.0
+p0.80,p0.80_m1,2,sarsa,SARSA,0,2000,0.0
+p0.80,p0.80_m1,2,sarsa,SARSA,0,2500,0.0
+p0.80,p0.80_m1,2,sarsa,SARSA,0,3000,0.0
+p0.80,p0.80_m1,2,sarsa,SARSA,0,3500,0.0
+p0.80,p0.80_m1,2,sarsa,SARSA,0,4000,0.0
+p0.80,p0.80_m1,2,sarsa,SARSA,0,4500,0.0
+p0.80,p0.80_m1,2,sarsa,SARSA,0,5000,0.0
+p0.80,p0.80_m1,2,sarsa,SARSA,0,5500,0.0
+p0.80,p0.80_m1,2,sarsa,SARSA,0,6000,0.0
+p0.80,p0.80_m1,2,sarsa,SARSA,0,6500,0.0
+p0.80,p0.80_m1,2,sarsa,SARSA,0,7000,0.0
+p0.80,p0.80_m1,2,sarsa,SARSA,0,7500,0.0
+p0.80,p0.80_m1,2,sarsa,SARSA,0,8000,0.0
+p0.80,p0.80_m1,2,sarsa,SARSA,0,8500,0.0
+p0.80,p0.80_m1,2,sarsa,SARSA,0,9000,0.0
+p0.80,p0.80_m1,2,sarsa,SARSA,0,9500,0.0
+p0.80,p0.80_m1,2,sarsa,SARSA,0,10000,0.0
+p0.80,p0.80_m1,2,expected_sarsa,Expected SARSA,0,0,0.0
+p0.80,p0.80_m1,2,expected_sarsa,Expected SARSA,0,500,0.01
+p0.80,p0.80_m1,2,expected_sarsa,Expected SARSA,0,1000,0.0
+p0.80,p0.80_m1,2,expected_sarsa,Expected SARSA,0,1500,0.0
+p0.80,p0.80_m1,2,expected_sarsa,Expected SARSA,0,2000,0.0
+p0.80,p0.80_m1,2,expected_sarsa,Expected SARSA,0,2500,0.0
+p0.80,p0.80_m1,2,expected_sarsa,Expected SARSA,0,3000,0.0
+p0.80,p0.80_m1,2,expected_sarsa,Expected SARSA,0,3500,0.0
+p0.80,p0.80_m1,2,expected_sarsa,Expected SARSA,0,4000,0.0
+p0.80,p0.80_m1,2,expected_sarsa,Expected SARSA,0,4500,0.0
+p0.80,p0.80_m1,2,expected_sarsa,Expected SARSA,0,5000,0.0
+p0.80,p0.80_m1,2,expected_sarsa,Expected SARSA,0,5500,0.0
+p0.80,p0.80_m1,2,expected_sarsa,Expected SARSA,0,6000,0.0
+p0.80,p0.80_m1,2,expected_sarsa,Expected SARSA,0,6500,0.0
+p0.80,p0.80_m1,2,expected_sarsa,Expected SARSA,0,7000,0.0
+p0.80,p0.80_m1,2,expected_sarsa,Expected SARSA,0,7500,0.0
+p0.80,p0.80_m1,2,expected_sarsa,Expected SARSA,0,8000,0.0
+p0.80,p0.80_m1,2,expected_sarsa,Expected SARSA,0,8500,0.0
+p0.80,p0.80_m1,2,expected_sarsa,Expected SARSA,0,9000,0.0
+p0.80,p0.80_m1,2,expected_sarsa,Expected SARSA,0,9500,0.0
+p0.80,p0.80_m1,2,expected_sarsa,Expected SARSA,0,10000,0.0
+p0.80,p0.80_m1,2,sarsa_lambda,SARSA(lambda),0,0,0.0
+p0.80,p0.80_m1,2,sarsa_lambda,SARSA(lambda),0,500,0.0
+p0.80,p0.80_m1,2,sarsa_lambda,SARSA(lambda),0,1000,0.0
+p0.80,p0.80_m1,2,sarsa_lambda,SARSA(lambda),0,1500,0.0
+p0.80,p0.80_m1,2,sarsa_lambda,SARSA(lambda),0,2000,0.0
+p0.80,p0.80_m1,2,sarsa_lambda,SARSA(lambda),0,2500,0.0
+p0.80,p0.80_m1,2,sarsa_lambda,SARSA(lambda),0,3000,0.0
+p0.80,p0.80_m1,2,sarsa_lambda,SARSA(lambda),0,3500,0.0
+p0.80,p0.80_m1,2,sarsa_lambda,SARSA(lambda),0,4000,0.0
+p0.80,p0.80_m1,2,sarsa_lambda,SARSA(lambda),0,4500,0.0
+p0.80,p0.80_m1,2,sarsa_lambda,SARSA(lambda),0,5000,0.0
+p0.80,p0.80_m1,2,sarsa_lambda,SARSA(lambda),0,5500,0.01
+p0.80,p0.80_m1,2,sarsa_lambda,SARSA(lambda),0,6000,0.0
+p0.80,p0.80_m1,2,sarsa_lambda,SARSA(lambda),0,6500,0.01
+p0.80,p0.80_m1,2,sarsa_lambda,SARSA(lambda),0,7000,0.1
+p0.80,p0.80_m1,2,sarsa_lambda,SARSA(lambda),0,7500,0.06
+p0.80,p0.80_m1,2,sarsa_lambda,SARSA(lambda),0,8000,0.12
+p0.80,p0.80_m1,2,sarsa_lambda,SARSA(lambda),0,8500,0.11
+p0.80,p0.80_m1,2,sarsa_lambda,SARSA(lambda),0,9000,0.04
+p0.80,p0.80_m1,2,sarsa_lambda,SARSA(lambda),0,9500,0.0
+p0.80,p0.80_m1,2,sarsa_lambda,SARSA(lambda),0,10000,0.17
+p0.80,p0.80_m1,2,q_lambda,Q(lambda),0,0,0.0
+p0.80,p0.80_m1,2,q_lambda,Q(lambda),0,500,0.0
+p0.80,p0.80_m1,2,q_lambda,Q(lambda),0,1000,0.0
+p0.80,p0.80_m1,2,q_lambda,Q(lambda),0,1500,0.0
+p0.80,p0.80_m1,2,q_lambda,Q(lambda),0,2000,0.0
+p0.80,p0.80_m1,2,q_lambda,Q(lambda),0,2500,0.0
+p0.80,p0.80_m1,2,q_lambda,Q(lambda),0,3000,0.0
+p0.80,p0.80_m1,2,q_lambda,Q(lambda),0,3500,0.0
+p0.80,p0.80_m1,2,q_lambda,Q(lambda),0,4000,0.0
+p0.80,p0.80_m1,2,q_lambda,Q(lambda),0,4500,0.0
+p0.80,p0.80_m1,2,q_lambda,Q(lambda),0,5000,0.0
+p0.80,p0.80_m1,2,q_lambda,Q(lambda),0,5500,0.0
+p0.80,p0.80_m1,2,q_lambda,Q(lambda),0,6000,0.0
+p0.80,p0.80_m1,2,q_lambda,Q(lambda),0,6500,0.0
+p0.80,p0.80_m1,2,q_lambda,Q(lambda),0,7000,0.0
+p0.80,p0.80_m1,2,q_lambda,Q(lambda),0,7500,0.0
+p0.80,p0.80_m1,2,q_lambda,Q(lambda),0,8000,0.0
+p0.80,p0.80_m1,2,q_lambda,Q(lambda),0,8500,0.0
+p0.80,p0.80_m1,2,q_lambda,Q(lambda),0,9000,0.0
+p0.80,p0.80_m1,2,q_lambda,Q(lambda),0,9500,0.0
+p0.80,p0.80_m1,2,q_lambda,Q(lambda),0,10000,0.0
+p0.80,p0.80_m1,2,optimistic_q,Optimistic Q,0,0,0.0
+p0.80,p0.80_m1,2,optimistic_q,Optimistic Q,0,500,0.05
+p0.80,p0.80_m1,2,optimistic_q,Optimistic Q,0,1000,0.02
+p0.80,p0.80_m1,2,optimistic_q,Optimistic Q,0,1500,0.04
+p0.80,p0.80_m1,2,optimistic_q,Optimistic Q,0,2000,0.2
+p0.80,p0.80_m1,2,optimistic_q,Optimistic Q,0,2500,0.07
+p0.80,p0.80_m1,2,optimistic_q,Optimistic Q,0,3000,0.18
+p0.80,p0.80_m1,2,optimistic_q,Optimistic Q,0,3500,0.3
+p0.80,p0.80_m1,2,optimistic_q,Optimistic Q,0,4000,0.17
+p0.80,p0.80_m1,2,optimistic_q,Optimistic Q,0,4500,0.16
+p0.80,p0.80_m1,2,optimistic_q,Optimistic Q,0,5000,0.23
+p0.80,p0.80_m1,2,optimistic_q,Optimistic Q,0,5500,0.16
+p0.80,p0.80_m1,2,optimistic_q,Optimistic Q,0,6000,0.15
+p0.80,p0.80_m1,2,optimistic_q,Optimistic Q,0,6500,0.19
+p0.80,p0.80_m1,2,optimistic_q,Optimistic Q,0,7000,0.25
+p0.80,p0.80_m1,2,optimistic_q,Optimistic Q,0,7500,0.08
+p0.80,p0.80_m1,2,optimistic_q,Optimistic Q,0,8000,0.29
+p0.80,p0.80_m1,2,optimistic_q,Optimistic Q,0,8500,0.24
+p0.80,p0.80_m1,2,optimistic_q,Optimistic Q,0,9000,0.16
+p0.80,p0.80_m1,2,optimistic_q,Optimistic Q,0,9500,0.18
+p0.80,p0.80_m1,2,optimistic_q,Optimistic Q,0,10000,0.3
+p0.80,p0.80_m1,2,dyna_q,Dyna-Q,0,0,0.0
+p0.80,p0.80_m1,2,dyna_q,Dyna-Q,0,500,0.0
+p0.80,p0.80_m1,2,dyna_q,Dyna-Q,0,1000,0.0
+p0.80,p0.80_m1,2,dyna_q,Dyna-Q,0,1500,0.0
+p0.80,p0.80_m1,2,dyna_q,Dyna-Q,0,2000,0.0
+p0.80,p0.80_m1,2,dyna_q,Dyna-Q,0,2500,0.0
+p0.80,p0.80_m1,2,dyna_q,Dyna-Q,0,3000,0.0
+p0.80,p0.80_m1,2,dyna_q,Dyna-Q,0,3500,0.0
+p0.80,p0.80_m1,2,dyna_q,Dyna-Q,0,4000,0.0
+p0.80,p0.80_m1,2,dyna_q,Dyna-Q,0,4500,0.0
+p0.80,p0.80_m1,2,dyna_q,Dyna-Q,0,5000,0.0
+p0.80,p0.80_m1,2,dyna_q,Dyna-Q,0,5500,0.0
+p0.80,p0.80_m1,2,dyna_q,Dyna-Q,0,6000,0.0
+p0.80,p0.80_m1,2,dyna_q,Dyna-Q,0,6500,0.0
+p0.80,p0.80_m1,2,dyna_q,Dyna-Q,0,7000,0.0
+p0.80,p0.80_m1,2,dyna_q,Dyna-Q,0,7500,0.0
+p0.80,p0.80_m1,2,dyna_q,Dyna-Q,0,8000,0.0
+p0.80,p0.80_m1,2,dyna_q,Dyna-Q,0,8500,0.0
+p0.80,p0.80_m1,2,dyna_q,Dyna-Q,0,9000,0.0
+p0.80,p0.80_m1,2,dyna_q,Dyna-Q,0,9500,0.0
+p0.80,p0.80_m1,2,dyna_q,Dyna-Q,0,10000,0.0
+p0.80,p0.80_m2,3,q_learning,Q-learning,0,0,0.0
+p0.80,p0.80_m2,3,q_learning,Q-learning,0,500,0.01
+p0.80,p0.80_m2,3,q_learning,Q-learning,0,1000,0.0
+p0.80,p0.80_m2,3,q_learning,Q-learning,0,1500,0.0
+p0.80,p0.80_m2,3,q_learning,Q-learning,0,2000,0.0
+p0.80,p0.80_m2,3,q_learning,Q-learning,0,2500,0.1
+p0.80,p0.80_m2,3,q_learning,Q-learning,0,3000,0.14
+p0.80,p0.80_m2,3,q_learning,Q-learning,0,3500,0.2
+p0.80,p0.80_m2,3,q_learning,Q-learning,0,4000,0.72
+p0.80,p0.80_m2,3,q_learning,Q-learning,0,4500,0.78
+p0.80,p0.80_m2,3,q_learning,Q-learning,0,5000,0.93
+p0.80,p0.80_m2,3,q_learning,Q-learning,0,5500,0.95
+p0.80,p0.80_m2,3,q_learning,Q-learning,0,6000,0.96
+p0.80,p0.80_m2,3,q_learning,Q-learning,0,6500,0.97
+p0.80,p0.80_m2,3,q_learning,Q-learning,0,7000,0.93
+p0.80,p0.80_m2,3,q_learning,Q-learning,0,7500,0.98
+p0.80,p0.80_m2,3,q_learning,Q-learning,0,8000,0.97
+p0.80,p0.80_m2,3,q_learning,Q-learning,0,8500,0.84
+p0.80,p0.80_m2,3,q_learning,Q-learning,0,9000,0.93
+p0.80,p0.80_m2,3,q_learning,Q-learning,0,9500,0.95
+p0.80,p0.80_m2,3,q_learning,Q-learning,0,10000,0.96
+p0.80,p0.80_m2,3,sarsa,SARSA,0,0,0.0
+p0.80,p0.80_m2,3,sarsa,SARSA,0,500,0.01
+p0.80,p0.80_m2,3,sarsa,SARSA,0,1000,0.01
+p0.80,p0.80_m2,3,sarsa,SARSA,0,1500,0.06
+p0.80,p0.80_m2,3,sarsa,SARSA,0,2000,0.04
+p0.80,p0.80_m2,3,sarsa,SARSA,0,2500,0.11
+p0.80,p0.80_m2,3,sarsa,SARSA,0,3000,0.1
+p0.80,p0.80_m2,3,sarsa,SARSA,0,3500,0.11
+p0.80,p0.80_m2,3,sarsa,SARSA,0,4000,0.25
+p0.80,p0.80_m2,3,sarsa,SARSA,0,4500,0.2
+p0.80,p0.80_m2,3,sarsa,SARSA,0,5000,0.28
+p0.80,p0.80_m2,3,sarsa,SARSA,0,5500,0.66
+p0.80,p0.80_m2,3,sarsa,SARSA,0,6000,0.73
+p0.80,p0.80_m2,3,sarsa,SARSA,0,6500,0.71
+p0.80,p0.80_m2,3,sarsa,SARSA,0,7000,0.76
+p0.80,p0.80_m2,3,sarsa,SARSA,0,7500,0.73
+p0.80,p0.80_m2,3,sarsa,SARSA,0,8000,0.74
+p0.80,p0.80_m2,3,sarsa,SARSA,0,8500,0.8
+p0.80,p0.80_m2,3,sarsa,SARSA,0,9000,0.78
+p0.80,p0.80_m2,3,sarsa,SARSA,0,9500,0.87
+p0.80,p0.80_m2,3,sarsa,SARSA,0,10000,0.73
+p0.80,p0.80_m2,3,expected_sarsa,Expected SARSA,0,0,0.0
+p0.80,p0.80_m2,3,expected_sarsa,Expected SARSA,0,500,0.0
+p0.80,p0.80_m2,3,expected_sarsa,Expected SARSA,0,1000,0.0
+p0.80,p0.80_m2,3,expected_sarsa,Expected SARSA,0,1500,0.0
+p0.80,p0.80_m2,3,expected_sarsa,Expected SARSA,0,2000,0.0
+p0.80,p0.80_m2,3,expected_sarsa,Expected SARSA,0,2500,0.01
+p0.80,p0.80_m2,3,expected_sarsa,Expected SARSA,0,3000,0.02
+p0.80,p0.80_m2,3,expected_sarsa,Expected SARSA,0,3500,0.02
+p0.80,p0.80_m2,3,expected_sarsa,Expected SARSA,0,4000,0.04
+p0.80,p0.80_m2,3,expected_sarsa,Expected SARSA,0,4500,0.05
+p0.80,p0.80_m2,3,expected_sarsa,Expected SARSA,0,5000,0.16
+p0.80,p0.80_m2,3,expected_sarsa,Expected SARSA,0,5500,0.28
+p0.80,p0.80_m2,3,expected_sarsa,Expected SARSA,0,6000,0.31
+p0.80,p0.80_m2,3,expected_sarsa,Expected SARSA,0,6500,0.64
+p0.80,p0.80_m2,3,expected_sarsa,Expected SARSA,0,7000,0.67
+p0.80,p0.80_m2,3,expected_sarsa,Expected SARSA,0,7500,0.71
+p0.80,p0.80_m2,3,expected_sarsa,Expected SARSA,0,8000,0.76
+p0.80,p0.80_m2,3,expected_sarsa,Expected SARSA,0,8500,0.89
+p0.80,p0.80_m2,3,expected_sarsa,Expected SARSA,0,9000,0.82
+p0.80,p0.80_m2,3,expected_sarsa,Expected SARSA,0,9500,0.85
+p0.80,p0.80_m2,3,expected_sarsa,Expected SARSA,0,10000,0.91
+p0.80,p0.80_m2,3,sarsa_lambda,SARSA(lambda),0,0,0.0
+p0.80,p0.80_m2,3,sarsa_lambda,SARSA(lambda),0,500,0.07
+p0.80,p0.80_m2,3,sarsa_lambda,SARSA(lambda),0,1000,0.23
+p0.80,p0.80_m2,3,sarsa_lambda,SARSA(lambda),0,1500,0.37
+p0.80,p0.80_m2,3,sarsa_lambda,SARSA(lambda),0,2000,0.6
+p0.80,p0.80_m2,3,sarsa_lambda,SARSA(lambda),0,2500,0.54
+p0.80,p0.80_m2,3,sarsa_lambda,SARSA(lambda),0,3000,0.63
+p0.80,p0.80_m2,3,sarsa_lambda,SARSA(lambda),0,3500,0.71
+p0.80,p0.80_m2,3,sarsa_lambda,SARSA(lambda),0,4000,0.2
+p0.80,p0.80_m2,3,sarsa_lambda,SARSA(lambda),0,4500,0.77
+p0.80,p0.80_m2,3,sarsa_lambda,SARSA(lambda),0,5000,0.74
+p0.80,p0.80_m2,3,sarsa_lambda,SARSA(lambda),0,5500,0.34
+p0.80,p0.80_m2,3,sarsa_lambda,SARSA(lambda),0,6000,0.76
+p0.80,p0.80_m2,3,sarsa_lambda,SARSA(lambda),0,6500,0.71
+p0.80,p0.80_m2,3,sarsa_lambda,SARSA(lambda),0,7000,0.86
+p0.80,p0.80_m2,3,sarsa_lambda,SARSA(lambda),0,7500,0.87
+p0.80,p0.80_m2,3,sarsa_lambda,SARSA(lambda),0,8000,0.65
+p0.80,p0.80_m2,3,sarsa_lambda,SARSA(lambda),0,8500,0.68
+p0.80,p0.80_m2,3,sarsa_lambda,SARSA(lambda),0,9000,0.77
+p0.80,p0.80_m2,3,sarsa_lambda,SARSA(lambda),0,9500,0.75
+p0.80,p0.80_m2,3,sarsa_lambda,SARSA(lambda),0,10000,0.93
+p0.80,p0.80_m2,3,q_lambda,Q(lambda),0,0,0.0
+p0.80,p0.80_m2,3,q_lambda,Q(lambda),0,500,0.01
+p0.80,p0.80_m2,3,q_lambda,Q(lambda),0,1000,0.09
+p0.80,p0.80_m2,3,q_lambda,Q(lambda),0,1500,0.12
+p0.80,p0.80_m2,3,q_lambda,Q(lambda),0,2000,0.27
+p0.80,p0.80_m2,3,q_lambda,Q(lambda),0,2500,0.39
+p0.80,p0.80_m2,3,q_lambda,Q(lambda),0,3000,0.61
+p0.80,p0.80_m2,3,q_lambda,Q(lambda),0,3500,0.55
+p0.80,p0.80_m2,3,q_lambda,Q(lambda),0,4000,0.69
+p0.80,p0.80_m2,3,q_lambda,Q(lambda),0,4500,0.82
+p0.80,p0.80_m2,3,q_lambda,Q(lambda),0,5000,0.83
+p0.80,p0.80_m2,3,q_lambda,Q(lambda),0,5500,0.78
+p0.80,p0.80_m2,3,q_lambda,Q(lambda),0,6000,0.87
+p0.80,p0.80_m2,3,q_lambda,Q(lambda),0,6500,0.94
+p0.80,p0.80_m2,3,q_lambda,Q(lambda),0,7000,0.96
+p0.80,p0.80_m2,3,q_lambda,Q(lambda),0,7500,0.85
+p0.80,p0.80_m2,3,q_lambda,Q(lambda),0,8000,0.96
+p0.80,p0.80_m2,3,q_lambda,Q(lambda),0,8500,0.91
+p0.80,p0.80_m2,3,q_lambda,Q(lambda),0,9000,0.81
+p0.80,p0.80_m2,3,q_lambda,Q(lambda),0,9500,0.93
+p0.80,p0.80_m2,3,q_lambda,Q(lambda),0,10000,0.82
+p0.80,p0.80_m2,3,optimistic_q,Optimistic Q,0,0,0.0
+p0.80,p0.80_m2,3,optimistic_q,Optimistic Q,0,500,0.47
+p0.80,p0.80_m2,3,optimistic_q,Optimistic Q,0,1000,0.88
+p0.80,p0.80_m2,3,optimistic_q,Optimistic Q,0,1500,0.98
+p0.80,p0.80_m2,3,optimistic_q,Optimistic Q,0,2000,0.99
+p0.80,p0.80_m2,3,optimistic_q,Optimistic Q,0,2500,0.96
+p0.80,p0.80_m2,3,optimistic_q,Optimistic Q,0,3000,0.94
+p0.80,p0.80_m2,3,optimistic_q,Optimistic Q,0,3500,0.99
+p0.80,p0.80_m2,3,optimistic_q,Optimistic Q,0,4000,0.97
+p0.80,p0.80_m2,3,optimistic_q,Optimistic Q,0,4500,0.94
+p0.80,p0.80_m2,3,optimistic_q,Optimistic Q,0,5000,0.97
+p0.80,p0.80_m2,3,optimistic_q,Optimistic Q,0,5500,0.98
+p0.80,p0.80_m2,3,optimistic_q,Optimistic Q,0,6000,0.96
+p0.80,p0.80_m2,3,optimistic_q,Optimistic Q,0,6500,0.99
+p0.80,p0.80_m2,3,optimistic_q,Optimistic Q,0,7000,0.96
+p0.80,p0.80_m2,3,optimistic_q,Optimistic Q,0,7500,0.87
+p0.80,p0.80_m2,3,optimistic_q,Optimistic Q,0,8000,0.95
+p0.80,p0.80_m2,3,optimistic_q,Optimistic Q,0,8500,0.96
+p0.80,p0.80_m2,3,optimistic_q,Optimistic Q,0,9000,0.96
+p0.80,p0.80_m2,3,optimistic_q,Optimistic Q,0,9500,0.97
+p0.80,p0.80_m2,3,optimistic_q,Optimistic Q,0,10000,0.98
+p0.80,p0.80_m2,3,dyna_q,Dyna-Q,0,0,0.0
+p0.80,p0.80_m2,3,dyna_q,Dyna-Q,0,500,0.01
+p0.80,p0.80_m2,3,dyna_q,Dyna-Q,0,1000,0.0
+p0.80,p0.80_m2,3,dyna_q,Dyna-Q,0,1500,0.65
+p0.80,p0.80_m2,3,dyna_q,Dyna-Q,0,2000,0.85
+p0.80,p0.80_m2,3,dyna_q,Dyna-Q,0,2500,0.46
+p0.80,p0.80_m2,3,dyna_q,Dyna-Q,0,3000,0.51
+p0.80,p0.80_m2,3,dyna_q,Dyna-Q,0,3500,0.63
+p0.80,p0.80_m2,3,dyna_q,Dyna-Q,0,4000,0.76
+p0.80,p0.80_m2,3,dyna_q,Dyna-Q,0,4500,0.86
+p0.80,p0.80_m2,3,dyna_q,Dyna-Q,0,5000,0.83
+p0.80,p0.80_m2,3,dyna_q,Dyna-Q,0,5500,0.56
+p0.80,p0.80_m2,3,dyna_q,Dyna-Q,0,6000,0.52
+p0.80,p0.80_m2,3,dyna_q,Dyna-Q,0,6500,0.78
+p0.80,p0.80_m2,3,dyna_q,Dyna-Q,0,7000,0.58
+p0.80,p0.80_m2,3,dyna_q,Dyna-Q,0,7500,0.43
+p0.80,p0.80_m2,3,dyna_q,Dyna-Q,0,8000,0.83
+p0.80,p0.80_m2,3,dyna_q,Dyna-Q,0,8500,0.65
+p0.80,p0.80_m2,3,dyna_q,Dyna-Q,0,9000,0.9
+p0.80,p0.80_m2,3,dyna_q,Dyna-Q,0,9500,0.86
+p0.80,p0.80_m2,3,dyna_q,Dyna-Q,0,10000,0.76
+p0.70,p0.70_m0,4,q_learning,Q-learning,0,0,0.0
+p0.70,p0.70_m0,4,q_learning,Q-learning,0,500,0.0
+p0.70,p0.70_m0,4,q_learning,Q-learning,0,1000,0.0
+p0.70,p0.70_m0,4,q_learning,Q-learning,0,1500,0.0
+p0.70,p0.70_m0,4,q_learning,Q-learning,0,2000,0.0
+p0.70,p0.70_m0,4,q_learning,Q-learning,0,2500,0.0
+p0.70,p0.70_m0,4,q_learning,Q-learning,0,3000,0.0
+p0.70,p0.70_m0,4,q_learning,Q-learning,0,3500,0.0
+p0.70,p0.70_m0,4,q_learning,Q-learning,0,4000,0.0
+p0.70,p0.70_m0,4,q_learning,Q-learning,0,4500,0.0
+p0.70,p0.70_m0,4,q_learning,Q-learning,0,5000,0.0
+p0.70,p0.70_m0,4,q_learning,Q-learning,0,5500,0.0
+p0.70,p0.70_m0,4,q_learning,Q-learning,0,6000,0.0
+p0.70,p0.70_m0,4,q_learning,Q-learning,0,6500,0.0
+p0.70,p0.70_m0,4,q_learning,Q-learning,0,7000,0.0
+p0.70,p0.70_m0,4,q_learning,Q-learning,0,7500,0.0
+p0.70,p0.70_m0,4,q_learning,Q-learning,0,8000,0.0
+p0.70,p0.70_m0,4,q_learning,Q-learning,0,8500,0.0
+p0.70,p0.70_m0,4,q_learning,Q-learning,0,9000,0.0
+p0.70,p0.70_m0,4,q_learning,Q-learning,0,9500,0.0
+p0.70,p0.70_m0,4,q_learning,Q-learning,0,10000,0.0
+p0.70,p0.70_m0,4,sarsa,SARSA,0,0,0.0
+p0.70,p0.70_m0,4,sarsa,SARSA,0,500,0.0
+p0.70,p0.70_m0,4,sarsa,SARSA,0,1000,0.0
+p0.70,p0.70_m0,4,sarsa,SARSA,0,1500,0.0
+p0.70,p0.70_m0,4,sarsa,SARSA,0,2000,0.0
+p0.70,p0.70_m0,4,sarsa,SARSA,0,2500,0.0
+p0.70,p0.70_m0,4,sarsa,SARSA,0,3000,0.0
+p0.70,p0.70_m0,4,sarsa,SARSA,0,3500,0.0
+p0.70,p0.70_m0,4,sarsa,SARSA,0,4000,0.0
+p0.70,p0.70_m0,4,sarsa,SARSA,0,4500,0.0
+p0.70,p0.70_m0,4,sarsa,SARSA,0,5000,0.0
+p0.70,p0.70_m0,4,sarsa,SARSA,0,5500,0.0
+p0.70,p0.70_m0,4,sarsa,SARSA,0,6000,0.0
+p0.70,p0.70_m0,4,sarsa,SARSA,0,6500,0.0
+p0.70,p0.70_m0,4,sarsa,SARSA,0,7000,0.0
+p0.70,p0.70_m0,4,sarsa,SARSA,0,7500,0.0
+p0.70,p0.70_m0,4,sarsa,SARSA,0,8000,0.0
+p0.70,p0.70_m0,4,sarsa,SARSA,0,8500,0.0
+p0.70,p0.70_m0,4,sarsa,SARSA,0,9000,0.0
+p0.70,p0.70_m0,4,sarsa,SARSA,0,9500,0.0
+p0.70,p0.70_m0,4,sarsa,SARSA,0,10000,0.0
+p0.70,p0.70_m0,4,expected_sarsa,Expected SARSA,0,0,0.0
+p0.70,p0.70_m0,4,expected_sarsa,Expected SARSA,0,500,0.0
+p0.70,p0.70_m0,4,expected_sarsa,Expected SARSA,0,1000,0.0
+p0.70,p0.70_m0,4,expected_sarsa,Expected SARSA,0,1500,0.0
+p0.70,p0.70_m0,4,expected_sarsa,Expected SARSA,0,2000,0.0
+p0.70,p0.70_m0,4,expected_sarsa,Expected SARSA,0,2500,0.0
+p0.70,p0.70_m0,4,expected_sarsa,Expected SARSA,0,3000,0.0
+p0.70,p0.70_m0,4,expected_sarsa,Expected SARSA,0,3500,0.0
+p0.70,p0.70_m0,4,expected_sarsa,Expected SARSA,0,4000,0.0
+p0.70,p0.70_m0,4,expected_sarsa,Expected SARSA,0,4500,0.0
+p0.70,p0.70_m0,4,expected_sarsa,Expected SARSA,0,5000,0.0
+p0.70,p0.70_m0,4,expected_sarsa,Expected SARSA,0,5500,0.0
+p0.70,p0.70_m0,4,expected_sarsa,Expected SARSA,0,6000,0.0
+p0.70,p0.70_m0,4,expected_sarsa,Expected SARSA,0,6500,0.0
+p0.70,p0.70_m0,4,expected_sarsa,Expected SARSA,0,7000,0.0
+p0.70,p0.70_m0,4,expected_sarsa,Expected SARSA,0,7500,0.0
+p0.70,p0.70_m0,4,expected_sarsa,Expected SARSA,0,8000,0.0
+p0.70,p0.70_m0,4,expected_sarsa,Expected SARSA,0,8500,0.0
+p0.70,p0.70_m0,4,expected_sarsa,Expected SARSA,0,9000,0.0
+p0.70,p0.70_m0,4,expected_sarsa,Expected SARSA,0,9500,0.0
+p0.70,p0.70_m0,4,expected_sarsa,Expected SARSA,0,10000,0.0
+p0.70,p0.70_m0,4,sarsa_lambda,SARSA(lambda),0,0,0.0
+p0.70,p0.70_m0,4,sarsa_lambda,SARSA(lambda),0,500,0.0
+p0.70,p0.70_m0,4,sarsa_lambda,SARSA(lambda),0,1000,0.0
+p0.70,p0.70_m0,4,sarsa_lambda,SARSA(lambda),0,1500,0.0
+p0.70,p0.70_m0,4,sarsa_lambda,SARSA(lambda),0,2000,0.0
+p0.70,p0.70_m0,4,sarsa_lambda,SARSA(lambda),0,2500,0.0
+p0.70,p0.70_m0,4,sarsa_lambda,SARSA(lambda),0,3000,0.0
+p0.70,p0.70_m0,4,sarsa_lambda,SARSA(lambda),0,3500,0.0
+p0.70,p0.70_m0,4,sarsa_lambda,SARSA(lambda),0,4000,0.0
+p0.70,p0.70_m0,4,sarsa_lambda,SARSA(lambda),0,4500,0.0
+p0.70,p0.70_m0,4,sarsa_lambda,SARSA(lambda),0,5000,0.0
+p0.70,p0.70_m0,4,sarsa_lambda,SARSA(lambda),0,5500,0.0
+p0.70,p0.70_m0,4,sarsa_lambda,SARSA(lambda),0,6000,0.0
+p0.70,p0.70_m0,4,sarsa_lambda,SARSA(lambda),0,6500,0.0
+p0.70,p0.70_m0,4,sarsa_lambda,SARSA(lambda),0,7000,0.0
+p0.70,p0.70_m0,4,sarsa_lambda,SARSA(lambda),0,7500,0.0
+p0.70,p0.70_m0,4,sarsa_lambda,SARSA(lambda),0,8000,0.0
+p0.70,p0.70_m0,4,sarsa_lambda,SARSA(lambda),0,8500,0.0
+p0.70,p0.70_m0,4,sarsa_lambda,SARSA(lambda),0,9000,0.0
+p0.70,p0.70_m0,4,sarsa_lambda,SARSA(lambda),0,9500,0.0
+p0.70,p0.70_m0,4,sarsa_lambda,SARSA(lambda),0,10000,0.0
+p0.70,p0.70_m0,4,q_lambda,Q(lambda),0,0,0.0
+p0.70,p0.70_m0,4,q_lambda,Q(lambda),0,500,0.0
+p0.70,p0.70_m0,4,q_lambda,Q(lambda),0,1000,0.0
+p0.70,p0.70_m0,4,q_lambda,Q(lambda),0,1500,0.0
+p0.70,p0.70_m0,4,q_lambda,Q(lambda),0,2000,0.0
+p0.70,p0.70_m0,4,q_lambda,Q(lambda),0,2500,0.0
+p0.70,p0.70_m0,4,q_lambda,Q(lambda),0,3000,0.0
+p0.70,p0.70_m0,4,q_lambda,Q(lambda),0,3500,0.0
+p0.70,p0.70_m0,4,q_lambda,Q(lambda),0,4000,0.0
+p0.70,p0.70_m0,4,q_lambda,Q(lambda),0,4500,0.0
+p0.70,p0.70_m0,4,q_lambda,Q(lambda),0,5000,0.0
+p0.70,p0.70_m0,4,q_lambda,Q(lambda),0,5500,0.0
+p0.70,p0.70_m0,4,q_lambda,Q(lambda),0,6000,0.0
+p0.70,p0.70_m0,4,q_lambda,Q(lambda),0,6500,0.0
+p0.70,p0.70_m0,4,q_lambda,Q(lambda),0,7000,0.0
+p0.70,p0.70_m0,4,q_lambda,Q(lambda),0,7500,0.0
+p0.70,p0.70_m0,4,q_lambda,Q(lambda),0,8000,0.0
+p0.70,p0.70_m0,4,q_lambda,Q(lambda),0,8500,0.0
+p0.70,p0.70_m0,4,q_lambda,Q(lambda),0,9000,0.0
+p0.70,p0.70_m0,4,q_lambda,Q(lambda),0,9500,0.0
+p0.70,p0.70_m0,4,q_lambda,Q(lambda),0,10000,0.0
+p0.70,p0.70_m0,4,optimistic_q,Optimistic Q,0,0,0.0
+p0.70,p0.70_m0,4,optimistic_q,Optimistic Q,0,500,0.04
+p0.70,p0.70_m0,4,optimistic_q,Optimistic Q,0,1000,0.18
+p0.70,p0.70_m0,4,optimistic_q,Optimistic Q,0,1500,0.18
+p0.70,p0.70_m0,4,optimistic_q,Optimistic Q,0,2000,0.48
+p0.70,p0.70_m0,4,optimistic_q,Optimistic Q,0,2500,0.4
+p0.70,p0.70_m0,4,optimistic_q,Optimistic Q,0,3000,0.42
+p0.70,p0.70_m0,4,optimistic_q,Optimistic Q,0,3500,0.37
+p0.70,p0.70_m0,4,optimistic_q,Optimistic Q,0,4000,0.46
+p0.70,p0.70_m0,4,optimistic_q,Optimistic Q,0,4500,0.5
+p0.70,p0.70_m0,4,optimistic_q,Optimistic Q,0,5000,0.42
+p0.70,p0.70_m0,4,optimistic_q,Optimistic Q,0,5500,0.48
+p0.70,p0.70_m0,4,optimistic_q,Optimistic Q,0,6000,0.37
+p0.70,p0.70_m0,4,optimistic_q,Optimistic Q,0,6500,0.44
+p0.70,p0.70_m0,4,optimistic_q,Optimistic Q,0,7000,0.46
+p0.70,p0.70_m0,4,optimistic_q,Optimistic Q,0,7500,0.35
+p0.70,p0.70_m0,4,optimistic_q,Optimistic Q,0,8000,0.4
+p0.70,p0.70_m0,4,optimistic_q,Optimistic Q,0,8500,0.3
+p0.70,p0.70_m0,4,optimistic_q,Optimistic Q,0,9000,0.45
+p0.70,p0.70_m0,4,optimistic_q,Optimistic Q,0,9500,0.42
+p0.70,p0.70_m0,4,optimistic_q,Optimistic Q,0,10000,0.42
+p0.70,p0.70_m0,4,dyna_q,Dyna-Q,0,0,0.0
+p0.70,p0.70_m0,4,dyna_q,Dyna-Q,0,500,0.0
+p0.70,p0.70_m0,4,dyna_q,Dyna-Q,0,1000,0.0
+p0.70,p0.70_m0,4,dyna_q,Dyna-Q,0,1500,0.0
+p0.70,p0.70_m0,4,dyna_q,Dyna-Q,0,2000,0.0
+p0.70,p0.70_m0,4,dyna_q,Dyna-Q,0,2500,0.0
+p0.70,p0.70_m0,4,dyna_q,Dyna-Q,0,3000,0.0
+p0.70,p0.70_m0,4,dyna_q,Dyna-Q,0,3500,0.0
+p0.70,p0.70_m0,4,dyna_q,Dyna-Q,0,4000,0.0
+p0.70,p0.70_m0,4,dyna_q,Dyna-Q,0,4500,0.0
+p0.70,p0.70_m0,4,dyna_q,Dyna-Q,0,5000,0.0
+p0.70,p0.70_m0,4,dyna_q,Dyna-Q,0,5500,0.0
+p0.70,p0.70_m0,4,dyna_q,Dyna-Q,0,6000,0.0
+p0.70,p0.70_m0,4,dyna_q,Dyna-Q,0,6500,0.0
+p0.70,p0.70_m0,4,dyna_q,Dyna-Q,0,7000,0.0
+p0.70,p0.70_m0,4,dyna_q,Dyna-Q,0,7500,0.0
+p0.70,p0.70_m0,4,dyna_q,Dyna-Q,0,8000,0.0
+p0.70,p0.70_m0,4,dyna_q,Dyna-Q,0,8500,0.01
+p0.70,p0.70_m0,4,dyna_q,Dyna-Q,0,9000,0.21
+p0.70,p0.70_m0,4,dyna_q,Dyna-Q,0,9500,0.14
+p0.70,p0.70_m0,4,dyna_q,Dyna-Q,0,10000,0.01
+p0.70,p0.70_m1,5,q_learning,Q-learning,0,0,0.0
+p0.70,p0.70_m1,5,q_learning,Q-learning,0,500,0.0
+p0.70,p0.70_m1,5,q_learning,Q-learning,0,1000,0.0
+p0.70,p0.70_m1,5,q_learning,Q-learning,0,1500,0.0
+p0.70,p0.70_m1,5,q_learning,Q-learning,0,2000,0.0
+p0.70,p0.70_m1,5,q_learning,Q-learning,0,2500,0.0
+p0.70,p0.70_m1,5,q_learning,Q-learning,0,3000,0.0
+p0.70,p0.70_m1,5,q_learning,Q-learning,0,3500,0.0
+p0.70,p0.70_m1,5,q_learning,Q-learning,0,4000,0.0
+p0.70,p0.70_m1,5,q_learning,Q-learning,0,4500,0.0
+p0.70,p0.70_m1,5,q_learning,Q-learning,0,5000,0.0
+p0.70,p0.70_m1,5,q_learning,Q-learning,0,5500,0.0
+p0.70,p0.70_m1,5,q_learning,Q-learning,0,6000,0.0
+p0.70,p0.70_m1,5,q_learning,Q-learning,0,6500,0.0
+p0.70,p0.70_m1,5,q_learning,Q-learning,0,7000,0.0
+p0.70,p0.70_m1,5,q_learning,Q-learning,0,7500,0.0
+p0.70,p0.70_m1,5,q_learning,Q-learning,0,8000,0.0
+p0.70,p0.70_m1,5,q_learning,Q-learning,0,8500,0.0
+p0.70,p0.70_m1,5,q_learning,Q-learning,0,9000,0.0
+p0.70,p0.70_m1,5,q_learning,Q-learning,0,9500,0.0
+p0.70,p0.70_m1,5,q_learning,Q-learning,0,10000,0.0
+p0.70,p0.70_m1,5,sarsa,SARSA,0,0,0.0
+p0.70,p0.70_m1,5,sarsa,SARSA,0,500,0.0
+p0.70,p0.70_m1,5,sarsa,SARSA,0,1000,0.0
+p0.70,p0.70_m1,5,sarsa,SARSA,0,1500,0.0
+p0.70,p0.70_m1,5,sarsa,SARSA,0,2000,0.0
+p0.70,p0.70_m1,5,sarsa,SARSA,0,2500,0.0
+p0.70,p0.70_m1,5,sarsa,SARSA,0,3000,0.0
+p0.70,p0.70_m1,5,sarsa,SARSA,0,3500,0.0
+p0.70,p0.70_m1,5,sarsa,SARSA,0,4000,0.0
+p0.70,p0.70_m1,5,sarsa,SARSA,0,4500,0.0
+p0.70,p0.70_m1,5,sarsa,SARSA,0,5000,0.0
+p0.70,p0.70_m1,5,sarsa,SARSA,0,5500,0.0
+p0.70,p0.70_m1,5,sarsa,SARSA,0,6000,0.0
+p0.70,p0.70_m1,5,sarsa,SARSA,0,6500,0.0
+p0.70,p0.70_m1,5,sarsa,SARSA,0,7000,0.0
+p0.70,p0.70_m1,5,sarsa,SARSA,0,7500,0.0
+p0.70,p0.70_m1,5,sarsa,SARSA,0,8000,0.0
+p0.70,p0.70_m1,5,sarsa,SARSA,0,8500,0.0
+p0.70,p0.70_m1,5,sarsa,SARSA,0,9000,0.0
+p0.70,p0.70_m1,5,sarsa,SARSA,0,9500,0.0
+p0.70,p0.70_m1,5,sarsa,SARSA,0,10000,0.0
+p0.70,p0.70_m1,5,expected_sarsa,Expected SARSA,0,0,0.0
+p0.70,p0.70_m1,5,expected_sarsa,Expected SARSA,0,500,0.0
+p0.70,p0.70_m1,5,expected_sarsa,Expected SARSA,0,1000,0.0
+p0.70,p0.70_m1,5,expected_sarsa,Expected SARSA,0,1500,0.0
+p0.70,p0.70_m1,5,expected_sarsa,Expected SARSA,0,2000,0.0
+p0.70,p0.70_m1,5,expected_sarsa,Expected SARSA,0,2500,0.0
+p0.70,p0.70_m1,5,expected_sarsa,Expected SARSA,0,3000,0.0
+p0.70,p0.70_m1,5,expected_sarsa,Expected SARSA,0,3500,0.0
+p0.70,p0.70_m1,5,expected_sarsa,Expected SARSA,0,4000,0.0
+p0.70,p0.70_m1,5,expected_sarsa,Expected SARSA,0,4500,0.0
+p0.70,p0.70_m1,5,expected_sarsa,Expected SARSA,0,5000,0.0
+p0.70,p0.70_m1,5,expected_sarsa,Expected SARSA,0,5500,0.0
+p0.70,p0.70_m1,5,expected_sarsa,Expected SARSA,0,6000,0.0
+p0.70,p0.70_m1,5,expected_sarsa,Expected SARSA,0,6500,0.0
+p0.70,p0.70_m1,5,expected_sarsa,Expected SARSA,0,7000,0.0
+p0.70,p0.70_m1,5,expected_sarsa,Expected SARSA,0,7500,0.0
+p0.70,p0.70_m1,5,expected_sarsa,Expected SARSA,0,8000,0.0
+p0.70,p0.70_m1,5,expected_sarsa,Expected SARSA,0,8500,0.0
+p0.70,p0.70_m1,5,expected_sarsa,Expected SARSA,0,9000,0.0
+p0.70,p0.70_m1,5,expected_sarsa,Expected SARSA,0,9500,0.0
+p0.70,p0.70_m1,5,expected_sarsa,Expected SARSA,0,10000,0.0
+p0.70,p0.70_m1,5,sarsa_lambda,SARSA(lambda),0,0,0.0
+p0.70,p0.70_m1,5,sarsa_lambda,SARSA(lambda),0,500,0.0
+p0.70,p0.70_m1,5,sarsa_lambda,SARSA(lambda),0,1000,0.0
+p0.70,p0.70_m1,5,sarsa_lambda,SARSA(lambda),0,1500,0.0
+p0.70,p0.70_m1,5,sarsa_lambda,SARSA(lambda),0,2000,0.0
+p0.70,p0.70_m1,5,sarsa_lambda,SARSA(lambda),0,2500,0.0
+p0.70,p0.70_m1,5,sarsa_lambda,SARSA(lambda),0,3000,0.0
+p0.70,p0.70_m1,5,sarsa_lambda,SARSA(lambda),0,3500,0.0
+p0.70,p0.70_m1,5,sarsa_lambda,SARSA(lambda),0,4000,0.0
+p0.70,p0.70_m1,5,sarsa_lambda,SARSA(lambda),0,4500,0.0
+p0.70,p0.70_m1,5,sarsa_lambda,SARSA(lambda),0,5000,0.0
+p0.70,p0.70_m1,5,sarsa_lambda,SARSA(lambda),0,5500,0.0
+p0.70,p0.70_m1,5,sarsa_lambda,SARSA(lambda),0,6000,0.0
+p0.70,p0.70_m1,5,sarsa_lambda,SARSA(lambda),0,6500,0.0
+p0.70,p0.70_m1,5,sarsa_lambda,SARSA(lambda),0,7000,0.0
+p0.70,p0.70_m1,5,sarsa_lambda,SARSA(lambda),0,7500,0.0
+p0.70,p0.70_m1,5,sarsa_lambda,SARSA(lambda),0,8000,0.0
+p0.70,p0.70_m1,5,sarsa_lambda,SARSA(lambda),0,8500,0.0
+p0.70,p0.70_m1,5,sarsa_lambda,SARSA(lambda),0,9000,0.0
+p0.70,p0.70_m1,5,sarsa_lambda,SARSA(lambda),0,9500,0.0
+p0.70,p0.70_m1,5,sarsa_lambda,SARSA(lambda),0,10000,0.0
+p0.70,p0.70_m1,5,q_lambda,Q(lambda),0,0,0.0
+p0.70,p0.70_m1,5,q_lambda,Q(lambda),0,500,0.0
+p0.70,p0.70_m1,5,q_lambda,Q(lambda),0,1000,0.0
+p0.70,p0.70_m1,5,q_lambda,Q(lambda),0,1500,0.0
+p0.70,p0.70_m1,5,q_lambda,Q(lambda),0,2000,0.0
+p0.70,p0.70_m1,5,q_lambda,Q(lambda),0,2500,0.0
+p0.70,p0.70_m1,5,q_lambda,Q(lambda),0,3000,0.0
+p0.70,p0.70_m1,5,q_lambda,Q(lambda),0,3500,0.0
+p0.70,p0.70_m1,5,q_lambda,Q(lambda),0,4000,0.0
+p0.70,p0.70_m1,5,q_lambda,Q(lambda),0,4500,0.0
+p0.70,p0.70_m1,5,q_lambda,Q(lambda),0,5000,0.0
+p0.70,p0.70_m1,5,q_lambda,Q(lambda),0,5500,0.0
+p0.70,p0.70_m1,5,q_lambda,Q(lambda),0,6000,0.0
+p0.70,p0.70_m1,5,q_lambda,Q(lambda),0,6500,0.0
+p0.70,p0.70_m1,5,q_lambda,Q(lambda),0,7000,0.0
+p0.70,p0.70_m1,5,q_lambda,Q(lambda),0,7500,0.0
+p0.70,p0.70_m1,5,q_lambda,Q(lambda),0,8000,0.0
+p0.70,p0.70_m1,5,q_lambda,Q(lambda),0,8500,0.0
+p0.70,p0.70_m1,5,q_lambda,Q(lambda),0,9000,0.0
+p0.70,p0.70_m1,5,q_lambda,Q(lambda),0,9500,0.0
+p0.70,p0.70_m1,5,q_lambda,Q(lambda),0,10000,0.0
+p0.70,p0.70_m1,5,optimistic_q,Optimistic Q,0,0,0.0
+p0.70,p0.70_m1,5,optimistic_q,Optimistic Q,0,500,0.03
+p0.70,p0.70_m1,5,optimistic_q,Optimistic Q,0,1000,0.03
+p0.70,p0.70_m1,5,optimistic_q,Optimistic Q,0,1500,0.0
+p0.70,p0.70_m1,5,optimistic_q,Optimistic Q,0,2000,0.0
+p0.70,p0.70_m1,5,optimistic_q,Optimistic Q,0,2500,0.0
+p0.70,p0.70_m1,5,optimistic_q,Optimistic Q,0,3000,0.02
+p0.70,p0.70_m1,5,optimistic_q,Optimistic Q,0,3500,0.0
+p0.70,p0.70_m1,5,optimistic_q,Optimistic Q,0,4000,0.07
+p0.70,p0.70_m1,5,optimistic_q,Optimistic Q,0,4500,0.0
+p0.70,p0.70_m1,5,optimistic_q,Optimistic Q,0,5000,0.04
+p0.70,p0.70_m1,5,optimistic_q,Optimistic Q,0,5500,0.0
+p0.70,p0.70_m1,5,optimistic_q,Optimistic Q,0,6000,0.04
+p0.70,p0.70_m1,5,optimistic_q,Optimistic Q,0,6500,0.07
+p0.70,p0.70_m1,5,optimistic_q,Optimistic Q,0,7000,0.08
+p0.70,p0.70_m1,5,optimistic_q,Optimistic Q,0,7500,0.01
+p0.70,p0.70_m1,5,optimistic_q,Optimistic Q,0,8000,0.05
+p0.70,p0.70_m1,5,optimistic_q,Optimistic Q,0,8500,0.05
+p0.70,p0.70_m1,5,optimistic_q,Optimistic Q,0,9000,0.06
+p0.70,p0.70_m1,5,optimistic_q,Optimistic Q,0,9500,0.06
+p0.70,p0.70_m1,5,optimistic_q,Optimistic Q,0,10000,0.0
+p0.70,p0.70_m1,5,dyna_q,Dyna-Q,0,0,0.0
+p0.70,p0.70_m1,5,dyna_q,Dyna-Q,0,500,0.0
+p0.70,p0.70_m1,5,dyna_q,Dyna-Q,0,1000,0.0
+p0.70,p0.70_m1,5,dyna_q,Dyna-Q,0,1500,0.0
+p0.70,p0.70_m1,5,dyna_q,Dyna-Q,0,2000,0.0
+p0.70,p0.70_m1,5,dyna_q,Dyna-Q,0,2500,0.0
+p0.70,p0.70_m1,5,dyna_q,Dyna-Q,0,3000,0.0
+p0.70,p0.70_m1,5,dyna_q,Dyna-Q,0,3500,0.0
+p0.70,p0.70_m1,5,dyna_q,Dyna-Q,0,4000,0.0
+p0.70,p0.70_m1,5,dyna_q,Dyna-Q,0,4500,0.0
+p0.70,p0.70_m1,5,dyna_q,Dyna-Q,0,5000,0.0
+p0.70,p0.70_m1,5,dyna_q,Dyna-Q,0,5500,0.0
+p0.70,p0.70_m1,5,dyna_q,Dyna-Q,0,6000,0.0
+p0.70,p0.70_m1,5,dyna_q,Dyna-Q,0,6500,0.0
+p0.70,p0.70_m1,5,dyna_q,Dyna-Q,0,7000,0.0
+p0.70,p0.70_m1,5,dyna_q,Dyna-Q,0,7500,0.0
+p0.70,p0.70_m1,5,dyna_q,Dyna-Q,0,8000,0.0
+p0.70,p0.70_m1,5,dyna_q,Dyna-Q,0,8500,0.0
+p0.70,p0.70_m1,5,dyna_q,Dyna-Q,0,9000,0.0
+p0.70,p0.70_m1,5,dyna_q,Dyna-Q,0,9500,0.0
+p0.70,p0.70_m1,5,dyna_q,Dyna-Q,0,10000,0.0
+p0.70,p0.70_m2,6,q_learning,Q-learning,0,0,0.0
+p0.70,p0.70_m2,6,q_learning,Q-learning,0,500,0.0
+p0.70,p0.70_m2,6,q_learning,Q-learning,0,1000,0.0
+p0.70,p0.70_m2,6,q_learning,Q-learning,0,1500,0.0
+p0.70,p0.70_m2,6,q_learning,Q-learning,0,2000,0.0
+p0.70,p0.70_m2,6,q_learning,Q-learning,0,2500,0.0
+p0.70,p0.70_m2,6,q_learning,Q-learning,0,3000,0.0
+p0.70,p0.70_m2,6,q_learning,Q-learning,0,3500,0.0
+p0.70,p0.70_m2,6,q_learning,Q-learning,0,4000,0.0
+p0.70,p0.70_m2,6,q_learning,Q-learning,0,4500,0.0
+p0.70,p0.70_m2,6,q_learning,Q-learning,0,5000,0.0
+p0.70,p0.70_m2,6,q_learning,Q-learning,0,5500,0.0
+p0.70,p0.70_m2,6,q_learning,Q-learning,0,6000,0.0
+p0.70,p0.70_m2,6,q_learning,Q-learning,0,6500,0.0
+p0.70,p0.70_m2,6,q_learning,Q-learning,0,7000,0.0
+p0.70,p0.70_m2,6,q_learning,Q-learning,0,7500,0.0
+p0.70,p0.70_m2,6,q_learning,Q-learning,0,8000,0.0
+p0.70,p0.70_m2,6,q_learning,Q-learning,0,8500,0.0
+p0.70,p0.70_m2,6,q_learning,Q-learning,0,9000,0.0
+p0.70,p0.70_m2,6,q_learning,Q-learning,0,9500,0.0
+p0.70,p0.70_m2,6,q_learning,Q-learning,0,10000,0.0
+p0.70,p0.70_m2,6,sarsa,SARSA,0,0,0.0
+p0.70,p0.70_m2,6,sarsa,SARSA,0,500,0.0
+p0.70,p0.70_m2,6,sarsa,SARSA,0,1000,0.0
+p0.70,p0.70_m2,6,sarsa,SARSA,0,1500,0.0
+p0.70,p0.70_m2,6,sarsa,SARSA,0,2000,0.0
+p0.70,p0.70_m2,6,sarsa,SARSA,0,2500,0.0
+p0.70,p0.70_m2,6,sarsa,SARSA,0,3000,0.0
+p0.70,p0.70_m2,6,sarsa,SARSA,0,3500,0.0
+p0.70,p0.70_m2,6,sarsa,SARSA,0,4000,0.0
+p0.70,p0.70_m2,6,sarsa,SARSA,0,4500,0.0
+p0.70,p0.70_m2,6,sarsa,SARSA,0,5000,0.0
+p0.70,p0.70_m2,6,sarsa,SARSA,0,5500,0.0
+p0.70,p0.70_m2,6,sarsa,SARSA,0,6000,0.0
+p0.70,p0.70_m2,6,sarsa,SARSA,0,6500,0.0
+p0.70,p0.70_m2,6,sarsa,SARSA,0,7000,0.0
+p0.70,p0.70_m2,6,sarsa,SARSA,0,7500,0.0
+p0.70,p0.70_m2,6,sarsa,SARSA,0,8000,0.0
+p0.70,p0.70_m2,6,sarsa,SARSA,0,8500,0.0
+p0.70,p0.70_m2,6,sarsa,SARSA,0,9000,0.0
+p0.70,p0.70_m2,6,sarsa,SARSA,0,9500,0.0
+p0.70,p0.70_m2,6,sarsa,SARSA,0,10000,0.0
+p0.70,p0.70_m2,6,expected_sarsa,Expected SARSA,0,0,0.0
+p0.70,p0.70_m2,6,expected_sarsa,Expected SARSA,0,500,0.0
+p0.70,p0.70_m2,6,expected_sarsa,Expected SARSA,0,1000,0.0
+p0.70,p0.70_m2,6,expected_sarsa,Expected SARSA,0,1500,0.0
+p0.70,p0.70_m2,6,expected_sarsa,Expected SARSA,0,2000,0.0
+p0.70,p0.70_m2,6,expected_sarsa,Expected SARSA,0,2500,0.0
+p0.70,p0.70_m2,6,expected_sarsa,Expected SARSA,0,3000,0.0
+p0.70,p0.70_m2,6,expected_sarsa,Expected SARSA,0,3500,0.0
+p0.70,p0.70_m2,6,expected_sarsa,Expected SARSA,0,4000,0.0
+p0.70,p0.70_m2,6,expected_sarsa,Expected SARSA,0,4500,0.0
+p0.70,p0.70_m2,6,expected_sarsa,Expected SARSA,0,5000,0.0
+p0.70,p0.70_m2,6,expected_sarsa,Expected SARSA,0,5500,0.0
+p0.70,p0.70_m2,6,expected_sarsa,Expected SARSA,0,6000,0.0
+p0.70,p0.70_m2,6,expected_sarsa,Expected SARSA,0,6500,0.0
+p0.70,p0.70_m2,6,expected_sarsa,Expected SARSA,0,7000,0.0
+p0.70,p0.70_m2,6,expected_sarsa,Expected SARSA,0,7500,0.0
+p0.70,p0.70_m2,6,expected_sarsa,Expected SARSA,0,8000,0.0
+p0.70,p0.70_m2,6,expected_sarsa,Expected SARSA,0,8500,0.0
+p0.70,p0.70_m2,6,expected_sarsa,Expected SARSA,0,9000,0.0
+p0.70,p0.70_m2,6,expected_sarsa,Expected SARSA,0,9500,0.0
+p0.70,p0.70_m2,6,expected_sarsa,Expected SARSA,0,10000,0.0
+p0.70,p0.70_m2,6,sarsa_lambda,SARSA(lambda),0,0,0.0
+p0.70,p0.70_m2,6,sarsa_lambda,SARSA(lambda),0,500,0.0
+p0.70,p0.70_m2,6,sarsa_lambda,SARSA(lambda),0,1000,0.0
+p0.70,p0.70_m2,6,sarsa_lambda,SARSA(lambda),0,1500,0.0
+p0.70,p0.70_m2,6,sarsa_lambda,SARSA(lambda),0,2000,0.0
+p0.70,p0.70_m2,6,sarsa_lambda,SARSA(lambda),0,2500,0.0
+p0.70,p0.70_m2,6,sarsa_lambda,SARSA(lambda),0,3000,0.0
+p0.70,p0.70_m2,6,sarsa_lambda,SARSA(lambda),0,3500,0.0
+p0.70,p0.70_m2,6,sarsa_lambda,SARSA(lambda),0,4000,0.0
+p0.70,p0.70_m2,6,sarsa_lambda,SARSA(lambda),0,4500,0.0
+p0.70,p0.70_m2,6,sarsa_lambda,SARSA(lambda),0,5000,0.0
+p0.70,p0.70_m2,6,sarsa_lambda,SARSA(lambda),0,5500,0.0
+p0.70,p0.70_m2,6,sarsa_lambda,SARSA(lambda),0,6000,0.0
+p0.70,p0.70_m2,6,sarsa_lambda,SARSA(lambda),0,6500,0.0
+p0.70,p0.70_m2,6,sarsa_lambda,SARSA(lambda),0,7000,0.0
+p0.70,p0.70_m2,6,sarsa_lambda,SARSA(lambda),0,7500,0.0
+p0.70,p0.70_m2,6,sarsa_lambda,SARSA(lambda),0,8000,0.0
+p0.70,p0.70_m2,6,sarsa_lambda,SARSA(lambda),0,8500,0.0
+p0.70,p0.70_m2,6,sarsa_lambda,SARSA(lambda),0,9000,0.0
+p0.70,p0.70_m2,6,sarsa_lambda,SARSA(lambda),0,9500,0.0
+p0.70,p0.70_m2,6,sarsa_lambda,SARSA(lambda),0,10000,0.0
+p0.70,p0.70_m2,6,q_lambda,Q(lambda),0,0,0.0
+p0.70,p0.70_m2,6,q_lambda,Q(lambda),0,500,0.0
+p0.70,p0.70_m2,6,q_lambda,Q(lambda),0,1000,0.0
+p0.70,p0.70_m2,6,q_lambda,Q(lambda),0,1500,0.0
+p0.70,p0.70_m2,6,q_lambda,Q(lambda),0,2000,0.0
+p0.70,p0.70_m2,6,q_lambda,Q(lambda),0,2500,0.0
+p0.70,p0.70_m2,6,q_lambda,Q(lambda),0,3000,0.0
+p0.70,p0.70_m2,6,q_lambda,Q(lambda),0,3500,0.0
+p0.70,p0.70_m2,6,q_lambda,Q(lambda),0,4000,0.0
+p0.70,p0.70_m2,6,q_lambda,Q(lambda),0,4500,0.0
+p0.70,p0.70_m2,6,q_lambda,Q(lambda),0,5000,0.0
+p0.70,p0.70_m2,6,q_lambda,Q(lambda),0,5500,0.0
+p0.70,p0.70_m2,6,q_lambda,Q(lambda),0,6000,0.0
+p0.70,p0.70_m2,6,q_lambda,Q(lambda),0,6500,0.0
+p0.70,p0.70_m2,6,q_lambda,Q(lambda),0,7000,0.0
+p0.70,p0.70_m2,6,q_lambda,Q(lambda),0,7500,0.0
+p0.70,p0.70_m2,6,q_lambda,Q(lambda),0,8000,0.0
+p0.70,p0.70_m2,6,q_lambda,Q(lambda),0,8500,0.0
+p0.70,p0.70_m2,6,q_lambda,Q(lambda),0,9000,0.0
+p0.70,p0.70_m2,6,q_lambda,Q(lambda),0,9500,0.0
+p0.70,p0.70_m2,6,q_lambda,Q(lambda),0,10000,0.0
+p0.70,p0.70_m2,6,optimistic_q,Optimistic Q,0,0,0.0
+p0.70,p0.70_m2,6,optimistic_q,Optimistic Q,0,500,0.02
+p0.70,p0.70_m2,6,optimistic_q,Optimistic Q,0,1000,0.11
+p0.70,p0.70_m2,6,optimistic_q,Optimistic Q,0,1500,0.14
+p0.70,p0.70_m2,6,optimistic_q,Optimistic Q,0,2000,0.19
+p0.70,p0.70_m2,6,optimistic_q,Optimistic Q,0,2500,0.11
+p0.70,p0.70_m2,6,optimistic_q,Optimistic Q,0,3000,0.18
+p0.70,p0.70_m2,6,optimistic_q,Optimistic Q,0,3500,0.13
+p0.70,p0.70_m2,6,optimistic_q,Optimistic Q,0,4000,0.21
+p0.70,p0.70_m2,6,optimistic_q,Optimistic Q,0,4500,0.2
+p0.70,p0.70_m2,6,optimistic_q,Optimistic Q,0,5000,0.1
+p0.70,p0.70_m2,6,optimistic_q,Optimistic Q,0,5500,0.26
+p0.70,p0.70_m2,6,optimistic_q,Optimistic Q,0,6000,0.2
+p0.70,p0.70_m2,6,optimistic_q,Optimistic Q,0,6500,0.17
+p0.70,p0.70_m2,6,optimistic_q,Optimistic Q,0,7000,0.19
+p0.70,p0.70_m2,6,optimistic_q,Optimistic Q,0,7500,0.21
+p0.70,p0.70_m2,6,optimistic_q,Optimistic Q,0,8000,0.16
+p0.70,p0.70_m2,6,optimistic_q,Optimistic Q,0,8500,0.2
+p0.70,p0.70_m2,6,optimistic_q,Optimistic Q,0,9000,0.27
+p0.70,p0.70_m2,6,optimistic_q,Optimistic Q,0,9500,0.28
+p0.70,p0.70_m2,6,optimistic_q,Optimistic Q,0,10000,0.23
+p0.70,p0.70_m2,6,dyna_q,Dyna-Q,0,0,0.0
+p0.70,p0.70_m2,6,dyna_q,Dyna-Q,0,500,0.01
+p0.70,p0.70_m2,6,dyna_q,Dyna-Q,0,1000,0.0
+p0.70,p0.70_m2,6,dyna_q,Dyna-Q,0,1500,0.0
+p0.70,p0.70_m2,6,dyna_q,Dyna-Q,0,2000,0.0
+p0.70,p0.70_m2,6,dyna_q,Dyna-Q,0,2500,0.0
+p0.70,p0.70_m2,6,dyna_q,Dyna-Q,0,3000,0.0
+p0.70,p0.70_m2,6,dyna_q,Dyna-Q,0,3500,0.0
+p0.70,p0.70_m2,6,dyna_q,Dyna-Q,0,4000,0.0
+p0.70,p0.70_m2,6,dyna_q,Dyna-Q,0,4500,0.0
+p0.70,p0.70_m2,6,dyna_q,Dyna-Q,0,5000,0.0
+p0.70,p0.70_m2,6,dyna_q,Dyna-Q,0,5500,0.0
+p0.70,p0.70_m2,6,dyna_q,Dyna-Q,0,6000,0.0
+p0.70,p0.70_m2,6,dyna_q,Dyna-Q,0,6500,0.0
+p0.70,p0.70_m2,6,dyna_q,Dyna-Q,0,7000,0.0
+p0.70,p0.70_m2,6,dyna_q,Dyna-Q,0,7500,0.0
+p0.70,p0.70_m2,6,dyna_q,Dyna-Q,0,8000,0.0
+p0.70,p0.70_m2,6,dyna_q,Dyna-Q,0,8500,0.0
+p0.70,p0.70_m2,6,dyna_q,Dyna-Q,0,9000,0.0
+p0.70,p0.70_m2,6,dyna_q,Dyna-Q,0,9500,0.0
+p0.70,p0.70_m2,6,dyna_q,Dyna-Q,0,10000,0.0
+p0.60,p0.60_m0,7,q_learning,Q-learning,0,0,0.0
+p0.60,p0.60_m0,7,q_learning,Q-learning,0,500,0.0
+p0.60,p0.60_m0,7,q_learning,Q-learning,0,1000,0.0
+p0.60,p0.60_m0,7,q_learning,Q-learning,0,1500,0.0
+p0.60,p0.60_m0,7,q_learning,Q-learning,0,2000,0.0
+p0.60,p0.60_m0,7,q_learning,Q-learning,0,2500,0.0
+p0.60,p0.60_m0,7,q_learning,Q-learning,0,3000,0.0
+p0.60,p0.60_m0,7,q_learning,Q-learning,0,3500,0.0
+p0.60,p0.60_m0,7,q_learning,Q-learning,0,4000,0.0
+p0.60,p0.60_m0,7,q_learning,Q-learning,0,4500,0.0
+p0.60,p0.60_m0,7,q_learning,Q-learning,0,5000,0.0
+p0.60,p0.60_m0,7,q_learning,Q-learning,0,5500,0.0
+p0.60,p0.60_m0,7,q_learning,Q-learning,0,6000,0.0
+p0.60,p0.60_m0,7,q_learning,Q-learning,0,6500,0.0
+p0.60,p0.60_m0,7,q_learning,Q-learning,0,7000,0.0
+p0.60,p0.60_m0,7,q_learning,Q-learning,0,7500,0.0
+p0.60,p0.60_m0,7,q_learning,Q-learning,0,8000,0.0
+p0.60,p0.60_m0,7,q_learning,Q-learning,0,8500,0.0
+p0.60,p0.60_m0,7,q_learning,Q-learning,0,9000,0.0
+p0.60,p0.60_m0,7,q_learning,Q-learning,0,9500,0.0
+p0.60,p0.60_m0,7,q_learning,Q-learning,0,10000,0.0
+p0.60,p0.60_m0,7,sarsa,SARSA,0,0,0.0
+p0.60,p0.60_m0,7,sarsa,SARSA,0,500,0.0
+p0.60,p0.60_m0,7,sarsa,SARSA,0,1000,0.0
+p0.60,p0.60_m0,7,sarsa,SARSA,0,1500,0.0
+p0.60,p0.60_m0,7,sarsa,SARSA,0,2000,0.0
+p0.60,p0.60_m0,7,sarsa,SARSA,0,2500,0.0
+p0.60,p0.60_m0,7,sarsa,SARSA,0,3000,0.0
+p0.60,p0.60_m0,7,sarsa,SARSA,0,3500,0.0
+p0.60,p0.60_m0,7,sarsa,SARSA,0,4000,0.0
+p0.60,p0.60_m0,7,sarsa,SARSA,0,4500,0.0
+p0.60,p0.60_m0,7,sarsa,SARSA,0,5000,0.0
+p0.60,p0.60_m0,7,sarsa,SARSA,0,5500,0.0
+p0.60,p0.60_m0,7,sarsa,SARSA,0,6000,0.0
+p0.60,p0.60_m0,7,sarsa,SARSA,0,6500,0.0
+p0.60,p0.60_m0,7,sarsa,SARSA,0,7000,0.0
+p0.60,p0.60_m0,7,sarsa,SARSA,0,7500,0.0
+p0.60,p0.60_m0,7,sarsa,SARSA,0,8000,0.0
+p0.60,p0.60_m0,7,sarsa,SARSA,0,8500,0.0
+p0.60,p0.60_m0,7,sarsa,SARSA,0,9000,0.0
+p0.60,p0.60_m0,7,sarsa,SARSA,0,9500,0.0
+p0.60,p0.60_m0,7,sarsa,SARSA,0,10000,0.0
+p0.60,p0.60_m0,7,expected_sarsa,Expected SARSA,0,0,0.0
+p0.60,p0.60_m0,7,expected_sarsa,Expected SARSA,0,500,0.0
+p0.60,p0.60_m0,7,expected_sarsa,Expected SARSA,0,1000,0.0
+p0.60,p0.60_m0,7,expected_sarsa,Expected SARSA,0,1500,0.0
+p0.60,p0.60_m0,7,expected_sarsa,Expected SARSA,0,2000,0.0
+p0.60,p0.60_m0,7,expected_sarsa,Expected SARSA,0,2500,0.0
+p0.60,p0.60_m0,7,expected_sarsa,Expected SARSA,0,3000,0.0
+p0.60,p0.60_m0,7,expected_sarsa,Expected SARSA,0,3500,0.0
+p0.60,p0.60_m0,7,expected_sarsa,Expected SARSA,0,4000,0.0
+p0.60,p0.60_m0,7,expected_sarsa,Expected SARSA,0,4500,0.0
+p0.60,p0.60_m0,7,expected_sarsa,Expected SARSA,0,5000,0.0
+p0.60,p0.60_m0,7,expected_sarsa,Expected SARSA,0,5500,0.0
+p0.60,p0.60_m0,7,expected_sarsa,Expected SARSA,0,6000,0.0
+p0.60,p0.60_m0,7,expected_sarsa,Expected SARSA,0,6500,0.0
+p0.60,p0.60_m0,7,expected_sarsa,Expected SARSA,0,7000,0.0
+p0.60,p0.60_m0,7,expected_sarsa,Expected SARSA,0,7500,0.0
+p0.60,p0.60_m0,7,expected_sarsa,Expected SARSA,0,8000,0.0
+p0.60,p0.60_m0,7,expected_sarsa,Expected SARSA,0,8500,0.0
+p0.60,p0.60_m0,7,expected_sarsa,Expected SARSA,0,9000,0.0
+p0.60,p0.60_m0,7,expected_sarsa,Expected SARSA,0,9500,0.0
+p0.60,p0.60_m0,7,expected_sarsa,Expected SARSA,0,10000,0.0
+p0.60,p0.60_m0,7,sarsa_lambda,SARSA(lambda),0,0,0.0
+p0.60,p0.60_m0,7,sarsa_lambda,SARSA(lambda),0,500,0.0
+p0.60,p0.60_m0,7,sarsa_lambda,SARSA(lambda),0,1000,0.0
+p0.60,p0.60_m0,7,sarsa_lambda,SARSA(lambda),0,1500,0.0
+p0.60,p0.60_m0,7,sarsa_lambda,SARSA(lambda),0,2000,0.0
+p0.60,p0.60_m0,7,sarsa_lambda,SARSA(lambda),0,2500,0.0
+p0.60,p0.60_m0,7,sarsa_lambda,SARSA(lambda),0,3000,0.0
+p0.60,p0.60_m0,7,sarsa_lambda,SARSA(lambda),0,3500,0.0
+p0.60,p0.60_m0,7,sarsa_lambda,SARSA(lambda),0,4000,0.0
+p0.60,p0.60_m0,7,sarsa_lambda,SARSA(lambda),0,4500,0.0
+p0.60,p0.60_m0,7,sarsa_lambda,SARSA(lambda),0,5000,0.0
+p0.60,p0.60_m0,7,sarsa_lambda,SARSA(lambda),0,5500,0.0
+p0.60,p0.60_m0,7,sarsa_lambda,SARSA(lambda),0,6000,0.0
+p0.60,p0.60_m0,7,sarsa_lambda,SARSA(lambda),0,6500,0.0
+p0.60,p0.60_m0,7,sarsa_lambda,SARSA(lambda),0,7000,0.0
+p0.60,p0.60_m0,7,sarsa_lambda,SARSA(lambda),0,7500,0.0
+p0.60,p0.60_m0,7,sarsa_lambda,SARSA(lambda),0,8000,0.0
+p0.60,p0.60_m0,7,sarsa_lambda,SARSA(lambda),0,8500,0.0
+p0.60,p0.60_m0,7,sarsa_lambda,SARSA(lambda),0,9000,0.0
+p0.60,p0.60_m0,7,sarsa_lambda,SARSA(lambda),0,9500,0.0
+p0.60,p0.60_m0,7,sarsa_lambda,SARSA(lambda),0,10000,0.0
+p0.60,p0.60_m0,7,q_lambda,Q(lambda),0,0,0.0
+p0.60,p0.60_m0,7,q_lambda,Q(lambda),0,500,0.0
+p0.60,p0.60_m0,7,q_lambda,Q(lambda),0,1000,0.0
+p0.60,p0.60_m0,7,q_lambda,Q(lambda),0,1500,0.0
+p0.60,p0.60_m0,7,q_lambda,Q(lambda),0,2000,0.0
+p0.60,p0.60_m0,7,q_lambda,Q(lambda),0,2500,0.0
+p0.60,p0.60_m0,7,q_lambda,Q(lambda),0,3000,0.0
+p0.60,p0.60_m0,7,q_lambda,Q(lambda),0,3500,0.0
+p0.60,p0.60_m0,7,q_lambda,Q(lambda),0,4000,0.0
+p0.60,p0.60_m0,7,q_lambda,Q(lambda),0,4500,0.0
+p0.60,p0.60_m0,7,q_lambda,Q(lambda),0,5000,0.0
+p0.60,p0.60_m0,7,q_lambda,Q(lambda),0,5500,0.0
+p0.60,p0.60_m0,7,q_lambda,Q(lambda),0,6000,0.0
+p0.60,p0.60_m0,7,q_lambda,Q(lambda),0,6500,0.0
+p0.60,p0.60_m0,7,q_lambda,Q(lambda),0,7000,0.0
+p0.60,p0.60_m0,7,q_lambda,Q(lambda),0,7500,0.0
+p0.60,p0.60_m0,7,q_lambda,Q(lambda),0,8000,0.0
+p0.60,p0.60_m0,7,q_lambda,Q(lambda),0,8500,0.0
+p0.60,p0.60_m0,7,q_lambda,Q(lambda),0,9000,0.0
+p0.60,p0.60_m0,7,q_lambda,Q(lambda),0,9500,0.0
+p0.60,p0.60_m0,7,q_lambda,Q(lambda),0,10000,0.0
+p0.60,p0.60_m0,7,optimistic_q,Optimistic Q,0,0,0.0
+p0.60,p0.60_m0,7,optimistic_q,Optimistic Q,0,500,0.0
+p0.60,p0.60_m0,7,optimistic_q,Optimistic Q,0,1000,0.12
+p0.60,p0.60_m0,7,optimistic_q,Optimistic Q,0,1500,0.06
+p0.60,p0.60_m0,7,optimistic_q,Optimistic Q,0,2000,0.1
+p0.60,p0.60_m0,7,optimistic_q,Optimistic Q,0,2500,0.12
+p0.60,p0.60_m0,7,optimistic_q,Optimistic Q,0,3000,0.1
+p0.60,p0.60_m0,7,optimistic_q,Optimistic Q,0,3500,0.16
+p0.60,p0.60_m0,7,optimistic_q,Optimistic Q,0,4000,0.07
+p0.60,p0.60_m0,7,optimistic_q,Optimistic Q,0,4500,0.11
+p0.60,p0.60_m0,7,optimistic_q,Optimistic Q,0,5000,0.12
+p0.60,p0.60_m0,7,optimistic_q,Optimistic Q,0,5500,0.05
+p0.60,p0.60_m0,7,optimistic_q,Optimistic Q,0,6000,0.13
+p0.60,p0.60_m0,7,optimistic_q,Optimistic Q,0,6500,0.06
+p0.60,p0.60_m0,7,optimistic_q,Optimistic Q,0,7000,0.1
+p0.60,p0.60_m0,7,optimistic_q,Optimistic Q,0,7500,0.1
+p0.60,p0.60_m0,7,optimistic_q,Optimistic Q,0,8000,0.1
+p0.60,p0.60_m0,7,optimistic_q,Optimistic Q,0,8500,0.1
+p0.60,p0.60_m0,7,optimistic_q,Optimistic Q,0,9000,0.15
+p0.60,p0.60_m0,7,optimistic_q,Optimistic Q,0,9500,0.11
+p0.60,p0.60_m0,7,optimistic_q,Optimistic Q,0,10000,0.16
+p0.60,p0.60_m0,7,dyna_q,Dyna-Q,0,0,0.0
+p0.60,p0.60_m0,7,dyna_q,Dyna-Q,0,500,0.0
+p0.60,p0.60_m0,7,dyna_q,Dyna-Q,0,1000,0.0
+p0.60,p0.60_m0,7,dyna_q,Dyna-Q,0,1500,0.0
+p0.60,p0.60_m0,7,dyna_q,Dyna-Q,0,2000,0.0
+p0.60,p0.60_m0,7,dyna_q,Dyna-Q,0,2500,0.0
+p0.60,p0.60_m0,7,dyna_q,Dyna-Q,0,3000,0.0
+p0.60,p0.60_m0,7,dyna_q,Dyna-Q,0,3500,0.0
+p0.60,p0.60_m0,7,dyna_q,Dyna-Q,0,4000,0.0
+p0.60,p0.60_m0,7,dyna_q,Dyna-Q,0,4500,0.0
+p0.60,p0.60_m0,7,dyna_q,Dyna-Q,0,5000,0.0
+p0.60,p0.60_m0,7,dyna_q,Dyna-Q,0,5500,0.0
+p0.60,p0.60_m0,7,dyna_q,Dyna-Q,0,6000,0.0
+p0.60,p0.60_m0,7,dyna_q,Dyna-Q,0,6500,0.0
+p0.60,p0.60_m0,7,dyna_q,Dyna-Q,0,7000,0.0
+p0.60,p0.60_m0,7,dyna_q,Dyna-Q,0,7500,0.0
+p0.60,p0.60_m0,7,dyna_q,Dyna-Q,0,8000,0.0
+p0.60,p0.60_m0,7,dyna_q,Dyna-Q,0,8500,0.0
+p0.60,p0.60_m0,7,dyna_q,Dyna-Q,0,9000,0.0
+p0.60,p0.60_m0,7,dyna_q,Dyna-Q,0,9500,0.0
+p0.60,p0.60_m0,7,dyna_q,Dyna-Q,0,10000,0.0
+p0.60,p0.60_m1,8,q_learning,Q-learning,0,0,0.0
+p0.60,p0.60_m1,8,q_learning,Q-learning,0,500,0.0
+p0.60,p0.60_m1,8,q_learning,Q-learning,0,1000,0.0
+p0.60,p0.60_m1,8,q_learning,Q-learning,0,1500,0.0
+p0.60,p0.60_m1,8,q_learning,Q-learning,0,2000,0.0
+p0.60,p0.60_m1,8,q_learning,Q-learning,0,2500,0.0
+p0.60,p0.60_m1,8,q_learning,Q-learning,0,3000,0.0
+p0.60,p0.60_m1,8,q_learning,Q-learning,0,3500,0.0
+p0.60,p0.60_m1,8,q_learning,Q-learning,0,4000,0.0
+p0.60,p0.60_m1,8,q_learning,Q-learning,0,4500,0.0
+p0.60,p0.60_m1,8,q_learning,Q-learning,0,5000,0.0
+p0.60,p0.60_m1,8,q_learning,Q-learning,0,5500,0.0
+p0.60,p0.60_m1,8,q_learning,Q-learning,0,6000,0.0
+p0.60,p0.60_m1,8,q_learning,Q-learning,0,6500,0.0
+p0.60,p0.60_m1,8,q_learning,Q-learning,0,7000,0.0
+p0.60,p0.60_m1,8,q_learning,Q-learning,0,7500,0.0
+p0.60,p0.60_m1,8,q_learning,Q-learning,0,8000,0.0
+p0.60,p0.60_m1,8,q_learning,Q-learning,0,8500,0.0
+p0.60,p0.60_m1,8,q_learning,Q-learning,0,9000,0.0
+p0.60,p0.60_m1,8,q_learning,Q-learning,0,9500,0.0
+p0.60,p0.60_m1,8,q_learning,Q-learning,0,10000,0.0
+p0.60,p0.60_m1,8,sarsa,SARSA,0,0,0.0
+p0.60,p0.60_m1,8,sarsa,SARSA,0,500,0.0
+p0.60,p0.60_m1,8,sarsa,SARSA,0,1000,0.0
+p0.60,p0.60_m1,8,sarsa,SARSA,0,1500,0.0
+p0.60,p0.60_m1,8,sarsa,SARSA,0,2000,0.0
+p0.60,p0.60_m1,8,sarsa,SARSA,0,2500,0.0
+p0.60,p0.60_m1,8,sarsa,SARSA,0,3000,0.0
+p0.60,p0.60_m1,8,sarsa,SARSA,0,3500,0.0
+p0.60,p0.60_m1,8,sarsa,SARSA,0,4000,0.0
+p0.60,p0.60_m1,8,sarsa,SARSA,0,4500,0.0
+p0.60,p0.60_m1,8,sarsa,SARSA,0,5000,0.0
+p0.60,p0.60_m1,8,sarsa,SARSA,0,5500,0.0
+p0.60,p0.60_m1,8,sarsa,SARSA,0,6000,0.0
+p0.60,p0.60_m1,8,sarsa,SARSA,0,6500,0.0
+p0.60,p0.60_m1,8,sarsa,SARSA,0,7000,0.0
+p0.60,p0.60_m1,8,sarsa,SARSA,0,7500,0.0
+p0.60,p0.60_m1,8,sarsa,SARSA,0,8000,0.0
+p0.60,p0.60_m1,8,sarsa,SARSA,0,8500,0.0
+p0.60,p0.60_m1,8,sarsa,SARSA,0,9000,0.0
+p0.60,p0.60_m1,8,sarsa,SARSA,0,9500,0.0
+p0.60,p0.60_m1,8,sarsa,SARSA,0,10000,0.0
+p0.60,p0.60_m1,8,expected_sarsa,Expected SARSA,0,0,0.0
+p0.60,p0.60_m1,8,expected_sarsa,Expected SARSA,0,500,0.0
+p0.60,p0.60_m1,8,expected_sarsa,Expected SARSA,0,1000,0.0
+p0.60,p0.60_m1,8,expected_sarsa,Expected SARSA,0,1500,0.0
+p0.60,p0.60_m1,8,expected_sarsa,Expected SARSA,0,2000,0.0
+p0.60,p0.60_m1,8,expected_sarsa,Expected SARSA,0,2500,0.0
+p0.60,p0.60_m1,8,expected_sarsa,Expected SARSA,0,3000,0.0
+p0.60,p0.60_m1,8,expected_sarsa,Expected SARSA,0,3500,0.0
+p0.60,p0.60_m1,8,expected_sarsa,Expected SARSA,0,4000,0.0
+p0.60,p0.60_m1,8,expected_sarsa,Expected SARSA,0,4500,0.0
+p0.60,p0.60_m1,8,expected_sarsa,Expected SARSA,0,5000,0.0
+p0.60,p0.60_m1,8,expected_sarsa,Expected SARSA,0,5500,0.0
+p0.60,p0.60_m1,8,expected_sarsa,Expected SARSA,0,6000,0.0
+p0.60,p0.60_m1,8,expected_sarsa,Expected SARSA,0,6500,0.0
+p0.60,p0.60_m1,8,expected_sarsa,Expected SARSA,0,7000,0.0
+p0.60,p0.60_m1,8,expected_sarsa,Expected SARSA,0,7500,0.0
+p0.60,p0.60_m1,8,expected_sarsa,Expected SARSA,0,8000,0.0
+p0.60,p0.60_m1,8,expected_sarsa,Expected SARSA,0,8500,0.0
+p0.60,p0.60_m1,8,expected_sarsa,Expected SARSA,0,9000,0.0
+p0.60,p0.60_m1,8,expected_sarsa,Expected SARSA,0,9500,0.0
+p0.60,p0.60_m1,8,expected_sarsa,Expected SARSA,0,10000,0.0
+p0.60,p0.60_m1,8,sarsa_lambda,SARSA(lambda),0,0,0.0
+p0.60,p0.60_m1,8,sarsa_lambda,SARSA(lambda),0,500,0.0
+p0.60,p0.60_m1,8,sarsa_lambda,SARSA(lambda),0,1000,0.0
+p0.60,p0.60_m1,8,sarsa_lambda,SARSA(lambda),0,1500,0.0
+p0.60,p0.60_m1,8,sarsa_lambda,SARSA(lambda),0,2000,0.0
+p0.60,p0.60_m1,8,sarsa_lambda,SARSA(lambda),0,2500,0.0
+p0.60,p0.60_m1,8,sarsa_lambda,SARSA(lambda),0,3000,0.0
+p0.60,p0.60_m1,8,sarsa_lambda,SARSA(lambda),0,3500,0.0
+p0.60,p0.60_m1,8,sarsa_lambda,SARSA(lambda),0,4000,0.0
+p0.60,p0.60_m1,8,sarsa_lambda,SARSA(lambda),0,4500,0.0
+p0.60,p0.60_m1,8,sarsa_lambda,SARSA(lambda),0,5000,0.0
+p0.60,p0.60_m1,8,sarsa_lambda,SARSA(lambda),0,5500,0.0
+p0.60,p0.60_m1,8,sarsa_lambda,SARSA(lambda),0,6000,0.0
+p0.60,p0.60_m1,8,sarsa_lambda,SARSA(lambda),0,6500,0.0
+p0.60,p0.60_m1,8,sarsa_lambda,SARSA(lambda),0,7000,0.0
+p0.60,p0.60_m1,8,sarsa_lambda,SARSA(lambda),0,7500,0.0
+p0.60,p0.60_m1,8,sarsa_lambda,SARSA(lambda),0,8000,0.0
+p0.60,p0.60_m1,8,sarsa_lambda,SARSA(lambda),0,8500,0.0
+p0.60,p0.60_m1,8,sarsa_lambda,SARSA(lambda),0,9000,0.0
+p0.60,p0.60_m1,8,sarsa_lambda,SARSA(lambda),0,9500,0.0
+p0.60,p0.60_m1,8,sarsa_lambda,SARSA(lambda),0,10000,0.0
+p0.60,p0.60_m1,8,q_lambda,Q(lambda),0,0,0.0
+p0.60,p0.60_m1,8,q_lambda,Q(lambda),0,500,0.0
+p0.60,p0.60_m1,8,q_lambda,Q(lambda),0,1000,0.0
+p0.60,p0.60_m1,8,q_lambda,Q(lambda),0,1500,0.0
+p0.60,p0.60_m1,8,q_lambda,Q(lambda),0,2000,0.0
+p0.60,p0.60_m1,8,q_lambda,Q(lambda),0,2500,0.0
+p0.60,p0.60_m1,8,q_lambda,Q(lambda),0,3000,0.0
+p0.60,p0.60_m1,8,q_lambda,Q(lambda),0,3500,0.0
+p0.60,p0.60_m1,8,q_lambda,Q(lambda),0,4000,0.0
+p0.60,p0.60_m1,8,q_lambda,Q(lambda),0,4500,0.0
+p0.60,p0.60_m1,8,q_lambda,Q(lambda),0,5000,0.0
+p0.60,p0.60_m1,8,q_lambda,Q(lambda),0,5500,0.0
+p0.60,p0.60_m1,8,q_lambda,Q(lambda),0,6000,0.0
+p0.60,p0.60_m1,8,q_lambda,Q(lambda),0,6500,0.0
+p0.60,p0.60_m1,8,q_lambda,Q(lambda),0,7000,0.0
+p0.60,p0.60_m1,8,q_lambda,Q(lambda),0,7500,0.0
+p0.60,p0.60_m1,8,q_lambda,Q(lambda),0,8000,0.0
+p0.60,p0.60_m1,8,q_lambda,Q(lambda),0,8500,0.0
+p0.60,p0.60_m1,8,q_lambda,Q(lambda),0,9000,0.0
+p0.60,p0.60_m1,8,q_lambda,Q(lambda),0,9500,0.0
+p0.60,p0.60_m1,8,q_lambda,Q(lambda),0,10000,0.0
+p0.60,p0.60_m1,8,optimistic_q,Optimistic Q,0,0,0.0
+p0.60,p0.60_m1,8,optimistic_q,Optimistic Q,0,500,0.0
+p0.60,p0.60_m1,8,optimistic_q,Optimistic Q,0,1000,0.0
+p0.60,p0.60_m1,8,optimistic_q,Optimistic Q,0,1500,0.0
+p0.60,p0.60_m1,8,optimistic_q,Optimistic Q,0,2000,0.0
+p0.60,p0.60_m1,8,optimistic_q,Optimistic Q,0,2500,0.0
+p0.60,p0.60_m1,8,optimistic_q,Optimistic Q,0,3000,0.0
+p0.60,p0.60_m1,8,optimistic_q,Optimistic Q,0,3500,0.01
+p0.60,p0.60_m1,8,optimistic_q,Optimistic Q,0,4000,0.0
+p0.60,p0.60_m1,8,optimistic_q,Optimistic Q,0,4500,0.0
+p0.60,p0.60_m1,8,optimistic_q,Optimistic Q,0,5000,0.0
+p0.60,p0.60_m1,8,optimistic_q,Optimistic Q,0,5500,0.0
+p0.60,p0.60_m1,8,optimistic_q,Optimistic Q,0,6000,0.0
+p0.60,p0.60_m1,8,optimistic_q,Optimistic Q,0,6500,0.0
+p0.60,p0.60_m1,8,optimistic_q,Optimistic Q,0,7000,0.01
+p0.60,p0.60_m1,8,optimistic_q,Optimistic Q,0,7500,0.01
+p0.60,p0.60_m1,8,optimistic_q,Optimistic Q,0,8000,0.0
+p0.60,p0.60_m1,8,optimistic_q,Optimistic Q,0,8500,0.0
+p0.60,p0.60_m1,8,optimistic_q,Optimistic Q,0,9000,0.0
+p0.60,p0.60_m1,8,optimistic_q,Optimistic Q,0,9500,0.03
+p0.60,p0.60_m1,8,optimistic_q,Optimistic Q,0,10000,0.0
+p0.60,p0.60_m1,8,dyna_q,Dyna-Q,0,0,0.0
+p0.60,p0.60_m1,8,dyna_q,Dyna-Q,0,500,0.0
+p0.60,p0.60_m1,8,dyna_q,Dyna-Q,0,1000,0.0
+p0.60,p0.60_m1,8,dyna_q,Dyna-Q,0,1500,0.0
+p0.60,p0.60_m1,8,dyna_q,Dyna-Q,0,2000,0.0
+p0.60,p0.60_m1,8,dyna_q,Dyna-Q,0,2500,0.0
+p0.60,p0.60_m1,8,dyna_q,Dyna-Q,0,3000,0.0
+p0.60,p0.60_m1,8,dyna_q,Dyna-Q,0,3500,0.0
+p0.60,p0.60_m1,8,dyna_q,Dyna-Q,0,4000,0.0
+p0.60,p0.60_m1,8,dyna_q,Dyna-Q,0,4500,0.0
+p0.60,p0.60_m1,8,dyna_q,Dyna-Q,0,5000,0.0
+p0.60,p0.60_m1,8,dyna_q,Dyna-Q,0,5500,0.0
+p0.60,p0.60_m1,8,dyna_q,Dyna-Q,0,6000,0.0
+p0.60,p0.60_m1,8,dyna_q,Dyna-Q,0,6500,0.0
+p0.60,p0.60_m1,8,dyna_q,Dyna-Q,0,7000,0.0
+p0.60,p0.60_m1,8,dyna_q,Dyna-Q,0,7500,0.0
+p0.60,p0.60_m1,8,dyna_q,Dyna-Q,0,8000,0.0
+p0.60,p0.60_m1,8,dyna_q,Dyna-Q,0,8500,0.0
+p0.60,p0.60_m1,8,dyna_q,Dyna-Q,0,9000,0.0
+p0.60,p0.60_m1,8,dyna_q,Dyna-Q,0,9500,0.0
+p0.60,p0.60_m1,8,dyna_q,Dyna-Q,0,10000,0.0
+p0.60,p0.60_m2,9,q_learning,Q-learning,0,0,0.0
+p0.60,p0.60_m2,9,q_learning,Q-learning,0,500,0.0
+p0.60,p0.60_m2,9,q_learning,Q-learning,0,1000,0.0
+p0.60,p0.60_m2,9,q_learning,Q-learning,0,1500,0.0
+p0.60,p0.60_m2,9,q_learning,Q-learning,0,2000,0.0
+p0.60,p0.60_m2,9,q_learning,Q-learning,0,2500,0.0
+p0.60,p0.60_m2,9,q_learning,Q-learning,0,3000,0.0
+p0.60,p0.60_m2,9,q_learning,Q-learning,0,3500,0.0
+p0.60,p0.60_m2,9,q_learning,Q-learning,0,4000,0.0
+p0.60,p0.60_m2,9,q_learning,Q-learning,0,4500,0.0
+p0.60,p0.60_m2,9,q_learning,Q-learning,0,5000,0.0
+p0.60,p0.60_m2,9,q_learning,Q-learning,0,5500,0.0
+p0.60,p0.60_m2,9,q_learning,Q-learning,0,6000,0.0
+p0.60,p0.60_m2,9,q_learning,Q-learning,0,6500,0.0
+p0.60,p0.60_m2,9,q_learning,Q-learning,0,7000,0.0
+p0.60,p0.60_m2,9,q_learning,Q-learning,0,7500,0.0
+p0.60,p0.60_m2,9,q_learning,Q-learning,0,8000,0.0
+p0.60,p0.60_m2,9,q_learning,Q-learning,0,8500,0.0
+p0.60,p0.60_m2,9,q_learning,Q-learning,0,9000,0.0
+p0.60,p0.60_m2,9,q_learning,Q-learning,0,9500,0.0
+p0.60,p0.60_m2,9,q_learning,Q-learning,0,10000,0.0
+p0.60,p0.60_m2,9,sarsa,SARSA,0,0,0.0
+p0.60,p0.60_m2,9,sarsa,SARSA,0,500,0.0
+p0.60,p0.60_m2,9,sarsa,SARSA,0,1000,0.0
+p0.60,p0.60_m2,9,sarsa,SARSA,0,1500,0.0
+p0.60,p0.60_m2,9,sarsa,SARSA,0,2000,0.0
+p0.60,p0.60_m2,9,sarsa,SARSA,0,2500,0.0
+p0.60,p0.60_m2,9,sarsa,SARSA,0,3000,0.0
+p0.60,p0.60_m2,9,sarsa,SARSA,0,3500,0.0
+p0.60,p0.60_m2,9,sarsa,SARSA,0,4000,0.0
+p0.60,p0.60_m2,9,sarsa,SARSA,0,4500,0.0
+p0.60,p0.60_m2,9,sarsa,SARSA,0,5000,0.0
+p0.60,p0.60_m2,9,sarsa,SARSA,0,5500,0.0
+p0.60,p0.60_m2,9,sarsa,SARSA,0,6000,0.0
+p0.60,p0.60_m2,9,sarsa,SARSA,0,6500,0.0
+p0.60,p0.60_m2,9,sarsa,SARSA,0,7000,0.0
+p0.60,p0.60_m2,9,sarsa,SARSA,0,7500,0.0
+p0.60,p0.60_m2,9,sarsa,SARSA,0,8000,0.0
+p0.60,p0.60_m2,9,sarsa,SARSA,0,8500,0.0
+p0.60,p0.60_m2,9,sarsa,SARSA,0,9000,0.0
+p0.60,p0.60_m2,9,sarsa,SARSA,0,9500,0.0
+p0.60,p0.60_m2,9,sarsa,SARSA,0,10000,0.0
+p0.60,p0.60_m2,9,expected_sarsa,Expected SARSA,0,0,0.0
+p0.60,p0.60_m2,9,expected_sarsa,Expected SARSA,0,500,0.0
+p0.60,p0.60_m2,9,expected_sarsa,Expected SARSA,0,1000,0.0
+p0.60,p0.60_m2,9,expected_sarsa,Expected SARSA,0,1500,0.0
+p0.60,p0.60_m2,9,expected_sarsa,Expected SARSA,0,2000,0.0
+p0.60,p0.60_m2,9,expected_sarsa,Expected SARSA,0,2500,0.0
+p0.60,p0.60_m2,9,expected_sarsa,Expected SARSA,0,3000,0.0
+p0.60,p0.60_m2,9,expected_sarsa,Expected SARSA,0,3500,0.0
+p0.60,p0.60_m2,9,expected_sarsa,Expected SARSA,0,4000,0.0
+p0.60,p0.60_m2,9,expected_sarsa,Expected SARSA,0,4500,0.0
+p0.60,p0.60_m2,9,expected_sarsa,Expected SARSA,0,5000,0.0
+p0.60,p0.60_m2,9,expected_sarsa,Expected SARSA,0,5500,0.0
+p0.60,p0.60_m2,9,expected_sarsa,Expected SARSA,0,6000,0.0
+p0.60,p0.60_m2,9,expected_sarsa,Expected SARSA,0,6500,0.0
+p0.60,p0.60_m2,9,expected_sarsa,Expected SARSA,0,7000,0.0
+p0.60,p0.60_m2,9,expected_sarsa,Expected SARSA,0,7500,0.0
+p0.60,p0.60_m2,9,expected_sarsa,Expected SARSA,0,8000,0.0
+p0.60,p0.60_m2,9,expected_sarsa,Expected SARSA,0,8500,0.0
+p0.60,p0.60_m2,9,expected_sarsa,Expected SARSA,0,9000,0.0
+p0.60,p0.60_m2,9,expected_sarsa,Expected SARSA,0,9500,0.0
+p0.60,p0.60_m2,9,expected_sarsa,Expected SARSA,0,10000,0.0
+p0.60,p0.60_m2,9,sarsa_lambda,SARSA(lambda),0,0,0.0
+p0.60,p0.60_m2,9,sarsa_lambda,SARSA(lambda),0,500,0.0
+p0.60,p0.60_m2,9,sarsa_lambda,SARSA(lambda),0,1000,0.0
+p0.60,p0.60_m2,9,sarsa_lambda,SARSA(lambda),0,1500,0.0
+p0.60,p0.60_m2,9,sarsa_lambda,SARSA(lambda),0,2000,0.0
+p0.60,p0.60_m2,9,sarsa_lambda,SARSA(lambda),0,2500,0.0
+p0.60,p0.60_m2,9,sarsa_lambda,SARSA(lambda),0,3000,0.0
+p0.60,p0.60_m2,9,sarsa_lambda,SARSA(lambda),0,3500,0.0
+p0.60,p0.60_m2,9,sarsa_lambda,SARSA(lambda),0,4000,0.0
+p0.60,p0.60_m2,9,sarsa_lambda,SARSA(lambda),0,4500,0.0
+p0.60,p0.60_m2,9,sarsa_lambda,SARSA(lambda),0,5000,0.0
+p0.60,p0.60_m2,9,sarsa_lambda,SARSA(lambda),0,5500,0.0
+p0.60,p0.60_m2,9,sarsa_lambda,SARSA(lambda),0,6000,0.0
+p0.60,p0.60_m2,9,sarsa_lambda,SARSA(lambda),0,6500,0.0
+p0.60,p0.60_m2,9,sarsa_lambda,SARSA(lambda),0,7000,0.0
+p0.60,p0.60_m2,9,sarsa_lambda,SARSA(lambda),0,7500,0.0
+p0.60,p0.60_m2,9,sarsa_lambda,SARSA(lambda),0,8000,0.0
+p0.60,p0.60_m2,9,sarsa_lambda,SARSA(lambda),0,8500,0.0
+p0.60,p0.60_m2,9,sarsa_lambda,SARSA(lambda),0,9000,0.0
+p0.60,p0.60_m2,9,sarsa_lambda,SARSA(lambda),0,9500,0.0
+p0.60,p0.60_m2,9,sarsa_lambda,SARSA(lambda),0,10000,0.0
+p0.60,p0.60_m2,9,q_lambda,Q(lambda),0,0,0.0
+p0.60,p0.60_m2,9,q_lambda,Q(lambda),0,500,0.0
+p0.60,p0.60_m2,9,q_lambda,Q(lambda),0,1000,0.0
+p0.60,p0.60_m2,9,q_lambda,Q(lambda),0,1500,0.0
+p0.60,p0.60_m2,9,q_lambda,Q(lambda),0,2000,0.0
+p0.60,p0.60_m2,9,q_lambda,Q(lambda),0,2500,0.0
+p0.60,p0.60_m2,9,q_lambda,Q(lambda),0,3000,0.0
+p0.60,p0.60_m2,9,q_lambda,Q(lambda),0,3500,0.0
+p0.60,p0.60_m2,9,q_lambda,Q(lambda),0,4000,0.0
+p0.60,p0.60_m2,9,q_lambda,Q(lambda),0,4500,0.0
+p0.60,p0.60_m2,9,q_lambda,Q(lambda),0,5000,0.0
+p0.60,p0.60_m2,9,q_lambda,Q(lambda),0,5500,0.0
+p0.60,p0.60_m2,9,q_lambda,Q(lambda),0,6000,0.0
+p0.60,p0.60_m2,9,q_lambda,Q(lambda),0,6500,0.0
+p0.60,p0.60_m2,9,q_lambda,Q(lambda),0,7000,0.0
+p0.60,p0.60_m2,9,q_lambda,Q(lambda),0,7500,0.0
+p0.60,p0.60_m2,9,q_lambda,Q(lambda),0,8000,0.0
+p0.60,p0.60_m2,9,q_lambda,Q(lambda),0,8500,0.0
+p0.60,p0.60_m2,9,q_lambda,Q(lambda),0,9000,0.0
+p0.60,p0.60_m2,9,q_lambda,Q(lambda),0,9500,0.0
+p0.60,p0.60_m2,9,q_lambda,Q(lambda),0,10000,0.0
+p0.60,p0.60_m2,9,optimistic_q,Optimistic Q,0,0,0.0
+p0.60,p0.60_m2,9,optimistic_q,Optimistic Q,0,500,0.0
+p0.60,p0.60_m2,9,optimistic_q,Optimistic Q,0,1000,0.0
+p0.60,p0.60_m2,9,optimistic_q,Optimistic Q,0,1500,0.0
+p0.60,p0.60_m2,9,optimistic_q,Optimistic Q,0,2000,0.0
+p0.60,p0.60_m2,9,optimistic_q,Optimistic Q,0,2500,0.0
+p0.60,p0.60_m2,9,optimistic_q,Optimistic Q,0,3000,0.0
+p0.60,p0.60_m2,9,optimistic_q,Optimistic Q,0,3500,0.0
+p0.60,p0.60_m2,9,optimistic_q,Optimistic Q,0,4000,0.0
+p0.60,p0.60_m2,9,optimistic_q,Optimistic Q,0,4500,0.0
+p0.60,p0.60_m2,9,optimistic_q,Optimistic Q,0,5000,0.0
+p0.60,p0.60_m2,9,optimistic_q,Optimistic Q,0,5500,0.0
+p0.60,p0.60_m2,9,optimistic_q,Optimistic Q,0,6000,0.0
+p0.60,p0.60_m2,9,optimistic_q,Optimistic Q,0,6500,0.0
+p0.60,p0.60_m2,9,optimistic_q,Optimistic Q,0,7000,0.0
+p0.60,p0.60_m2,9,optimistic_q,Optimistic Q,0,7500,0.0
+p0.60,p0.60_m2,9,optimistic_q,Optimistic Q,0,8000,0.0
+p0.60,p0.60_m2,9,optimistic_q,Optimistic Q,0,8500,0.0
+p0.60,p0.60_m2,9,optimistic_q,Optimistic Q,0,9000,0.0
+p0.60,p0.60_m2,9,optimistic_q,Optimistic Q,0,9500,0.0
+p0.60,p0.60_m2,9,optimistic_q,Optimistic Q,0,10000,0.0
+p0.60,p0.60_m2,9,dyna_q,Dyna-Q,0,0,0.0
+p0.60,p0.60_m2,9,dyna_q,Dyna-Q,0,500,0.0
+p0.60,p0.60_m2,9,dyna_q,Dyna-Q,0,1000,0.0
+p0.60,p0.60_m2,9,dyna_q,Dyna-Q,0,1500,0.0
+p0.60,p0.60_m2,9,dyna_q,Dyna-Q,0,2000,0.0
+p0.60,p0.60_m2,9,dyna_q,Dyna-Q,0,2500,0.0
+p0.60,p0.60_m2,9,dyna_q,Dyna-Q,0,3000,0.0
+p0.60,p0.60_m2,9,dyna_q,Dyna-Q,0,3500,0.0
+p0.60,p0.60_m2,9,dyna_q,Dyna-Q,0,4000,0.0
+p0.60,p0.60_m2,9,dyna_q,Dyna-Q,0,4500,0.0
+p0.60,p0.60_m2,9,dyna_q,Dyna-Q,0,5000,0.0
+p0.60,p0.60_m2,9,dyna_q,Dyna-Q,0,5500,0.0
+p0.60,p0.60_m2,9,dyna_q,Dyna-Q,0,6000,0.0
+p0.60,p0.60_m2,9,dyna_q,Dyna-Q,0,6500,0.0
+p0.60,p0.60_m2,9,dyna_q,Dyna-Q,0,7000,0.0
+p0.60,p0.60_m2,9,dyna_q,Dyna-Q,0,7500,0.0
+p0.60,p0.60_m2,9,dyna_q,Dyna-Q,0,8000,0.0
+p0.60,p0.60_m2,9,dyna_q,Dyna-Q,0,8500,0.0
+p0.60,p0.60_m2,9,dyna_q,Dyna-Q,0,9000,0.0
+p0.60,p0.60_m2,9,dyna_q,Dyna-Q,0,9500,0.0
+p0.60,p0.60_m2,9,dyna_q,Dyna-Q,0,10000,0.0
+p0.50,p0.50_m0,10,q_learning,Q-learning,0,0,0.0
+p0.50,p0.50_m0,10,q_learning,Q-learning,0,500,0.0
+p0.50,p0.50_m0,10,q_learning,Q-learning,0,1000,0.0
+p0.50,p0.50_m0,10,q_learning,Q-learning,0,1500,0.0
+p0.50,p0.50_m0,10,q_learning,Q-learning,0,2000,0.0
+p0.50,p0.50_m0,10,q_learning,Q-learning,0,2500,0.0
+p0.50,p0.50_m0,10,q_learning,Q-learning,0,3000,0.0
+p0.50,p0.50_m0,10,q_learning,Q-learning,0,3500,0.0
+p0.50,p0.50_m0,10,q_learning,Q-learning,0,4000,0.0
+p0.50,p0.50_m0,10,q_learning,Q-learning,0,4500,0.0
+p0.50,p0.50_m0,10,q_learning,Q-learning,0,5000,0.0
+p0.50,p0.50_m0,10,q_learning,Q-learning,0,5500,0.0
+p0.50,p0.50_m0,10,q_learning,Q-learning,0,6000,0.0
+p0.50,p0.50_m0,10,q_learning,Q-learning,0,6500,0.0
+p0.50,p0.50_m0,10,q_learning,Q-learning,0,7000,0.0
+p0.50,p0.50_m0,10,q_learning,Q-learning,0,7500,0.0
+p0.50,p0.50_m0,10,q_learning,Q-learning,0,8000,0.0
+p0.50,p0.50_m0,10,q_learning,Q-learning,0,8500,0.0
+p0.50,p0.50_m0,10,q_learning,Q-learning,0,9000,0.0
+p0.50,p0.50_m0,10,q_learning,Q-learning,0,9500,0.0
+p0.50,p0.50_m0,10,q_learning,Q-learning,0,10000,0.0
+p0.50,p0.50_m0,10,sarsa,SARSA,0,0,0.0
+p0.50,p0.50_m0,10,sarsa,SARSA,0,500,0.0
+p0.50,p0.50_m0,10,sarsa,SARSA,0,1000,0.0
+p0.50,p0.50_m0,10,sarsa,SARSA,0,1500,0.0
+p0.50,p0.50_m0,10,sarsa,SARSA,0,2000,0.0
+p0.50,p0.50_m0,10,sarsa,SARSA,0,2500,0.0
+p0.50,p0.50_m0,10,sarsa,SARSA,0,3000,0.0
+p0.50,p0.50_m0,10,sarsa,SARSA,0,3500,0.0
+p0.50,p0.50_m0,10,sarsa,SARSA,0,4000,0.0
+p0.50,p0.50_m0,10,sarsa,SARSA,0,4500,0.0
+p0.50,p0.50_m0,10,sarsa,SARSA,0,5000,0.0
+p0.50,p0.50_m0,10,sarsa,SARSA,0,5500,0.0
+p0.50,p0.50_m0,10,sarsa,SARSA,0,6000,0.0
+p0.50,p0.50_m0,10,sarsa,SARSA,0,6500,0.0
+p0.50,p0.50_m0,10,sarsa,SARSA,0,7000,0.0
+p0.50,p0.50_m0,10,sarsa,SARSA,0,7500,0.0
+p0.50,p0.50_m0,10,sarsa,SARSA,0,8000,0.0
+p0.50,p0.50_m0,10,sarsa,SARSA,0,8500,0.0
+p0.50,p0.50_m0,10,sarsa,SARSA,0,9000,0.0
+p0.50,p0.50_m0,10,sarsa,SARSA,0,9500,0.0
+p0.50,p0.50_m0,10,sarsa,SARSA,0,10000,0.0
+p0.50,p0.50_m0,10,expected_sarsa,Expected SARSA,0,0,0.0
+p0.50,p0.50_m0,10,expected_sarsa,Expected SARSA,0,500,0.0
+p0.50,p0.50_m0,10,expected_sarsa,Expected SARSA,0,1000,0.0
+p0.50,p0.50_m0,10,expected_sarsa,Expected SARSA,0,1500,0.0
+p0.50,p0.50_m0,10,expected_sarsa,Expected SARSA,0,2000,0.0
+p0.50,p0.50_m0,10,expected_sarsa,Expected SARSA,0,2500,0.0
+p0.50,p0.50_m0,10,expected_sarsa,Expected SARSA,0,3000,0.0
+p0.50,p0.50_m0,10,expected_sarsa,Expected SARSA,0,3500,0.0
+p0.50,p0.50_m0,10,expected_sarsa,Expected SARSA,0,4000,0.0
+p0.50,p0.50_m0,10,expected_sarsa,Expected SARSA,0,4500,0.0
+p0.50,p0.50_m0,10,expected_sarsa,Expected SARSA,0,5000,0.0
+p0.50,p0.50_m0,10,expected_sarsa,Expected SARSA,0,5500,0.0
+p0.50,p0.50_m0,10,expected_sarsa,Expected SARSA,0,6000,0.0
+p0.50,p0.50_m0,10,expected_sarsa,Expected SARSA,0,6500,0.0
+p0.50,p0.50_m0,10,expected_sarsa,Expected SARSA,0,7000,0.0
+p0.50,p0.50_m0,10,expected_sarsa,Expected SARSA,0,7500,0.0
+p0.50,p0.50_m0,10,expected_sarsa,Expected SARSA,0,8000,0.0
+p0.50,p0.50_m0,10,expected_sarsa,Expected SARSA,0,8500,0.0
+p0.50,p0.50_m0,10,expected_sarsa,Expected SARSA,0,9000,0.0
+p0.50,p0.50_m0,10,expected_sarsa,Expected SARSA,0,9500,0.0
+p0.50,p0.50_m0,10,expected_sarsa,Expected SARSA,0,10000,0.0
+p0.50,p0.50_m0,10,sarsa_lambda,SARSA(lambda),0,0,0.0
+p0.50,p0.50_m0,10,sarsa_lambda,SARSA(lambda),0,500,0.0
+p0.50,p0.50_m0,10,sarsa_lambda,SARSA(lambda),0,1000,0.0
+p0.50,p0.50_m0,10,sarsa_lambda,SARSA(lambda),0,1500,0.0
+p0.50,p0.50_m0,10,sarsa_lambda,SARSA(lambda),0,2000,0.0
+p0.50,p0.50_m0,10,sarsa_lambda,SARSA(lambda),0,2500,0.0
+p0.50,p0.50_m0,10,sarsa_lambda,SARSA(lambda),0,3000,0.0
+p0.50,p0.50_m0,10,sarsa_lambda,SARSA(lambda),0,3500,0.0
+p0.50,p0.50_m0,10,sarsa_lambda,SARSA(lambda),0,4000,0.0
+p0.50,p0.50_m0,10,sarsa_lambda,SARSA(lambda),0,4500,0.0
+p0.50,p0.50_m0,10,sarsa_lambda,SARSA(lambda),0,5000,0.0
+p0.50,p0.50_m0,10,sarsa_lambda,SARSA(lambda),0,5500,0.0
+p0.50,p0.50_m0,10,sarsa_lambda,SARSA(lambda),0,6000,0.0
+p0.50,p0.50_m0,10,sarsa_lambda,SARSA(lambda),0,6500,0.0
+p0.50,p0.50_m0,10,sarsa_lambda,SARSA(lambda),0,7000,0.0
+p0.50,p0.50_m0,10,sarsa_lambda,SARSA(lambda),0,7500,0.0
+p0.50,p0.50_m0,10,sarsa_lambda,SARSA(lambda),0,8000,0.0
+p0.50,p0.50_m0,10,sarsa_lambda,SARSA(lambda),0,8500,0.0
+p0.50,p0.50_m0,10,sarsa_lambda,SARSA(lambda),0,9000,0.0
+p0.50,p0.50_m0,10,sarsa_lambda,SARSA(lambda),0,9500,0.0
+p0.50,p0.50_m0,10,sarsa_lambda,SARSA(lambda),0,10000,0.0
+p0.50,p0.50_m0,10,q_lambda,Q(lambda),0,0,0.0
+p0.50,p0.50_m0,10,q_lambda,Q(lambda),0,500,0.0
+p0.50,p0.50_m0,10,q_lambda,Q(lambda),0,1000,0.0
+p0.50,p0.50_m0,10,q_lambda,Q(lambda),0,1500,0.0
+p0.50,p0.50_m0,10,q_lambda,Q(lambda),0,2000,0.0
+p0.50,p0.50_m0,10,q_lambda,Q(lambda),0,2500,0.0
+p0.50,p0.50_m0,10,q_lambda,Q(lambda),0,3000,0.0
+p0.50,p0.50_m0,10,q_lambda,Q(lambda),0,3500,0.0
+p0.50,p0.50_m0,10,q_lambda,Q(lambda),0,4000,0.0
+p0.50,p0.50_m0,10,q_lambda,Q(lambda),0,4500,0.0
+p0.50,p0.50_m0,10,q_lambda,Q(lambda),0,5000,0.0
+p0.50,p0.50_m0,10,q_lambda,Q(lambda),0,5500,0.0
+p0.50,p0.50_m0,10,q_lambda,Q(lambda),0,6000,0.0
+p0.50,p0.50_m0,10,q_lambda,Q(lambda),0,6500,0.0
+p0.50,p0.50_m0,10,q_lambda,Q(lambda),0,7000,0.0
+p0.50,p0.50_m0,10,q_lambda,Q(lambda),0,7500,0.0
+p0.50,p0.50_m0,10,q_lambda,Q(lambda),0,8000,0.0
+p0.50,p0.50_m0,10,q_lambda,Q(lambda),0,8500,0.0
+p0.50,p0.50_m0,10,q_lambda,Q(lambda),0,9000,0.0
+p0.50,p0.50_m0,10,q_lambda,Q(lambda),0,9500,0.0
+p0.50,p0.50_m0,10,q_lambda,Q(lambda),0,10000,0.0
+p0.50,p0.50_m0,10,optimistic_q,Optimistic Q,0,0,0.0
+p0.50,p0.50_m0,10,optimistic_q,Optimistic Q,0,500,0.0
+p0.50,p0.50_m0,10,optimistic_q,Optimistic Q,0,1000,0.0
+p0.50,p0.50_m0,10,optimistic_q,Optimistic Q,0,1500,0.0
+p0.50,p0.50_m0,10,optimistic_q,Optimistic Q,0,2000,0.0
+p0.50,p0.50_m0,10,optimistic_q,Optimistic Q,0,2500,0.0
+p0.50,p0.50_m0,10,optimistic_q,Optimistic Q,0,3000,0.0
+p0.50,p0.50_m0,10,optimistic_q,Optimistic Q,0,3500,0.0
+p0.50,p0.50_m0,10,optimistic_q,Optimistic Q,0,4000,0.0
+p0.50,p0.50_m0,10,optimistic_q,Optimistic Q,0,4500,0.0
+p0.50,p0.50_m0,10,optimistic_q,Optimistic Q,0,5000,0.0
+p0.50,p0.50_m0,10,optimistic_q,Optimistic Q,0,5500,0.0
+p0.50,p0.50_m0,10,optimistic_q,Optimistic Q,0,6000,0.0
+p0.50,p0.50_m0,10,optimistic_q,Optimistic Q,0,6500,0.0
+p0.50,p0.50_m0,10,optimistic_q,Optimistic Q,0,7000,0.0
+p0.50,p0.50_m0,10,optimistic_q,Optimistic Q,0,7500,0.0
+p0.50,p0.50_m0,10,optimistic_q,Optimistic Q,0,8000,0.0
+p0.50,p0.50_m0,10,optimistic_q,Optimistic Q,0,8500,0.0
+p0.50,p0.50_m0,10,optimistic_q,Optimistic Q,0,9000,0.0
+p0.50,p0.50_m0,10,optimistic_q,Optimistic Q,0,9500,0.0
+p0.50,p0.50_m0,10,optimistic_q,Optimistic Q,0,10000,0.0
+p0.50,p0.50_m0,10,dyna_q,Dyna-Q,0,0,0.0
+p0.50,p0.50_m0,10,dyna_q,Dyna-Q,0,500,0.0
+p0.50,p0.50_m0,10,dyna_q,Dyna-Q,0,1000,0.0
+p0.50,p0.50_m0,10,dyna_q,Dyna-Q,0,1500,0.0
+p0.50,p0.50_m0,10,dyna_q,Dyna-Q,0,2000,0.0
+p0.50,p0.50_m0,10,dyna_q,Dyna-Q,0,2500,0.0
+p0.50,p0.50_m0,10,dyna_q,Dyna-Q,0,3000,0.0
+p0.50,p0.50_m0,10,dyna_q,Dyna-Q,0,3500,0.0
+p0.50,p0.50_m0,10,dyna_q,Dyna-Q,0,4000,0.0
+p0.50,p0.50_m0,10,dyna_q,Dyna-Q,0,4500,0.0
+p0.50,p0.50_m0,10,dyna_q,Dyna-Q,0,5000,0.0
+p0.50,p0.50_m0,10,dyna_q,Dyna-Q,0,5500,0.0
+p0.50,p0.50_m0,10,dyna_q,Dyna-Q,0,6000,0.0
+p0.50,p0.50_m0,10,dyna_q,Dyna-Q,0,6500,0.0
+p0.50,p0.50_m0,10,dyna_q,Dyna-Q,0,7000,0.0
+p0.50,p0.50_m0,10,dyna_q,Dyna-Q,0,7500,0.0
+p0.50,p0.50_m0,10,dyna_q,Dyna-Q,0,8000,0.0
+p0.50,p0.50_m0,10,dyna_q,Dyna-Q,0,8500,0.0
+p0.50,p0.50_m0,10,dyna_q,Dyna-Q,0,9000,0.0
+p0.50,p0.50_m0,10,dyna_q,Dyna-Q,0,9500,0.0
+p0.50,p0.50_m0,10,dyna_q,Dyna-Q,0,10000,0.0
+p0.50,p0.50_m1,11,q_learning,Q-learning,0,0,0.0
+p0.50,p0.50_m1,11,q_learning,Q-learning,0,500,0.0
+p0.50,p0.50_m1,11,q_learning,Q-learning,0,1000,0.0
+p0.50,p0.50_m1,11,q_learning,Q-learning,0,1500,0.0
+p0.50,p0.50_m1,11,q_learning,Q-learning,0,2000,0.0
+p0.50,p0.50_m1,11,q_learning,Q-learning,0,2500,0.0
+p0.50,p0.50_m1,11,q_learning,Q-learning,0,3000,0.0
+p0.50,p0.50_m1,11,q_learning,Q-learning,0,3500,0.0
+p0.50,p0.50_m1,11,q_learning,Q-learning,0,4000,0.0
+p0.50,p0.50_m1,11,q_learning,Q-learning,0,4500,0.0
+p0.50,p0.50_m1,11,q_learning,Q-learning,0,5000,0.0
+p0.50,p0.50_m1,11,q_learning,Q-learning,0,5500,0.0
+p0.50,p0.50_m1,11,q_learning,Q-learning,0,6000,0.0
+p0.50,p0.50_m1,11,q_learning,Q-learning,0,6500,0.0
+p0.50,p0.50_m1,11,q_learning,Q-learning,0,7000,0.0
+p0.50,p0.50_m1,11,q_learning,Q-learning,0,7500,0.0
+p0.50,p0.50_m1,11,q_learning,Q-learning,0,8000,0.0
+p0.50,p0.50_m1,11,q_learning,Q-learning,0,8500,0.0
+p0.50,p0.50_m1,11,q_learning,Q-learning,0,9000,0.0
+p0.50,p0.50_m1,11,q_learning,Q-learning,0,9500,0.0
+p0.50,p0.50_m1,11,q_learning,Q-learning,0,10000,0.0
+p0.50,p0.50_m1,11,sarsa,SARSA,0,0,0.0
+p0.50,p0.50_m1,11,sarsa,SARSA,0,500,0.0
+p0.50,p0.50_m1,11,sarsa,SARSA,0,1000,0.0
+p0.50,p0.50_m1,11,sarsa,SARSA,0,1500,0.0
+p0.50,p0.50_m1,11,sarsa,SARSA,0,2000,0.0
+p0.50,p0.50_m1,11,sarsa,SARSA,0,2500,0.0
+p0.50,p0.50_m1,11,sarsa,SARSA,0,3000,0.0
+p0.50,p0.50_m1,11,sarsa,SARSA,0,3500,0.0
+p0.50,p0.50_m1,11,sarsa,SARSA,0,4000,0.0
+p0.50,p0.50_m1,11,sarsa,SARSA,0,4500,0.0
+p0.50,p0.50_m1,11,sarsa,SARSA,0,5000,0.0
+p0.50,p0.50_m1,11,sarsa,SARSA,0,5500,0.0
+p0.50,p0.50_m1,11,sarsa,SARSA,0,6000,0.0
+p0.50,p0.50_m1,11,sarsa,SARSA,0,6500,0.0
+p0.50,p0.50_m1,11,sarsa,SARSA,0,7000,0.0
+p0.50,p0.50_m1,11,sarsa,SARSA,0,7500,0.0
+p0.50,p0.50_m1,11,sarsa,SARSA,0,8000,0.0
+p0.50,p0.50_m1,11,sarsa,SARSA,0,8500,0.0
+p0.50,p0.50_m1,11,sarsa,SARSA,0,9000,0.0
+p0.50,p0.50_m1,11,sarsa,SARSA,0,9500,0.0
+p0.50,p0.50_m1,11,sarsa,SARSA,0,10000,0.0
+p0.50,p0.50_m1,11,expected_sarsa,Expected SARSA,0,0,0.0
+p0.50,p0.50_m1,11,expected_sarsa,Expected SARSA,0,500,0.0
+p0.50,p0.50_m1,11,expected_sarsa,Expected SARSA,0,1000,0.0
+p0.50,p0.50_m1,11,expected_sarsa,Expected SARSA,0,1500,0.0
+p0.50,p0.50_m1,11,expected_sarsa,Expected SARSA,0,2000,0.0
+p0.50,p0.50_m1,11,expected_sarsa,Expected SARSA,0,2500,0.0
+p0.50,p0.50_m1,11,expected_sarsa,Expected SARSA,0,3000,0.0
+p0.50,p0.50_m1,11,expected_sarsa,Expected SARSA,0,3500,0.0
+p0.50,p0.50_m1,11,expected_sarsa,Expected SARSA,0,4000,0.0
+p0.50,p0.50_m1,11,expected_sarsa,Expected SARSA,0,4500,0.0
+p0.50,p0.50_m1,11,expected_sarsa,Expected SARSA,0,5000,0.0
+p0.50,p0.50_m1,11,expected_sarsa,Expected SARSA,0,5500,0.0
+p0.50,p0.50_m1,11,expected_sarsa,Expected SARSA,0,6000,0.0
+p0.50,p0.50_m1,11,expected_sarsa,Expected SARSA,0,6500,0.0
+p0.50,p0.50_m1,11,expected_sarsa,Expected SARSA,0,7000,0.0
+p0.50,p0.50_m1,11,expected_sarsa,Expected SARSA,0,7500,0.0
+p0.50,p0.50_m1,11,expected_sarsa,Expected SARSA,0,8000,0.0
+p0.50,p0.50_m1,11,expected_sarsa,Expected SARSA,0,8500,0.0
+p0.50,p0.50_m1,11,expected_sarsa,Expected SARSA,0,9000,0.0
+p0.50,p0.50_m1,11,expected_sarsa,Expected SARSA,0,9500,0.0
+p0.50,p0.50_m1,11,expected_sarsa,Expected SARSA,0,10000,0.0
+p0.50,p0.50_m1,11,sarsa_lambda,SARSA(lambda),0,0,0.0
+p0.50,p0.50_m1,11,sarsa_lambda,SARSA(lambda),0,500,0.0
+p0.50,p0.50_m1,11,sarsa_lambda,SARSA(lambda),0,1000,0.0
+p0.50,p0.50_m1,11,sarsa_lambda,SARSA(lambda),0,1500,0.0
+p0.50,p0.50_m1,11,sarsa_lambda,SARSA(lambda),0,2000,0.0
+p0.50,p0.50_m1,11,sarsa_lambda,SARSA(lambda),0,2500,0.0
+p0.50,p0.50_m1,11,sarsa_lambda,SARSA(lambda),0,3000,0.0
+p0.50,p0.50_m1,11,sarsa_lambda,SARSA(lambda),0,3500,0.0
+p0.50,p0.50_m1,11,sarsa_lambda,SARSA(lambda),0,4000,0.0
+p0.50,p0.50_m1,11,sarsa_lambda,SARSA(lambda),0,4500,0.0
+p0.50,p0.50_m1,11,sarsa_lambda,SARSA(lambda),0,5000,0.0
+p0.50,p0.50_m1,11,sarsa_lambda,SARSA(lambda),0,5500,0.0
+p0.50,p0.50_m1,11,sarsa_lambda,SARSA(lambda),0,6000,0.0
+p0.50,p0.50_m1,11,sarsa_lambda,SARSA(lambda),0,6500,0.0
+p0.50,p0.50_m1,11,sarsa_lambda,SARSA(lambda),0,7000,0.0
+p0.50,p0.50_m1,11,sarsa_lambda,SARSA(lambda),0,7500,0.0
+p0.50,p0.50_m1,11,sarsa_lambda,SARSA(lambda),0,8000,0.0
+p0.50,p0.50_m1,11,sarsa_lambda,SARSA(lambda),0,8500,0.0
+p0.50,p0.50_m1,11,sarsa_lambda,SARSA(lambda),0,9000,0.0
+p0.50,p0.50_m1,11,sarsa_lambda,SARSA(lambda),0,9500,0.0
+p0.50,p0.50_m1,11,sarsa_lambda,SARSA(lambda),0,10000,0.0
+p0.50,p0.50_m1,11,q_lambda,Q(lambda),0,0,0.0
+p0.50,p0.50_m1,11,q_lambda,Q(lambda),0,500,0.0
+p0.50,p0.50_m1,11,q_lambda,Q(lambda),0,1000,0.0
+p0.50,p0.50_m1,11,q_lambda,Q(lambda),0,1500,0.0
+p0.50,p0.50_m1,11,q_lambda,Q(lambda),0,2000,0.0
+p0.50,p0.50_m1,11,q_lambda,Q(lambda),0,2500,0.0
+p0.50,p0.50_m1,11,q_lambda,Q(lambda),0,3000,0.0
+p0.50,p0.50_m1,11,q_lambda,Q(lambda),0,3500,0.0
+p0.50,p0.50_m1,11,q_lambda,Q(lambda),0,4000,0.0
+p0.50,p0.50_m1,11,q_lambda,Q(lambda),0,4500,0.0
+p0.50,p0.50_m1,11,q_lambda,Q(lambda),0,5000,0.0
+p0.50,p0.50_m1,11,q_lambda,Q(lambda),0,5500,0.0
+p0.50,p0.50_m1,11,q_lambda,Q(lambda),0,6000,0.0
+p0.50,p0.50_m1,11,q_lambda,Q(lambda),0,6500,0.0
+p0.50,p0.50_m1,11,q_lambda,Q(lambda),0,7000,0.0
+p0.50,p0.50_m1,11,q_lambda,Q(lambda),0,7500,0.0
+p0.50,p0.50_m1,11,q_lambda,Q(lambda),0,8000,0.0
+p0.50,p0.50_m1,11,q_lambda,Q(lambda),0,8500,0.0
+p0.50,p0.50_m1,11,q_lambda,Q(lambda),0,9000,0.0
+p0.50,p0.50_m1,11,q_lambda,Q(lambda),0,9500,0.0
+p0.50,p0.50_m1,11,q_lambda,Q(lambda),0,10000,0.0
+p0.50,p0.50_m1,11,optimistic_q,Optimistic Q,0,0,0.0
+p0.50,p0.50_m1,11,optimistic_q,Optimistic Q,0,500,0.0
+p0.50,p0.50_m1,11,optimistic_q,Optimistic Q,0,1000,0.0
+p0.50,p0.50_m1,11,optimistic_q,Optimistic Q,0,1500,0.0
+p0.50,p0.50_m1,11,optimistic_q,Optimistic Q,0,2000,0.0
+p0.50,p0.50_m1,11,optimistic_q,Optimistic Q,0,2500,0.0
+p0.50,p0.50_m1,11,optimistic_q,Optimistic Q,0,3000,0.0
+p0.50,p0.50_m1,11,optimistic_q,Optimistic Q,0,3500,0.0
+p0.50,p0.50_m1,11,optimistic_q,Optimistic Q,0,4000,0.01
+p0.50,p0.50_m1,11,optimistic_q,Optimistic Q,0,4500,0.0
+p0.50,p0.50_m1,11,optimistic_q,Optimistic Q,0,5000,0.0
+p0.50,p0.50_m1,11,optimistic_q,Optimistic Q,0,5500,0.0
+p0.50,p0.50_m1,11,optimistic_q,Optimistic Q,0,6000,0.01
+p0.50,p0.50_m1,11,optimistic_q,Optimistic Q,0,6500,0.0
+p0.50,p0.50_m1,11,optimistic_q,Optimistic Q,0,7000,0.01
+p0.50,p0.50_m1,11,optimistic_q,Optimistic Q,0,7500,0.0
+p0.50,p0.50_m1,11,optimistic_q,Optimistic Q,0,8000,0.0
+p0.50,p0.50_m1,11,optimistic_q,Optimistic Q,0,8500,0.0
+p0.50,p0.50_m1,11,optimistic_q,Optimistic Q,0,9000,0.0
+p0.50,p0.50_m1,11,optimistic_q,Optimistic Q,0,9500,0.0
+p0.50,p0.50_m1,11,optimistic_q,Optimistic Q,0,10000,0.0
+p0.50,p0.50_m1,11,dyna_q,Dyna-Q,0,0,0.0
+p0.50,p0.50_m1,11,dyna_q,Dyna-Q,0,500,0.0
+p0.50,p0.50_m1,11,dyna_q,Dyna-Q,0,1000,0.0
+p0.50,p0.50_m1,11,dyna_q,Dyna-Q,0,1500,0.0
+p0.50,p0.50_m1,11,dyna_q,Dyna-Q,0,2000,0.0
+p0.50,p0.50_m1,11,dyna_q,Dyna-Q,0,2500,0.0
+p0.50,p0.50_m1,11,dyna_q,Dyna-Q,0,3000,0.0
+p0.50,p0.50_m1,11,dyna_q,Dyna-Q,0,3500,0.0
+p0.50,p0.50_m1,11,dyna_q,Dyna-Q,0,4000,0.0
+p0.50,p0.50_m1,11,dyna_q,Dyna-Q,0,4500,0.0
+p0.50,p0.50_m1,11,dyna_q,Dyna-Q,0,5000,0.0
+p0.50,p0.50_m1,11,dyna_q,Dyna-Q,0,5500,0.0
+p0.50,p0.50_m1,11,dyna_q,Dyna-Q,0,6000,0.0
+p0.50,p0.50_m1,11,dyna_q,Dyna-Q,0,6500,0.0
+p0.50,p0.50_m1,11,dyna_q,Dyna-Q,0,7000,0.0
+p0.50,p0.50_m1,11,dyna_q,Dyna-Q,0,7500,0.0
+p0.50,p0.50_m1,11,dyna_q,Dyna-Q,0,8000,0.0
+p0.50,p0.50_m1,11,dyna_q,Dyna-Q,0,8500,0.0
+p0.50,p0.50_m1,11,dyna_q,Dyna-Q,0,9000,0.0
+p0.50,p0.50_m1,11,dyna_q,Dyna-Q,0,9500,0.0
+p0.50,p0.50_m1,11,dyna_q,Dyna-Q,0,10000,0.0
+p0.50,p0.50_m2,12,q_learning,Q-learning,0,0,0.0
+p0.50,p0.50_m2,12,q_learning,Q-learning,0,500,0.0
+p0.50,p0.50_m2,12,q_learning,Q-learning,0,1000,0.0
+p0.50,p0.50_m2,12,q_learning,Q-learning,0,1500,0.0
+p0.50,p0.50_m2,12,q_learning,Q-learning,0,2000,0.0
+p0.50,p0.50_m2,12,q_learning,Q-learning,0,2500,0.0
+p0.50,p0.50_m2,12,q_learning,Q-learning,0,3000,0.0
+p0.50,p0.50_m2,12,q_learning,Q-learning,0,3500,0.0
+p0.50,p0.50_m2,12,q_learning,Q-learning,0,4000,0.0
+p0.50,p0.50_m2,12,q_learning,Q-learning,0,4500,0.0
+p0.50,p0.50_m2,12,q_learning,Q-learning,0,5000,0.0
+p0.50,p0.50_m2,12,q_learning,Q-learning,0,5500,0.0
+p0.50,p0.50_m2,12,q_learning,Q-learning,0,6000,0.0
+p0.50,p0.50_m2,12,q_learning,Q-learning,0,6500,0.0
+p0.50,p0.50_m2,12,q_learning,Q-learning,0,7000,0.0
+p0.50,p0.50_m2,12,q_learning,Q-learning,0,7500,0.0
+p0.50,p0.50_m2,12,q_learning,Q-learning,0,8000,0.0
+p0.50,p0.50_m2,12,q_learning,Q-learning,0,8500,0.0
+p0.50,p0.50_m2,12,q_learning,Q-learning,0,9000,0.0
+p0.50,p0.50_m2,12,q_learning,Q-learning,0,9500,0.0
+p0.50,p0.50_m2,12,q_learning,Q-learning,0,10000,0.0
+p0.50,p0.50_m2,12,sarsa,SARSA,0,0,0.0
+p0.50,p0.50_m2,12,sarsa,SARSA,0,500,0.0
+p0.50,p0.50_m2,12,sarsa,SARSA,0,1000,0.0
+p0.50,p0.50_m2,12,sarsa,SARSA,0,1500,0.0
+p0.50,p0.50_m2,12,sarsa,SARSA,0,2000,0.0
+p0.50,p0.50_m2,12,sarsa,SARSA,0,2500,0.0
+p0.50,p0.50_m2,12,sarsa,SARSA,0,3000,0.0
+p0.50,p0.50_m2,12,sarsa,SARSA,0,3500,0.0
+p0.50,p0.50_m2,12,sarsa,SARSA,0,4000,0.0
+p0.50,p0.50_m2,12,sarsa,SARSA,0,4500,0.0
+p0.50,p0.50_m2,12,sarsa,SARSA,0,5000,0.0
+p0.50,p0.50_m2,12,sarsa,SARSA,0,5500,0.0
+p0.50,p0.50_m2,12,sarsa,SARSA,0,6000,0.0
+p0.50,p0.50_m2,12,sarsa,SARSA,0,6500,0.0
+p0.50,p0.50_m2,12,sarsa,SARSA,0,7000,0.0
+p0.50,p0.50_m2,12,sarsa,SARSA,0,7500,0.0
+p0.50,p0.50_m2,12,sarsa,SARSA,0,8000,0.0
+p0.50,p0.50_m2,12,sarsa,SARSA,0,8500,0.0
+p0.50,p0.50_m2,12,sarsa,SARSA,0,9000,0.0
+p0.50,p0.50_m2,12,sarsa,SARSA,0,9500,0.0
+p0.50,p0.50_m2,12,sarsa,SARSA,0,10000,0.0
+p0.50,p0.50_m2,12,expected_sarsa,Expected SARSA,0,0,0.0
+p0.50,p0.50_m2,12,expected_sarsa,Expected SARSA,0,500,0.0
+p0.50,p0.50_m2,12,expected_sarsa,Expected SARSA,0,1000,0.0
+p0.50,p0.50_m2,12,expected_sarsa,Expected SARSA,0,1500,0.0
+p0.50,p0.50_m2,12,expected_sarsa,Expected SARSA,0,2000,0.0
+p0.50,p0.50_m2,12,expected_sarsa,Expected SARSA,0,2500,0.0
+p0.50,p0.50_m2,12,expected_sarsa,Expected SARSA,0,3000,0.0
+p0.50,p0.50_m2,12,expected_sarsa,Expected SARSA,0,3500,0.0
+p0.50,p0.50_m2,12,expected_sarsa,Expected SARSA,0,4000,0.0
+p0.50,p0.50_m2,12,expected_sarsa,Expected SARSA,0,4500,0.0
+p0.50,p0.50_m2,12,expected_sarsa,Expected SARSA,0,5000,0.0
+p0.50,p0.50_m2,12,expected_sarsa,Expected SARSA,0,5500,0.0
+p0.50,p0.50_m2,12,expected_sarsa,Expected SARSA,0,6000,0.0
+p0.50,p0.50_m2,12,expected_sarsa,Expected SARSA,0,6500,0.0
+p0.50,p0.50_m2,12,expected_sarsa,Expected SARSA,0,7000,0.0
+p0.50,p0.50_m2,12,expected_sarsa,Expected SARSA,0,7500,0.0
+p0.50,p0.50_m2,12,expected_sarsa,Expected SARSA,0,8000,0.0
+p0.50,p0.50_m2,12,expected_sarsa,Expected SARSA,0,8500,0.0
+p0.50,p0.50_m2,12,expected_sarsa,Expected SARSA,0,9000,0.0
+p0.50,p0.50_m2,12,expected_sarsa,Expected SARSA,0,9500,0.0
+p0.50,p0.50_m2,12,expected_sarsa,Expected SARSA,0,10000,0.0
+p0.50,p0.50_m2,12,sarsa_lambda,SARSA(lambda),0,0,0.0
+p0.50,p0.50_m2,12,sarsa_lambda,SARSA(lambda),0,500,0.0
+p0.50,p0.50_m2,12,sarsa_lambda,SARSA(lambda),0,1000,0.0
+p0.50,p0.50_m2,12,sarsa_lambda,SARSA(lambda),0,1500,0.0
+p0.50,p0.50_m2,12,sarsa_lambda,SARSA(lambda),0,2000,0.0
+p0.50,p0.50_m2,12,sarsa_lambda,SARSA(lambda),0,2500,0.0
+p0.50,p0.50_m2,12,sarsa_lambda,SARSA(lambda),0,3000,0.0
+p0.50,p0.50_m2,12,sarsa_lambda,SARSA(lambda),0,3500,0.0
+p0.50,p0.50_m2,12,sarsa_lambda,SARSA(lambda),0,4000,0.0
+p0.50,p0.50_m2,12,sarsa_lambda,SARSA(lambda),0,4500,0.0
+p0.50,p0.50_m2,12,sarsa_lambda,SARSA(lambda),0,5000,0.0
+p0.50,p0.50_m2,12,sarsa_lambda,SARSA(lambda),0,5500,0.0
+p0.50,p0.50_m2,12,sarsa_lambda,SARSA(lambda),0,6000,0.0
+p0.50,p0.50_m2,12,sarsa_lambda,SARSA(lambda),0,6500,0.0
+p0.50,p0.50_m2,12,sarsa_lambda,SARSA(lambda),0,7000,0.0
+p0.50,p0.50_m2,12,sarsa_lambda,SARSA(lambda),0,7500,0.0
+p0.50,p0.50_m2,12,sarsa_lambda,SARSA(lambda),0,8000,0.0
+p0.50,p0.50_m2,12,sarsa_lambda,SARSA(lambda),0,8500,0.0
+p0.50,p0.50_m2,12,sarsa_lambda,SARSA(lambda),0,9000,0.0
+p0.50,p0.50_m2,12,sarsa_lambda,SARSA(lambda),0,9500,0.0
+p0.50,p0.50_m2,12,sarsa_lambda,SARSA(lambda),0,10000,0.0
+p0.50,p0.50_m2,12,q_lambda,Q(lambda),0,0,0.0
+p0.50,p0.50_m2,12,q_lambda,Q(lambda),0,500,0.0
+p0.50,p0.50_m2,12,q_lambda,Q(lambda),0,1000,0.0
+p0.50,p0.50_m2,12,q_lambda,Q(lambda),0,1500,0.0
+p0.50,p0.50_m2,12,q_lambda,Q(lambda),0,2000,0.0
+p0.50,p0.50_m2,12,q_lambda,Q(lambda),0,2500,0.0
+p0.50,p0.50_m2,12,q_lambda,Q(lambda),0,3000,0.0
+p0.50,p0.50_m2,12,q_lambda,Q(lambda),0,3500,0.0
+p0.50,p0.50_m2,12,q_lambda,Q(lambda),0,4000,0.0
+p0.50,p0.50_m2,12,q_lambda,Q(lambda),0,4500,0.0
+p0.50,p0.50_m2,12,q_lambda,Q(lambda),0,5000,0.0
+p0.50,p0.50_m2,12,q_lambda,Q(lambda),0,5500,0.0
+p0.50,p0.50_m2,12,q_lambda,Q(lambda),0,6000,0.0
+p0.50,p0.50_m2,12,q_lambda,Q(lambda),0,6500,0.0
+p0.50,p0.50_m2,12,q_lambda,Q(lambda),0,7000,0.0
+p0.50,p0.50_m2,12,q_lambda,Q(lambda),0,7500,0.0
+p0.50,p0.50_m2,12,q_lambda,Q(lambda),0,8000,0.0
+p0.50,p0.50_m2,12,q_lambda,Q(lambda),0,8500,0.0
+p0.50,p0.50_m2,12,q_lambda,Q(lambda),0,9000,0.0
+p0.50,p0.50_m2,12,q_lambda,Q(lambda),0,9500,0.0
+p0.50,p0.50_m2,12,q_lambda,Q(lambda),0,10000,0.0
+p0.50,p0.50_m2,12,optimistic_q,Optimistic Q,0,0,0.0
+p0.50,p0.50_m2,12,optimistic_q,Optimistic Q,0,500,0.0
+p0.50,p0.50_m2,12,optimistic_q,Optimistic Q,0,1000,0.0
+p0.50,p0.50_m2,12,optimistic_q,Optimistic Q,0,1500,0.0
+p0.50,p0.50_m2,12,optimistic_q,Optimistic Q,0,2000,0.0
+p0.50,p0.50_m2,12,optimistic_q,Optimistic Q,0,2500,0.0
+p0.50,p0.50_m2,12,optimistic_q,Optimistic Q,0,3000,0.0
+p0.50,p0.50_m2,12,optimistic_q,Optimistic Q,0,3500,0.0
+p0.50,p0.50_m2,12,optimistic_q,Optimistic Q,0,4000,0.0
+p0.50,p0.50_m2,12,optimistic_q,Optimistic Q,0,4500,0.0
+p0.50,p0.50_m2,12,optimistic_q,Optimistic Q,0,5000,0.0
+p0.50,p0.50_m2,12,optimistic_q,Optimistic Q,0,5500,0.0
+p0.50,p0.50_m2,12,optimistic_q,Optimistic Q,0,6000,0.0
+p0.50,p0.50_m2,12,optimistic_q,Optimistic Q,0,6500,0.0
+p0.50,p0.50_m2,12,optimistic_q,Optimistic Q,0,7000,0.0
+p0.50,p0.50_m2,12,optimistic_q,Optimistic Q,0,7500,0.0
+p0.50,p0.50_m2,12,optimistic_q,Optimistic Q,0,8000,0.0
+p0.50,p0.50_m2,12,optimistic_q,Optimistic Q,0,8500,0.0
+p0.50,p0.50_m2,12,optimistic_q,Optimistic Q,0,9000,0.0
+p0.50,p0.50_m2,12,optimistic_q,Optimistic Q,0,9500,0.0
+p0.50,p0.50_m2,12,optimistic_q,Optimistic Q,0,10000,0.0
+p0.50,p0.50_m2,12,dyna_q,Dyna-Q,0,0,0.0
+p0.50,p0.50_m2,12,dyna_q,Dyna-Q,0,500,0.0
+p0.50,p0.50_m2,12,dyna_q,Dyna-Q,0,1000,0.0
+p0.50,p0.50_m2,12,dyna_q,Dyna-Q,0,1500,0.0
+p0.50,p0.50_m2,12,dyna_q,Dyna-Q,0,2000,0.0
+p0.50,p0.50_m2,12,dyna_q,Dyna-Q,0,2500,0.0
+p0.50,p0.50_m2,12,dyna_q,Dyna-Q,0,3000,0.0
+p0.50,p0.50_m2,12,dyna_q,Dyna-Q,0,3500,0.0
+p0.50,p0.50_m2,12,dyna_q,Dyna-Q,0,4000,0.0
+p0.50,p0.50_m2,12,dyna_q,Dyna-Q,0,4500,0.0
+p0.50,p0.50_m2,12,dyna_q,Dyna-Q,0,5000,0.0
+p0.50,p0.50_m2,12,dyna_q,Dyna-Q,0,5500,0.0
+p0.50,p0.50_m2,12,dyna_q,Dyna-Q,0,6000,0.0
+p0.50,p0.50_m2,12,dyna_q,Dyna-Q,0,6500,0.0
+p0.50,p0.50_m2,12,dyna_q,Dyna-Q,0,7000,0.0
+p0.50,p0.50_m2,12,dyna_q,Dyna-Q,0,7500,0.0
+p0.50,p0.50_m2,12,dyna_q,Dyna-Q,0,8000,0.0
+p0.50,p0.50_m2,12,dyna_q,Dyna-Q,0,8500,0.0
+p0.50,p0.50_m2,12,dyna_q,Dyna-Q,0,9000,0.0
+p0.50,p0.50_m2,12,dyna_q,Dyna-Q,0,9500,0.0
+p0.50,p0.50_m2,12,dyna_q,Dyna-Q,0,10000,0.0

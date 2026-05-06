@@ -1,0 +1,92 @@
+group,map_label,map_id,algorithm,display_algorithm,seed,episode,final_success
+p0.60,p0.60_m2,9,dyna_q,Dyna-Q,0,10000,0.0
+p0.80,p0.80_m2,3,q_lambda,Q(lambda),0,10000,0.82
+standard8,standard8,0,sarsa,SARSA,0,10000,0.74
+p0.60,p0.60_m2,9,sarsa,SARSA,0,10000,0.0
+p0.50,p0.50_m2,12,q_lambda,Q(lambda),0,10000,0.0
+p0.60,p0.60_m0,7,q_lambda,Q(lambda),0,10000,0.0
+p0.50,p0.50_m1,11,q_learning,Q-learning,0,10000,0.0
+p0.80,p0.80_m0,1,optimistic_q,Optimistic Q,0,10000,0.15
+p0.70,p0.70_m1,5,sarsa,SARSA,0,10000,0.0
+p0.80,p0.80_m2,3,q_learning,Q-learning,0,10000,0.96
+p0.70,p0.70_m0,4,sarsa,SARSA,0,10000,0.0
+p0.70,p0.70_m0,4,optimistic_q,Optimistic Q,0,10000,0.42
+p0.50,p0.50_m1,11,expected_sarsa,Expected SARSA,0,10000,0.0
+p0.80,p0.80_m2,3,expected_sarsa,Expected SARSA,0,10000,0.91
+p0.60,p0.60_m2,9,sarsa_lambda,SARSA(lambda),0,10000,0.0
+p0.60,p0.60_m0,7,dyna_q,Dyna-Q,0,10000,0.0
+p0.70,p0.70_m0,4,dyna_q,Dyna-Q,0,10000,0.01
+p0.70,p0.70_m2,6,sarsa_lambda,SARSA(lambda),0,10000,0.0
+p0.70,p0.70_m2,6,expected_sarsa,Expected SARSA,0,10000,0.0
+p0.70,p0.70_m1,5,q_learning,Q-learning,0,10000,0.0
+p0.60,p0.60_m2,9,q_lambda,Q(lambda),0,10000,0.0
+p0.80,p0.80_m2,3,sarsa,SARSA,0,10000,0.73
+p0.60,p0.60_m0,7,optimistic_q,Optimistic Q,0,10000,0.16
+p0.80,p0.80_m0,1,q_lambda,Q(lambda),0,10000,0.0
+standard8,standard8,0,q_learning,Q-learning,0,10000,0.78
+p0.50,p0.50_m2,12,optimistic_q,Optimistic Q,0,10000,0.0
+p0.50,p0.50_m1,11,sarsa,SARSA,0,10000,0.0
+p0.80,p0.80_m2,3,sarsa_lambda,SARSA(lambda),0,10000,0.93
+p0.60,p0.60_m2,9,expected_sarsa,Expected SARSA,0,10000,0.0
+p0.80,p0.80_m1,2,dyna_q,Dyna-Q,0,10000,0.0
+p0.50,p0.50_m1,11,sarsa_lambda,SARSA(lambda),0,10000,0.0
+p0.80,p0.80_m0,1,expected_sarsa,Expected SARSA,0,10000,0.0
+p0.60,p0.60_m1,8,q_learning,Q-learning,0,10000,0.0
+p0.70,p0.70_m2,6,q_lambda,Q(lambda),0,10000,0.0
+p0.70,p0.70_m2,6,sarsa,SARSA,0,10000,0.0
+p0.60,p0.60_m2,9,optimistic_q,Optimistic Q,0,10000,0.0
+p0.50,p0.50_m1,11,q_lambda,Q(lambda),0,10000,0.0
+p0.80,p0.80_m2,3,optimistic_q,Optimistic Q,0,10000,0.98
+p0.70,p0.70_m2,6,q_learning,Q-learning,0,10000,0.0
+p0.70,p0.70_m1,5,sarsa_lambda,SARSA(lambda),0,10000,0.0
+p0.60,p0.60_m0,7,q_learning,Q-learning,0,10000,0.0
+p0.70,p0.70_m1,5,optimistic_q,Optimistic Q,0,10000,0.0
+p0.70,p0.70_m0,4,q_learning,Q-learning,0,10000,0.0
+p0.60,p0.60_m0,7,expected_sarsa,Expected SARSA,0,10000,0.0
+p0.60,p0.60_m1,8,sarsa_lambda,SARSA(lambda),0,10000,0.0
+standard8,standard8,0,q_lambda,Q(lambda),0,10000,0.85
+p0.50,p0.50_m2,12,sarsa,SARSA,0,10000,0.0
+p0.50,p0.50_m0,10,expected_sarsa,Expected SARSA,0,10000,0.0
+p0.80,p0.80_m1,2,sarsa_lambda,SARSA(lambda),0,10000,0.17
+p0.50,p0.50_m1,11,dyna_q,Dyna-Q,0,10000,0.0
+standard8,standard8,0,dyna_q,Dyna-Q,0,10000,0.16
+p0.60,p0.60_m1,8,optimistic_q,Optimistic Q,0,10000,0.0
+p0.70,p0.70_m0,4,expected_sarsa,Expected SARSA,0,10000,0.0
+p0.80,p0.80_m0,1,sarsa_lambda,SARSA(lambda),0,10000,0.0
+p0.80,p0.80_m1,2,sarsa,SARSA,0,10000,0.0
+p0.50,p0.50_m0,10,q_lambda,Q(lambda),0,10000,0.0
+p0.60,p0.60_m0,7,sarsa,SARSA,0,10000,0.0
+p0.50,p0.50_m0,10,sarsa_lambda,SARSA(lambda),0,10000,0.0
+p0.80,p0.80_m1,2,expected_sarsa,Expected SARSA,0,10000,0.0
+standard8,standard8,0,optimistic_q,Optimistic Q,0,10000,0.82
+p0.50,p0.50_m2,12,q_learning,Q-learning,0,10000,0.0
+p0.70,p0.70_m1,5,q_lambda,Q(lambda),0,10000,0.0
+p0.50,p0.50_m0,10,optimistic_q,Optimistic Q,0,10000,0.0
+p0.70,p0.70_m2,6,optimistic_q,Optimistic Q,0,10000,0.23
+p0.80,p0.80_m1,2,q_learning,Q-learning,0,10000,0.0
+p0.50,p0.50_m0,10,sarsa,SARSA,0,10000,0.0
+p0.80,p0.80_m0,1,sarsa,SARSA,0,10000,0.0
+p0.60,p0.60_m1,8,sarsa,SARSA,0,10000,0.0
+p0.70,p0.70_m0,4,q_lambda,Q(lambda),0,10000,0.0
+standard8,standard8,0,expected_sarsa,Expected SARSA,0,10000,0.85
+p0.50,p0.50_m2,12,sarsa_lambda,SARSA(lambda),0,10000,0.0
+p0.60,p0.60_m1,8,q_lambda,Q(lambda),0,10000,0.0
+p0.60,p0.60_m2,9,q_learning,Q-learning,0,10000,0.0
+p0.80,p0.80_m0,1,dyna_q,Dyna-Q,0,10000,0.0
+p0.50,p0.50_m0,10,dyna_q,Dyna-Q,0,10000,0.0
+p0.50,p0.50_m0,10,q_learning,Q-learning,0,10000,0.0
+p0.80,p0.80_m1,2,optimistic_q,Optimistic Q,0,10000,0.3
+p0.70,p0.70_m1,5,expected_sarsa,Expected SARSA,0,10000,0.0
+p0.60,p0.60_m0,7,sarsa_lambda,SARSA(lambda),0,10000,0.0
+p0.70,p0.70_m2,6,dyna_q,Dyna-Q,0,10000,0.0
+p0.70,p0.70_m1,5,dyna_q,Dyna-Q,0,10000,0.0
+p0.50,p0.50_m1,11,optimistic_q,Optimistic Q,0,10000,0.0
+p0.80,p0.80_m0,1,q_learning,Q-learning,0,10000,0.0
+p0.80,p0.80_m2,3,dyna_q,Dyna-Q,0,10000,0.76
+standard8,standard8,0,sarsa_lambda,SARSA(lambda),0,10000,0.76
+p0.50,p0.50_m2,12,expected_sarsa,Expected SARSA,0,10000,0.0
+p0.60,p0.60_m1,8,dyna_q,Dyna-Q,0,10000,0.0
+p0.60,p0.60_m1,8,expected_sarsa,Expected SARSA,0,10000,0.0
+p0.70,p0.70_m0,4,sarsa_lambda,SARSA(lambda),0,10000,0.0
+p0.80,p0.80_m1,2,q_lambda,Q(lambda),0,10000,0.0
+p0.50,p0.50_m2,12,dyna_q,Dyna-Q,0,10000,0.0

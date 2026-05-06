@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+*.zip
+*_partial.csv
+standard_4x4_slippery_focused_v*/
+random8_learning_curves_long_v*/
+designed4_learning_curves_long_v*/
+fixed_map_slippery_results/
+fixed_map_optuna_results/

@@ -1,0 +1,5 @@
+map_label,frozen_prob,map_id,holes,oracle_success,mean_final_success,best_final_success,worst_final_success,best_algorithm
+designed4_m0,-1.0,0,4,0.5566666666666666,0.32,0.53,0.13,Dyna-Q
+designed4_m1,-1.0,1,4,0.9433333333333334,0.9728571428571428,0.98,0.93,Dyna-Q
+designed4_m2,-1.0,2,4,0.6733333333333333,0.37857142857142856,0.57,0.0,Q(lambda)
+designed4_m3,-1.0,3,4,0.6566666666666666,0.42428571428571427,0.61,0.04,Optimistic Q

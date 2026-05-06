@@ -1,0 +1,10 @@
+algorithm,display_algorithm,env,mean_final_success,std_final_success,n
+policy_iteration,Policy Iteration,standard_4x4_stoch,0.8466666666666667,0.015275252316519468,3
+value_iteration,Value Iteration,standard_4x4_stoch,0.8466666666666667,0.015275252316519468,3
+q_learning,Q-learning,standard_4x4_stoch,0.77,0.045825756949558365,3
+optimistic_q,Optimistic Q,standard_4x4_stoch,0.7666666666666666,0.025166114784235843,3
+sarsa,SARSA,standard_4x4_stoch,0.7233333333333333,0.020816659994661358,3
+expected_sarsa,Expected SARSA,standard_4x4_stoch,0.68,0.08660254037844382,3
+q_lambda,Q(lambda),standard_4x4_stoch,0.53,0.38974350539810154,3
+sarsa_lambda,SARSA(lambda),standard_4x4_stoch,0.43,0.2463736998950983,3
+dyna_q,Dyna-Q,standard_4x4_stoch,0.3466666666666667,0.30171730698343,3

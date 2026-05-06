@@ -1,0 +1,5 @@
+setting,algorithm,display_algorithm,mean_success,std_success,n
+Fixed 8x8,optimistic_q,Optimistic Q,0.8166666666666668,0.1550268793897798,3
+Fixed 8x8,q_learning,Q-learning,0.7600000000000001,0.0458257569495584,3
+Fixed 8x8,softmax_q,Softmax Q,0.1,0.0754983443527075,3
+Fixed 8x8,ucb_q,UCB-Q,0.1333333333333333,0.0288675134594812,3
