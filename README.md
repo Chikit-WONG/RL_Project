@@ -28,6 +28,7 @@ RL_Project_Submission_FINAL_20260507/
 |   |-- 02_diagnostic_gymnasium8/
 |-- docs/
 |-- report_overleaf_light/
+|-- report/
 ```
 
 ## Main Benchmark
@@ -59,10 +60,11 @@ Value Iteration is used as an oracle reference, not as a model-free baseline.
 ## Recommended Reading Order
 
 1. `report_overleaf_light/main.tex`
-2. `docs/中文文件结构说明.md`
-3. `docs/图表阅读指南.md`
-4. `docs/中文结果整理.md`
-5. `docs/algorithm_qa_notes.md`
+2. `report/RL_proj.pdf`
+3. `docs/中文文件结构说明.md`
+4. `docs/图表阅读指南.md`
+5. `docs/中文结果整理.md`
+6. `docs/algorithm_qa_notes.md`
 
 ## Reproduction
 
