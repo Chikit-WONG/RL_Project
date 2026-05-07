@@ -1,12 +1,13 @@
-# Stochastic FrozenLake RL Project Submission
+# Stochastic FrozenLake Game-Playing RL Project Submission
 
 This package is organized around the final report narrative:
 
-1. We use the Gymnasium standard 8x8 map as an important standard benchmark.
-2. We then tried Gymnasium-generated random maps.
-3. Many low-p Gymnasium random maps had near-zero oracle success under `slippery=True`, so they were not suitable for fair algorithm ranking.
-4. We therefore used controlled stochastic maps as the main comparison benchmark.
-5. We compared seven tabular RL algorithms, added Optuna tuning, and used Value Iteration as an oracle reference.
+1. We treat FrozenLake as a stochastic grid-world game-playing task.
+2. We use the Gymnasium standard 8x8 map as an important standard benchmark.
+3. We then tried Gymnasium-generated random maps.
+4. Many low-p Gymnasium random maps had near-zero oracle success under `slippery=True`, so they were not suitable for fair algorithm ranking.
+5. We therefore used controlled stochastic maps as the main comparison benchmark.
+6. We compared seven tabular RL game-playing agents, added Optuna tuning, and used Value Iteration as an oracle reference.
 
 ## Folder Structure
 
