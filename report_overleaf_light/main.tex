@@ -115,7 +115,7 @@ Gymnasium-generated random maps answer a different design question: what happens
 \end{figure}
 
 \subsection{Controlled 4x4 Maps}
-Figure~\ref{fig:designed4} reports the controlled random 4$\times$4 experiment. These maps also have exactly four holes and are therefore much more credible than high-$p$ random maps. With the longer 2,000-episode learning-curve rerun, Expected SARSA and Q-learning are the strongest mean final-success methods on these four maps, while optimistic Q-learning has the best mean AUC, meaning that it often learns earlier even when the final score is not always the highest.
+Figure~\ref{fig:designed4} reports the controlled random 4$\times$4 experiment. These maps also have exactly four holes and are therefore much more credible than high-$p$ random maps. The results should be read as a credibility check rather than a strong ranking claim: Expected SARSA, Q-learning, and optimistic Q-learning are close in mean performance, but the standard deviations across only four maps are large. This means the controlled 4$\times$4 setting confirms that the algorithms behave plausibly on non-trivial small boards, while the more reliable algorithm ranking should come from the larger 8$\times$8 controlled benchmark.
 
 \begin{figure}[H]
     \centering
