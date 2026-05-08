@@ -1,5 +1,5 @@
 \documentclass[10pt]{article}
-\usepackage[a4paper,margin=0.72in]{geometry}
+\usepackage[a4paper,margin=0.68in]{geometry}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
@@ -13,9 +13,12 @@
 \usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
 
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{0.34em}
+\setlength{\parskip}{0.26em}
 \setlist{nosep,leftmargin=1.4em}
-\captionsetup{font=small}
+\captionsetup{font=small,skip=2pt}
+\setlength{\textfloatsep}{7pt plus 1pt minus 2pt}
+\setlength{\floatsep}{6pt plus 1pt minus 2pt}
+\setlength{\intextsep}{6pt plus 1pt minus 2pt}
 
 \title{\vspace{-1.2em}\textbf{Game Playing with Reinforcement Learning on Stochastic FrozenLake}\\[-0.25em]
 {\large Benchmarking Tabular Agents on Standard and Controlled Maps}}
@@ -59,6 +62,13 @@ Third, we introduced controlled maps for the final comparison. The design goal i
 
 \subsection{FrozenLake Game Environment}
 All reported experiments use \texttt{slippery=True}. In each step, the environment samples one of three outcomes: the intended direction, the left deviation, or the right deviation, each with probability $1/3$. This matches the standard FrozenLake stochastic transition idea and prevents the task from becoming deterministic maze following.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.88\linewidth]{figures_compact/frozenlake_environment_overview.jpg}
+    \caption{FrozenLake environment overview. The agent starts at \texttt{S}, reaches \texttt{G}, avoids holes \texttt{H}, and evaluates greedy policies under stochastic slippery transitions.}
+    \label{fig:envoverview}
+\end{figure}
 
 We evaluate six stochastic settings:
 \begin{itemize}
