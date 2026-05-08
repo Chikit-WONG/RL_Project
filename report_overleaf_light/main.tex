@@ -40,7 +40,7 @@ The research questions are:
 \begin{enumerate}
     \item Which tabular RL game-playing agents are strongest on slippery FrozenLake?
     \item Why is controlled board design necessary for fair algorithm comparison on stochastic FrozenLake?
-    \item Is performance mainly limited by exploration or reward propagation?
+    \item Is performance mainly limited by exploration or by map-specific failure cases?
     \item Does automated hyperparameter search improve the strongest methods?
 \end{enumerate}
 
@@ -191,17 +191,7 @@ Figure~\ref{fig:explore} isolates exploration strategy on fixed 8$\times$8 slipp
     \label{fig:explore}
 \end{figure}
 
-\subsection{Reward Propagation Ablation}
-Figure~\ref{fig:propagation} is not intended as a second overall algorithm ranking. It isolates backup and reward-propagation mechanisms on the fixed 8$\times$8 map. n-step SARSA is included because it is the canonical multi-step TD control baseline between one-step SARSA and eligibility traces. Optimistic Q-learning is not included in this panel because its main change is exploration through optimistic initialization, which is already tested in Figure~\ref{fig:explore}. Under this fixed-map ablation, one-step Q-learning is strongest at 0.760, while Q($\lambda$), Dyna-Q, SARSA($\lambda$), and n-step SARSA are lower or more variable. This does not contradict the main controlled-random result; it shows that propagation tricks alone do not dominate unless the exploration problem is also handled well.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.78\linewidth]{figures_compact/reward_propagation_ablation_fixed_8x8.jpg}
-    \caption{Reward-propagation ablation on fixed 8$\times$8 slippery FrozenLake. More complex propagation is not automatically better under short sparse-reward training.}
-    \label{fig:propagation}
-\end{figure}
-
-\subsection{Oracle-Gap Ablation}
+\subsection{Oracle-Gap Analysis}
 Figure~\ref{fig:gap} measures how far learned policies are from the known-model oracle on each random 8$\times$8 map. Optimistic Q-learning has the smallest mean gap after the long run. Some non-optimistic methods still have isolated hard-map failures, which is why per-map heatmaps are more useful than a single averaged line.
 
 \begin{figure}[H]
@@ -237,7 +227,7 @@ The first finding is methodological: map choice changes what the experiment meas
 
 The second finding is algorithmic: on controlled stochastic maps, exploration is the main bottleneck. Optimistic Q-learning performs best on the controlled random 8$\times$8 benchmark because optimistic initial values keep uncertain actions attractive until the agent discovers successful routes. Q-learning, SARSA, and Expected SARSA form a strong second group, but they depend more heavily on the exploration schedule. This also explains why longer training and per-map curves reduced the apparent variance seen in earlier aggregate plots.
 
-The ablation results support this interpretation. The exploration ablation shows that optimistic initialization is more effective than UCB-Q or softmax exploration in this tabular FrozenLake setting. The reward-propagation ablation answers a separate question: whether multi-step backups, eligibility traces, or model-based planning improve learning once reward has been discovered. These mechanisms help in some cases, especially in AUC or convergence behavior, but they do not replace the need for effective exploration.
+The ablation results support this interpretation. The exploration ablation shows that optimistic initialization is more effective than UCB-Q or softmax exploration in this tabular FrozenLake setting. The oracle-gap and per-map plots then show where learned policies still fall short of the known-model oracle. Together, these analyses point to exploration and map-specific failure cases as the main practical issues, rather than suggesting that adding more complex backup variants automatically improves performance.
 
 The main limitation is scope. The controlled maps make algorithm comparison clearer, but they do not prove generalization to every possible FrozenLake layout. Gymnasium random maps are therefore kept as a diagnostic boundary case, and the controlled random 8$\times$8 benchmark is presented as the main fair comparison rather than a universal claim. We also leave 16$\times$16 and neural-RL variants as future work because preliminary runs were strongly affected by map design and training budget.
 
