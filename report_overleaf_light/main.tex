@@ -108,6 +108,13 @@ The next step was to test whether the same pipeline works on Gymnasium's standar
 
 The standard Gymnasium 8$\times$8 map is an important benchmark. It is widely used, reproducible, and challenging without being degenerate. In our run, its oracle success is 0.861, and the learned mean success across the seven algorithms is 0.709. Several algorithms learn strong policies on this map: Expected SARSA reaches 0.85, Q($\lambda$) reaches 0.85, optimistic Q-learning reaches 0.82, Q-learning reaches 0.78, SARSA($\lambda$) reaches 0.76, and SARSA reaches 0.74. This confirms that the training pipeline can handle a standard stochastic 8$\times$8 benchmark.
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.78\linewidth]{figures_compact/gymnasium8/standard8_learning_curve.png}
+    \caption{Learning curves on the Gymnasium standard 8$\times$8 slippery map. This figure is kept as a standard reference point before the random-map diagnostic.}
+    \label{fig:gym8standardcurve}
+\end{figure}
+
 Gymnasium-generated random maps answer a different design question: what happens if we rely directly on the library's random-map generator at lower frozen-tile probabilities? The answer is that performance drops sharply on many generated random maps, and the reason is visible from the oracle. Several $p=0.5$ and $p=0.6$ random maps have oracle success near zero under slippery dynamics. These maps are technically connected, because the generator guarantees a path from start to goal, but the stochastic transition model makes reliable completion extremely unlikely. Across all 13 Gymnasium maps, including the standard map and the random maps, optimistic Q-learning remains the best learned method, but its mean final success is only 0.235 because the near-impossible generated maps dominate the average. This diagnostic result explains why the project moved toward carefully controlled maps for fair algorithm ranking.
 
 \begin{figure}[H]
@@ -159,8 +166,33 @@ Figure~\ref{fig:learningpanel} shows per-map learning curves rather than one mix
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.96\linewidth]{figures_compact/random8_learning_curves_all_maps_panel.jpg}
-    \caption{Per-map learning curves for 20 random 8$\times$8 slippery maps. Each subplot contains all seven algorithms and the Value Iteration oracle.}
+    \includegraphics[width=0.188\linewidth]{figures_compact/per_map_random8/p0.80_m0_learning_curve.png}\hfill
+    \includegraphics[width=0.188\linewidth]{figures_compact/per_map_random8/p0.80_m1_learning_curve.png}\hfill
+    \includegraphics[width=0.188\linewidth]{figures_compact/per_map_random8/p0.80_m2_learning_curve.png}\hfill
+    \includegraphics[width=0.188\linewidth]{figures_compact/per_map_random8/p0.80_m3_learning_curve.png}\hfill
+    \includegraphics[width=0.188\linewidth]{figures_compact/per_map_random8/p0.80_m4_learning_curve.png}
+    \vspace{0.25em}
+
+    \includegraphics[width=0.188\linewidth]{figures_compact/per_map_random8/p0.85_m0_learning_curve.png}\hfill
+    \includegraphics[width=0.188\linewidth]{figures_compact/per_map_random8/p0.85_m1_learning_curve.png}\hfill
+    \includegraphics[width=0.188\linewidth]{figures_compact/per_map_random8/p0.85_m2_learning_curve.png}\hfill
+    \includegraphics[width=0.188\linewidth]{figures_compact/per_map_random8/p0.85_m3_learning_curve.png}\hfill
+    \includegraphics[width=0.188\linewidth]{figures_compact/per_map_random8/p0.85_m4_learning_curve.png}
+    \vspace{0.25em}
+
+    \includegraphics[width=0.188\linewidth]{figures_compact/per_map_random8/p0.90_m0_learning_curve.png}\hfill
+    \includegraphics[width=0.188\linewidth]{figures_compact/per_map_random8/p0.90_m1_learning_curve.png}\hfill
+    \includegraphics[width=0.188\linewidth]{figures_compact/per_map_random8/p0.90_m2_learning_curve.png}\hfill
+    \includegraphics[width=0.188\linewidth]{figures_compact/per_map_random8/p0.90_m3_learning_curve.png}\hfill
+    \includegraphics[width=0.188\linewidth]{figures_compact/per_map_random8/p0.90_m4_learning_curve.png}
+    \vspace{0.25em}
+
+    \includegraphics[width=0.188\linewidth]{figures_compact/per_map_random8/p0.95_m0_learning_curve.png}\hfill
+    \includegraphics[width=0.188\linewidth]{figures_compact/per_map_random8/p0.95_m1_learning_curve.png}\hfill
+    \includegraphics[width=0.188\linewidth]{figures_compact/per_map_random8/p0.95_m2_learning_curve.png}\hfill
+    \includegraphics[width=0.188\linewidth]{figures_compact/per_map_random8/p0.95_m3_learning_curve.png}\hfill
+    \includegraphics[width=0.188\linewidth]{figures_compact/per_map_random8/p0.95_m4_learning_curve.png}
+    \caption{Per-map learning curves for all 20 controlled random 8$\times$8 slippery maps. Each panel is inserted from the original per-map figure, preserving the map label, legend, and layout inset.}
     \label{fig:learningpanel}
 \end{figure}
 
