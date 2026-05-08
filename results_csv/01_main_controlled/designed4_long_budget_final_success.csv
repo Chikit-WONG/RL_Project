@@ -1,0 +1,29 @@
+algorithm,display_algorithm,frozen_prob,map_id,map_label,seed,episode,success_rate,suite,map_size,oracle_success,holes,oracle_gap,eval_auc,first_episode_success_ge_0p8,suite_label
+dyna_q,Dyna-Q,-1.0,1,designed4_m1,0,2000,0.98,designed4,4x4,0.9433333333333334,4,-0.036666666666666625,0.741375,200.0,Designed 4x4 long
+q_lambda,Q(lambda),-1.0,3,designed4_m3,0,2000,0.37,designed4,4x4,0.6566666666666666,4,0.2866666666666666,0.214,,Designed 4x4 long
+q_learning,Q-learning,-1.0,0,designed4_m0,0,2000,0.5,designed4,4x4,0.5566666666666666,4,0.05666666666666664,0.406375,,Designed 4x4 long
+sarsa,SARSA,-1.0,0,designed4_m0,0,2000,0.13,designed4,4x4,0.5566666666666666,4,0.42666666666666664,0.1105,,Designed 4x4 long
+expected_sarsa,Expected SARSA,-1.0,0,designed4_m0,0,2000,0.5,designed4,4x4,0.5566666666666666,4,0.05666666666666664,0.292125,,Designed 4x4 long
+sarsa_lambda,SARSA(lambda),-1.0,0,designed4_m0,0,2000,0.17,designed4,4x4,0.5566666666666666,4,0.3866666666666666,0.08475,,Designed 4x4 long
+q_lambda,Q(lambda),-1.0,0,designed4_m0,0,2000,0.18,designed4,4x4,0.5566666666666666,4,0.37666666666666665,0.135875,,Designed 4x4 long
+optimistic_q,Optimistic Q,-1.0,0,designed4_m0,0,2000,0.23,designed4,4x4,0.5566666666666666,4,0.32666666666666666,0.4115,,Designed 4x4 long
+dyna_q,Dyna-Q,-1.0,0,designed4_m0,0,2000,0.53,designed4,4x4,0.5566666666666666,4,0.026666666666666616,0.30925,,Designed 4x4 long
+q_learning,Q-learning,-1.0,1,designed4_m1,0,2000,0.98,designed4,4x4,0.9433333333333334,4,-0.036666666666666625,0.788375,550.0,Designed 4x4 long
+sarsa,SARSA,-1.0,1,designed4_m1,0,2000,0.98,designed4,4x4,0.9433333333333334,4,-0.036666666666666625,0.803625,400.0,Designed 4x4 long
+expected_sarsa,Expected SARSA,-1.0,1,designed4_m1,0,2000,0.93,designed4,4x4,0.9433333333333334,4,0.013333333333333308,0.83775,400.0,Designed 4x4 long
+sarsa_lambda,SARSA(lambda),-1.0,1,designed4_m1,0,2000,0.98,designed4,4x4,0.9433333333333334,4,-0.036666666666666625,0.696625,400.0,Designed 4x4 long
+optimistic_q,Optimistic Q,-1.0,3,designed4_m3,0,2000,0.61,designed4,4x4,0.6566666666666666,4,0.046666666666666634,0.523,,Designed 4x4 long
+q_lambda,Q(lambda),-1.0,1,designed4_m1,0,2000,0.98,designed4,4x4,0.9433333333333334,4,-0.036666666666666625,0.765875,550.0,Designed 4x4 long
+q_learning,Q-learning,-1.0,2,designed4_m2,0,2000,0.5,designed4,4x4,0.6733333333333333,4,0.17333333333333334,0.399875,,Designed 4x4 long
+sarsa,SARSA,-1.0,2,designed4_m2,0,2000,0.5,designed4,4x4,0.6733333333333333,4,0.17333333333333334,0.420875,,Designed 4x4 long
+expected_sarsa,Expected SARSA,-1.0,2,designed4_m2,0,2000,0.54,designed4,4x4,0.6733333333333333,4,0.1333333333333333,0.424625,,Designed 4x4 long
+sarsa_lambda,SARSA(lambda),-1.0,2,designed4_m2,0,2000,0.0,designed4,4x4,0.6733333333333333,4,0.6733333333333333,0.296375,,Designed 4x4 long
+q_lambda,Q(lambda),-1.0,2,designed4_m2,0,2000,0.57,designed4,4x4,0.6733333333333333,4,0.10333333333333339,0.404,,Designed 4x4 long
+optimistic_q,Optimistic Q,-1.0,2,designed4_m2,0,2000,0.54,designed4,4x4,0.6733333333333333,4,0.1333333333333333,0.485875,,Designed 4x4 long
+dyna_q,Dyna-Q,-1.0,2,designed4_m2,0,2000,0.0,designed4,4x4,0.6733333333333333,4,0.6733333333333333,0.233375,,Designed 4x4 long
+q_learning,Q-learning,-1.0,3,designed4_m3,0,2000,0.54,designed4,4x4,0.6566666666666666,4,0.11666666666666659,0.380375,,Designed 4x4 long
+sarsa,SARSA,-1.0,3,designed4_m3,0,2000,0.23,designed4,4x4,0.6566666666666666,4,0.42666666666666664,0.1565,,Designed 4x4 long
+expected_sarsa,Expected SARSA,-1.0,3,designed4_m3,0,2000,0.57,designed4,4x4,0.6566666666666666,4,0.08666666666666667,0.38825,,Designed 4x4 long
+sarsa_lambda,SARSA(lambda),-1.0,3,designed4_m3,0,2000,0.04,designed4,4x4,0.6566666666666666,4,0.6166666666666666,0.088625,,Designed 4x4 long
+optimistic_q,Optimistic Q,-1.0,1,designed4_m1,0,2000,0.98,designed4,4x4,0.9433333333333334,4,-0.036666666666666625,0.880875,350.0,Designed 4x4 long
+dyna_q,Dyna-Q,-1.0,3,designed4_m3,0,2000,0.61,designed4,4x4,0.6566666666666666,4,0.046666666666666634,0.3765,,Designed 4x4 long

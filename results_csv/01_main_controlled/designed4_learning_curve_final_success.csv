@@ -1,0 +1,29 @@
+algorithm,display_algorithm,frozen_prob,map_id,map_label,seed,episode,success_rate,suite,map_size,oracle_success,holes
+dyna_q,Dyna-Q,-1.0,1,designed4_m1,0,2000,0.98,designed4,4x4,0.9433333333333334,4
+q_lambda,Q(lambda),-1.0,3,designed4_m3,0,2000,0.37,designed4,4x4,0.6566666666666666,4
+q_learning,Q-learning,-1.0,0,designed4_m0,0,2000,0.5,designed4,4x4,0.5566666666666666,4
+sarsa,SARSA,-1.0,0,designed4_m0,0,2000,0.13,designed4,4x4,0.5566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,0,designed4_m0,0,2000,0.5,designed4,4x4,0.5566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,0,designed4_m0,0,2000,0.17,designed4,4x4,0.5566666666666666,4
+q_lambda,Q(lambda),-1.0,0,designed4_m0,0,2000,0.18,designed4,4x4,0.5566666666666666,4
+optimistic_q,Optimistic Q,-1.0,0,designed4_m0,0,2000,0.23,designed4,4x4,0.5566666666666666,4
+dyna_q,Dyna-Q,-1.0,0,designed4_m0,0,2000,0.53,designed4,4x4,0.5566666666666666,4
+q_learning,Q-learning,-1.0,1,designed4_m1,0,2000,0.98,designed4,4x4,0.9433333333333334,4
+sarsa,SARSA,-1.0,1,designed4_m1,0,2000,0.98,designed4,4x4,0.9433333333333334,4
+expected_sarsa,Expected SARSA,-1.0,1,designed4_m1,0,2000,0.93,designed4,4x4,0.9433333333333334,4
+sarsa_lambda,SARSA(lambda),-1.0,1,designed4_m1,0,2000,0.98,designed4,4x4,0.9433333333333334,4
+optimistic_q,Optimistic Q,-1.0,3,designed4_m3,0,2000,0.61,designed4,4x4,0.6566666666666666,4
+q_lambda,Q(lambda),-1.0,1,designed4_m1,0,2000,0.98,designed4,4x4,0.9433333333333334,4
+q_learning,Q-learning,-1.0,2,designed4_m2,0,2000,0.5,designed4,4x4,0.6733333333333333,4
+sarsa,SARSA,-1.0,2,designed4_m2,0,2000,0.5,designed4,4x4,0.6733333333333333,4
+expected_sarsa,Expected SARSA,-1.0,2,designed4_m2,0,2000,0.54,designed4,4x4,0.6733333333333333,4
+sarsa_lambda,SARSA(lambda),-1.0,2,designed4_m2,0,2000,0.0,designed4,4x4,0.6733333333333333,4
+q_lambda,Q(lambda),-1.0,2,designed4_m2,0,2000,0.57,designed4,4x4,0.6733333333333333,4
+optimistic_q,Optimistic Q,-1.0,2,designed4_m2,0,2000,0.54,designed4,4x4,0.6733333333333333,4
+dyna_q,Dyna-Q,-1.0,2,designed4_m2,0,2000,0.0,designed4,4x4,0.6733333333333333,4
+q_learning,Q-learning,-1.0,3,designed4_m3,0,2000,0.54,designed4,4x4,0.6566666666666666,4
+sarsa,SARSA,-1.0,3,designed4_m3,0,2000,0.23,designed4,4x4,0.6566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,3,designed4_m3,0,2000,0.57,designed4,4x4,0.6566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,3,designed4_m3,0,2000,0.04,designed4,4x4,0.6566666666666666,4
+optimistic_q,Optimistic Q,-1.0,1,designed4_m1,0,2000,0.98,designed4,4x4,0.9433333333333334,4
+dyna_q,Dyna-Q,-1.0,3,designed4_m3,0,2000,0.61,designed4,4x4,0.6566666666666666,4

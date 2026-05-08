@@ -1,0 +1,141 @@
+algorithm,display_algorithm,frozen_prob,map_id,map_label,seed,episode,success_rate,suite,map_size,oracle_success,holes
+expected_sarsa,Expected SARSA,0.95,4,p0.95_m4,0,10000,0.98,random8,8x8,1.0,1
+sarsa,SARSA,0.95,4,p0.95_m4,0,10000,1.0,random8,8x8,1.0,1
+sarsa_lambda,SARSA(lambda),0.95,4,p0.95_m4,0,10000,1.0,random8,8x8,1.0,1
+q_learning,Q-learning,0.95,4,p0.95_m4,0,10000,1.0,random8,8x8,1.0,1
+q_lambda,Q(lambda),0.95,4,p0.95_m4,0,10000,1.0,random8,8x8,1.0,1
+optimistic_q,Optimistic Q,0.95,4,p0.95_m4,0,10000,1.0,random8,8x8,1.0,1
+dyna_q,Dyna-Q,0.85,4,p0.85_m4,0,10000,0.9,random8,8x8,1.0,7
+optimistic_q,Optimistic Q,0.95,3,p0.95_m3,0,10000,1.0,random8,8x8,1.0,5
+optimistic_q,Optimistic Q,0.8,4,p0.80_m4,0,10000,1.0,random8,8x8,1.0,10
+dyna_q,Dyna-Q,0.8,4,p0.80_m4,0,10000,0.9,random8,8x8,1.0,10
+sarsa,SARSA,0.85,0,p0.85_m0,0,10000,0.9,random8,8x8,1.0,3
+expected_sarsa,Expected SARSA,0.85,0,p0.85_m0,0,10000,0.96,random8,8x8,1.0,3
+sarsa_lambda,SARSA(lambda),0.85,0,p0.85_m0,0,10000,1.0,random8,8x8,1.0,3
+q_lambda,Q(lambda),0.85,0,p0.85_m0,0,10000,1.0,random8,8x8,1.0,3
+optimistic_q,Optimistic Q,0.85,0,p0.85_m0,0,10000,1.0,random8,8x8,1.0,3
+dyna_q,Dyna-Q,0.85,0,p0.85_m0,0,10000,1.0,random8,8x8,1.0,3
+q_learning,Q-learning,0.85,1,p0.85_m1,0,10000,0.94,random8,8x8,0.9933333333333333,7
+sarsa,SARSA,0.85,1,p0.85_m1,0,10000,0.94,random8,8x8,0.9933333333333333,7
+expected_sarsa,Expected SARSA,0.85,1,p0.85_m1,0,10000,0.94,random8,8x8,0.9933333333333333,7
+sarsa_lambda,SARSA(lambda),0.85,1,p0.85_m1,0,10000,0.9,random8,8x8,0.9933333333333333,7
+q_lambda,Q(lambda),0.85,1,p0.85_m1,0,10000,0.9,random8,8x8,0.9933333333333333,7
+optimistic_q,Optimistic Q,0.85,1,p0.85_m1,0,10000,0.98,random8,8x8,0.9933333333333333,7
+dyna_q,Dyna-Q,0.85,1,p0.85_m1,0,10000,0.94,random8,8x8,0.9933333333333333,7
+q_learning,Q-learning,0.85,2,p0.85_m2,0,10000,0.76,random8,8x8,0.9433333333333334,8
+sarsa,SARSA,0.85,2,p0.85_m2,0,10000,0.84,random8,8x8,0.9433333333333334,8
+expected_sarsa,Expected SARSA,0.85,2,p0.85_m2,0,10000,0.64,random8,8x8,0.9433333333333334,8
+sarsa_lambda,SARSA(lambda),0.85,2,p0.85_m2,0,10000,0.68,random8,8x8,0.9433333333333334,8
+q_lambda,Q(lambda),0.85,2,p0.85_m2,0,10000,0.32,random8,8x8,0.9433333333333334,8
+optimistic_q,Optimistic Q,0.85,2,p0.85_m2,0,10000,0.92,random8,8x8,0.9433333333333334,8
+dyna_q,Dyna-Q,0.85,2,p0.85_m2,0,10000,0.96,random8,8x8,0.9433333333333334,8
+q_learning,Q-learning,0.85,3,p0.85_m3,0,10000,0.88,random8,8x8,0.98,8
+sarsa,SARSA,0.85,3,p0.85_m3,0,10000,0.94,random8,8x8,0.98,8
+expected_sarsa,Expected SARSA,0.85,3,p0.85_m3,0,10000,0.64,random8,8x8,0.98,8
+sarsa_lambda,SARSA(lambda),0.85,3,p0.85_m3,0,10000,0.56,random8,8x8,0.98,8
+q_lambda,Q(lambda),0.85,3,p0.85_m3,0,10000,0.76,random8,8x8,0.98,8
+optimistic_q,Optimistic Q,0.85,3,p0.85_m3,0,10000,0.98,random8,8x8,0.98,8
+dyna_q,Dyna-Q,0.85,3,p0.85_m3,0,10000,0.4,random8,8x8,0.98,8
+q_lambda,Q(lambda),0.8,4,p0.80_m4,0,10000,0.56,random8,8x8,1.0,10
+sarsa_lambda,SARSA(lambda),0.8,4,p0.80_m4,0,10000,0.76,random8,8x8,1.0,10
+expected_sarsa,Expected SARSA,0.8,4,p0.80_m4,0,10000,0.7,random8,8x8,1.0,10
+sarsa,SARSA,0.8,4,p0.80_m4,0,10000,0.68,random8,8x8,1.0,10
+q_learning,Q-learning,0.8,0,p0.80_m0,0,10000,1.0,random8,8x8,1.0,7
+sarsa,SARSA,0.8,0,p0.80_m0,0,10000,0.9,random8,8x8,1.0,7
+expected_sarsa,Expected SARSA,0.8,0,p0.80_m0,0,10000,0.9,random8,8x8,1.0,7
+sarsa_lambda,SARSA(lambda),0.8,0,p0.80_m0,0,10000,0.96,random8,8x8,1.0,7
+q_lambda,Q(lambda),0.8,0,p0.80_m0,0,10000,0.98,random8,8x8,1.0,7
+optimistic_q,Optimistic Q,0.8,0,p0.80_m0,0,10000,1.0,random8,8x8,1.0,7
+dyna_q,Dyna-Q,0.8,0,p0.80_m0,0,10000,0.88,random8,8x8,1.0,7
+q_learning,Q-learning,0.8,1,p0.80_m1,0,10000,0.86,random8,8x8,0.9933333333333332,11
+sarsa,SARSA,0.8,1,p0.80_m1,0,10000,0.96,random8,8x8,0.9933333333333332,11
+expected_sarsa,Expected SARSA,0.8,1,p0.80_m1,0,10000,0.96,random8,8x8,0.9933333333333332,11
+sarsa_lambda,SARSA(lambda),0.8,1,p0.80_m1,0,10000,0.46,random8,8x8,0.9933333333333332,11
+q_lambda,Q(lambda),0.8,1,p0.80_m1,0,10000,0.98,random8,8x8,0.9933333333333332,11
+optimistic_q,Optimistic Q,0.8,1,p0.80_m1,0,10000,1.0,random8,8x8,0.9933333333333332,11
+dyna_q,Dyna-Q,0.8,1,p0.80_m1,0,10000,0.94,random8,8x8,0.9933333333333332,11
+q_learning,Q-learning,0.85,4,p0.85_m4,0,10000,0.94,random8,8x8,1.0,7
+q_learning,Q-learning,0.8,2,p0.80_m2,0,10000,0.36,random8,8x8,0.94,9
+expected_sarsa,Expected SARSA,0.8,2,p0.80_m2,0,10000,0.84,random8,8x8,0.94,9
+sarsa_lambda,SARSA(lambda),0.8,2,p0.80_m2,0,10000,0.02,random8,8x8,0.94,9
+q_lambda,Q(lambda),0.8,2,p0.80_m2,0,10000,0.46,random8,8x8,0.94,9
+optimistic_q,Optimistic Q,0.8,2,p0.80_m2,0,10000,0.94,random8,8x8,0.94,9
+q_learning,Q-learning,0.85,0,p0.85_m0,0,10000,0.98,random8,8x8,1.0,3
+dyna_q,Dyna-Q,0.8,2,p0.80_m2,0,10000,0.84,random8,8x8,0.94,9
+q_learning,Q-learning,0.8,3,p0.80_m3,0,10000,0.66,random8,8x8,0.9966666666666667,8
+sarsa,SARSA,0.8,3,p0.80_m3,0,10000,0.86,random8,8x8,0.9966666666666667,8
+expected_sarsa,Expected SARSA,0.8,3,p0.80_m3,0,10000,0.74,random8,8x8,0.9966666666666667,8
+sarsa_lambda,SARSA(lambda),0.8,3,p0.80_m3,0,10000,0.98,random8,8x8,0.9966666666666667,8
+q_lambda,Q(lambda),0.8,3,p0.80_m3,0,10000,0.94,random8,8x8,0.9966666666666667,8
+optimistic_q,Optimistic Q,0.8,3,p0.80_m3,0,10000,1.0,random8,8x8,0.9966666666666667,8
+dyna_q,Dyna-Q,0.8,3,p0.80_m3,0,10000,0.8,random8,8x8,0.9966666666666667,8
+q_learning,Q-learning,0.8,4,p0.80_m4,0,10000,0.54,random8,8x8,1.0,10
+sarsa,SARSA,0.8,2,p0.80_m2,0,10000,0.5,random8,8x8,0.94,9
+dyna_q,Dyna-Q,0.95,3,p0.95_m3,0,10000,0.94,random8,8x8,1.0,5
+sarsa,SARSA,0.85,4,p0.85_m4,0,10000,0.98,random8,8x8,1.0,7
+sarsa_lambda,SARSA(lambda),0.85,4,p0.85_m4,0,10000,0.96,random8,8x8,1.0,7
+q_lambda,Q(lambda),0.9,4,p0.90_m4,0,10000,0.94,random8,8x8,1.0,6
+optimistic_q,Optimistic Q,0.9,4,p0.90_m4,0,10000,1.0,random8,8x8,1.0,6
+dyna_q,Dyna-Q,0.9,4,p0.90_m4,0,10000,0.98,random8,8x8,1.0,6
+q_learning,Q-learning,0.95,0,p0.95_m0,0,10000,0.9,random8,8x8,1.0,6
+sarsa,SARSA,0.95,0,p0.95_m0,0,10000,0.86,random8,8x8,1.0,6
+expected_sarsa,Expected SARSA,0.95,0,p0.95_m0,0,10000,1.0,random8,8x8,1.0,6
+sarsa_lambda,SARSA(lambda),0.95,0,p0.95_m0,0,10000,0.92,random8,8x8,1.0,6
+q_lambda,Q(lambda),0.95,0,p0.95_m0,0,10000,0.92,random8,8x8,1.0,6
+optimistic_q,Optimistic Q,0.95,0,p0.95_m0,0,10000,1.0,random8,8x8,1.0,6
+dyna_q,Dyna-Q,0.95,0,p0.95_m0,0,10000,0.88,random8,8x8,1.0,6
+q_learning,Q-learning,0.95,1,p0.95_m1,0,10000,1.0,random8,8x8,0.9733333333333334,6
+sarsa,SARSA,0.95,1,p0.95_m1,0,10000,0.92,random8,8x8,0.9733333333333334,6
+expected_sarsa,Expected SARSA,0.95,1,p0.95_m1,0,10000,0.98,random8,8x8,0.9733333333333334,6
+sarsa_lambda,SARSA(lambda),0.95,1,p0.95_m1,0,10000,0.74,random8,8x8,0.9733333333333334,6
+q_lambda,Q(lambda),0.95,1,p0.95_m1,0,10000,0.86,random8,8x8,0.9733333333333334,6
+optimistic_q,Optimistic Q,0.95,1,p0.95_m1,0,10000,0.98,random8,8x8,0.9733333333333334,6
+dyna_q,Dyna-Q,0.95,1,p0.95_m1,0,10000,0.74,random8,8x8,0.9733333333333334,6
+q_learning,Q-learning,0.95,2,p0.95_m2,0,10000,1.0,random8,8x8,1.0,2
+sarsa,SARSA,0.95,2,p0.95_m2,0,10000,1.0,random8,8x8,1.0,2
+expected_sarsa,Expected SARSA,0.95,2,p0.95_m2,0,10000,1.0,random8,8x8,1.0,2
+sarsa_lambda,SARSA(lambda),0.95,2,p0.95_m2,0,10000,1.0,random8,8x8,1.0,2
+q_lambda,Q(lambda),0.95,2,p0.95_m2,0,10000,0.98,random8,8x8,1.0,2
+optimistic_q,Optimistic Q,0.95,2,p0.95_m2,0,10000,1.0,random8,8x8,1.0,2
+dyna_q,Dyna-Q,0.95,2,p0.95_m2,0,10000,0.98,random8,8x8,1.0,2
+q_learning,Q-learning,0.95,3,p0.95_m3,0,10000,0.9,random8,8x8,1.0,5
+sarsa,SARSA,0.95,3,p0.95_m3,0,10000,0.98,random8,8x8,1.0,5
+expected_sarsa,Expected SARSA,0.95,3,p0.95_m3,0,10000,1.0,random8,8x8,1.0,5
+sarsa_lambda,SARSA(lambda),0.95,3,p0.95_m3,0,10000,0.48,random8,8x8,1.0,5
+q_lambda,Q(lambda),0.95,3,p0.95_m3,0,10000,1.0,random8,8x8,1.0,5
+sarsa_lambda,SARSA(lambda),0.9,4,p0.90_m4,0,10000,0.66,random8,8x8,1.0,6
+expected_sarsa,Expected SARSA,0.9,4,p0.90_m4,0,10000,0.92,random8,8x8,1.0,6
+sarsa,SARSA,0.9,4,p0.90_m4,0,10000,0.96,random8,8x8,1.0,6
+q_learning,Q-learning,0.9,4,p0.90_m4,0,10000,0.96,random8,8x8,1.0,6
+q_lambda,Q(lambda),0.85,4,p0.85_m4,0,10000,1.0,random8,8x8,1.0,7
+optimistic_q,Optimistic Q,0.85,4,p0.85_m4,0,10000,1.0,random8,8x8,1.0,7
+q_learning,Q-learning,0.9,0,p0.90_m0,0,10000,0.94,random8,8x8,0.9733333333333334,7
+sarsa,SARSA,0.9,0,p0.90_m0,0,10000,0.88,random8,8x8,0.9733333333333334,7
+expected_sarsa,Expected SARSA,0.9,0,p0.90_m0,0,10000,0.98,random8,8x8,0.9733333333333334,7
+sarsa_lambda,SARSA(lambda),0.9,0,p0.90_m0,0,10000,0.72,random8,8x8,0.9733333333333334,7
+q_lambda,Q(lambda),0.9,0,p0.90_m0,0,10000,0.86,random8,8x8,0.9733333333333334,7
+optimistic_q,Optimistic Q,0.9,0,p0.90_m0,0,10000,0.96,random8,8x8,0.9733333333333334,7
+dyna_q,Dyna-Q,0.9,0,p0.90_m0,0,10000,0.4,random8,8x8,0.9733333333333334,7
+q_learning,Q-learning,0.9,1,p0.90_m1,0,10000,1.0,random8,8x8,1.0,4
+sarsa,SARSA,0.9,1,p0.90_m1,0,10000,1.0,random8,8x8,1.0,4
+expected_sarsa,Expected SARSA,0.9,1,p0.90_m1,0,10000,1.0,random8,8x8,1.0,4
+sarsa_lambda,SARSA(lambda),0.9,1,p0.90_m1,0,10000,1.0,random8,8x8,1.0,4
+q_lambda,Q(lambda),0.9,1,p0.90_m1,0,10000,1.0,random8,8x8,1.0,4
+expected_sarsa,Expected SARSA,0.85,4,p0.85_m4,0,10000,0.94,random8,8x8,1.0,7
+optimistic_q,Optimistic Q,0.9,1,p0.90_m1,0,10000,1.0,random8,8x8,1.0,4
+q_learning,Q-learning,0.9,2,p0.90_m2,0,10000,1.0,random8,8x8,1.0,6
+sarsa,SARSA,0.9,2,p0.90_m2,0,10000,0.82,random8,8x8,1.0,6
+expected_sarsa,Expected SARSA,0.9,2,p0.90_m2,0,10000,0.92,random8,8x8,1.0,6
+sarsa_lambda,SARSA(lambda),0.9,2,p0.90_m2,0,10000,0.92,random8,8x8,1.0,6
+q_lambda,Q(lambda),0.9,2,p0.90_m2,0,10000,1.0,random8,8x8,1.0,6
+optimistic_q,Optimistic Q,0.9,2,p0.90_m2,0,10000,1.0,random8,8x8,1.0,6
+dyna_q,Dyna-Q,0.9,2,p0.90_m2,0,10000,0.98,random8,8x8,1.0,6
+q_learning,Q-learning,0.9,3,p0.90_m3,0,10000,0.96,random8,8x8,1.0,3
+sarsa,SARSA,0.9,3,p0.90_m3,0,10000,0.98,random8,8x8,1.0,3
+expected_sarsa,Expected SARSA,0.9,3,p0.90_m3,0,10000,1.0,random8,8x8,1.0,3
+sarsa_lambda,SARSA(lambda),0.9,3,p0.90_m3,0,10000,0.94,random8,8x8,1.0,3
+q_lambda,Q(lambda),0.9,3,p0.90_m3,0,10000,1.0,random8,8x8,1.0,3
+optimistic_q,Optimistic Q,0.9,3,p0.90_m3,0,10000,1.0,random8,8x8,1.0,3
+dyna_q,Dyna-Q,0.9,3,p0.90_m3,0,10000,1.0,random8,8x8,1.0,3
+dyna_q,Dyna-Q,0.9,1,p0.90_m1,0,10000,0.96,random8,8x8,1.0,4
+dyna_q,Dyna-Q,0.95,4,p0.95_m4,0,10000,0.98,random8,8x8,1.0,1

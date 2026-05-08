@@ -1,0 +1,28 @@
+algorithm,display_algorithm,env,seed,final_success
+q_learning,Q-learning,standard_4x4_stoch,0,0.73
+q_learning,Q-learning,standard_4x4_stoch,1,0.76
+q_learning,Q-learning,standard_4x4_stoch,2,0.82
+sarsa,SARSA,standard_4x4_stoch,0,0.7
+sarsa,SARSA,standard_4x4_stoch,1,0.73
+sarsa,SARSA,standard_4x4_stoch,2,0.74
+expected_sarsa,Expected SARSA,standard_4x4_stoch,0,0.58
+expected_sarsa,Expected SARSA,standard_4x4_stoch,1,0.73
+expected_sarsa,Expected SARSA,standard_4x4_stoch,2,0.73
+sarsa_lambda,SARSA(lambda),standard_4x4_stoch,0,0.2
+sarsa_lambda,SARSA(lambda),standard_4x4_stoch,1,0.4
+sarsa_lambda,SARSA(lambda),standard_4x4_stoch,2,0.69
+q_lambda,Q(lambda),standard_4x4_stoch,0,0.76
+q_lambda,Q(lambda),standard_4x4_stoch,1,0.75
+q_lambda,Q(lambda),standard_4x4_stoch,2,0.08
+optimistic_q,Optimistic Q,standard_4x4_stoch,0,0.77
+optimistic_q,Optimistic Q,standard_4x4_stoch,1,0.74
+optimistic_q,Optimistic Q,standard_4x4_stoch,2,0.79
+dyna_q,Dyna-Q,standard_4x4_stoch,0,0.0
+dyna_q,Dyna-Q,standard_4x4_stoch,1,0.49
+dyna_q,Dyna-Q,standard_4x4_stoch,2,0.55
+value_iteration,Value Iteration,standard_4x4_stoch,0,0.85
+value_iteration,Value Iteration,standard_4x4_stoch,1,0.83
+value_iteration,Value Iteration,standard_4x4_stoch,2,0.86
+policy_iteration,Policy Iteration,standard_4x4_stoch,0,0.85
+policy_iteration,Policy Iteration,standard_4x4_stoch,1,0.83
+policy_iteration,Policy Iteration,standard_4x4_stoch,2,0.86

@@ -1,0 +1,1149 @@
+algorithm,display_algorithm,frozen_prob,map_id,map_label,seed,episode,success_rate,suite,map_size,oracle_success,holes
+q_learning,Q-learning,-1.0,0,designed4_m0,0,0,0.01,designed4,4x4,0.5566666666666666,4
+q_learning,Q-learning,-1.0,0,designed4_m0,0,50,0.02,designed4,4x4,0.5566666666666666,4
+q_learning,Q-learning,-1.0,0,designed4_m0,0,100,0.03,designed4,4x4,0.5566666666666666,4
+q_learning,Q-learning,-1.0,0,designed4_m0,0,150,0.05,designed4,4x4,0.5566666666666666,4
+q_learning,Q-learning,-1.0,0,designed4_m0,0,200,0.07,designed4,4x4,0.5566666666666666,4
+q_learning,Q-learning,-1.0,0,designed4_m0,0,250,0.26,designed4,4x4,0.5566666666666666,4
+q_learning,Q-learning,-1.0,0,designed4_m0,0,300,0.29,designed4,4x4,0.5566666666666666,4
+q_learning,Q-learning,-1.0,0,designed4_m0,0,350,0.31,designed4,4x4,0.5566666666666666,4
+q_learning,Q-learning,-1.0,0,designed4_m0,0,400,0.31,designed4,4x4,0.5566666666666666,4
+q_learning,Q-learning,-1.0,0,designed4_m0,0,450,0.36,designed4,4x4,0.5566666666666666,4
+q_learning,Q-learning,-1.0,0,designed4_m0,0,500,0.16,designed4,4x4,0.5566666666666666,4
+q_learning,Q-learning,-1.0,0,designed4_m0,0,550,0.46,designed4,4x4,0.5566666666666666,4
+q_learning,Q-learning,-1.0,0,designed4_m0,0,600,0.43,designed4,4x4,0.5566666666666666,4
+q_learning,Q-learning,-1.0,0,designed4_m0,0,650,0.5,designed4,4x4,0.5566666666666666,4
+q_learning,Q-learning,-1.0,0,designed4_m0,0,700,0.49,designed4,4x4,0.5566666666666666,4
+q_learning,Q-learning,-1.0,0,designed4_m0,0,750,0.45,designed4,4x4,0.5566666666666666,4
+q_learning,Q-learning,-1.0,0,designed4_m0,0,800,0.53,designed4,4x4,0.5566666666666666,4
+q_learning,Q-learning,-1.0,0,designed4_m0,0,850,0.54,designed4,4x4,0.5566666666666666,4
+q_learning,Q-learning,-1.0,0,designed4_m0,0,900,0.47,designed4,4x4,0.5566666666666666,4
+q_learning,Q-learning,-1.0,0,designed4_m0,0,950,0.42,designed4,4x4,0.5566666666666666,4
+q_learning,Q-learning,-1.0,0,designed4_m0,0,1000,0.44,designed4,4x4,0.5566666666666666,4
+q_learning,Q-learning,-1.0,0,designed4_m0,0,1050,0.6,designed4,4x4,0.5566666666666666,4
+q_learning,Q-learning,-1.0,0,designed4_m0,0,1100,0.49,designed4,4x4,0.5566666666666666,4
+q_learning,Q-learning,-1.0,0,designed4_m0,0,1150,0.39,designed4,4x4,0.5566666666666666,4
+q_learning,Q-learning,-1.0,0,designed4_m0,0,1200,0.52,designed4,4x4,0.5566666666666666,4
+q_learning,Q-learning,-1.0,0,designed4_m0,0,1250,0.53,designed4,4x4,0.5566666666666666,4
+q_learning,Q-learning,-1.0,0,designed4_m0,0,1300,0.48,designed4,4x4,0.5566666666666666,4
+q_learning,Q-learning,-1.0,0,designed4_m0,0,1350,0.5,designed4,4x4,0.5566666666666666,4
+q_learning,Q-learning,-1.0,0,designed4_m0,0,1400,0.52,designed4,4x4,0.5566666666666666,4
+q_learning,Q-learning,-1.0,0,designed4_m0,0,1450,0.47,designed4,4x4,0.5566666666666666,4
+q_learning,Q-learning,-1.0,0,designed4_m0,0,1500,0.54,designed4,4x4,0.5566666666666666,4
+q_learning,Q-learning,-1.0,0,designed4_m0,0,1550,0.53,designed4,4x4,0.5566666666666666,4
+q_learning,Q-learning,-1.0,0,designed4_m0,0,1600,0.5,designed4,4x4,0.5566666666666666,4
+q_learning,Q-learning,-1.0,0,designed4_m0,0,1650,0.53,designed4,4x4,0.5566666666666666,4
+q_learning,Q-learning,-1.0,0,designed4_m0,0,1700,0.48,designed4,4x4,0.5566666666666666,4
+q_learning,Q-learning,-1.0,0,designed4_m0,0,1750,0.43,designed4,4x4,0.5566666666666666,4
+q_learning,Q-learning,-1.0,0,designed4_m0,0,1800,0.42,designed4,4x4,0.5566666666666666,4
+q_learning,Q-learning,-1.0,0,designed4_m0,0,1850,0.46,designed4,4x4,0.5566666666666666,4
+q_learning,Q-learning,-1.0,0,designed4_m0,0,1900,0.48,designed4,4x4,0.5566666666666666,4
+q_learning,Q-learning,-1.0,0,designed4_m0,0,1950,0.54,designed4,4x4,0.5566666666666666,4
+q_learning,Q-learning,-1.0,0,designed4_m0,0,2000,0.5,designed4,4x4,0.5566666666666666,4
+sarsa,SARSA,-1.0,0,designed4_m0,0,0,0.01,designed4,4x4,0.5566666666666666,4
+sarsa,SARSA,-1.0,0,designed4_m0,0,50,0.02,designed4,4x4,0.5566666666666666,4
+sarsa,SARSA,-1.0,0,designed4_m0,0,100,0.0,designed4,4x4,0.5566666666666666,4
+sarsa,SARSA,-1.0,0,designed4_m0,0,150,0.0,designed4,4x4,0.5566666666666666,4
+sarsa,SARSA,-1.0,0,designed4_m0,0,200,0.0,designed4,4x4,0.5566666666666666,4
+sarsa,SARSA,-1.0,0,designed4_m0,0,250,0.03,designed4,4x4,0.5566666666666666,4
+sarsa,SARSA,-1.0,0,designed4_m0,0,300,0.01,designed4,4x4,0.5566666666666666,4
+sarsa,SARSA,-1.0,0,designed4_m0,0,350,0.0,designed4,4x4,0.5566666666666666,4
+sarsa,SARSA,-1.0,0,designed4_m0,0,400,0.05,designed4,4x4,0.5566666666666666,4
+sarsa,SARSA,-1.0,0,designed4_m0,0,450,0.1,designed4,4x4,0.5566666666666666,4
+sarsa,SARSA,-1.0,0,designed4_m0,0,500,0.06,designed4,4x4,0.5566666666666666,4
+sarsa,SARSA,-1.0,0,designed4_m0,0,550,0.06,designed4,4x4,0.5566666666666666,4
+sarsa,SARSA,-1.0,0,designed4_m0,0,600,0.15,designed4,4x4,0.5566666666666666,4
+sarsa,SARSA,-1.0,0,designed4_m0,0,650,0.12,designed4,4x4,0.5566666666666666,4
+sarsa,SARSA,-1.0,0,designed4_m0,0,700,0.12,designed4,4x4,0.5566666666666666,4
+sarsa,SARSA,-1.0,0,designed4_m0,0,750,0.13,designed4,4x4,0.5566666666666666,4
+sarsa,SARSA,-1.0,0,designed4_m0,0,800,0.16,designed4,4x4,0.5566666666666666,4
+sarsa,SARSA,-1.0,0,designed4_m0,0,850,0.16,designed4,4x4,0.5566666666666666,4
+sarsa,SARSA,-1.0,0,designed4_m0,0,900,0.13,designed4,4x4,0.5566666666666666,4
+sarsa,SARSA,-1.0,0,designed4_m0,0,950,0.11,designed4,4x4,0.5566666666666666,4
+sarsa,SARSA,-1.0,0,designed4_m0,0,1000,0.18,designed4,4x4,0.5566666666666666,4
+sarsa,SARSA,-1.0,0,designed4_m0,0,1050,0.17,designed4,4x4,0.5566666666666666,4
+sarsa,SARSA,-1.0,0,designed4_m0,0,1100,0.17,designed4,4x4,0.5566666666666666,4
+sarsa,SARSA,-1.0,0,designed4_m0,0,1150,0.18,designed4,4x4,0.5566666666666666,4
+sarsa,SARSA,-1.0,0,designed4_m0,0,1200,0.07,designed4,4x4,0.5566666666666666,4
+sarsa,SARSA,-1.0,0,designed4_m0,0,1250,0.15,designed4,4x4,0.5566666666666666,4
+sarsa,SARSA,-1.0,0,designed4_m0,0,1300,0.16,designed4,4x4,0.5566666666666666,4
+sarsa,SARSA,-1.0,0,designed4_m0,0,1350,0.12,designed4,4x4,0.5566666666666666,4
+sarsa,SARSA,-1.0,0,designed4_m0,0,1400,0.15,designed4,4x4,0.5566666666666666,4
+sarsa,SARSA,-1.0,0,designed4_m0,0,1450,0.06,designed4,4x4,0.5566666666666666,4
+sarsa,SARSA,-1.0,0,designed4_m0,0,1500,0.11,designed4,4x4,0.5566666666666666,4
+sarsa,SARSA,-1.0,0,designed4_m0,0,1550,0.15,designed4,4x4,0.5566666666666666,4
+sarsa,SARSA,-1.0,0,designed4_m0,0,1600,0.13,designed4,4x4,0.5566666666666666,4
+sarsa,SARSA,-1.0,0,designed4_m0,0,1650,0.12,designed4,4x4,0.5566666666666666,4
+sarsa,SARSA,-1.0,0,designed4_m0,0,1700,0.19,designed4,4x4,0.5566666666666666,4
+sarsa,SARSA,-1.0,0,designed4_m0,0,1750,0.19,designed4,4x4,0.5566666666666666,4
+sarsa,SARSA,-1.0,0,designed4_m0,0,1800,0.16,designed4,4x4,0.5566666666666666,4
+sarsa,SARSA,-1.0,0,designed4_m0,0,1850,0.14,designed4,4x4,0.5566666666666666,4
+sarsa,SARSA,-1.0,0,designed4_m0,0,1900,0.18,designed4,4x4,0.5566666666666666,4
+sarsa,SARSA,-1.0,0,designed4_m0,0,1950,0.16,designed4,4x4,0.5566666666666666,4
+sarsa,SARSA,-1.0,0,designed4_m0,0,2000,0.13,designed4,4x4,0.5566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,0,designed4_m0,0,0,0.01,designed4,4x4,0.5566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,0,designed4_m0,0,50,0.0,designed4,4x4,0.5566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,0,designed4_m0,0,100,0.01,designed4,4x4,0.5566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,0,designed4_m0,0,150,0.05,designed4,4x4,0.5566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,0,designed4_m0,0,200,0.04,designed4,4x4,0.5566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,0,designed4_m0,0,250,0.04,designed4,4x4,0.5566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,0,designed4_m0,0,300,0.05,designed4,4x4,0.5566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,0,designed4_m0,0,350,0.07,designed4,4x4,0.5566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,0,designed4_m0,0,400,0.07,designed4,4x4,0.5566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,0,designed4_m0,0,450,0.19,designed4,4x4,0.5566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,0,designed4_m0,0,500,0.16,designed4,4x4,0.5566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,0,designed4_m0,0,550,0.19,designed4,4x4,0.5566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,0,designed4_m0,0,600,0.16,designed4,4x4,0.5566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,0,designed4_m0,0,650,0.25,designed4,4x4,0.5566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,0,designed4_m0,0,700,0.22,designed4,4x4,0.5566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,0,designed4_m0,0,750,0.23,designed4,4x4,0.5566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,0,designed4_m0,0,800,0.18,designed4,4x4,0.5566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,0,designed4_m0,0,850,0.27,designed4,4x4,0.5566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,0,designed4_m0,0,900,0.21,designed4,4x4,0.5566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,0,designed4_m0,0,950,0.18,designed4,4x4,0.5566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,0,designed4_m0,0,1000,0.23,designed4,4x4,0.5566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,0,designed4_m0,0,1050,0.25,designed4,4x4,0.5566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,0,designed4_m0,0,1100,0.28,designed4,4x4,0.5566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,0,designed4_m0,0,1150,0.24,designed4,4x4,0.5566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,0,designed4_m0,0,1200,0.25,designed4,4x4,0.5566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,0,designed4_m0,0,1250,0.5,designed4,4x4,0.5566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,0,designed4_m0,0,1300,0.54,designed4,4x4,0.5566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,0,designed4_m0,0,1350,0.56,designed4,4x4,0.5566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,0,designed4_m0,0,1400,0.52,designed4,4x4,0.5566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,0,designed4_m0,0,1450,0.47,designed4,4x4,0.5566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,0,designed4_m0,0,1500,0.47,designed4,4x4,0.5566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,0,designed4_m0,0,1550,0.55,designed4,4x4,0.5566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,0,designed4_m0,0,1600,0.56,designed4,4x4,0.5566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,0,designed4_m0,0,1650,0.49,designed4,4x4,0.5566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,0,designed4_m0,0,1700,0.48,designed4,4x4,0.5566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,0,designed4_m0,0,1750,0.43,designed4,4x4,0.5566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,0,designed4_m0,0,1800,0.53,designed4,4x4,0.5566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,0,designed4_m0,0,1850,0.46,designed4,4x4,0.5566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,0,designed4_m0,0,1900,0.53,designed4,4x4,0.5566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,0,designed4_m0,0,1950,0.52,designed4,4x4,0.5566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,0,designed4_m0,0,2000,0.5,designed4,4x4,0.5566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,0,designed4_m0,0,0,0.01,designed4,4x4,0.5566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,0,designed4_m0,0,50,0.08,designed4,4x4,0.5566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,0,designed4_m0,0,100,0.01,designed4,4x4,0.5566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,0,designed4_m0,0,150,0.0,designed4,4x4,0.5566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,0,designed4_m0,0,200,0.02,designed4,4x4,0.5566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,0,designed4_m0,0,250,0.1,designed4,4x4,0.5566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,0,designed4_m0,0,300,0.06,designed4,4x4,0.5566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,0,designed4_m0,0,350,0.01,designed4,4x4,0.5566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,0,designed4_m0,0,400,0.04,designed4,4x4,0.5566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,0,designed4_m0,0,450,0.07,designed4,4x4,0.5566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,0,designed4_m0,0,500,0.04,designed4,4x4,0.5566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,0,designed4_m0,0,550,0.06,designed4,4x4,0.5566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,0,designed4_m0,0,600,0.05,designed4,4x4,0.5566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,0,designed4_m0,0,650,0.15,designed4,4x4,0.5566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,0,designed4_m0,0,700,0.16,designed4,4x4,0.5566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,0,designed4_m0,0,750,0.18,designed4,4x4,0.5566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,0,designed4_m0,0,800,0.2,designed4,4x4,0.5566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,0,designed4_m0,0,850,0.18,designed4,4x4,0.5566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,0,designed4_m0,0,900,0.0,designed4,4x4,0.5566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,0,designed4_m0,0,950,0.22,designed4,4x4,0.5566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,0,designed4_m0,0,1000,0.09,designed4,4x4,0.5566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,0,designed4_m0,0,1050,0.03,designed4,4x4,0.5566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,0,designed4_m0,0,1100,0.1,designed4,4x4,0.5566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,0,designed4_m0,0,1150,0.11,designed4,4x4,0.5566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,0,designed4_m0,0,1200,0.05,designed4,4x4,0.5566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,0,designed4_m0,0,1250,0.01,designed4,4x4,0.5566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,0,designed4_m0,0,1300,0.07,designed4,4x4,0.5566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,0,designed4_m0,0,1350,0.1,designed4,4x4,0.5566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,0,designed4_m0,0,1400,0.05,designed4,4x4,0.5566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,0,designed4_m0,0,1450,0.05,designed4,4x4,0.5566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,0,designed4_m0,0,1500,0.07,designed4,4x4,0.5566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,0,designed4_m0,0,1550,0.06,designed4,4x4,0.5566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,0,designed4_m0,0,1600,0.07,designed4,4x4,0.5566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,0,designed4_m0,0,1650,0.0,designed4,4x4,0.5566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,0,designed4_m0,0,1700,0.07,designed4,4x4,0.5566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,0,designed4_m0,0,1750,0.02,designed4,4x4,0.5566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,0,designed4_m0,0,1800,0.1,designed4,4x4,0.5566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,0,designed4_m0,0,1850,0.23,designed4,4x4,0.5566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,0,designed4_m0,0,1900,0.2,designed4,4x4,0.5566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,0,designed4_m0,0,1950,0.19,designed4,4x4,0.5566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,0,designed4_m0,0,2000,0.17,designed4,4x4,0.5566666666666666,4
+q_lambda,Q(lambda),-1.0,0,designed4_m0,0,0,0.01,designed4,4x4,0.5566666666666666,4
+q_lambda,Q(lambda),-1.0,0,designed4_m0,0,50,0.0,designed4,4x4,0.5566666666666666,4
+q_lambda,Q(lambda),-1.0,0,designed4_m0,0,100,0.0,designed4,4x4,0.5566666666666666,4
+q_lambda,Q(lambda),-1.0,0,designed4_m0,0,150,0.0,designed4,4x4,0.5566666666666666,4
+q_lambda,Q(lambda),-1.0,0,designed4_m0,0,200,0.0,designed4,4x4,0.5566666666666666,4
+q_lambda,Q(lambda),-1.0,0,designed4_m0,0,250,0.0,designed4,4x4,0.5566666666666666,4
+q_lambda,Q(lambda),-1.0,0,designed4_m0,0,300,0.01,designed4,4x4,0.5566666666666666,4
+q_lambda,Q(lambda),-1.0,0,designed4_m0,0,350,0.02,designed4,4x4,0.5566666666666666,4
+q_lambda,Q(lambda),-1.0,0,designed4_m0,0,400,0.0,designed4,4x4,0.5566666666666666,4
+q_lambda,Q(lambda),-1.0,0,designed4_m0,0,450,0.01,designed4,4x4,0.5566666666666666,4
+q_lambda,Q(lambda),-1.0,0,designed4_m0,0,500,0.09,designed4,4x4,0.5566666666666666,4
+q_lambda,Q(lambda),-1.0,0,designed4_m0,0,550,0.07,designed4,4x4,0.5566666666666666,4
+q_lambda,Q(lambda),-1.0,0,designed4_m0,0,600,0.07,designed4,4x4,0.5566666666666666,4
+q_lambda,Q(lambda),-1.0,0,designed4_m0,0,650,0.1,designed4,4x4,0.5566666666666666,4
+q_lambda,Q(lambda),-1.0,0,designed4_m0,0,700,0.11,designed4,4x4,0.5566666666666666,4
+q_lambda,Q(lambda),-1.0,0,designed4_m0,0,750,0.08,designed4,4x4,0.5566666666666666,4
+q_lambda,Q(lambda),-1.0,0,designed4_m0,0,800,0.18,designed4,4x4,0.5566666666666666,4
+q_lambda,Q(lambda),-1.0,0,designed4_m0,0,850,0.16,designed4,4x4,0.5566666666666666,4
+q_lambda,Q(lambda),-1.0,0,designed4_m0,0,900,0.14,designed4,4x4,0.5566666666666666,4
+q_lambda,Q(lambda),-1.0,0,designed4_m0,0,950,0.13,designed4,4x4,0.5566666666666666,4
+q_lambda,Q(lambda),-1.0,0,designed4_m0,0,1000,0.11,designed4,4x4,0.5566666666666666,4
+q_lambda,Q(lambda),-1.0,0,designed4_m0,0,1050,0.17,designed4,4x4,0.5566666666666666,4
+q_lambda,Q(lambda),-1.0,0,designed4_m0,0,1100,0.21,designed4,4x4,0.5566666666666666,4
+q_lambda,Q(lambda),-1.0,0,designed4_m0,0,1150,0.17,designed4,4x4,0.5566666666666666,4
+q_lambda,Q(lambda),-1.0,0,designed4_m0,0,1200,0.14,designed4,4x4,0.5566666666666666,4
+q_lambda,Q(lambda),-1.0,0,designed4_m0,0,1250,0.24,designed4,4x4,0.5566666666666666,4
+q_lambda,Q(lambda),-1.0,0,designed4_m0,0,1300,0.23,designed4,4x4,0.5566666666666666,4
+q_lambda,Q(lambda),-1.0,0,designed4_m0,0,1350,0.27,designed4,4x4,0.5566666666666666,4
+q_lambda,Q(lambda),-1.0,0,designed4_m0,0,1400,0.34,designed4,4x4,0.5566666666666666,4
+q_lambda,Q(lambda),-1.0,0,designed4_m0,0,1450,0.29,designed4,4x4,0.5566666666666666,4
+q_lambda,Q(lambda),-1.0,0,designed4_m0,0,1500,0.2,designed4,4x4,0.5566666666666666,4
+q_lambda,Q(lambda),-1.0,0,designed4_m0,0,1550,0.29,designed4,4x4,0.5566666666666666,4
+q_lambda,Q(lambda),-1.0,0,designed4_m0,0,1600,0.0,designed4,4x4,0.5566666666666666,4
+q_lambda,Q(lambda),-1.0,0,designed4_m0,0,1650,0.27,designed4,4x4,0.5566666666666666,4
+q_lambda,Q(lambda),-1.0,0,designed4_m0,0,1700,0.26,designed4,4x4,0.5566666666666666,4
+q_lambda,Q(lambda),-1.0,0,designed4_m0,0,1750,0.18,designed4,4x4,0.5566666666666666,4
+q_lambda,Q(lambda),-1.0,0,designed4_m0,0,1800,0.14,designed4,4x4,0.5566666666666666,4
+q_lambda,Q(lambda),-1.0,0,designed4_m0,0,1850,0.22,designed4,4x4,0.5566666666666666,4
+q_lambda,Q(lambda),-1.0,0,designed4_m0,0,1900,0.21,designed4,4x4,0.5566666666666666,4
+q_lambda,Q(lambda),-1.0,0,designed4_m0,0,1950,0.23,designed4,4x4,0.5566666666666666,4
+q_lambda,Q(lambda),-1.0,0,designed4_m0,0,2000,0.18,designed4,4x4,0.5566666666666666,4
+optimistic_q,Optimistic Q,-1.0,0,designed4_m0,0,0,0.01,designed4,4x4,0.5566666666666666,4
+optimistic_q,Optimistic Q,-1.0,0,designed4_m0,0,50,0.0,designed4,4x4,0.5566666666666666,4
+optimistic_q,Optimistic Q,-1.0,0,designed4_m0,0,100,0.13,designed4,4x4,0.5566666666666666,4
+optimistic_q,Optimistic Q,-1.0,0,designed4_m0,0,150,0.05,designed4,4x4,0.5566666666666666,4
+optimistic_q,Optimistic Q,-1.0,0,designed4_m0,0,200,0.45,designed4,4x4,0.5566666666666666,4
+optimistic_q,Optimistic Q,-1.0,0,designed4_m0,0,250,0.46,designed4,4x4,0.5566666666666666,4
+optimistic_q,Optimistic Q,-1.0,0,designed4_m0,0,300,0.0,designed4,4x4,0.5566666666666666,4
+optimistic_q,Optimistic Q,-1.0,0,designed4_m0,0,350,0.47,designed4,4x4,0.5566666666666666,4
+optimistic_q,Optimistic Q,-1.0,0,designed4_m0,0,400,0.56,designed4,4x4,0.5566666666666666,4
+optimistic_q,Optimistic Q,-1.0,0,designed4_m0,0,450,0.55,designed4,4x4,0.5566666666666666,4
+optimistic_q,Optimistic Q,-1.0,0,designed4_m0,0,500,0.46,designed4,4x4,0.5566666666666666,4
+optimistic_q,Optimistic Q,-1.0,0,designed4_m0,0,550,0.5,designed4,4x4,0.5566666666666666,4
+optimistic_q,Optimistic Q,-1.0,0,designed4_m0,0,600,0.4,designed4,4x4,0.5566666666666666,4
+optimistic_q,Optimistic Q,-1.0,0,designed4_m0,0,650,0.5,designed4,4x4,0.5566666666666666,4
+optimistic_q,Optimistic Q,-1.0,0,designed4_m0,0,700,0.38,designed4,4x4,0.5566666666666666,4
+optimistic_q,Optimistic Q,-1.0,0,designed4_m0,0,750,0.54,designed4,4x4,0.5566666666666666,4
+optimistic_q,Optimistic Q,-1.0,0,designed4_m0,0,800,0.49,designed4,4x4,0.5566666666666666,4
+optimistic_q,Optimistic Q,-1.0,0,designed4_m0,0,850,0.56,designed4,4x4,0.5566666666666666,4
+optimistic_q,Optimistic Q,-1.0,0,designed4_m0,0,900,0.44,designed4,4x4,0.5566666666666666,4
+optimistic_q,Optimistic Q,-1.0,0,designed4_m0,0,950,0.41,designed4,4x4,0.5566666666666666,4
+optimistic_q,Optimistic Q,-1.0,0,designed4_m0,0,1000,0.0,designed4,4x4,0.5566666666666666,4
+optimistic_q,Optimistic Q,-1.0,0,designed4_m0,0,1050,0.5,designed4,4x4,0.5566666666666666,4
+optimistic_q,Optimistic Q,-1.0,0,designed4_m0,0,1100,0.39,designed4,4x4,0.5566666666666666,4
+optimistic_q,Optimistic Q,-1.0,0,designed4_m0,0,1150,0.39,designed4,4x4,0.5566666666666666,4
+optimistic_q,Optimistic Q,-1.0,0,designed4_m0,0,1200,0.46,designed4,4x4,0.5566666666666666,4
+optimistic_q,Optimistic Q,-1.0,0,designed4_m0,0,1250,0.5,designed4,4x4,0.5566666666666666,4
+optimistic_q,Optimistic Q,-1.0,0,designed4_m0,0,1300,0.48,designed4,4x4,0.5566666666666666,4
+optimistic_q,Optimistic Q,-1.0,0,designed4_m0,0,1350,0.55,designed4,4x4,0.5566666666666666,4
+optimistic_q,Optimistic Q,-1.0,0,designed4_m0,0,1400,0.39,designed4,4x4,0.5566666666666666,4
+optimistic_q,Optimistic Q,-1.0,0,designed4_m0,0,1450,0.53,designed4,4x4,0.5566666666666666,4
+optimistic_q,Optimistic Q,-1.0,0,designed4_m0,0,1500,0.54,designed4,4x4,0.5566666666666666,4
+optimistic_q,Optimistic Q,-1.0,0,designed4_m0,0,1550,0.53,designed4,4x4,0.5566666666666666,4
+optimistic_q,Optimistic Q,-1.0,0,designed4_m0,0,1600,0.45,designed4,4x4,0.5566666666666666,4
+optimistic_q,Optimistic Q,-1.0,0,designed4_m0,0,1650,0.4,designed4,4x4,0.5566666666666666,4
+optimistic_q,Optimistic Q,-1.0,0,designed4_m0,0,1700,0.45,designed4,4x4,0.5566666666666666,4
+optimistic_q,Optimistic Q,-1.0,0,designed4_m0,0,1750,0.44,designed4,4x4,0.5566666666666666,4
+optimistic_q,Optimistic Q,-1.0,0,designed4_m0,0,1800,0.53,designed4,4x4,0.5566666666666666,4
+optimistic_q,Optimistic Q,-1.0,0,designed4_m0,0,1850,0.44,designed4,4x4,0.5566666666666666,4
+optimistic_q,Optimistic Q,-1.0,0,designed4_m0,0,1900,0.45,designed4,4x4,0.5566666666666666,4
+optimistic_q,Optimistic Q,-1.0,0,designed4_m0,0,1950,0.57,designed4,4x4,0.5566666666666666,4
+optimistic_q,Optimistic Q,-1.0,0,designed4_m0,0,2000,0.23,designed4,4x4,0.5566666666666666,4
+dyna_q,Dyna-Q,-1.0,0,designed4_m0,0,0,0.01,designed4,4x4,0.5566666666666666,4
+dyna_q,Dyna-Q,-1.0,0,designed4_m0,0,50,0.02,designed4,4x4,0.5566666666666666,4
+dyna_q,Dyna-Q,-1.0,0,designed4_m0,0,100,0.02,designed4,4x4,0.5566666666666666,4
+dyna_q,Dyna-Q,-1.0,0,designed4_m0,0,150,0.01,designed4,4x4,0.5566666666666666,4
+dyna_q,Dyna-Q,-1.0,0,designed4_m0,0,200,0.09,designed4,4x4,0.5566666666666666,4
+dyna_q,Dyna-Q,-1.0,0,designed4_m0,0,250,0.0,designed4,4x4,0.5566666666666666,4
+dyna_q,Dyna-Q,-1.0,0,designed4_m0,0,300,0.16,designed4,4x4,0.5566666666666666,4
+dyna_q,Dyna-Q,-1.0,0,designed4_m0,0,350,0.06,designed4,4x4,0.5566666666666666,4
+dyna_q,Dyna-Q,-1.0,0,designed4_m0,0,400,0.57,designed4,4x4,0.5566666666666666,4
+dyna_q,Dyna-Q,-1.0,0,designed4_m0,0,450,0.0,designed4,4x4,0.5566666666666666,4
+dyna_q,Dyna-Q,-1.0,0,designed4_m0,0,500,0.47,designed4,4x4,0.5566666666666666,4
+dyna_q,Dyna-Q,-1.0,0,designed4_m0,0,550,0.11,designed4,4x4,0.5566666666666666,4
+dyna_q,Dyna-Q,-1.0,0,designed4_m0,0,600,0.44,designed4,4x4,0.5566666666666666,4
+dyna_q,Dyna-Q,-1.0,0,designed4_m0,0,650,0.0,designed4,4x4,0.5566666666666666,4
+dyna_q,Dyna-Q,-1.0,0,designed4_m0,0,700,0.0,designed4,4x4,0.5566666666666666,4
+dyna_q,Dyna-Q,-1.0,0,designed4_m0,0,750,0.43,designed4,4x4,0.5566666666666666,4
+dyna_q,Dyna-Q,-1.0,0,designed4_m0,0,800,0.38,designed4,4x4,0.5566666666666666,4
+dyna_q,Dyna-Q,-1.0,0,designed4_m0,0,850,0.51,designed4,4x4,0.5566666666666666,4
+dyna_q,Dyna-Q,-1.0,0,designed4_m0,0,900,0.35,designed4,4x4,0.5566666666666666,4
+dyna_q,Dyna-Q,-1.0,0,designed4_m0,0,950,0.51,designed4,4x4,0.5566666666666666,4
+dyna_q,Dyna-Q,-1.0,0,designed4_m0,0,1000,0.62,designed4,4x4,0.5566666666666666,4
+dyna_q,Dyna-Q,-1.0,0,designed4_m0,0,1050,0.49,designed4,4x4,0.5566666666666666,4
+dyna_q,Dyna-Q,-1.0,0,designed4_m0,0,1100,0.48,designed4,4x4,0.5566666666666666,4
+dyna_q,Dyna-Q,-1.0,0,designed4_m0,0,1150,0.05,designed4,4x4,0.5566666666666666,4
+dyna_q,Dyna-Q,-1.0,0,designed4_m0,0,1200,0.47,designed4,4x4,0.5566666666666666,4
+dyna_q,Dyna-Q,-1.0,0,designed4_m0,0,1250,0.5,designed4,4x4,0.5566666666666666,4
+dyna_q,Dyna-Q,-1.0,0,designed4_m0,0,1300,0.37,designed4,4x4,0.5566666666666666,4
+dyna_q,Dyna-Q,-1.0,0,designed4_m0,0,1350,0.29,designed4,4x4,0.5566666666666666,4
+dyna_q,Dyna-Q,-1.0,0,designed4_m0,0,1400,0.29,designed4,4x4,0.5566666666666666,4
+dyna_q,Dyna-Q,-1.0,0,designed4_m0,0,1450,0.29,designed4,4x4,0.5566666666666666,4
+dyna_q,Dyna-Q,-1.0,0,designed4_m0,0,1500,0.27,designed4,4x4,0.5566666666666666,4
+dyna_q,Dyna-Q,-1.0,0,designed4_m0,0,1550,0.53,designed4,4x4,0.5566666666666666,4
+dyna_q,Dyna-Q,-1.0,0,designed4_m0,0,1600,0.5,designed4,4x4,0.5566666666666666,4
+dyna_q,Dyna-Q,-1.0,0,designed4_m0,0,1650,0.0,designed4,4x4,0.5566666666666666,4
+dyna_q,Dyna-Q,-1.0,0,designed4_m0,0,1700,0.42,designed4,4x4,0.5566666666666666,4
+dyna_q,Dyna-Q,-1.0,0,designed4_m0,0,1750,0.49,designed4,4x4,0.5566666666666666,4
+dyna_q,Dyna-Q,-1.0,0,designed4_m0,0,1800,0.53,designed4,4x4,0.5566666666666666,4
+dyna_q,Dyna-Q,-1.0,0,designed4_m0,0,1850,0.46,designed4,4x4,0.5566666666666666,4
+dyna_q,Dyna-Q,-1.0,0,designed4_m0,0,1900,0.5,designed4,4x4,0.5566666666666666,4
+dyna_q,Dyna-Q,-1.0,0,designed4_m0,0,1950,0.42,designed4,4x4,0.5566666666666666,4
+dyna_q,Dyna-Q,-1.0,0,designed4_m0,0,2000,0.53,designed4,4x4,0.5566666666666666,4
+q_learning,Q-learning,-1.0,1,designed4_m1,0,0,0.01,designed4,4x4,0.9433333333333334,4
+q_learning,Q-learning,-1.0,1,designed4_m1,0,50,0.02,designed4,4x4,0.9433333333333334,4
+q_learning,Q-learning,-1.0,1,designed4_m1,0,100,0.03,designed4,4x4,0.9433333333333334,4
+q_learning,Q-learning,-1.0,1,designed4_m1,0,150,0.02,designed4,4x4,0.9433333333333334,4
+q_learning,Q-learning,-1.0,1,designed4_m1,0,200,0.36,designed4,4x4,0.9433333333333334,4
+q_learning,Q-learning,-1.0,1,designed4_m1,0,250,0.34,designed4,4x4,0.9433333333333334,4
+q_learning,Q-learning,-1.0,1,designed4_m1,0,300,0.3,designed4,4x4,0.9433333333333334,4
+q_learning,Q-learning,-1.0,1,designed4_m1,0,350,0.31,designed4,4x4,0.9433333333333334,4
+q_learning,Q-learning,-1.0,1,designed4_m1,0,400,0.59,designed4,4x4,0.9433333333333334,4
+q_learning,Q-learning,-1.0,1,designed4_m1,0,450,0.62,designed4,4x4,0.9433333333333334,4
+q_learning,Q-learning,-1.0,1,designed4_m1,0,500,0.59,designed4,4x4,0.9433333333333334,4
+q_learning,Q-learning,-1.0,1,designed4_m1,0,550,0.91,designed4,4x4,0.9433333333333334,4
+q_learning,Q-learning,-1.0,1,designed4_m1,0,600,0.91,designed4,4x4,0.9433333333333334,4
+q_learning,Q-learning,-1.0,1,designed4_m1,0,650,0.91,designed4,4x4,0.9433333333333334,4
+q_learning,Q-learning,-1.0,1,designed4_m1,0,700,0.95,designed4,4x4,0.9433333333333334,4
+q_learning,Q-learning,-1.0,1,designed4_m1,0,750,0.94,designed4,4x4,0.9433333333333334,4
+q_learning,Q-learning,-1.0,1,designed4_m1,0,800,0.93,designed4,4x4,0.9433333333333334,4
+q_learning,Q-learning,-1.0,1,designed4_m1,0,850,0.95,designed4,4x4,0.9433333333333334,4
+q_learning,Q-learning,-1.0,1,designed4_m1,0,900,0.93,designed4,4x4,0.9433333333333334,4
+q_learning,Q-learning,-1.0,1,designed4_m1,0,950,0.94,designed4,4x4,0.9433333333333334,4
+q_learning,Q-learning,-1.0,1,designed4_m1,0,1000,0.93,designed4,4x4,0.9433333333333334,4
+q_learning,Q-learning,-1.0,1,designed4_m1,0,1050,0.92,designed4,4x4,0.9433333333333334,4
+q_learning,Q-learning,-1.0,1,designed4_m1,0,1100,0.92,designed4,4x4,0.9433333333333334,4
+q_learning,Q-learning,-1.0,1,designed4_m1,0,1150,0.98,designed4,4x4,0.9433333333333334,4
+q_learning,Q-learning,-1.0,1,designed4_m1,0,1200,0.98,designed4,4x4,0.9433333333333334,4
+q_learning,Q-learning,-1.0,1,designed4_m1,0,1250,0.99,designed4,4x4,0.9433333333333334,4
+q_learning,Q-learning,-1.0,1,designed4_m1,0,1300,0.99,designed4,4x4,0.9433333333333334,4
+q_learning,Q-learning,-1.0,1,designed4_m1,0,1350,1.0,designed4,4x4,0.9433333333333334,4
+q_learning,Q-learning,-1.0,1,designed4_m1,0,1400,1.0,designed4,4x4,0.9433333333333334,4
+q_learning,Q-learning,-1.0,1,designed4_m1,0,1450,0.99,designed4,4x4,0.9433333333333334,4
+q_learning,Q-learning,-1.0,1,designed4_m1,0,1500,0.98,designed4,4x4,0.9433333333333334,4
+q_learning,Q-learning,-1.0,1,designed4_m1,0,1550,0.98,designed4,4x4,0.9433333333333334,4
+q_learning,Q-learning,-1.0,1,designed4_m1,0,1600,0.98,designed4,4x4,0.9433333333333334,4
+q_learning,Q-learning,-1.0,1,designed4_m1,0,1650,0.97,designed4,4x4,0.9433333333333334,4
+q_learning,Q-learning,-1.0,1,designed4_m1,0,1700,0.98,designed4,4x4,0.9433333333333334,4
+q_learning,Q-learning,-1.0,1,designed4_m1,0,1750,1.0,designed4,4x4,0.9433333333333334,4
+q_learning,Q-learning,-1.0,1,designed4_m1,0,1800,0.99,designed4,4x4,0.9433333333333334,4
+q_learning,Q-learning,-1.0,1,designed4_m1,0,1850,0.96,designed4,4x4,0.9433333333333334,4
+q_learning,Q-learning,-1.0,1,designed4_m1,0,1900,0.97,designed4,4x4,0.9433333333333334,4
+q_learning,Q-learning,-1.0,1,designed4_m1,0,1950,0.98,designed4,4x4,0.9433333333333334,4
+q_learning,Q-learning,-1.0,1,designed4_m1,0,2000,0.98,designed4,4x4,0.9433333333333334,4
+sarsa,SARSA,-1.0,1,designed4_m1,0,0,0.01,designed4,4x4,0.9433333333333334,4
+sarsa,SARSA,-1.0,1,designed4_m1,0,50,0.02,designed4,4x4,0.9433333333333334,4
+sarsa,SARSA,-1.0,1,designed4_m1,0,100,0.03,designed4,4x4,0.9433333333333334,4
+sarsa,SARSA,-1.0,1,designed4_m1,0,150,0.02,designed4,4x4,0.9433333333333334,4
+sarsa,SARSA,-1.0,1,designed4_m1,0,200,0.03,designed4,4x4,0.9433333333333334,4
+sarsa,SARSA,-1.0,1,designed4_m1,0,250,0.2,designed4,4x4,0.9433333333333334,4
+sarsa,SARSA,-1.0,1,designed4_m1,0,300,0.65,designed4,4x4,0.9433333333333334,4
+sarsa,SARSA,-1.0,1,designed4_m1,0,350,0.73,designed4,4x4,0.9433333333333334,4
+sarsa,SARSA,-1.0,1,designed4_m1,0,400,0.84,designed4,4x4,0.9433333333333334,4
+sarsa,SARSA,-1.0,1,designed4_m1,0,450,0.93,designed4,4x4,0.9433333333333334,4
+sarsa,SARSA,-1.0,1,designed4_m1,0,500,0.93,designed4,4x4,0.9433333333333334,4
+sarsa,SARSA,-1.0,1,designed4_m1,0,550,0.94,designed4,4x4,0.9433333333333334,4
+sarsa,SARSA,-1.0,1,designed4_m1,0,600,0.93,designed4,4x4,0.9433333333333334,4
+sarsa,SARSA,-1.0,1,designed4_m1,0,650,0.94,designed4,4x4,0.9433333333333334,4
+sarsa,SARSA,-1.0,1,designed4_m1,0,700,0.94,designed4,4x4,0.9433333333333334,4
+sarsa,SARSA,-1.0,1,designed4_m1,0,750,0.95,designed4,4x4,0.9433333333333334,4
+sarsa,SARSA,-1.0,1,designed4_m1,0,800,0.95,designed4,4x4,0.9433333333333334,4
+sarsa,SARSA,-1.0,1,designed4_m1,0,850,0.91,designed4,4x4,0.9433333333333334,4
+sarsa,SARSA,-1.0,1,designed4_m1,0,900,0.92,designed4,4x4,0.9433333333333334,4
+sarsa,SARSA,-1.0,1,designed4_m1,0,950,0.94,designed4,4x4,0.9433333333333334,4
+sarsa,SARSA,-1.0,1,designed4_m1,0,1000,0.93,designed4,4x4,0.9433333333333334,4
+sarsa,SARSA,-1.0,1,designed4_m1,0,1050,0.95,designed4,4x4,0.9433333333333334,4
+sarsa,SARSA,-1.0,1,designed4_m1,0,1100,0.89,designed4,4x4,0.9433333333333334,4
+sarsa,SARSA,-1.0,1,designed4_m1,0,1150,0.87,designed4,4x4,0.9433333333333334,4
+sarsa,SARSA,-1.0,1,designed4_m1,0,1200,0.92,designed4,4x4,0.9433333333333334,4
+sarsa,SARSA,-1.0,1,designed4_m1,0,1250,0.91,designed4,4x4,0.9433333333333334,4
+sarsa,SARSA,-1.0,1,designed4_m1,0,1300,0.92,designed4,4x4,0.9433333333333334,4
+sarsa,SARSA,-1.0,1,designed4_m1,0,1350,0.94,designed4,4x4,0.9433333333333334,4
+sarsa,SARSA,-1.0,1,designed4_m1,0,1400,0.97,designed4,4x4,0.9433333333333334,4
+sarsa,SARSA,-1.0,1,designed4_m1,0,1450,0.95,designed4,4x4,0.9433333333333334,4
+sarsa,SARSA,-1.0,1,designed4_m1,0,1500,0.96,designed4,4x4,0.9433333333333334,4
+sarsa,SARSA,-1.0,1,designed4_m1,0,1550,0.97,designed4,4x4,0.9433333333333334,4
+sarsa,SARSA,-1.0,1,designed4_m1,0,1600,0.91,designed4,4x4,0.9433333333333334,4
+sarsa,SARSA,-1.0,1,designed4_m1,0,1650,0.91,designed4,4x4,0.9433333333333334,4
+sarsa,SARSA,-1.0,1,designed4_m1,0,1700,0.95,designed4,4x4,0.9433333333333334,4
+sarsa,SARSA,-1.0,1,designed4_m1,0,1750,1.0,designed4,4x4,0.9433333333333334,4
+sarsa,SARSA,-1.0,1,designed4_m1,0,1800,0.99,designed4,4x4,0.9433333333333334,4
+sarsa,SARSA,-1.0,1,designed4_m1,0,1850,0.96,designed4,4x4,0.9433333333333334,4
+sarsa,SARSA,-1.0,1,designed4_m1,0,1900,0.97,designed4,4x4,0.9433333333333334,4
+sarsa,SARSA,-1.0,1,designed4_m1,0,1950,0.98,designed4,4x4,0.9433333333333334,4
+sarsa,SARSA,-1.0,1,designed4_m1,0,2000,0.98,designed4,4x4,0.9433333333333334,4
+expected_sarsa,Expected SARSA,-1.0,1,designed4_m1,0,0,0.01,designed4,4x4,0.9433333333333334,4
+expected_sarsa,Expected SARSA,-1.0,1,designed4_m1,0,50,0.06,designed4,4x4,0.9433333333333334,4
+expected_sarsa,Expected SARSA,-1.0,1,designed4_m1,0,100,0.36,designed4,4x4,0.9433333333333334,4
+expected_sarsa,Expected SARSA,-1.0,1,designed4_m1,0,150,0.31,designed4,4x4,0.9433333333333334,4
+expected_sarsa,Expected SARSA,-1.0,1,designed4_m1,0,200,0.21,designed4,4x4,0.9433333333333334,4
+expected_sarsa,Expected SARSA,-1.0,1,designed4_m1,0,250,0.7,designed4,4x4,0.9433333333333334,4
+expected_sarsa,Expected SARSA,-1.0,1,designed4_m1,0,300,0.78,designed4,4x4,0.9433333333333334,4
+expected_sarsa,Expected SARSA,-1.0,1,designed4_m1,0,350,0.62,designed4,4x4,0.9433333333333334,4
+expected_sarsa,Expected SARSA,-1.0,1,designed4_m1,0,400,0.94,designed4,4x4,0.9433333333333334,4
+expected_sarsa,Expected SARSA,-1.0,1,designed4_m1,0,450,0.92,designed4,4x4,0.9433333333333334,4
+expected_sarsa,Expected SARSA,-1.0,1,designed4_m1,0,500,0.9,designed4,4x4,0.9433333333333334,4
+expected_sarsa,Expected SARSA,-1.0,1,designed4_m1,0,550,0.86,designed4,4x4,0.9433333333333334,4
+expected_sarsa,Expected SARSA,-1.0,1,designed4_m1,0,600,0.88,designed4,4x4,0.9433333333333334,4
+expected_sarsa,Expected SARSA,-1.0,1,designed4_m1,0,650,0.94,designed4,4x4,0.9433333333333334,4
+expected_sarsa,Expected SARSA,-1.0,1,designed4_m1,0,700,0.94,designed4,4x4,0.9433333333333334,4
+expected_sarsa,Expected SARSA,-1.0,1,designed4_m1,0,750,0.95,designed4,4x4,0.9433333333333334,4
+expected_sarsa,Expected SARSA,-1.0,1,designed4_m1,0,800,0.95,designed4,4x4,0.9433333333333334,4
+expected_sarsa,Expected SARSA,-1.0,1,designed4_m1,0,850,0.91,designed4,4x4,0.9433333333333334,4
+expected_sarsa,Expected SARSA,-1.0,1,designed4_m1,0,900,0.92,designed4,4x4,0.9433333333333334,4
+expected_sarsa,Expected SARSA,-1.0,1,designed4_m1,0,950,0.94,designed4,4x4,0.9433333333333334,4
+expected_sarsa,Expected SARSA,-1.0,1,designed4_m1,0,1000,0.95,designed4,4x4,0.9433333333333334,4
+expected_sarsa,Expected SARSA,-1.0,1,designed4_m1,0,1050,0.93,designed4,4x4,0.9433333333333334,4
+expected_sarsa,Expected SARSA,-1.0,1,designed4_m1,0,1100,0.96,designed4,4x4,0.9433333333333334,4
+expected_sarsa,Expected SARSA,-1.0,1,designed4_m1,0,1150,0.98,designed4,4x4,0.9433333333333334,4
+expected_sarsa,Expected SARSA,-1.0,1,designed4_m1,0,1200,0.96,designed4,4x4,0.9433333333333334,4
+expected_sarsa,Expected SARSA,-1.0,1,designed4_m1,0,1250,0.96,designed4,4x4,0.9433333333333334,4
+expected_sarsa,Expected SARSA,-1.0,1,designed4_m1,0,1300,0.92,designed4,4x4,0.9433333333333334,4
+expected_sarsa,Expected SARSA,-1.0,1,designed4_m1,0,1350,0.92,designed4,4x4,0.9433333333333334,4
+expected_sarsa,Expected SARSA,-1.0,1,designed4_m1,0,1400,0.97,designed4,4x4,0.9433333333333334,4
+expected_sarsa,Expected SARSA,-1.0,1,designed4_m1,0,1450,0.97,designed4,4x4,0.9433333333333334,4
+expected_sarsa,Expected SARSA,-1.0,1,designed4_m1,0,1500,0.94,designed4,4x4,0.9433333333333334,4
+expected_sarsa,Expected SARSA,-1.0,1,designed4_m1,0,1550,0.93,designed4,4x4,0.9433333333333334,4
+expected_sarsa,Expected SARSA,-1.0,1,designed4_m1,0,1600,0.96,designed4,4x4,0.9433333333333334,4
+expected_sarsa,Expected SARSA,-1.0,1,designed4_m1,0,1650,0.97,designed4,4x4,0.9433333333333334,4
+expected_sarsa,Expected SARSA,-1.0,1,designed4_m1,0,1700,0.95,designed4,4x4,0.9433333333333334,4
+expected_sarsa,Expected SARSA,-1.0,1,designed4_m1,0,1750,0.94,designed4,4x4,0.9433333333333334,4
+expected_sarsa,Expected SARSA,-1.0,1,designed4_m1,0,1800,0.94,designed4,4x4,0.9433333333333334,4
+expected_sarsa,Expected SARSA,-1.0,1,designed4_m1,0,1850,0.95,designed4,4x4,0.9433333333333334,4
+expected_sarsa,Expected SARSA,-1.0,1,designed4_m1,0,1900,0.93,designed4,4x4,0.9433333333333334,4
+expected_sarsa,Expected SARSA,-1.0,1,designed4_m1,0,1950,0.92,designed4,4x4,0.9433333333333334,4
+expected_sarsa,Expected SARSA,-1.0,1,designed4_m1,0,2000,0.93,designed4,4x4,0.9433333333333334,4
+sarsa_lambda,SARSA(lambda),-1.0,1,designed4_m1,0,0,0.01,designed4,4x4,0.9433333333333334,4
+sarsa_lambda,SARSA(lambda),-1.0,1,designed4_m1,0,50,0.02,designed4,4x4,0.9433333333333334,4
+sarsa_lambda,SARSA(lambda),-1.0,1,designed4_m1,0,100,0.03,designed4,4x4,0.9433333333333334,4
+sarsa_lambda,SARSA(lambda),-1.0,1,designed4_m1,0,150,0.11,designed4,4x4,0.9433333333333334,4
+sarsa_lambda,SARSA(lambda),-1.0,1,designed4_m1,0,200,0.13,designed4,4x4,0.9433333333333334,4
+sarsa_lambda,SARSA(lambda),-1.0,1,designed4_m1,0,250,0.12,designed4,4x4,0.9433333333333334,4
+sarsa_lambda,SARSA(lambda),-1.0,1,designed4_m1,0,300,0.66,designed4,4x4,0.9433333333333334,4
+sarsa_lambda,SARSA(lambda),-1.0,1,designed4_m1,0,350,0.74,designed4,4x4,0.9433333333333334,4
+sarsa_lambda,SARSA(lambda),-1.0,1,designed4_m1,0,400,0.8,designed4,4x4,0.9433333333333334,4
+sarsa_lambda,SARSA(lambda),-1.0,1,designed4_m1,0,450,0.0,designed4,4x4,0.9433333333333334,4
+sarsa_lambda,SARSA(lambda),-1.0,1,designed4_m1,0,500,0.21,designed4,4x4,0.9433333333333334,4
+sarsa_lambda,SARSA(lambda),-1.0,1,designed4_m1,0,550,0.49,designed4,4x4,0.9433333333333334,4
+sarsa_lambda,SARSA(lambda),-1.0,1,designed4_m1,0,600,0.2,designed4,4x4,0.9433333333333334,4
+sarsa_lambda,SARSA(lambda),-1.0,1,designed4_m1,0,650,0.98,designed4,4x4,0.9433333333333334,4
+sarsa_lambda,SARSA(lambda),-1.0,1,designed4_m1,0,700,0.98,designed4,4x4,0.9433333333333334,4
+sarsa_lambda,SARSA(lambda),-1.0,1,designed4_m1,0,750,0.64,designed4,4x4,0.9433333333333334,4
+sarsa_lambda,SARSA(lambda),-1.0,1,designed4_m1,0,800,0.93,designed4,4x4,0.9433333333333334,4
+sarsa_lambda,SARSA(lambda),-1.0,1,designed4_m1,0,850,0.95,designed4,4x4,0.9433333333333334,4
+sarsa_lambda,SARSA(lambda),-1.0,1,designed4_m1,0,900,0.93,designed4,4x4,0.9433333333333334,4
+sarsa_lambda,SARSA(lambda),-1.0,1,designed4_m1,0,950,0.94,designed4,4x4,0.9433333333333334,4
+sarsa_lambda,SARSA(lambda),-1.0,1,designed4_m1,0,1000,0.93,designed4,4x4,0.9433333333333334,4
+sarsa_lambda,SARSA(lambda),-1.0,1,designed4_m1,0,1050,0.79,designed4,4x4,0.9433333333333334,4
+sarsa_lambda,SARSA(lambda),-1.0,1,designed4_m1,0,1100,0.92,designed4,4x4,0.9433333333333334,4
+sarsa_lambda,SARSA(lambda),-1.0,1,designed4_m1,0,1150,0.89,designed4,4x4,0.9433333333333334,4
+sarsa_lambda,SARSA(lambda),-1.0,1,designed4_m1,0,1200,0.87,designed4,4x4,0.9433333333333334,4
+sarsa_lambda,SARSA(lambda),-1.0,1,designed4_m1,0,1250,0.88,designed4,4x4,0.9433333333333334,4
+sarsa_lambda,SARSA(lambda),-1.0,1,designed4_m1,0,1300,0.16,designed4,4x4,0.9433333333333334,4
+sarsa_lambda,SARSA(lambda),-1.0,1,designed4_m1,0,1350,0.82,designed4,4x4,0.9433333333333334,4
+sarsa_lambda,SARSA(lambda),-1.0,1,designed4_m1,0,1400,0.87,designed4,4x4,0.9433333333333334,4
+sarsa_lambda,SARSA(lambda),-1.0,1,designed4_m1,0,1450,0.95,designed4,4x4,0.9433333333333334,4
+sarsa_lambda,SARSA(lambda),-1.0,1,designed4_m1,0,1500,0.97,designed4,4x4,0.9433333333333334,4
+sarsa_lambda,SARSA(lambda),-1.0,1,designed4_m1,0,1550,0.95,designed4,4x4,0.9433333333333334,4
+sarsa_lambda,SARSA(lambda),-1.0,1,designed4_m1,0,1600,0.98,designed4,4x4,0.9433333333333334,4
+sarsa_lambda,SARSA(lambda),-1.0,1,designed4_m1,0,1650,0.97,designed4,4x4,0.9433333333333334,4
+sarsa_lambda,SARSA(lambda),-1.0,1,designed4_m1,0,1700,0.98,designed4,4x4,0.9433333333333334,4
+sarsa_lambda,SARSA(lambda),-1.0,1,designed4_m1,0,1750,1.0,designed4,4x4,0.9433333333333334,4
+sarsa_lambda,SARSA(lambda),-1.0,1,designed4_m1,0,1800,0.99,designed4,4x4,0.9433333333333334,4
+sarsa_lambda,SARSA(lambda),-1.0,1,designed4_m1,0,1850,0.8,designed4,4x4,0.9433333333333334,4
+sarsa_lambda,SARSA(lambda),-1.0,1,designed4_m1,0,1900,0.81,designed4,4x4,0.9433333333333334,4
+sarsa_lambda,SARSA(lambda),-1.0,1,designed4_m1,0,1950,0.98,designed4,4x4,0.9433333333333334,4
+sarsa_lambda,SARSA(lambda),-1.0,1,designed4_m1,0,2000,0.98,designed4,4x4,0.9433333333333334,4
+q_lambda,Q(lambda),-1.0,1,designed4_m1,0,0,0.01,designed4,4x4,0.9433333333333334,4
+q_lambda,Q(lambda),-1.0,1,designed4_m1,0,50,0.01,designed4,4x4,0.9433333333333334,4
+q_lambda,Q(lambda),-1.0,1,designed4_m1,0,100,0.04,designed4,4x4,0.9433333333333334,4
+q_lambda,Q(lambda),-1.0,1,designed4_m1,0,150,0.16,designed4,4x4,0.9433333333333334,4
+q_lambda,Q(lambda),-1.0,1,designed4_m1,0,200,0.65,designed4,4x4,0.9433333333333334,4
+q_lambda,Q(lambda),-1.0,1,designed4_m1,0,250,0.61,designed4,4x4,0.9433333333333334,4
+q_lambda,Q(lambda),-1.0,1,designed4_m1,0,300,0.5,designed4,4x4,0.9433333333333334,4
+q_lambda,Q(lambda),-1.0,1,designed4_m1,0,350,0.53,designed4,4x4,0.9433333333333334,4
+q_lambda,Q(lambda),-1.0,1,designed4_m1,0,400,0.0,designed4,4x4,0.9433333333333334,4
+q_lambda,Q(lambda),-1.0,1,designed4_m1,0,450,0.69,designed4,4x4,0.9433333333333334,4
+q_lambda,Q(lambda),-1.0,1,designed4_m1,0,500,0.65,designed4,4x4,0.9433333333333334,4
+q_lambda,Q(lambda),-1.0,1,designed4_m1,0,550,0.91,designed4,4x4,0.9433333333333334,4
+q_lambda,Q(lambda),-1.0,1,designed4_m1,0,600,0.93,designed4,4x4,0.9433333333333334,4
+q_lambda,Q(lambda),-1.0,1,designed4_m1,0,650,0.74,designed4,4x4,0.9433333333333334,4
+q_lambda,Q(lambda),-1.0,1,designed4_m1,0,700,0.93,designed4,4x4,0.9433333333333334,4
+q_lambda,Q(lambda),-1.0,1,designed4_m1,0,750,0.94,designed4,4x4,0.9433333333333334,4
+q_lambda,Q(lambda),-1.0,1,designed4_m1,0,800,0.86,designed4,4x4,0.9433333333333334,4
+q_lambda,Q(lambda),-1.0,1,designed4_m1,0,850,0.85,designed4,4x4,0.9433333333333334,4
+q_lambda,Q(lambda),-1.0,1,designed4_m1,0,900,0.79,designed4,4x4,0.9433333333333334,4
+q_lambda,Q(lambda),-1.0,1,designed4_m1,0,950,0.89,designed4,4x4,0.9433333333333334,4
+q_lambda,Q(lambda),-1.0,1,designed4_m1,0,1000,1.0,designed4,4x4,0.9433333333333334,4
+q_lambda,Q(lambda),-1.0,1,designed4_m1,0,1050,0.99,designed4,4x4,0.9433333333333334,4
+q_lambda,Q(lambda),-1.0,1,designed4_m1,0,1100,0.99,designed4,4x4,0.9433333333333334,4
+q_lambda,Q(lambda),-1.0,1,designed4_m1,0,1150,0.98,designed4,4x4,0.9433333333333334,4
+q_lambda,Q(lambda),-1.0,1,designed4_m1,0,1200,0.8,designed4,4x4,0.9433333333333334,4
+q_lambda,Q(lambda),-1.0,1,designed4_m1,0,1250,0.61,designed4,4x4,0.9433333333333334,4
+q_lambda,Q(lambda),-1.0,1,designed4_m1,0,1300,0.92,designed4,4x4,0.9433333333333334,4
+q_lambda,Q(lambda),-1.0,1,designed4_m1,0,1350,0.95,designed4,4x4,0.9433333333333334,4
+q_lambda,Q(lambda),-1.0,1,designed4_m1,0,1400,0.97,designed4,4x4,0.9433333333333334,4
+q_lambda,Q(lambda),-1.0,1,designed4_m1,0,1450,0.95,designed4,4x4,0.9433333333333334,4
+q_lambda,Q(lambda),-1.0,1,designed4_m1,0,1500,0.96,designed4,4x4,0.9433333333333334,4
+q_lambda,Q(lambda),-1.0,1,designed4_m1,0,1550,0.97,designed4,4x4,0.9433333333333334,4
+q_lambda,Q(lambda),-1.0,1,designed4_m1,0,1600,0.83,designed4,4x4,0.9433333333333334,4
+q_lambda,Q(lambda),-1.0,1,designed4_m1,0,1650,0.91,designed4,4x4,0.9433333333333334,4
+q_lambda,Q(lambda),-1.0,1,designed4_m1,0,1700,0.95,designed4,4x4,0.9433333333333334,4
+q_lambda,Q(lambda),-1.0,1,designed4_m1,0,1750,0.96,designed4,4x4,0.9433333333333334,4
+q_lambda,Q(lambda),-1.0,1,designed4_m1,0,1800,0.97,designed4,4x4,0.9433333333333334,4
+q_lambda,Q(lambda),-1.0,1,designed4_m1,0,1850,0.95,designed4,4x4,0.9433333333333334,4
+q_lambda,Q(lambda),-1.0,1,designed4_m1,0,1900,0.89,designed4,4x4,0.9433333333333334,4
+q_lambda,Q(lambda),-1.0,1,designed4_m1,0,1950,0.91,designed4,4x4,0.9433333333333334,4
+q_lambda,Q(lambda),-1.0,1,designed4_m1,0,2000,0.98,designed4,4x4,0.9433333333333334,4
+optimistic_q,Optimistic Q,-1.0,1,designed4_m1,0,0,0.01,designed4,4x4,0.9433333333333334,4
+optimistic_q,Optimistic Q,-1.0,1,designed4_m1,0,50,0.45,designed4,4x4,0.9433333333333334,4
+optimistic_q,Optimistic Q,-1.0,1,designed4_m1,0,100,0.12,designed4,4x4,0.9433333333333334,4
+optimistic_q,Optimistic Q,-1.0,1,designed4_m1,0,150,0.66,designed4,4x4,0.9433333333333334,4
+optimistic_q,Optimistic Q,-1.0,1,designed4_m1,0,200,0.69,designed4,4x4,0.9433333333333334,4
+optimistic_q,Optimistic Q,-1.0,1,designed4_m1,0,250,0.79,designed4,4x4,0.9433333333333334,4
+optimistic_q,Optimistic Q,-1.0,1,designed4_m1,0,300,0.7,designed4,4x4,0.9433333333333334,4
+optimistic_q,Optimistic Q,-1.0,1,designed4_m1,0,350,0.81,designed4,4x4,0.9433333333333334,4
+optimistic_q,Optimistic Q,-1.0,1,designed4_m1,0,400,0.79,designed4,4x4,0.9433333333333334,4
+optimistic_q,Optimistic Q,-1.0,1,designed4_m1,0,450,0.95,designed4,4x4,0.9433333333333334,4
+optimistic_q,Optimistic Q,-1.0,1,designed4_m1,0,500,0.93,designed4,4x4,0.9433333333333334,4
+optimistic_q,Optimistic Q,-1.0,1,designed4_m1,0,550,0.99,designed4,4x4,0.9433333333333334,4
+optimistic_q,Optimistic Q,-1.0,1,designed4_m1,0,600,0.97,designed4,4x4,0.9433333333333334,4
+optimistic_q,Optimistic Q,-1.0,1,designed4_m1,0,650,0.95,designed4,4x4,0.9433333333333334,4
+optimistic_q,Optimistic Q,-1.0,1,designed4_m1,0,700,0.98,designed4,4x4,0.9433333333333334,4
+optimistic_q,Optimistic Q,-1.0,1,designed4_m1,0,750,0.97,designed4,4x4,0.9433333333333334,4
+optimistic_q,Optimistic Q,-1.0,1,designed4_m1,0,800,0.98,designed4,4x4,0.9433333333333334,4
+optimistic_q,Optimistic Q,-1.0,1,designed4_m1,0,850,0.93,designed4,4x4,0.9433333333333334,4
+optimistic_q,Optimistic Q,-1.0,1,designed4_m1,0,900,0.98,designed4,4x4,0.9433333333333334,4
+optimistic_q,Optimistic Q,-1.0,1,designed4_m1,0,950,0.96,designed4,4x4,0.9433333333333334,4
+optimistic_q,Optimistic Q,-1.0,1,designed4_m1,0,1000,0.96,designed4,4x4,0.9433333333333334,4
+optimistic_q,Optimistic Q,-1.0,1,designed4_m1,0,1050,0.94,designed4,4x4,0.9433333333333334,4
+optimistic_q,Optimistic Q,-1.0,1,designed4_m1,0,1100,0.95,designed4,4x4,0.9433333333333334,4
+optimistic_q,Optimistic Q,-1.0,1,designed4_m1,0,1150,0.91,designed4,4x4,0.9433333333333334,4
+optimistic_q,Optimistic Q,-1.0,1,designed4_m1,0,1200,0.94,designed4,4x4,0.9433333333333334,4
+optimistic_q,Optimistic Q,-1.0,1,designed4_m1,0,1250,0.97,designed4,4x4,0.9433333333333334,4
+optimistic_q,Optimistic Q,-1.0,1,designed4_m1,0,1300,0.96,designed4,4x4,0.9433333333333334,4
+optimistic_q,Optimistic Q,-1.0,1,designed4_m1,0,1350,0.94,designed4,4x4,0.9433333333333334,4
+optimistic_q,Optimistic Q,-1.0,1,designed4_m1,0,1400,0.97,designed4,4x4,0.9433333333333334,4
+optimistic_q,Optimistic Q,-1.0,1,designed4_m1,0,1450,0.97,designed4,4x4,0.9433333333333334,4
+optimistic_q,Optimistic Q,-1.0,1,designed4_m1,0,1500,0.97,designed4,4x4,0.9433333333333334,4
+optimistic_q,Optimistic Q,-1.0,1,designed4_m1,0,1550,0.97,designed4,4x4,0.9433333333333334,4
+optimistic_q,Optimistic Q,-1.0,1,designed4_m1,0,1600,0.97,designed4,4x4,0.9433333333333334,4
+optimistic_q,Optimistic Q,-1.0,1,designed4_m1,0,1650,0.97,designed4,4x4,0.9433333333333334,4
+optimistic_q,Optimistic Q,-1.0,1,designed4_m1,0,1700,0.96,designed4,4x4,0.9433333333333334,4
+optimistic_q,Optimistic Q,-1.0,1,designed4_m1,0,1750,0.94,designed4,4x4,0.9433333333333334,4
+optimistic_q,Optimistic Q,-1.0,1,designed4_m1,0,1800,0.94,designed4,4x4,0.9433333333333334,4
+optimistic_q,Optimistic Q,-1.0,1,designed4_m1,0,1850,0.96,designed4,4x4,0.9433333333333334,4
+optimistic_q,Optimistic Q,-1.0,1,designed4_m1,0,1900,0.97,designed4,4x4,0.9433333333333334,4
+optimistic_q,Optimistic Q,-1.0,1,designed4_m1,0,1950,0.98,designed4,4x4,0.9433333333333334,4
+optimistic_q,Optimistic Q,-1.0,1,designed4_m1,0,2000,0.98,designed4,4x4,0.9433333333333334,4
+dyna_q,Dyna-Q,-1.0,1,designed4_m1,0,0,0.01,designed4,4x4,0.9433333333333334,4
+dyna_q,Dyna-Q,-1.0,1,designed4_m1,0,50,0.0,designed4,4x4,0.9433333333333334,4
+dyna_q,Dyna-Q,-1.0,1,designed4_m1,0,100,0.37,designed4,4x4,0.9433333333333334,4
+dyna_q,Dyna-Q,-1.0,1,designed4_m1,0,150,0.67,designed4,4x4,0.9433333333333334,4
+dyna_q,Dyna-Q,-1.0,1,designed4_m1,0,200,0.94,designed4,4x4,0.9433333333333334,4
+dyna_q,Dyna-Q,-1.0,1,designed4_m1,0,250,0.8,designed4,4x4,0.9433333333333334,4
+dyna_q,Dyna-Q,-1.0,1,designed4_m1,0,300,0.38,designed4,4x4,0.9433333333333334,4
+dyna_q,Dyna-Q,-1.0,1,designed4_m1,0,350,0.91,designed4,4x4,0.9433333333333334,4
+dyna_q,Dyna-Q,-1.0,1,designed4_m1,0,400,0.38,designed4,4x4,0.9433333333333334,4
+dyna_q,Dyna-Q,-1.0,1,designed4_m1,0,450,0.62,designed4,4x4,0.9433333333333334,4
+dyna_q,Dyna-Q,-1.0,1,designed4_m1,0,500,0.94,designed4,4x4,0.9433333333333334,4
+dyna_q,Dyna-Q,-1.0,1,designed4_m1,0,550,0.73,designed4,4x4,0.9433333333333334,4
+dyna_q,Dyna-Q,-1.0,1,designed4_m1,0,600,0.27,designed4,4x4,0.9433333333333334,4
+dyna_q,Dyna-Q,-1.0,1,designed4_m1,0,650,0.74,designed4,4x4,0.9433333333333334,4
+dyna_q,Dyna-Q,-1.0,1,designed4_m1,0,700,0.98,designed4,4x4,0.9433333333333334,4
+dyna_q,Dyna-Q,-1.0,1,designed4_m1,0,750,0.96,designed4,4x4,0.9433333333333334,4
+dyna_q,Dyna-Q,-1.0,1,designed4_m1,0,800,0.93,designed4,4x4,0.9433333333333334,4
+dyna_q,Dyna-Q,-1.0,1,designed4_m1,0,850,0.34,designed4,4x4,0.9433333333333334,4
+dyna_q,Dyna-Q,-1.0,1,designed4_m1,0,900,0.97,designed4,4x4,0.9433333333333334,4
+dyna_q,Dyna-Q,-1.0,1,designed4_m1,0,950,1.0,designed4,4x4,0.9433333333333334,4
+dyna_q,Dyna-Q,-1.0,1,designed4_m1,0,1000,0.93,designed4,4x4,0.9433333333333334,4
+dyna_q,Dyna-Q,-1.0,1,designed4_m1,0,1050,0.99,designed4,4x4,0.9433333333333334,4
+dyna_q,Dyna-Q,-1.0,1,designed4_m1,0,1100,0.94,designed4,4x4,0.9433333333333334,4
+dyna_q,Dyna-Q,-1.0,1,designed4_m1,0,1150,0.98,designed4,4x4,0.9433333333333334,4
+dyna_q,Dyna-Q,-1.0,1,designed4_m1,0,1200,0.74,designed4,4x4,0.9433333333333334,4
+dyna_q,Dyna-Q,-1.0,1,designed4_m1,0,1250,0.95,designed4,4x4,0.9433333333333334,4
+dyna_q,Dyna-Q,-1.0,1,designed4_m1,0,1300,0.0,designed4,4x4,0.9433333333333334,4
+dyna_q,Dyna-Q,-1.0,1,designed4_m1,0,1350,0.74,designed4,4x4,0.9433333333333334,4
+dyna_q,Dyna-Q,-1.0,1,designed4_m1,0,1400,0.98,designed4,4x4,0.9433333333333334,4
+dyna_q,Dyna-Q,-1.0,1,designed4_m1,0,1450,0.99,designed4,4x4,0.9433333333333334,4
+dyna_q,Dyna-Q,-1.0,1,designed4_m1,0,1500,0.34,designed4,4x4,0.9433333333333334,4
+dyna_q,Dyna-Q,-1.0,1,designed4_m1,0,1550,0.44,designed4,4x4,0.9433333333333334,4
+dyna_q,Dyna-Q,-1.0,1,designed4_m1,0,1600,0.85,designed4,4x4,0.9433333333333334,4
+dyna_q,Dyna-Q,-1.0,1,designed4_m1,0,1650,0.71,designed4,4x4,0.9433333333333334,4
+dyna_q,Dyna-Q,-1.0,1,designed4_m1,0,1700,0.98,designed4,4x4,0.9433333333333334,4
+dyna_q,Dyna-Q,-1.0,1,designed4_m1,0,1750,0.95,designed4,4x4,0.9433333333333334,4
+dyna_q,Dyna-Q,-1.0,1,designed4_m1,0,1800,0.99,designed4,4x4,0.9433333333333334,4
+dyna_q,Dyna-Q,-1.0,1,designed4_m1,0,1850,0.96,designed4,4x4,0.9433333333333334,4
+dyna_q,Dyna-Q,-1.0,1,designed4_m1,0,1900,0.79,designed4,4x4,0.9433333333333334,4
+dyna_q,Dyna-Q,-1.0,1,designed4_m1,0,1950,0.98,designed4,4x4,0.9433333333333334,4
+dyna_q,Dyna-Q,-1.0,1,designed4_m1,0,2000,0.98,designed4,4x4,0.9433333333333334,4
+q_learning,Q-learning,-1.0,2,designed4_m2,0,0,0.01,designed4,4x4,0.6733333333333333,4
+q_learning,Q-learning,-1.0,2,designed4_m2,0,50,0.01,designed4,4x4,0.6733333333333333,4
+q_learning,Q-learning,-1.0,2,designed4_m2,0,100,0.01,designed4,4x4,0.6733333333333333,4
+q_learning,Q-learning,-1.0,2,designed4_m2,0,150,0.01,designed4,4x4,0.6733333333333333,4
+q_learning,Q-learning,-1.0,2,designed4_m2,0,200,0.08,designed4,4x4,0.6733333333333333,4
+q_learning,Q-learning,-1.0,2,designed4_m2,0,250,0.22,designed4,4x4,0.6733333333333333,4
+q_learning,Q-learning,-1.0,2,designed4_m2,0,300,0.2,designed4,4x4,0.6733333333333333,4
+q_learning,Q-learning,-1.0,2,designed4_m2,0,350,0.17,designed4,4x4,0.6733333333333333,4
+q_learning,Q-learning,-1.0,2,designed4_m2,0,400,0.18,designed4,4x4,0.6733333333333333,4
+q_learning,Q-learning,-1.0,2,designed4_m2,0,450,0.21,designed4,4x4,0.6733333333333333,4
+q_learning,Q-learning,-1.0,2,designed4_m2,0,500,0.28,designed4,4x4,0.6733333333333333,4
+q_learning,Q-learning,-1.0,2,designed4_m2,0,550,0.4,designed4,4x4,0.6733333333333333,4
+q_learning,Q-learning,-1.0,2,designed4_m2,0,600,0.51,designed4,4x4,0.6733333333333333,4
+q_learning,Q-learning,-1.0,2,designed4_m2,0,650,0.4,designed4,4x4,0.6733333333333333,4
+q_learning,Q-learning,-1.0,2,designed4_m2,0,700,0.38,designed4,4x4,0.6733333333333333,4
+q_learning,Q-learning,-1.0,2,designed4_m2,0,750,0.48,designed4,4x4,0.6733333333333333,4
+q_learning,Q-learning,-1.0,2,designed4_m2,0,800,0.49,designed4,4x4,0.6733333333333333,4
+q_learning,Q-learning,-1.0,2,designed4_m2,0,850,0.45,designed4,4x4,0.6733333333333333,4
+q_learning,Q-learning,-1.0,2,designed4_m2,0,900,0.4,designed4,4x4,0.6733333333333333,4
+q_learning,Q-learning,-1.0,2,designed4_m2,0,950,0.4,designed4,4x4,0.6733333333333333,4
+q_learning,Q-learning,-1.0,2,designed4_m2,0,1000,0.46,designed4,4x4,0.6733333333333333,4
+q_learning,Q-learning,-1.0,2,designed4_m2,0,1050,0.47,designed4,4x4,0.6733333333333333,4
+q_learning,Q-learning,-1.0,2,designed4_m2,0,1100,0.25,designed4,4x4,0.6733333333333333,4
+q_learning,Q-learning,-1.0,2,designed4_m2,0,1150,0.52,designed4,4x4,0.6733333333333333,4
+q_learning,Q-learning,-1.0,2,designed4_m2,0,1200,0.64,designed4,4x4,0.6733333333333333,4
+q_learning,Q-learning,-1.0,2,designed4_m2,0,1250,0.59,designed4,4x4,0.6733333333333333,4
+q_learning,Q-learning,-1.0,2,designed4_m2,0,1300,0.56,designed4,4x4,0.6733333333333333,4
+q_learning,Q-learning,-1.0,2,designed4_m2,0,1350,0.6,designed4,4x4,0.6733333333333333,4
+q_learning,Q-learning,-1.0,2,designed4_m2,0,1400,0.56,designed4,4x4,0.6733333333333333,4
+q_learning,Q-learning,-1.0,2,designed4_m2,0,1450,0.51,designed4,4x4,0.6733333333333333,4
+q_learning,Q-learning,-1.0,2,designed4_m2,0,1500,0.53,designed4,4x4,0.6733333333333333,4
+q_learning,Q-learning,-1.0,2,designed4_m2,0,1550,0.54,designed4,4x4,0.6733333333333333,4
+q_learning,Q-learning,-1.0,2,designed4_m2,0,1600,0.27,designed4,4x4,0.6733333333333333,4
+q_learning,Q-learning,-1.0,2,designed4_m2,0,1650,0.59,designed4,4x4,0.6733333333333333,4
+q_learning,Q-learning,-1.0,2,designed4_m2,0,1700,0.55,designed4,4x4,0.6733333333333333,4
+q_learning,Q-learning,-1.0,2,designed4_m2,0,1750,0.5,designed4,4x4,0.6733333333333333,4
+q_learning,Q-learning,-1.0,2,designed4_m2,0,1800,0.52,designed4,4x4,0.6733333333333333,4
+q_learning,Q-learning,-1.0,2,designed4_m2,0,1850,0.61,designed4,4x4,0.6733333333333333,4
+q_learning,Q-learning,-1.0,2,designed4_m2,0,1900,0.62,designed4,4x4,0.6733333333333333,4
+q_learning,Q-learning,-1.0,2,designed4_m2,0,1950,0.57,designed4,4x4,0.6733333333333333,4
+q_learning,Q-learning,-1.0,2,designed4_m2,0,2000,0.5,designed4,4x4,0.6733333333333333,4
+sarsa,SARSA,-1.0,2,designed4_m2,0,0,0.01,designed4,4x4,0.6733333333333333,4
+sarsa,SARSA,-1.0,2,designed4_m2,0,50,0.01,designed4,4x4,0.6733333333333333,4
+sarsa,SARSA,-1.0,2,designed4_m2,0,100,0.01,designed4,4x4,0.6733333333333333,4
+sarsa,SARSA,-1.0,2,designed4_m2,0,150,0.02,designed4,4x4,0.6733333333333333,4
+sarsa,SARSA,-1.0,2,designed4_m2,0,200,0.04,designed4,4x4,0.6733333333333333,4
+sarsa,SARSA,-1.0,2,designed4_m2,0,250,0.12,designed4,4x4,0.6733333333333333,4
+sarsa,SARSA,-1.0,2,designed4_m2,0,300,0.03,designed4,4x4,0.6733333333333333,4
+sarsa,SARSA,-1.0,2,designed4_m2,0,350,0.25,designed4,4x4,0.6733333333333333,4
+sarsa,SARSA,-1.0,2,designed4_m2,0,400,0.22,designed4,4x4,0.6733333333333333,4
+sarsa,SARSA,-1.0,2,designed4_m2,0,450,0.29,designed4,4x4,0.6733333333333333,4
+sarsa,SARSA,-1.0,2,designed4_m2,0,500,0.18,designed4,4x4,0.6733333333333333,4
+sarsa,SARSA,-1.0,2,designed4_m2,0,550,0.18,designed4,4x4,0.6733333333333333,4
+sarsa,SARSA,-1.0,2,designed4_m2,0,600,0.5,designed4,4x4,0.6733333333333333,4
+sarsa,SARSA,-1.0,2,designed4_m2,0,650,0.39,designed4,4x4,0.6733333333333333,4
+sarsa,SARSA,-1.0,2,designed4_m2,0,700,0.36,designed4,4x4,0.6733333333333333,4
+sarsa,SARSA,-1.0,2,designed4_m2,0,750,0.48,designed4,4x4,0.6733333333333333,4
+sarsa,SARSA,-1.0,2,designed4_m2,0,800,0.62,designed4,4x4,0.6733333333333333,4
+sarsa,SARSA,-1.0,2,designed4_m2,0,850,0.53,designed4,4x4,0.6733333333333333,4
+sarsa,SARSA,-1.0,2,designed4_m2,0,900,0.46,designed4,4x4,0.6733333333333333,4
+sarsa,SARSA,-1.0,2,designed4_m2,0,950,0.49,designed4,4x4,0.6733333333333333,4
+sarsa,SARSA,-1.0,2,designed4_m2,0,1000,0.58,designed4,4x4,0.6733333333333333,4
+sarsa,SARSA,-1.0,2,designed4_m2,0,1050,0.58,designed4,4x4,0.6733333333333333,4
+sarsa,SARSA,-1.0,2,designed4_m2,0,1100,0.52,designed4,4x4,0.6733333333333333,4
+sarsa,SARSA,-1.0,2,designed4_m2,0,1150,0.58,designed4,4x4,0.6733333333333333,4
+sarsa,SARSA,-1.0,2,designed4_m2,0,1200,0.64,designed4,4x4,0.6733333333333333,4
+sarsa,SARSA,-1.0,2,designed4_m2,0,1250,0.59,designed4,4x4,0.6733333333333333,4
+sarsa,SARSA,-1.0,2,designed4_m2,0,1300,0.56,designed4,4x4,0.6733333333333333,4
+sarsa,SARSA,-1.0,2,designed4_m2,0,1350,0.6,designed4,4x4,0.6733333333333333,4
+sarsa,SARSA,-1.0,2,designed4_m2,0,1400,0.56,designed4,4x4,0.6733333333333333,4
+sarsa,SARSA,-1.0,2,designed4_m2,0,1450,0.52,designed4,4x4,0.6733333333333333,4
+sarsa,SARSA,-1.0,2,designed4_m2,0,1500,0.56,designed4,4x4,0.6733333333333333,4
+sarsa,SARSA,-1.0,2,designed4_m2,0,1550,0.54,designed4,4x4,0.6733333333333333,4
+sarsa,SARSA,-1.0,2,designed4_m2,0,1600,0.56,designed4,4x4,0.6733333333333333,4
+sarsa,SARSA,-1.0,2,designed4_m2,0,1650,0.59,designed4,4x4,0.6733333333333333,4
+sarsa,SARSA,-1.0,2,designed4_m2,0,1700,0.6,designed4,4x4,0.6733333333333333,4
+sarsa,SARSA,-1.0,2,designed4_m2,0,1750,0.5,designed4,4x4,0.6733333333333333,4
+sarsa,SARSA,-1.0,2,designed4_m2,0,1800,0.52,designed4,4x4,0.6733333333333333,4
+sarsa,SARSA,-1.0,2,designed4_m2,0,1850,0.61,designed4,4x4,0.6733333333333333,4
+sarsa,SARSA,-1.0,2,designed4_m2,0,1900,0.62,designed4,4x4,0.6733333333333333,4
+sarsa,SARSA,-1.0,2,designed4_m2,0,1950,0.57,designed4,4x4,0.6733333333333333,4
+sarsa,SARSA,-1.0,2,designed4_m2,0,2000,0.5,designed4,4x4,0.6733333333333333,4
+expected_sarsa,Expected SARSA,-1.0,2,designed4_m2,0,0,0.01,designed4,4x4,0.6733333333333333,4
+expected_sarsa,Expected SARSA,-1.0,2,designed4_m2,0,50,0.01,designed4,4x4,0.6733333333333333,4
+expected_sarsa,Expected SARSA,-1.0,2,designed4_m2,0,100,0.07,designed4,4x4,0.6733333333333333,4
+expected_sarsa,Expected SARSA,-1.0,2,designed4_m2,0,150,0.09,designed4,4x4,0.6733333333333333,4
+expected_sarsa,Expected SARSA,-1.0,2,designed4_m2,0,200,0.13,designed4,4x4,0.6733333333333333,4
+expected_sarsa,Expected SARSA,-1.0,2,designed4_m2,0,250,0.15,designed4,4x4,0.6733333333333333,4
+expected_sarsa,Expected SARSA,-1.0,2,designed4_m2,0,300,0.17,designed4,4x4,0.6733333333333333,4
+expected_sarsa,Expected SARSA,-1.0,2,designed4_m2,0,350,0.18,designed4,4x4,0.6733333333333333,4
+expected_sarsa,Expected SARSA,-1.0,2,designed4_m2,0,400,0.16,designed4,4x4,0.6733333333333333,4
+expected_sarsa,Expected SARSA,-1.0,2,designed4_m2,0,450,0.28,designed4,4x4,0.6733333333333333,4
+expected_sarsa,Expected SARSA,-1.0,2,designed4_m2,0,500,0.24,designed4,4x4,0.6733333333333333,4
+expected_sarsa,Expected SARSA,-1.0,2,designed4_m2,0,550,0.25,designed4,4x4,0.6733333333333333,4
+expected_sarsa,Expected SARSA,-1.0,2,designed4_m2,0,600,0.22,designed4,4x4,0.6733333333333333,4
+expected_sarsa,Expected SARSA,-1.0,2,designed4_m2,0,650,0.35,designed4,4x4,0.6733333333333333,4
+expected_sarsa,Expected SARSA,-1.0,2,designed4_m2,0,700,0.51,designed4,4x4,0.6733333333333333,4
+expected_sarsa,Expected SARSA,-1.0,2,designed4_m2,0,750,0.62,designed4,4x4,0.6733333333333333,4
+expected_sarsa,Expected SARSA,-1.0,2,designed4_m2,0,800,0.62,designed4,4x4,0.6733333333333333,4
+expected_sarsa,Expected SARSA,-1.0,2,designed4_m2,0,850,0.53,designed4,4x4,0.6733333333333333,4
+expected_sarsa,Expected SARSA,-1.0,2,designed4_m2,0,900,0.46,designed4,4x4,0.6733333333333333,4
+expected_sarsa,Expected SARSA,-1.0,2,designed4_m2,0,950,0.49,designed4,4x4,0.6733333333333333,4
+expected_sarsa,Expected SARSA,-1.0,2,designed4_m2,0,1000,0.58,designed4,4x4,0.6733333333333333,4
+expected_sarsa,Expected SARSA,-1.0,2,designed4_m2,0,1050,0.58,designed4,4x4,0.6733333333333333,4
+expected_sarsa,Expected SARSA,-1.0,2,designed4_m2,0,1100,0.52,designed4,4x4,0.6733333333333333,4
+expected_sarsa,Expected SARSA,-1.0,2,designed4_m2,0,1150,0.58,designed4,4x4,0.6733333333333333,4
+expected_sarsa,Expected SARSA,-1.0,2,designed4_m2,0,1200,0.64,designed4,4x4,0.6733333333333333,4
+expected_sarsa,Expected SARSA,-1.0,2,designed4_m2,0,1250,0.59,designed4,4x4,0.6733333333333333,4
+expected_sarsa,Expected SARSA,-1.0,2,designed4_m2,0,1300,0.56,designed4,4x4,0.6733333333333333,4
+expected_sarsa,Expected SARSA,-1.0,2,designed4_m2,0,1350,0.6,designed4,4x4,0.6733333333333333,4
+expected_sarsa,Expected SARSA,-1.0,2,designed4_m2,0,1400,0.56,designed4,4x4,0.6733333333333333,4
+expected_sarsa,Expected SARSA,-1.0,2,designed4_m2,0,1450,0.52,designed4,4x4,0.6733333333333333,4
+expected_sarsa,Expected SARSA,-1.0,2,designed4_m2,0,1500,0.56,designed4,4x4,0.6733333333333333,4
+expected_sarsa,Expected SARSA,-1.0,2,designed4_m2,0,1550,0.32,designed4,4x4,0.6733333333333333,4
+expected_sarsa,Expected SARSA,-1.0,2,designed4_m2,0,1600,0.56,designed4,4x4,0.6733333333333333,4
+expected_sarsa,Expected SARSA,-1.0,2,designed4_m2,0,1650,0.59,designed4,4x4,0.6733333333333333,4
+expected_sarsa,Expected SARSA,-1.0,2,designed4_m2,0,1700,0.6,designed4,4x4,0.6733333333333333,4
+expected_sarsa,Expected SARSA,-1.0,2,designed4_m2,0,1750,0.54,designed4,4x4,0.6733333333333333,4
+expected_sarsa,Expected SARSA,-1.0,2,designed4_m2,0,1800,0.53,designed4,4x4,0.6733333333333333,4
+expected_sarsa,Expected SARSA,-1.0,2,designed4_m2,0,1850,0.59,designed4,4x4,0.6733333333333333,4
+expected_sarsa,Expected SARSA,-1.0,2,designed4_m2,0,1900,0.6,designed4,4x4,0.6733333333333333,4
+expected_sarsa,Expected SARSA,-1.0,2,designed4_m2,0,1950,0.56,designed4,4x4,0.6733333333333333,4
+expected_sarsa,Expected SARSA,-1.0,2,designed4_m2,0,2000,0.54,designed4,4x4,0.6733333333333333,4
+sarsa_lambda,SARSA(lambda),-1.0,2,designed4_m2,0,0,0.01,designed4,4x4,0.6733333333333333,4
+sarsa_lambda,SARSA(lambda),-1.0,2,designed4_m2,0,50,0.01,designed4,4x4,0.6733333333333333,4
+sarsa_lambda,SARSA(lambda),-1.0,2,designed4_m2,0,100,0.01,designed4,4x4,0.6733333333333333,4
+sarsa_lambda,SARSA(lambda),-1.0,2,designed4_m2,0,150,0.07,designed4,4x4,0.6733333333333333,4
+sarsa_lambda,SARSA(lambda),-1.0,2,designed4_m2,0,200,0.09,designed4,4x4,0.6733333333333333,4
+sarsa_lambda,SARSA(lambda),-1.0,2,designed4_m2,0,250,0.21,designed4,4x4,0.6733333333333333,4
+sarsa_lambda,SARSA(lambda),-1.0,2,designed4_m2,0,300,0.0,designed4,4x4,0.6733333333333333,4
+sarsa_lambda,SARSA(lambda),-1.0,2,designed4_m2,0,350,0.02,designed4,4x4,0.6733333333333333,4
+sarsa_lambda,SARSA(lambda),-1.0,2,designed4_m2,0,400,0.18,designed4,4x4,0.6733333333333333,4
+sarsa_lambda,SARSA(lambda),-1.0,2,designed4_m2,0,450,0.1,designed4,4x4,0.6733333333333333,4
+sarsa_lambda,SARSA(lambda),-1.0,2,designed4_m2,0,500,0.1,designed4,4x4,0.6733333333333333,4
+sarsa_lambda,SARSA(lambda),-1.0,2,designed4_m2,0,550,0.12,designed4,4x4,0.6733333333333333,4
+sarsa_lambda,SARSA(lambda),-1.0,2,designed4_m2,0,600,0.44,designed4,4x4,0.6733333333333333,4
+sarsa_lambda,SARSA(lambda),-1.0,2,designed4_m2,0,650,0.09,designed4,4x4,0.6733333333333333,4
+sarsa_lambda,SARSA(lambda),-1.0,2,designed4_m2,0,700,0.32,designed4,4x4,0.6733333333333333,4
+sarsa_lambda,SARSA(lambda),-1.0,2,designed4_m2,0,750,0.57,designed4,4x4,0.6733333333333333,4
+sarsa_lambda,SARSA(lambda),-1.0,2,designed4_m2,0,800,0.59,designed4,4x4,0.6733333333333333,4
+sarsa_lambda,SARSA(lambda),-1.0,2,designed4_m2,0,850,0.51,designed4,4x4,0.6733333333333333,4
+sarsa_lambda,SARSA(lambda),-1.0,2,designed4_m2,0,900,0.43,designed4,4x4,0.6733333333333333,4
+sarsa_lambda,SARSA(lambda),-1.0,2,designed4_m2,0,950,0.3,designed4,4x4,0.6733333333333333,4
+sarsa_lambda,SARSA(lambda),-1.0,2,designed4_m2,0,1000,0.0,designed4,4x4,0.6733333333333333,4
+sarsa_lambda,SARSA(lambda),-1.0,2,designed4_m2,0,1050,0.31,designed4,4x4,0.6733333333333333,4
+sarsa_lambda,SARSA(lambda),-1.0,2,designed4_m2,0,1100,0.23,designed4,4x4,0.6733333333333333,4
+sarsa_lambda,SARSA(lambda),-1.0,2,designed4_m2,0,1150,0.33,designed4,4x4,0.6733333333333333,4
+sarsa_lambda,SARSA(lambda),-1.0,2,designed4_m2,0,1200,0.53,designed4,4x4,0.6733333333333333,4
+sarsa_lambda,SARSA(lambda),-1.0,2,designed4_m2,0,1250,0.55,designed4,4x4,0.6733333333333333,4
+sarsa_lambda,SARSA(lambda),-1.0,2,designed4_m2,0,1300,0.53,designed4,4x4,0.6733333333333333,4
+sarsa_lambda,SARSA(lambda),-1.0,2,designed4_m2,0,1350,0.54,designed4,4x4,0.6733333333333333,4
+sarsa_lambda,SARSA(lambda),-1.0,2,designed4_m2,0,1400,0.05,designed4,4x4,0.6733333333333333,4
+sarsa_lambda,SARSA(lambda),-1.0,2,designed4_m2,0,1450,0.42,designed4,4x4,0.6733333333333333,4
+sarsa_lambda,SARSA(lambda),-1.0,2,designed4_m2,0,1500,0.11,designed4,4x4,0.6733333333333333,4
+sarsa_lambda,SARSA(lambda),-1.0,2,designed4_m2,0,1550,0.5,designed4,4x4,0.6733333333333333,4
+sarsa_lambda,SARSA(lambda),-1.0,2,designed4_m2,0,1600,0.5,designed4,4x4,0.6733333333333333,4
+sarsa_lambda,SARSA(lambda),-1.0,2,designed4_m2,0,1650,0.55,designed4,4x4,0.6733333333333333,4
+sarsa_lambda,SARSA(lambda),-1.0,2,designed4_m2,0,1700,0.55,designed4,4x4,0.6733333333333333,4
+sarsa_lambda,SARSA(lambda),-1.0,2,designed4_m2,0,1750,0.32,designed4,4x4,0.6733333333333333,4
+sarsa_lambda,SARSA(lambda),-1.0,2,designed4_m2,0,1800,0.35,designed4,4x4,0.6733333333333333,4
+sarsa_lambda,SARSA(lambda),-1.0,2,designed4_m2,0,1850,0.41,designed4,4x4,0.6733333333333333,4
+sarsa_lambda,SARSA(lambda),-1.0,2,designed4_m2,0,1900,0.59,designed4,4x4,0.6733333333333333,4
+sarsa_lambda,SARSA(lambda),-1.0,2,designed4_m2,0,1950,0.32,designed4,4x4,0.6733333333333333,4
+sarsa_lambda,SARSA(lambda),-1.0,2,designed4_m2,0,2000,0.0,designed4,4x4,0.6733333333333333,4
+q_lambda,Q(lambda),-1.0,2,designed4_m2,0,0,0.01,designed4,4x4,0.6733333333333333,4
+q_lambda,Q(lambda),-1.0,2,designed4_m2,0,50,0.02,designed4,4x4,0.6733333333333333,4
+q_lambda,Q(lambda),-1.0,2,designed4_m2,0,100,0.1,designed4,4x4,0.6733333333333333,4
+q_lambda,Q(lambda),-1.0,2,designed4_m2,0,150,0.18,designed4,4x4,0.6733333333333333,4
+q_lambda,Q(lambda),-1.0,2,designed4_m2,0,200,0.24,designed4,4x4,0.6733333333333333,4
+q_lambda,Q(lambda),-1.0,2,designed4_m2,0,250,0.17,designed4,4x4,0.6733333333333333,4
+q_lambda,Q(lambda),-1.0,2,designed4_m2,0,300,0.42,designed4,4x4,0.6733333333333333,4
+q_lambda,Q(lambda),-1.0,2,designed4_m2,0,350,0.38,designed4,4x4,0.6733333333333333,4
+q_lambda,Q(lambda),-1.0,2,designed4_m2,0,400,0.42,designed4,4x4,0.6733333333333333,4
+q_lambda,Q(lambda),-1.0,2,designed4_m2,0,450,0.14,designed4,4x4,0.6733333333333333,4
+q_lambda,Q(lambda),-1.0,2,designed4_m2,0,500,0.38,designed4,4x4,0.6733333333333333,4
+q_lambda,Q(lambda),-1.0,2,designed4_m2,0,550,0.31,designed4,4x4,0.6733333333333333,4
+q_lambda,Q(lambda),-1.0,2,designed4_m2,0,600,0.31,designed4,4x4,0.6733333333333333,4
+q_lambda,Q(lambda),-1.0,2,designed4_m2,0,650,0.24,designed4,4x4,0.6733333333333333,4
+q_lambda,Q(lambda),-1.0,2,designed4_m2,0,700,0.4,designed4,4x4,0.6733333333333333,4
+q_lambda,Q(lambda),-1.0,2,designed4_m2,0,750,0.35,designed4,4x4,0.6733333333333333,4
+q_lambda,Q(lambda),-1.0,2,designed4_m2,0,800,0.42,designed4,4x4,0.6733333333333333,4
+q_lambda,Q(lambda),-1.0,2,designed4_m2,0,850,0.5,designed4,4x4,0.6733333333333333,4
+q_lambda,Q(lambda),-1.0,2,designed4_m2,0,900,0.45,designed4,4x4,0.6733333333333333,4
+q_lambda,Q(lambda),-1.0,2,designed4_m2,0,950,0.51,designed4,4x4,0.6733333333333333,4
+q_lambda,Q(lambda),-1.0,2,designed4_m2,0,1000,0.59,designed4,4x4,0.6733333333333333,4
+q_lambda,Q(lambda),-1.0,2,designed4_m2,0,1050,0.58,designed4,4x4,0.6733333333333333,4
+q_lambda,Q(lambda),-1.0,2,designed4_m2,0,1100,0.53,designed4,4x4,0.6733333333333333,4
+q_lambda,Q(lambda),-1.0,2,designed4_m2,0,1150,0.55,designed4,4x4,0.6733333333333333,4
+q_lambda,Q(lambda),-1.0,2,designed4_m2,0,1200,0.5,designed4,4x4,0.6733333333333333,4
+q_lambda,Q(lambda),-1.0,2,designed4_m2,0,1250,0.51,designed4,4x4,0.6733333333333333,4
+q_lambda,Q(lambda),-1.0,2,designed4_m2,0,1300,0.51,designed4,4x4,0.6733333333333333,4
+q_lambda,Q(lambda),-1.0,2,designed4_m2,0,1350,0.44,designed4,4x4,0.6733333333333333,4
+q_lambda,Q(lambda),-1.0,2,designed4_m2,0,1400,0.55,designed4,4x4,0.6733333333333333,4
+q_lambda,Q(lambda),-1.0,2,designed4_m2,0,1450,0.37,designed4,4x4,0.6733333333333333,4
+q_lambda,Q(lambda),-1.0,2,designed4_m2,0,1500,0.36,designed4,4x4,0.6733333333333333,4
+q_lambda,Q(lambda),-1.0,2,designed4_m2,0,1550,0.44,designed4,4x4,0.6733333333333333,4
+q_lambda,Q(lambda),-1.0,2,designed4_m2,0,1600,0.53,designed4,4x4,0.6733333333333333,4
+q_lambda,Q(lambda),-1.0,2,designed4_m2,0,1650,0.31,designed4,4x4,0.6733333333333333,4
+q_lambda,Q(lambda),-1.0,2,designed4_m2,0,1700,0.68,designed4,4x4,0.6733333333333333,4
+q_lambda,Q(lambda),-1.0,2,designed4_m2,0,1750,0.54,designed4,4x4,0.6733333333333333,4
+q_lambda,Q(lambda),-1.0,2,designed4_m2,0,1800,0.3,designed4,4x4,0.6733333333333333,4
+q_lambda,Q(lambda),-1.0,2,designed4_m2,0,1850,0.54,designed4,4x4,0.6733333333333333,4
+q_lambda,Q(lambda),-1.0,2,designed4_m2,0,1900,0.53,designed4,4x4,0.6733333333333333,4
+q_lambda,Q(lambda),-1.0,2,designed4_m2,0,1950,0.57,designed4,4x4,0.6733333333333333,4
+q_lambda,Q(lambda),-1.0,2,designed4_m2,0,2000,0.57,designed4,4x4,0.6733333333333333,4
+optimistic_q,Optimistic Q,-1.0,2,designed4_m2,0,0,0.01,designed4,4x4,0.6733333333333333,4
+optimistic_q,Optimistic Q,-1.0,2,designed4_m2,0,50,0.16,designed4,4x4,0.6733333333333333,4
+optimistic_q,Optimistic Q,-1.0,2,designed4_m2,0,100,0.0,designed4,4x4,0.6733333333333333,4
+optimistic_q,Optimistic Q,-1.0,2,designed4_m2,0,150,0.18,designed4,4x4,0.6733333333333333,4
+optimistic_q,Optimistic Q,-1.0,2,designed4_m2,0,200,0.0,designed4,4x4,0.6733333333333333,4
+optimistic_q,Optimistic Q,-1.0,2,designed4_m2,0,250,0.47,designed4,4x4,0.6733333333333333,4
+optimistic_q,Optimistic Q,-1.0,2,designed4_m2,0,300,0.53,designed4,4x4,0.6733333333333333,4
+optimistic_q,Optimistic Q,-1.0,2,designed4_m2,0,350,0.38,designed4,4x4,0.6733333333333333,4
+optimistic_q,Optimistic Q,-1.0,2,designed4_m2,0,400,0.0,designed4,4x4,0.6733333333333333,4
+optimistic_q,Optimistic Q,-1.0,2,designed4_m2,0,450,0.56,designed4,4x4,0.6733333333333333,4
+optimistic_q,Optimistic Q,-1.0,2,designed4_m2,0,500,0.6,designed4,4x4,0.6733333333333333,4
+optimistic_q,Optimistic Q,-1.0,2,designed4_m2,0,550,0.61,designed4,4x4,0.6733333333333333,4
+optimistic_q,Optimistic Q,-1.0,2,designed4_m2,0,600,0.6,designed4,4x4,0.6733333333333333,4
+optimistic_q,Optimistic Q,-1.0,2,designed4_m2,0,650,0.58,designed4,4x4,0.6733333333333333,4
+optimistic_q,Optimistic Q,-1.0,2,designed4_m2,0,700,0.0,designed4,4x4,0.6733333333333333,4
+optimistic_q,Optimistic Q,-1.0,2,designed4_m2,0,750,0.66,designed4,4x4,0.6733333333333333,4
+optimistic_q,Optimistic Q,-1.0,2,designed4_m2,0,800,0.66,designed4,4x4,0.6733333333333333,4
+optimistic_q,Optimistic Q,-1.0,2,designed4_m2,0,850,0.55,designed4,4x4,0.6733333333333333,4
+optimistic_q,Optimistic Q,-1.0,2,designed4_m2,0,900,0.55,designed4,4x4,0.6733333333333333,4
+optimistic_q,Optimistic Q,-1.0,2,designed4_m2,0,950,0.53,designed4,4x4,0.6733333333333333,4
+optimistic_q,Optimistic Q,-1.0,2,designed4_m2,0,1000,0.61,designed4,4x4,0.6733333333333333,4
+optimistic_q,Optimistic Q,-1.0,2,designed4_m2,0,1050,0.64,designed4,4x4,0.6733333333333333,4
+optimistic_q,Optimistic Q,-1.0,2,designed4_m2,0,1100,0.63,designed4,4x4,0.6733333333333333,4
+optimistic_q,Optimistic Q,-1.0,2,designed4_m2,0,1150,0.59,designed4,4x4,0.6733333333333333,4
+optimistic_q,Optimistic Q,-1.0,2,designed4_m2,0,1200,0.58,designed4,4x4,0.6733333333333333,4
+optimistic_q,Optimistic Q,-1.0,2,designed4_m2,0,1250,0.6,designed4,4x4,0.6733333333333333,4
+optimistic_q,Optimistic Q,-1.0,2,designed4_m2,0,1300,0.51,designed4,4x4,0.6733333333333333,4
+optimistic_q,Optimistic Q,-1.0,2,designed4_m2,0,1350,0.52,designed4,4x4,0.6733333333333333,4
+optimistic_q,Optimistic Q,-1.0,2,designed4_m2,0,1400,0.43,designed4,4x4,0.6733333333333333,4
+optimistic_q,Optimistic Q,-1.0,2,designed4_m2,0,1450,0.5,designed4,4x4,0.6733333333333333,4
+optimistic_q,Optimistic Q,-1.0,2,designed4_m2,0,1500,0.53,designed4,4x4,0.6733333333333333,4
+optimistic_q,Optimistic Q,-1.0,2,designed4_m2,0,1550,0.56,designed4,4x4,0.6733333333333333,4
+optimistic_q,Optimistic Q,-1.0,2,designed4_m2,0,1600,0.63,designed4,4x4,0.6733333333333333,4
+optimistic_q,Optimistic Q,-1.0,2,designed4_m2,0,1650,0.62,designed4,4x4,0.6733333333333333,4
+optimistic_q,Optimistic Q,-1.0,2,designed4_m2,0,1700,0.63,designed4,4x4,0.6733333333333333,4
+optimistic_q,Optimistic Q,-1.0,2,designed4_m2,0,1750,0.62,designed4,4x4,0.6733333333333333,4
+optimistic_q,Optimistic Q,-1.0,2,designed4_m2,0,1800,0.57,designed4,4x4,0.6733333333333333,4
+optimistic_q,Optimistic Q,-1.0,2,designed4_m2,0,1850,0.6,designed4,4x4,0.6733333333333333,4
+optimistic_q,Optimistic Q,-1.0,2,designed4_m2,0,1900,0.59,designed4,4x4,0.6733333333333333,4
+optimistic_q,Optimistic Q,-1.0,2,designed4_m2,0,1950,0.58,designed4,4x4,0.6733333333333333,4
+optimistic_q,Optimistic Q,-1.0,2,designed4_m2,0,2000,0.54,designed4,4x4,0.6733333333333333,4
+dyna_q,Dyna-Q,-1.0,2,designed4_m2,0,0,0.01,designed4,4x4,0.6733333333333333,4
+dyna_q,Dyna-Q,-1.0,2,designed4_m2,0,50,0.05,designed4,4x4,0.6733333333333333,4
+dyna_q,Dyna-Q,-1.0,2,designed4_m2,0,100,0.0,designed4,4x4,0.6733333333333333,4
+dyna_q,Dyna-Q,-1.0,2,designed4_m2,0,150,0.18,designed4,4x4,0.6733333333333333,4
+dyna_q,Dyna-Q,-1.0,2,designed4_m2,0,200,0.12,designed4,4x4,0.6733333333333333,4
+dyna_q,Dyna-Q,-1.0,2,designed4_m2,0,250,0.26,designed4,4x4,0.6733333333333333,4
+dyna_q,Dyna-Q,-1.0,2,designed4_m2,0,300,0.18,designed4,4x4,0.6733333333333333,4
+dyna_q,Dyna-Q,-1.0,2,designed4_m2,0,350,0.49,designed4,4x4,0.6733333333333333,4
+dyna_q,Dyna-Q,-1.0,2,designed4_m2,0,400,0.0,designed4,4x4,0.6733333333333333,4
+dyna_q,Dyna-Q,-1.0,2,designed4_m2,0,450,0.06,designed4,4x4,0.6733333333333333,4
+dyna_q,Dyna-Q,-1.0,2,designed4_m2,0,500,0.15,designed4,4x4,0.6733333333333333,4
+dyna_q,Dyna-Q,-1.0,2,designed4_m2,0,550,0.0,designed4,4x4,0.6733333333333333,4
+dyna_q,Dyna-Q,-1.0,2,designed4_m2,0,600,0.0,designed4,4x4,0.6733333333333333,4
+dyna_q,Dyna-Q,-1.0,2,designed4_m2,0,650,0.0,designed4,4x4,0.6733333333333333,4
+dyna_q,Dyna-Q,-1.0,2,designed4_m2,0,700,0.58,designed4,4x4,0.6733333333333333,4
+dyna_q,Dyna-Q,-1.0,2,designed4_m2,0,750,0.0,designed4,4x4,0.6733333333333333,4
+dyna_q,Dyna-Q,-1.0,2,designed4_m2,0,800,0.0,designed4,4x4,0.6733333333333333,4
+dyna_q,Dyna-Q,-1.0,2,designed4_m2,0,850,0.26,designed4,4x4,0.6733333333333333,4
+dyna_q,Dyna-Q,-1.0,2,designed4_m2,0,900,0.33,designed4,4x4,0.6733333333333333,4
+dyna_q,Dyna-Q,-1.0,2,designed4_m2,0,950,0.0,designed4,4x4,0.6733333333333333,4
+dyna_q,Dyna-Q,-1.0,2,designed4_m2,0,1000,0.39,designed4,4x4,0.6733333333333333,4
+dyna_q,Dyna-Q,-1.0,2,designed4_m2,0,1050,0.67,designed4,4x4,0.6733333333333333,4
+dyna_q,Dyna-Q,-1.0,2,designed4_m2,0,1100,0.0,designed4,4x4,0.6733333333333333,4
+dyna_q,Dyna-Q,-1.0,2,designed4_m2,0,1150,0.26,designed4,4x4,0.6733333333333333,4
+dyna_q,Dyna-Q,-1.0,2,designed4_m2,0,1200,0.0,designed4,4x4,0.6733333333333333,4
+dyna_q,Dyna-Q,-1.0,2,designed4_m2,0,1250,0.14,designed4,4x4,0.6733333333333333,4
+dyna_q,Dyna-Q,-1.0,2,designed4_m2,0,1300,0.28,designed4,4x4,0.6733333333333333,4
+dyna_q,Dyna-Q,-1.0,2,designed4_m2,0,1350,0.52,designed4,4x4,0.6733333333333333,4
+dyna_q,Dyna-Q,-1.0,2,designed4_m2,0,1400,0.0,designed4,4x4,0.6733333333333333,4
+dyna_q,Dyna-Q,-1.0,2,designed4_m2,0,1450,0.54,designed4,4x4,0.6733333333333333,4
+dyna_q,Dyna-Q,-1.0,2,designed4_m2,0,1500,0.53,designed4,4x4,0.6733333333333333,4
+dyna_q,Dyna-Q,-1.0,2,designed4_m2,0,1550,0.0,designed4,4x4,0.6733333333333333,4
+dyna_q,Dyna-Q,-1.0,2,designed4_m2,0,1600,0.35,designed4,4x4,0.6733333333333333,4
+dyna_q,Dyna-Q,-1.0,2,designed4_m2,0,1650,0.62,designed4,4x4,0.6733333333333333,4
+dyna_q,Dyna-Q,-1.0,2,designed4_m2,0,1700,0.44,designed4,4x4,0.6733333333333333,4
+dyna_q,Dyna-Q,-1.0,2,designed4_m2,0,1750,0.0,designed4,4x4,0.6733333333333333,4
+dyna_q,Dyna-Q,-1.0,2,designed4_m2,0,1800,0.32,designed4,4x4,0.6733333333333333,4
+dyna_q,Dyna-Q,-1.0,2,designed4_m2,0,1850,0.6,designed4,4x4,0.6733333333333333,4
+dyna_q,Dyna-Q,-1.0,2,designed4_m2,0,1900,0.44,designed4,4x4,0.6733333333333333,4
+dyna_q,Dyna-Q,-1.0,2,designed4_m2,0,1950,0.57,designed4,4x4,0.6733333333333333,4
+dyna_q,Dyna-Q,-1.0,2,designed4_m2,0,2000,0.0,designed4,4x4,0.6733333333333333,4
+q_learning,Q-learning,-1.0,3,designed4_m3,0,0,0.01,designed4,4x4,0.6566666666666666,4
+q_learning,Q-learning,-1.0,3,designed4_m3,0,50,0.03,designed4,4x4,0.6566666666666666,4
+q_learning,Q-learning,-1.0,3,designed4_m3,0,100,0.01,designed4,4x4,0.6566666666666666,4
+q_learning,Q-learning,-1.0,3,designed4_m3,0,150,0.01,designed4,4x4,0.6566666666666666,4
+q_learning,Q-learning,-1.0,3,designed4_m3,0,200,0.0,designed4,4x4,0.6566666666666666,4
+q_learning,Q-learning,-1.0,3,designed4_m3,0,250,0.05,designed4,4x4,0.6566666666666666,4
+q_learning,Q-learning,-1.0,3,designed4_m3,0,300,0.2,designed4,4x4,0.6566666666666666,4
+q_learning,Q-learning,-1.0,3,designed4_m3,0,350,0.23,designed4,4x4,0.6566666666666666,4
+q_learning,Q-learning,-1.0,3,designed4_m3,0,400,0.24,designed4,4x4,0.6566666666666666,4
+q_learning,Q-learning,-1.0,3,designed4_m3,0,450,0.37,designed4,4x4,0.6566666666666666,4
+q_learning,Q-learning,-1.0,3,designed4_m3,0,500,0.34,designed4,4x4,0.6566666666666666,4
+q_learning,Q-learning,-1.0,3,designed4_m3,0,550,0.45,designed4,4x4,0.6566666666666666,4
+q_learning,Q-learning,-1.0,3,designed4_m3,0,600,0.47,designed4,4x4,0.6566666666666666,4
+q_learning,Q-learning,-1.0,3,designed4_m3,0,650,0.45,designed4,4x4,0.6566666666666666,4
+q_learning,Q-learning,-1.0,3,designed4_m3,0,700,0.4,designed4,4x4,0.6566666666666666,4
+q_learning,Q-learning,-1.0,3,designed4_m3,0,750,0.45,designed4,4x4,0.6566666666666666,4
+q_learning,Q-learning,-1.0,3,designed4_m3,0,800,0.44,designed4,4x4,0.6566666666666666,4
+q_learning,Q-learning,-1.0,3,designed4_m3,0,850,0.3,designed4,4x4,0.6566666666666666,4
+q_learning,Q-learning,-1.0,3,designed4_m3,0,900,0.37,designed4,4x4,0.6566666666666666,4
+q_learning,Q-learning,-1.0,3,designed4_m3,0,950,0.45,designed4,4x4,0.6566666666666666,4
+q_learning,Q-learning,-1.0,3,designed4_m3,0,1000,0.44,designed4,4x4,0.6566666666666666,4
+q_learning,Q-learning,-1.0,3,designed4_m3,0,1050,0.41,designed4,4x4,0.6566666666666666,4
+q_learning,Q-learning,-1.0,3,designed4_m3,0,1100,0.42,designed4,4x4,0.6566666666666666,4
+q_learning,Q-learning,-1.0,3,designed4_m3,0,1150,0.52,designed4,4x4,0.6566666666666666,4
+q_learning,Q-learning,-1.0,3,designed4_m3,0,1200,0.51,designed4,4x4,0.6566666666666666,4
+q_learning,Q-learning,-1.0,3,designed4_m3,0,1250,0.42,designed4,4x4,0.6566666666666666,4
+q_learning,Q-learning,-1.0,3,designed4_m3,0,1300,0.31,designed4,4x4,0.6566666666666666,4
+q_learning,Q-learning,-1.0,3,designed4_m3,0,1350,0.31,designed4,4x4,0.6566666666666666,4
+q_learning,Q-learning,-1.0,3,designed4_m3,0,1400,0.45,designed4,4x4,0.6566666666666666,4
+q_learning,Q-learning,-1.0,3,designed4_m3,0,1450,0.59,designed4,4x4,0.6566666666666666,4
+q_learning,Q-learning,-1.0,3,designed4_m3,0,1500,0.54,designed4,4x4,0.6566666666666666,4
+q_learning,Q-learning,-1.0,3,designed4_m3,0,1550,0.55,designed4,4x4,0.6566666666666666,4
+q_learning,Q-learning,-1.0,3,designed4_m3,0,1600,0.59,designed4,4x4,0.6566666666666666,4
+q_learning,Q-learning,-1.0,3,designed4_m3,0,1650,0.49,designed4,4x4,0.6566666666666666,4
+q_learning,Q-learning,-1.0,3,designed4_m3,0,1700,0.54,designed4,4x4,0.6566666666666666,4
+q_learning,Q-learning,-1.0,3,designed4_m3,0,1750,0.45,designed4,4x4,0.6566666666666666,4
+q_learning,Q-learning,-1.0,3,designed4_m3,0,1800,0.55,designed4,4x4,0.6566666666666666,4
+q_learning,Q-learning,-1.0,3,designed4_m3,0,1850,0.5,designed4,4x4,0.6566666666666666,4
+q_learning,Q-learning,-1.0,3,designed4_m3,0,1900,0.54,designed4,4x4,0.6566666666666666,4
+q_learning,Q-learning,-1.0,3,designed4_m3,0,1950,0.55,designed4,4x4,0.6566666666666666,4
+q_learning,Q-learning,-1.0,3,designed4_m3,0,2000,0.54,designed4,4x4,0.6566666666666666,4
+sarsa,SARSA,-1.0,3,designed4_m3,0,0,0.01,designed4,4x4,0.6566666666666666,4
+sarsa,SARSA,-1.0,3,designed4_m3,0,50,0.03,designed4,4x4,0.6566666666666666,4
+sarsa,SARSA,-1.0,3,designed4_m3,0,100,0.01,designed4,4x4,0.6566666666666666,4
+sarsa,SARSA,-1.0,3,designed4_m3,0,150,0.01,designed4,4x4,0.6566666666666666,4
+sarsa,SARSA,-1.0,3,designed4_m3,0,200,0.02,designed4,4x4,0.6566666666666666,4
+sarsa,SARSA,-1.0,3,designed4_m3,0,250,0.02,designed4,4x4,0.6566666666666666,4
+sarsa,SARSA,-1.0,3,designed4_m3,0,300,0.0,designed4,4x4,0.6566666666666666,4
+sarsa,SARSA,-1.0,3,designed4_m3,0,350,0.06,designed4,4x4,0.6566666666666666,4
+sarsa,SARSA,-1.0,3,designed4_m3,0,400,0.05,designed4,4x4,0.6566666666666666,4
+sarsa,SARSA,-1.0,3,designed4_m3,0,450,0.05,designed4,4x4,0.6566666666666666,4
+sarsa,SARSA,-1.0,3,designed4_m3,0,500,0.1,designed4,4x4,0.6566666666666666,4
+sarsa,SARSA,-1.0,3,designed4_m3,0,550,0.12,designed4,4x4,0.6566666666666666,4
+sarsa,SARSA,-1.0,3,designed4_m3,0,600,0.15,designed4,4x4,0.6566666666666666,4
+sarsa,SARSA,-1.0,3,designed4_m3,0,650,0.13,designed4,4x4,0.6566666666666666,4
+sarsa,SARSA,-1.0,3,designed4_m3,0,700,0.11,designed4,4x4,0.6566666666666666,4
+sarsa,SARSA,-1.0,3,designed4_m3,0,750,0.16,designed4,4x4,0.6566666666666666,4
+sarsa,SARSA,-1.0,3,designed4_m3,0,800,0.19,designed4,4x4,0.6566666666666666,4
+sarsa,SARSA,-1.0,3,designed4_m3,0,850,0.14,designed4,4x4,0.6566666666666666,4
+sarsa,SARSA,-1.0,3,designed4_m3,0,900,0.14,designed4,4x4,0.6566666666666666,4
+sarsa,SARSA,-1.0,3,designed4_m3,0,950,0.18,designed4,4x4,0.6566666666666666,4
+sarsa,SARSA,-1.0,3,designed4_m3,0,1000,0.18,designed4,4x4,0.6566666666666666,4
+sarsa,SARSA,-1.0,3,designed4_m3,0,1050,0.23,designed4,4x4,0.6566666666666666,4
+sarsa,SARSA,-1.0,3,designed4_m3,0,1100,0.24,designed4,4x4,0.6566666666666666,4
+sarsa,SARSA,-1.0,3,designed4_m3,0,1150,0.2,designed4,4x4,0.6566666666666666,4
+sarsa,SARSA,-1.0,3,designed4_m3,0,1200,0.23,designed4,4x4,0.6566666666666666,4
+sarsa,SARSA,-1.0,3,designed4_m3,0,1250,0.22,designed4,4x4,0.6566666666666666,4
+sarsa,SARSA,-1.0,3,designed4_m3,0,1300,0.21,designed4,4x4,0.6566666666666666,4
+sarsa,SARSA,-1.0,3,designed4_m3,0,1350,0.25,designed4,4x4,0.6566666666666666,4
+sarsa,SARSA,-1.0,3,designed4_m3,0,1400,0.21,designed4,4x4,0.6566666666666666,4
+sarsa,SARSA,-1.0,3,designed4_m3,0,1450,0.18,designed4,4x4,0.6566666666666666,4
+sarsa,SARSA,-1.0,3,designed4_m3,0,1500,0.24,designed4,4x4,0.6566666666666666,4
+sarsa,SARSA,-1.0,3,designed4_m3,0,1550,0.24,designed4,4x4,0.6566666666666666,4
+sarsa,SARSA,-1.0,3,designed4_m3,0,1600,0.23,designed4,4x4,0.6566666666666666,4
+sarsa,SARSA,-1.0,3,designed4_m3,0,1650,0.29,designed4,4x4,0.6566666666666666,4
+sarsa,SARSA,-1.0,3,designed4_m3,0,1700,0.24,designed4,4x4,0.6566666666666666,4
+sarsa,SARSA,-1.0,3,designed4_m3,0,1750,0.06,designed4,4x4,0.6566666666666666,4
+sarsa,SARSA,-1.0,3,designed4_m3,0,1800,0.24,designed4,4x4,0.6566666666666666,4
+sarsa,SARSA,-1.0,3,designed4_m3,0,1850,0.29,designed4,4x4,0.6566666666666666,4
+sarsa,SARSA,-1.0,3,designed4_m3,0,1900,0.28,designed4,4x4,0.6566666666666666,4
+sarsa,SARSA,-1.0,3,designed4_m3,0,1950,0.21,designed4,4x4,0.6566666666666666,4
+sarsa,SARSA,-1.0,3,designed4_m3,0,2000,0.23,designed4,4x4,0.6566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,3,designed4_m3,0,0,0.01,designed4,4x4,0.6566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,3,designed4_m3,0,50,0.0,designed4,4x4,0.6566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,3,designed4_m3,0,100,0.02,designed4,4x4,0.6566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,3,designed4_m3,0,150,0.0,designed4,4x4,0.6566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,3,designed4_m3,0,200,0.02,designed4,4x4,0.6566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,3,designed4_m3,0,250,0.01,designed4,4x4,0.6566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,3,designed4_m3,0,300,0.02,designed4,4x4,0.6566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,3,designed4_m3,0,350,0.08,designed4,4x4,0.6566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,3,designed4_m3,0,400,0.08,designed4,4x4,0.6566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,3,designed4_m3,0,450,0.22,designed4,4x4,0.6566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,3,designed4_m3,0,500,0.27,designed4,4x4,0.6566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,3,designed4_m3,0,550,0.22,designed4,4x4,0.6566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,3,designed4_m3,0,600,0.29,designed4,4x4,0.6566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,3,designed4_m3,0,650,0.34,designed4,4x4,0.6566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,3,designed4_m3,0,700,0.51,designed4,4x4,0.6566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,3,designed4_m3,0,750,0.54,designed4,4x4,0.6566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,3,designed4_m3,0,800,0.57,designed4,4x4,0.6566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,3,designed4_m3,0,850,0.49,designed4,4x4,0.6566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,3,designed4_m3,0,900,0.54,designed4,4x4,0.6566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,3,designed4_m3,0,950,0.52,designed4,4x4,0.6566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,3,designed4_m3,0,1000,0.49,designed4,4x4,0.6566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,3,designed4_m3,0,1050,0.52,designed4,4x4,0.6566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,3,designed4_m3,0,1100,0.54,designed4,4x4,0.6566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,3,designed4_m3,0,1150,0.6,designed4,4x4,0.6566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,3,designed4_m3,0,1200,0.59,designed4,4x4,0.6566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,3,designed4_m3,0,1250,0.56,designed4,4x4,0.6566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,3,designed4_m3,0,1300,0.53,designed4,4x4,0.6566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,3,designed4_m3,0,1350,0.53,designed4,4x4,0.6566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,3,designed4_m3,0,1400,0.58,designed4,4x4,0.6566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,3,designed4_m3,0,1450,0.59,designed4,4x4,0.6566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,3,designed4_m3,0,1500,0.54,designed4,4x4,0.6566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,3,designed4_m3,0,1550,0.54,designed4,4x4,0.6566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,3,designed4_m3,0,1600,0.52,designed4,4x4,0.6566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,3,designed4_m3,0,1650,0.43,designed4,4x4,0.6566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,3,designed4_m3,0,1700,0.45,designed4,4x4,0.6566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,3,designed4_m3,0,1750,0.5,designed4,4x4,0.6566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,3,designed4_m3,0,1800,0.47,designed4,4x4,0.6566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,3,designed4_m3,0,1850,0.46,designed4,4x4,0.6566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,3,designed4_m3,0,1900,0.52,designed4,4x4,0.6566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,3,designed4_m3,0,1950,0.54,designed4,4x4,0.6566666666666666,4
+expected_sarsa,Expected SARSA,-1.0,3,designed4_m3,0,2000,0.57,designed4,4x4,0.6566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,3,designed4_m3,0,0,0.01,designed4,4x4,0.6566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,3,designed4_m3,0,50,0.01,designed4,4x4,0.6566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,3,designed4_m3,0,100,0.04,designed4,4x4,0.6566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,3,designed4_m3,0,150,0.05,designed4,4x4,0.6566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,3,designed4_m3,0,200,0.17,designed4,4x4,0.6566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,3,designed4_m3,0,250,0.0,designed4,4x4,0.6566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,3,designed4_m3,0,300,0.02,designed4,4x4,0.6566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,3,designed4_m3,0,350,0.04,designed4,4x4,0.6566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,3,designed4_m3,0,400,0.0,designed4,4x4,0.6566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,3,designed4_m3,0,450,0.07,designed4,4x4,0.6566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,3,designed4_m3,0,500,0.14,designed4,4x4,0.6566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,3,designed4_m3,0,550,0.05,designed4,4x4,0.6566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,3,designed4_m3,0,600,0.11,designed4,4x4,0.6566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,3,designed4_m3,0,650,0.11,designed4,4x4,0.6566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,3,designed4_m3,0,700,0.08,designed4,4x4,0.6566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,3,designed4_m3,0,750,0.09,designed4,4x4,0.6566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,3,designed4_m3,0,800,0.0,designed4,4x4,0.6566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,3,designed4_m3,0,850,0.02,designed4,4x4,0.6566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,3,designed4_m3,0,900,0.05,designed4,4x4,0.6566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,3,designed4_m3,0,950,0.04,designed4,4x4,0.6566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,3,designed4_m3,0,1000,0.04,designed4,4x4,0.6566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,3,designed4_m3,0,1050,0.1,designed4,4x4,0.6566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,3,designed4_m3,0,1100,0.08,designed4,4x4,0.6566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,3,designed4_m3,0,1150,0.1,designed4,4x4,0.6566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,3,designed4_m3,0,1200,0.09,designed4,4x4,0.6566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,3,designed4_m3,0,1250,0.05,designed4,4x4,0.6566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,3,designed4_m3,0,1300,0.09,designed4,4x4,0.6566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,3,designed4_m3,0,1350,0.0,designed4,4x4,0.6566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,3,designed4_m3,0,1400,0.07,designed4,4x4,0.6566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,3,designed4_m3,0,1450,0.07,designed4,4x4,0.6566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,3,designed4_m3,0,1500,0.01,designed4,4x4,0.6566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,3,designed4_m3,0,1550,0.08,designed4,4x4,0.6566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,3,designed4_m3,0,1600,0.05,designed4,4x4,0.6566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,3,designed4_m3,0,1650,0.22,designed4,4x4,0.6566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,3,designed4_m3,0,1700,0.25,designed4,4x4,0.6566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,3,designed4_m3,0,1750,0.18,designed4,4x4,0.6566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,3,designed4_m3,0,1800,0.2,designed4,4x4,0.6566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,3,designed4_m3,0,1850,0.24,designed4,4x4,0.6566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,3,designed4_m3,0,1900,0.3,designed4,4x4,0.6566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,3,designed4_m3,0,1950,0.21,designed4,4x4,0.6566666666666666,4
+sarsa_lambda,SARSA(lambda),-1.0,3,designed4_m3,0,2000,0.04,designed4,4x4,0.6566666666666666,4
+q_lambda,Q(lambda),-1.0,3,designed4_m3,0,0,0.01,designed4,4x4,0.6566666666666666,4
+q_lambda,Q(lambda),-1.0,3,designed4_m3,0,50,0.01,designed4,4x4,0.6566666666666666,4
+q_lambda,Q(lambda),-1.0,3,designed4_m3,0,100,0.0,designed4,4x4,0.6566666666666666,4
+q_lambda,Q(lambda),-1.0,3,designed4_m3,0,150,0.0,designed4,4x4,0.6566666666666666,4
+q_lambda,Q(lambda),-1.0,3,designed4_m3,0,200,0.05,designed4,4x4,0.6566666666666666,4
+q_lambda,Q(lambda),-1.0,3,designed4_m3,0,250,0.09,designed4,4x4,0.6566666666666666,4
+q_lambda,Q(lambda),-1.0,3,designed4_m3,0,300,0.06,designed4,4x4,0.6566666666666666,4
+q_lambda,Q(lambda),-1.0,3,designed4_m3,0,350,0.01,designed4,4x4,0.6566666666666666,4
+q_lambda,Q(lambda),-1.0,3,designed4_m3,0,400,0.07,designed4,4x4,0.6566666666666666,4
+q_lambda,Q(lambda),-1.0,3,designed4_m3,0,450,0.1,designed4,4x4,0.6566666666666666,4
+q_lambda,Q(lambda),-1.0,3,designed4_m3,0,500,0.11,designed4,4x4,0.6566666666666666,4
+q_lambda,Q(lambda),-1.0,3,designed4_m3,0,550,0.18,designed4,4x4,0.6566666666666666,4
+q_lambda,Q(lambda),-1.0,3,designed4_m3,0,600,0.17,designed4,4x4,0.6566666666666666,4
+q_lambda,Q(lambda),-1.0,3,designed4_m3,0,650,0.14,designed4,4x4,0.6566666666666666,4
+q_lambda,Q(lambda),-1.0,3,designed4_m3,0,700,0.15,designed4,4x4,0.6566666666666666,4
+q_lambda,Q(lambda),-1.0,3,designed4_m3,0,750,0.18,designed4,4x4,0.6566666666666666,4
+q_lambda,Q(lambda),-1.0,3,designed4_m3,0,800,0.18,designed4,4x4,0.6566666666666666,4
+q_lambda,Q(lambda),-1.0,3,designed4_m3,0,850,0.17,designed4,4x4,0.6566666666666666,4
+q_lambda,Q(lambda),-1.0,3,designed4_m3,0,900,0.19,designed4,4x4,0.6566666666666666,4
+q_lambda,Q(lambda),-1.0,3,designed4_m3,0,950,0.26,designed4,4x4,0.6566666666666666,4
+q_lambda,Q(lambda),-1.0,3,designed4_m3,0,1000,0.28,designed4,4x4,0.6566666666666666,4
+q_lambda,Q(lambda),-1.0,3,designed4_m3,0,1050,0.29,designed4,4x4,0.6566666666666666,4
+q_lambda,Q(lambda),-1.0,3,designed4_m3,0,1100,0.27,designed4,4x4,0.6566666666666666,4
+q_lambda,Q(lambda),-1.0,3,designed4_m3,0,1150,0.19,designed4,4x4,0.6566666666666666,4
+q_lambda,Q(lambda),-1.0,3,designed4_m3,0,1200,0.21,designed4,4x4,0.6566666666666666,4
+q_lambda,Q(lambda),-1.0,3,designed4_m3,0,1250,0.13,designed4,4x4,0.6566666666666666,4
+q_lambda,Q(lambda),-1.0,3,designed4_m3,0,1300,0.31,designed4,4x4,0.6566666666666666,4
+q_lambda,Q(lambda),-1.0,3,designed4_m3,0,1350,0.41,designed4,4x4,0.6566666666666666,4
+q_lambda,Q(lambda),-1.0,3,designed4_m3,0,1400,0.38,designed4,4x4,0.6566666666666666,4
+q_lambda,Q(lambda),-1.0,3,designed4_m3,0,1450,0.31,designed4,4x4,0.6566666666666666,4
+q_lambda,Q(lambda),-1.0,3,designed4_m3,0,1500,0.34,designed4,4x4,0.6566666666666666,4
+q_lambda,Q(lambda),-1.0,3,designed4_m3,0,1550,0.38,designed4,4x4,0.6566666666666666,4
+q_lambda,Q(lambda),-1.0,3,designed4_m3,0,1600,0.37,designed4,4x4,0.6566666666666666,4
+q_lambda,Q(lambda),-1.0,3,designed4_m3,0,1650,0.32,designed4,4x4,0.6566666666666666,4
+q_lambda,Q(lambda),-1.0,3,designed4_m3,0,1700,0.17,designed4,4x4,0.6566666666666666,4
+q_lambda,Q(lambda),-1.0,3,designed4_m3,0,1750,0.32,designed4,4x4,0.6566666666666666,4
+q_lambda,Q(lambda),-1.0,3,designed4_m3,0,1800,0.36,designed4,4x4,0.6566666666666666,4
+q_lambda,Q(lambda),-1.0,3,designed4_m3,0,1850,0.46,designed4,4x4,0.6566666666666666,4
+q_lambda,Q(lambda),-1.0,3,designed4_m3,0,1900,0.41,designed4,4x4,0.6566666666666666,4
+q_lambda,Q(lambda),-1.0,3,designed4_m3,0,1950,0.34,designed4,4x4,0.6566666666666666,4
+q_lambda,Q(lambda),-1.0,3,designed4_m3,0,2000,0.37,designed4,4x4,0.6566666666666666,4
+optimistic_q,Optimistic Q,-1.0,3,designed4_m3,0,0,0.01,designed4,4x4,0.6566666666666666,4
+optimistic_q,Optimistic Q,-1.0,3,designed4_m3,0,50,0.12,designed4,4x4,0.6566666666666666,4
+optimistic_q,Optimistic Q,-1.0,3,designed4_m3,0,100,0.28,designed4,4x4,0.6566666666666666,4
+optimistic_q,Optimistic Q,-1.0,3,designed4_m3,0,150,0.3,designed4,4x4,0.6566666666666666,4
+optimistic_q,Optimistic Q,-1.0,3,designed4_m3,0,200,0.14,designed4,4x4,0.6566666666666666,4
+optimistic_q,Optimistic Q,-1.0,3,designed4_m3,0,250,0.6,designed4,4x4,0.6566666666666666,4
+optimistic_q,Optimistic Q,-1.0,3,designed4_m3,0,300,0.42,designed4,4x4,0.6566666666666666,4
+optimistic_q,Optimistic Q,-1.0,3,designed4_m3,0,350,0.61,designed4,4x4,0.6566666666666666,4
+optimistic_q,Optimistic Q,-1.0,3,designed4_m3,0,400,0.54,designed4,4x4,0.6566666666666666,4
+optimistic_q,Optimistic Q,-1.0,3,designed4_m3,0,450,0.71,designed4,4x4,0.6566666666666666,4
+optimistic_q,Optimistic Q,-1.0,3,designed4_m3,0,500,0.32,designed4,4x4,0.6566666666666666,4
+optimistic_q,Optimistic Q,-1.0,3,designed4_m3,0,550,0.6,designed4,4x4,0.6566666666666666,4
+optimistic_q,Optimistic Q,-1.0,3,designed4_m3,0,600,0.61,designed4,4x4,0.6566666666666666,4
+optimistic_q,Optimistic Q,-1.0,3,designed4_m3,0,650,0.66,designed4,4x4,0.6566666666666666,4
+optimistic_q,Optimistic Q,-1.0,3,designed4_m3,0,700,0.59,designed4,4x4,0.6566666666666666,4
+optimistic_q,Optimistic Q,-1.0,3,designed4_m3,0,750,0.53,designed4,4x4,0.6566666666666666,4
+optimistic_q,Optimistic Q,-1.0,3,designed4_m3,0,800,0.62,designed4,4x4,0.6566666666666666,4
+optimistic_q,Optimistic Q,-1.0,3,designed4_m3,0,850,0.56,designed4,4x4,0.6566666666666666,4
+optimistic_q,Optimistic Q,-1.0,3,designed4_m3,0,900,0.41,designed4,4x4,0.6566666666666666,4
+optimistic_q,Optimistic Q,-1.0,3,designed4_m3,0,950,0.59,designed4,4x4,0.6566666666666666,4
+optimistic_q,Optimistic Q,-1.0,3,designed4_m3,0,1000,0.64,designed4,4x4,0.6566666666666666,4
+optimistic_q,Optimistic Q,-1.0,3,designed4_m3,0,1050,0.62,designed4,4x4,0.6566666666666666,4
+optimistic_q,Optimistic Q,-1.0,3,designed4_m3,0,1100,0.59,designed4,4x4,0.6566666666666666,4
+optimistic_q,Optimistic Q,-1.0,3,designed4_m3,0,1150,0.67,designed4,4x4,0.6566666666666666,4
+optimistic_q,Optimistic Q,-1.0,3,designed4_m3,0,1200,0.32,designed4,4x4,0.6566666666666666,4
+optimistic_q,Optimistic Q,-1.0,3,designed4_m3,0,1250,0.67,designed4,4x4,0.6566666666666666,4
+optimistic_q,Optimistic Q,-1.0,3,designed4_m3,0,1300,0.62,designed4,4x4,0.6566666666666666,4
+optimistic_q,Optimistic Q,-1.0,3,designed4_m3,0,1350,0.61,designed4,4x4,0.6566666666666666,4
+optimistic_q,Optimistic Q,-1.0,3,designed4_m3,0,1400,0.67,designed4,4x4,0.6566666666666666,4
+optimistic_q,Optimistic Q,-1.0,3,designed4_m3,0,1450,0.62,designed4,4x4,0.6566666666666666,4
+optimistic_q,Optimistic Q,-1.0,3,designed4_m3,0,1500,0.55,designed4,4x4,0.6566666666666666,4
+optimistic_q,Optimistic Q,-1.0,3,designed4_m3,0,1550,0.58,designed4,4x4,0.6566666666666666,4
+optimistic_q,Optimistic Q,-1.0,3,designed4_m3,0,1600,0.25,designed4,4x4,0.6566666666666666,4
+optimistic_q,Optimistic Q,-1.0,3,designed4_m3,0,1650,0.56,designed4,4x4,0.6566666666666666,4
+optimistic_q,Optimistic Q,-1.0,3,designed4_m3,0,1700,0.55,designed4,4x4,0.6566666666666666,4
+optimistic_q,Optimistic Q,-1.0,3,designed4_m3,0,1750,0.56,designed4,4x4,0.6566666666666666,4
+optimistic_q,Optimistic Q,-1.0,3,designed4_m3,0,1800,0.55,designed4,4x4,0.6566666666666666,4
+optimistic_q,Optimistic Q,-1.0,3,designed4_m3,0,1850,0.6,designed4,4x4,0.6566666666666666,4
+optimistic_q,Optimistic Q,-1.0,3,designed4_m3,0,1900,0.59,designed4,4x4,0.6566666666666666,4
+optimistic_q,Optimistic Q,-1.0,3,designed4_m3,0,1950,0.58,designed4,4x4,0.6566666666666666,4
+optimistic_q,Optimistic Q,-1.0,3,designed4_m3,0,2000,0.61,designed4,4x4,0.6566666666666666,4
+dyna_q,Dyna-Q,-1.0,3,designed4_m3,0,0,0.01,designed4,4x4,0.6566666666666666,4
+dyna_q,Dyna-Q,-1.0,3,designed4_m3,0,50,0.01,designed4,4x4,0.6566666666666666,4
+dyna_q,Dyna-Q,-1.0,3,designed4_m3,0,100,0.01,designed4,4x4,0.6566666666666666,4
+dyna_q,Dyna-Q,-1.0,3,designed4_m3,0,150,0.0,designed4,4x4,0.6566666666666666,4
+dyna_q,Dyna-Q,-1.0,3,designed4_m3,0,200,0.02,designed4,4x4,0.6566666666666666,4
+dyna_q,Dyna-Q,-1.0,3,designed4_m3,0,250,0.11,designed4,4x4,0.6566666666666666,4
+dyna_q,Dyna-Q,-1.0,3,designed4_m3,0,300,0.07,designed4,4x4,0.6566666666666666,4
+dyna_q,Dyna-Q,-1.0,3,designed4_m3,0,350,0.0,designed4,4x4,0.6566666666666666,4
+dyna_q,Dyna-Q,-1.0,3,designed4_m3,0,400,0.02,designed4,4x4,0.6566666666666666,4
+dyna_q,Dyna-Q,-1.0,3,designed4_m3,0,450,0.0,designed4,4x4,0.6566666666666666,4
+dyna_q,Dyna-Q,-1.0,3,designed4_m3,0,500,0.42,designed4,4x4,0.6566666666666666,4
+dyna_q,Dyna-Q,-1.0,3,designed4_m3,0,550,0.49,designed4,4x4,0.6566666666666666,4
+dyna_q,Dyna-Q,-1.0,3,designed4_m3,0,600,0.48,designed4,4x4,0.6566666666666666,4
+dyna_q,Dyna-Q,-1.0,3,designed4_m3,0,650,0.44,designed4,4x4,0.6566666666666666,4
+dyna_q,Dyna-Q,-1.0,3,designed4_m3,0,700,0.42,designed4,4x4,0.6566666666666666,4
+dyna_q,Dyna-Q,-1.0,3,designed4_m3,0,750,0.43,designed4,4x4,0.6566666666666666,4
+dyna_q,Dyna-Q,-1.0,3,designed4_m3,0,800,0.21,designed4,4x4,0.6566666666666666,4
+dyna_q,Dyna-Q,-1.0,3,designed4_m3,0,850,0.25,designed4,4x4,0.6566666666666666,4
+dyna_q,Dyna-Q,-1.0,3,designed4_m3,0,900,0.29,designed4,4x4,0.6566666666666666,4
+dyna_q,Dyna-Q,-1.0,3,designed4_m3,0,950,0.31,designed4,4x4,0.6566666666666666,4
+dyna_q,Dyna-Q,-1.0,3,designed4_m3,0,1000,0.2,designed4,4x4,0.6566666666666666,4
+dyna_q,Dyna-Q,-1.0,3,designed4_m3,0,1050,0.62,designed4,4x4,0.6566666666666666,4
+dyna_q,Dyna-Q,-1.0,3,designed4_m3,0,1100,0.59,designed4,4x4,0.6566666666666666,4
+dyna_q,Dyna-Q,-1.0,3,designed4_m3,0,1150,0.68,designed4,4x4,0.6566666666666666,4
+dyna_q,Dyna-Q,-1.0,3,designed4_m3,0,1200,0.67,designed4,4x4,0.6566666666666666,4
+dyna_q,Dyna-Q,-1.0,3,designed4_m3,0,1250,0.67,designed4,4x4,0.6566666666666666,4
+dyna_q,Dyna-Q,-1.0,3,designed4_m3,0,1300,0.62,designed4,4x4,0.6566666666666666,4
+dyna_q,Dyna-Q,-1.0,3,designed4_m3,0,1350,0.6,designed4,4x4,0.6566666666666666,4
+dyna_q,Dyna-Q,-1.0,3,designed4_m3,0,1400,0.66,designed4,4x4,0.6566666666666666,4
+dyna_q,Dyna-Q,-1.0,3,designed4_m3,0,1450,0.73,designed4,4x4,0.6566666666666666,4
+dyna_q,Dyna-Q,-1.0,3,designed4_m3,0,1500,0.7,designed4,4x4,0.6566666666666666,4
+dyna_q,Dyna-Q,-1.0,3,designed4_m3,0,1550,0.69,designed4,4x4,0.6566666666666666,4
+dyna_q,Dyna-Q,-1.0,3,designed4_m3,0,1600,0.14,designed4,4x4,0.6566666666666666,4
+dyna_q,Dyna-Q,-1.0,3,designed4_m3,0,1650,0.43,designed4,4x4,0.6566666666666666,4
+dyna_q,Dyna-Q,-1.0,3,designed4_m3,0,1700,0.43,designed4,4x4,0.6566666666666666,4
+dyna_q,Dyna-Q,-1.0,3,designed4_m3,0,1750,0.6,designed4,4x4,0.6566666666666666,4
+dyna_q,Dyna-Q,-1.0,3,designed4_m3,0,1800,0.46,designed4,4x4,0.6566666666666666,4
+dyna_q,Dyna-Q,-1.0,3,designed4_m3,0,1850,0.22,designed4,4x4,0.6566666666666666,4
+dyna_q,Dyna-Q,-1.0,3,designed4_m3,0,1900,0.48,designed4,4x4,0.6566666666666666,4
+dyna_q,Dyna-Q,-1.0,3,designed4_m3,0,1950,0.58,designed4,4x4,0.6566666666666666,4
+dyna_q,Dyna-Q,-1.0,3,designed4_m3,0,2000,0.61,designed4,4x4,0.6566666666666666,4

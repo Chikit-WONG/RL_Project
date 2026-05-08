@@ -1,0 +1,5 @@
+suite,map_size,frozen_prob,map_id,map_label,map_seed,oracle_success,layout,holes
+designed4,4x4,,0,designed4_m0,24011,0.5566666666666666,SFFH/FFHF/HFHF/FFFG,4
+designed4,4x4,,1,designed4_m1,24015,0.9433333333333334,SFFF/HHFF/HFFF/FFHG,4
+designed4,4x4,,2,designed4_m2,24021,0.6733333333333333,SFFF/HFFH/HHFF/FFFG,4
+designed4,4x4,,3,designed4_m3,24031,0.6566666666666666,SHFF/FFFF/HFHF/HFFG,4

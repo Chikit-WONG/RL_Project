@@ -1,0 +1,8 @@
+setting,algorithm,display_algorithm,mean_success,std_success,n
+Fixed 8x8,dyna_q,Dyna-Q,0.5366666666666666,0.2608320021265284,3
+Fixed 8x8,expected_sarsa,Expected SARSA,0.23,0.3637306695894642,3
+Fixed 8x8,n_step_sarsa,n-step SARSA,0.3833333333333333,0.3797806384392618,3
+Fixed 8x8,q_lambda,Q(lambda),0.58,0.0529150262212917,3
+Fixed 8x8,q_learning,Q-learning,0.7600000000000001,0.0458257569495584,3
+Fixed 8x8,sarsa,SARSA,0.4533333333333333,0.3002221399786054,3
+Fixed 8x8,sarsa_lambda,SARSA(lambda),0.5133333333333333,0.2386070689089771,3

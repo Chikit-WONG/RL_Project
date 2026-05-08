@@ -1,113 +1,99 @@
-# RL Project: FrozenLake Q-Learning
+# Stochastic FrozenLake Game-Playing RL Project Submission
 
-This project implements tabular Q-Learning for the course Track A topic `Game Playing with Q-Learning`. The code trains and evaluates an agent on 4x4 FrozenLake, saves figures and CSV summaries, and is designed to feed directly into the later project report.
+This package is organized around the final report narrative:
 
-## Environment
+1. We treat FrozenLake as a stochastic grid-world game-playing task.
+2. We use the Gymnasium standard 8x8 map as an important standard benchmark.
+3. We then tried Gymnasium-generated random maps.
+4. Many low-p Gymnasium random maps had near-zero oracle success under `slippery=True`, so they were not suitable for fair algorithm ranking.
+5. We therefore used controlled stochastic maps as the main comparison benchmark.
+6. We compared seven tabular RL game-playing agents, added Optuna tuning, and used Value Iteration as an oracle reference.
 
-- Recommended conda environment: `test`
-- Python version verified: `3.10.18`
-- CPU-only workflow by default
-- Login-node execution is the default because this is a lightweight tabular RL task
-
-## Dependencies
-
-The current `test` environment already has `numpy` and `matplotlib`. `gymnasium` is optional because the script can fall back to a native FrozenLake implementation.
-
-```bash
-conda activate test
-pip install numpy matplotlib
-pip install gymnasium  # optional
-```
-
-If `gymnasium` is unavailable, `q_learning_game.py` will automatically use the built-in `native` backend.
-
-## Project Files
-
-- `q_learning_game.py`: main training, evaluation, plotting, and export script
-- `plan/plan_zh.md`: standalone Chinese implementation plan
-- `plan/plan_v1_claude.md`: earlier discussion draft
-- `results/figures/`: generated plots
-- `results/tables/`: generated CSV summaries
-- `results/logs/`: per-run train/eval logs
-
-## How To Run
-
-Run the full enhanced experiment suite:
-
-```bash
-conda activate test
-cd /hpc2hdd/home/ckwong627/workdir/Class/AIAA3053-Reinforcement_Learning_Principles_and_Methods/Project/RL_Project
-python q_learning_game.py --exp all --multi-seed 5
-```
-
-Run a smaller smoke test:
-
-```bash
-python q_learning_game.py --exp all --episodes 1000 --multi-seed 2
-```
-
-Force the native backend:
-
-```bash
-python q_learning_game.py --backend native --exp all
-```
-
-## CLI Options
+## Folder Structure
 
 ```text
---backend {auto,gymnasium,native}
---exp {all,exp1,exp2,exp3}
---episodes N
---seed N
---multi-seed N
---output-dir PATH
+RL_Project_Submission_FINAL_20260507/
+|-- code/
+|   |-- core/
+|   |-- experiments/
+|   |-- analysis/
+|   |-- requirements.txt
+|-- figures/
+|   |-- 01_report_used_compact/
+|   |-- 02_main_controlled_results/
+|   |-- 03_diagnostic_gymnasium8/
+|   |-- 04_supplemental_per_map/
+|   |-- 05_all_figures_archive/
+|-- results_csv/
+|   |-- 01_main_controlled/
+|   |-- 02_diagnostic_gymnasium8/
+|-- docs/
+|-- report_overleaf_light/
+|-- report/
 ```
 
-Default behavior:
+## Main Benchmark
 
-- `backend=auto`
-- `exp=all`
-- `episodes=10000`
-- `seed=0`
-- `multi-seed=5`
-- `output-dir=results`
+The main algorithm comparison uses controlled stochastic maps:
 
-## Experiments
+- Standard 4x4 slippery FrozenLake.
+- Designed 4x4 maps with exactly four holes.
+- Gymnasium standard 8x8 slippery FrozenLake as a standard reference.
+- Fixed 8x8 slippery FrozenLake.
+- Controlled random 8x8 maps with `p = 0.80, 0.85, 0.90, 0.95`.
 
-- `Exp1`: deterministic FrozenLake baseline
-- `Exp2`: stochastic FrozenLake baseline
-- `Exp3`: alpha ablation with `alpha in {0.01, 0.1, 0.5}`
-- Enhanced display mode also runs multi-seed aggregation and exports mean/std comparisons
+All reported main experiments use `slippery=True`.
 
-## Expected Outputs
+## Algorithms
 
-Key figures:
+The main comparison includes:
 
-- `results/figures/exp1_learning_curve.png`
-- `results/figures/exp2_learning_curve.png`
-- `results/figures/exp2_eval_curve.png`
-- `results/figures/exp2_epsilon_curve.png`
-- `results/figures/exp2_qtable_heatmap.png`
-- `results/figures/exp2_policy_arrows.png`
-- `results/figures/exp3_alpha_comparison.png`
-- `results/figures/baseline_multi_seed_eval.png`
-- `results/figures/alpha_multi_seed_eval.png`
-- `results/figures/alpha_final_success_bar.png`
-- `results/figures/alpha_final_success_boxplot.png`
+- Q-learning
+- SARSA
+- Expected SARSA
+- SARSA(lambda)
+- Q(lambda)
+- Optimistic Q-learning
+- Dyna-Q
 
-Key tables:
+Value Iteration is used as an oracle reference, not as a model-free baseline.
 
-- `results/tables/run_summary.csv`
-- `results/tables/summary_table.csv`
+## Recommended Reading Order
 
-Logs:
+1. `report_overleaf_light/main.tex`
+2. `report/RL_proj.pdf`
+3. `docs/中文文件结构说明.md`
+4. `docs/图表阅读指南.md`
+5. `docs/中文结果整理.md`
+6. `docs/algorithm_qa_notes.md`
 
-- `results/logs/*_train.csv`
-- `results/logs/*_eval.csv`
+## Reproduction
 
-## Notes
+Install dependencies:
 
-- No GPU is required for this project.
-- The script prefers Gymnasium for parity with standard FrozenLake but stays reproducible without it.
-- For cluster execution, an optional CPU-only debug-partition script is available at `run_debug_cpu.slurm`.
-- The report, report PDF, and Overleaf `.zip` are intentionally left for the next stage after final experiment outputs are stable.
+```bash
+cd code
+python -m pip install -r requirements.txt
+```
+
+Run the controlled 8x8 long-budget experiment:
+
+```bash
+cd code/experiments
+python run_random8_learning_curves.py --suite random8 --output-dir random8_learning_curves_long_v1 --episodes 10000 --eval-interval 500 --eval-episodes 50 --oracle-eval-episodes 300 --maps-per-prob 5 --seeds 1 --max-steps 200 --planning-steps 15
+```
+
+Run the Gymnasium diagnostic trial:
+
+```bash
+cd code/experiments
+python run_gymnasium8_experiments.py --output-dir gymnasium8_random_maps_v1 --probs 0.8,0.7,0.6,0.5 --maps-per-prob 3 --episodes 10000 --eval-interval 500 --eval-episodes 100 --oracle-eval-episodes 1000 --max-steps 200 --planning-steps 15
+```
+
+The submitted CSV and figures are already included, so rerunning is optional.
+
+## Figure Policy
+
+`figures/02_main_controlled_results/` and `figures/03_diagnostic_gymnasium8/` are the recommended figures for the report and presentation.
+
+`figures/05_all_figures_archive/` keeps all current valid figures from the clean working package, including grouped learning curves and individual Gymnasium per-map plots, so no previous useful figure is lost.

@@ -1,39 +1,13 @@
-# Python bytecode and interpreter caches
 __pycache__/
 *.py[cod]
-*$py.class
-
-# Common Python tooling caches
 .pytest_cache/
-.mypy_cache/
-.ruff_cache/
-.nox/
-.tox/
-.coverage
-htmlcov/
-
-# Local temporary files
-*.tmp
-*.temp
-*.swp
-*.swo
-*~
+.ipynb_checkpoints/
 .DS_Store
-
-# Plan
-plan/
-
-# slurm_scripts/
-slurm_scripts/
-
-# temp
-temp/
-
-# report
-report/
-
-# zip files
+Thumbs.db
 *.zip
-
-# old report
-old_report/
+*_partial.csv
+standard_4x4_slippery_focused_v*/
+random8_learning_curves_long_v*/
+designed4_learning_curves_long_v*/
+fixed_map_slippery_results/
+fixed_map_optuna_results/

@@ -1,0 +1,29 @@
+setting,display_algorithm,mean_success
+Standard 4x4,Q-learning,0.77
+Designed 4x4 long,Q-learning,0.63
+Fixed 8x8,Q-learning,0.7600000000000001
+Random 8x8 long,Q-learning,0.8789999999999999
+Standard 4x4,SARSA,0.7233333333333333
+Designed 4x4 long,SARSA,0.45999999999999996
+Fixed 8x8,SARSA,0.4533333333333333
+Random 8x8 long,SARSA,0.8950000000000001
+Standard 4x4,Expected SARSA,0.68
+Designed 4x4 long,Expected SARSA,0.635
+Fixed 8x8,Expected SARSA,0.23
+Random 8x8 long,Expected SARSA,0.9020000000000001
+Standard 4x4,SARSA(lambda),0.43
+Designed 4x4 long,SARSA(lambda),0.2975
+Fixed 8x8,SARSA(lambda),0.5133333333333333
+Random 8x8 long,SARSA(lambda),0.783
+Standard 4x4,Q(lambda),0.53
+Designed 4x4 long,Q(lambda),0.525
+Fixed 8x8,Q(lambda),0.58
+Random 8x8 long,Q(lambda),0.873
+Standard 4x4,Optimistic Q,0.7666666666666666
+Designed 4x4 long,Optimistic Q,0.59
+Fixed 8x8,Optimistic Q,0.8166666666666668
+Random 8x8 long,Optimistic Q,0.9879999999999999
+Standard 4x4,Dyna-Q,0.3466666666666667
+Designed 4x4 long,Dyna-Q,0.53
+Fixed 8x8,Dyna-Q,0.5366666666666666
+Random 8x8 long,Dyna-Q,0.8700000000000001
