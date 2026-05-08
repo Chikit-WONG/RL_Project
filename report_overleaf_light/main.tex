@@ -115,7 +115,7 @@ Gymnasium-generated random maps answer a different design question: what happens
 \end{figure}
 
 \subsection{Controlled 4x4 Maps}
-Figure~\ref{fig:designed4} reports the controlled random 4$\times$4 experiment. These maps also have exactly four holes and are therefore much more credible than high-$p$ random maps. The results should be read as a credibility check rather than a strong ranking claim: Expected SARSA, Q-learning, and optimistic Q-learning are close in mean performance, but the standard deviations across only four maps are large. This means the controlled 4$\times$4 setting confirms that the algorithms behave plausibly on non-trivial small boards, while the more reliable algorithm ranking should come from the larger 8$\times$8 controlled benchmark.
+Figure~\ref{fig:designed4} reports the controlled random 4$\times$4 experiment. These maps also have exactly four holes and are therefore much more credible than high-$p$ random maps. In this aggregate, optimistic Q-learning has the highest mean success rate, but the result should still be read as a credibility check rather than a strong ranking claim because the map set is small and the cross-map variability is large. The controlled 4$\times$4 setting confirms that the algorithms behave plausibly on non-trivial small boards, while the more reliable algorithm ranking should come from the larger 8$\times$8 controlled benchmark.
 
 \begin{figure}[H]
     \centering
@@ -155,43 +155,30 @@ Figure~\ref{fig:learningpanel} shows per-map learning curves rather than one mix
 \end{figure}
 
 \subsection{Key Numerical Results}
-Table~\ref{tab:keyresults} reports the latest stochastic-only results used in the analysis. The controlled random 8$\times$8 rows are the main random-map algorithm comparison; the Gymnasium rows are included separately as diagnostic evidence for why controlled maps were introduced.
+Table~\ref{tab:keyresults} reports the learned-agent success rates across the main stochastic settings. This table is meant to be a compact ranking matrix rather than a cherry-picked list: every main tabular algorithm is shown in every reported setting where it was evaluated. The Gymnasium random column is a diagnostic average over the standard 8$\times$8 map plus the generated random maps, so it should not be mixed directly with the controlled benchmark columns.
 
 \begin{table}[H]
 \centering
-\caption{Selected latest stochastic results. Success values are mean final greedy evaluation rates.}
+\caption{Mean final greedy evaluation success across stochastic settings. Higher is better.}
 \label{tab:keyresults}
-\begin{tabular}{llcc}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lcccccc}
 \toprule
-Setting & Method & Mean Success & Std. Dev.\\
+Method & Std. 4x4 & Ctrl. 4x4 & Fixed 8x8 & Gym Std. 8x8 & Gym Random Diag. & Ctrl. Random 8x8\\
 \midrule
-Standard 4$\times$4 & Value Iteration oracle & 0.847 & --\\
-Standard 4$\times$4 & Q-learning & 0.770 & 0.046\\
-Standard 4$\times$4 & Optimistic Q-learning & 0.767 & 0.025\\
-Standard 4$\times$4 & SARSA & 0.723 & 0.021\\
-\midrule
-Designed 4$\times$4 & Value Iteration oracle & 0.708 & --\\
-Designed 4$\times$4 & Expected SARSA & 0.635 & 0.199\\
-Designed 4$\times$4 & Q-learning & 0.630 & 0.234\\
-Designed 4$\times$4 & Optimistic Q-learning & 0.590 & 0.308\\
-\midrule
-Fixed 8$\times$8 & Optimistic Q-learning & 0.817 & 0.155\\
-Fixed 8$\times$8 & Q-learning & 0.760 & 0.046\\
-Fixed 8$\times$8 & Q($\lambda$) & 0.580 & 0.053\\
-\midrule
-Random 8$\times$8 & Value Iteration oracle & 0.988 & --\\
-Random 8$\times$8 & Optimistic Q-learning & 0.988 & 0.023\\
-Random 8$\times$8 & Expected SARSA & 0.902 & 0.122\\
-Random 8$\times$8 & SARSA & 0.895 & 0.122\\
-\midrule
-Gymnasium standard 8$\times$8 & Expected SARSA & 0.850 & --\\
-Gymnasium standard 8$\times$8 & Q($\lambda$) & 0.850 & --\\
-Gymnasium standard 8$\times$8 & Optimistic Q-learning & 0.820 & --\\
-Gymnasium all 8$\times$8 maps & Optimistic Q-learning & 0.235 & 0.327\\
-Gymnasium all 8$\times$8 maps & SARSA($\lambda$) & 0.143 & 0.317\\
+Q-learning & 0.770 & 0.464 & 0.760 & 0.780 & 0.134 & 0.879\\
+SARSA & 0.723 & 0.444 & 0.453 & 0.740 & 0.113 & 0.895\\
+Expected SARSA & 0.680 & 0.383 & 0.230 & 0.850 & 0.135 & 0.902\\
+SARSA($\lambda$) & 0.430 & 0.371 & 0.513 & 0.760 & 0.143 & 0.783\\
+Q($\lambda$) & 0.530 & 0.326 & 0.580 & 0.850 & 0.128 & 0.873\\
+Optimistic Q & 0.767 & 0.661 & 0.817 & 0.820 & 0.235 & 0.988\\
+Dyna-Q & 0.347 & 0.388 & 0.537 & 0.160 & 0.072 & 0.870\\
 \bottomrule
 \end{tabular}
+}
 \end{table}
+
+The controlled random 8$\times$8 column is the main comparison result because it averages over 20 controlled stochastic maps with a longer 10,000-episode budget. The Gymnasium random diagnostic column is intentionally low: it includes several generated boards whose oracle success is near zero under slippery dynamics, which is why those boards are used to motivate controlled map design rather than to rank algorithms.
 
 \section{Ablation Study}
 \subsection{Exploration Ablation}
@@ -205,7 +192,7 @@ Figure~\ref{fig:explore} isolates exploration strategy on fixed 8$\times$8 slipp
 \end{figure}
 
 \subsection{Reward Propagation Ablation}
-Figure~\ref{fig:propagation} compares methods that propagate sparse terminal reward in different ways. Q-learning is strongest on the fixed 8$\times$8 map at 0.760. Q($\lambda$), Dyna-Q, and SARSA($\lambda$) are lower on this fixed map but remain important because they improve robustness on random 8$\times$8 maps. n-step SARSA and Expected SARSA are highly variable, which is expected when successful episodes are rare and the behavior policy is still exploratory.
+Figure~\ref{fig:propagation} is not intended as a second overall algorithm ranking. It isolates backup and reward-propagation mechanisms on the fixed 8$\times$8 map. n-step SARSA is included because it is the canonical multi-step TD control baseline between one-step SARSA and eligibility traces. Optimistic Q-learning is not included in this panel because its main change is exploration through optimistic initialization, which is already tested in Figure~\ref{fig:explore}. Under this fixed-map ablation, one-step Q-learning is strongest at 0.760, while Q($\lambda$), Dyna-Q, SARSA($\lambda$), and n-step SARSA are lower or more variable. This does not contradict the main controlled-random result; it shows that propagation tricks alone do not dominate unless the exploration problem is also handled well.
 
 \begin{figure}[H]
     \centering
